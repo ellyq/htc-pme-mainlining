@@ -1,0 +1,790 @@
+[     1.731168390/         0xf8fd579] FF RWrk            1 ?	
+[     1.731172244/         0xf8fd5c2] FF ext_event       0 ?	
+[     1.731174380/         0xf8fd5eb] FF ID set          0 ?	
+[     1.731176463/         0xf8fd613] FF SUSP clear      0 ?	
+[     1.731199327/         0xf8fd7cb] FF undefined       0 ?	
+[     1.731202192/         0xf8fd801] FF undef_b_sess    0 ?	
+[     1.731206098/         0xf8fd84c] FF Initialized     1 ?	
+[     1.736382609/         0xf915c8e] FF RWrk            1 ?	
+[     1.736387765/         0xf915cec] FF ext_event       0 ?	
+[     1.755311932/         0xf96e843] FF StrtGdgt gsy    2 ?	
+[     1.756633286/         0xf974b5a] FF StopGdgt psy    1 ?	
+[     1.756639692/         0xf974bd2] FF Undef SDP       1 ?	
+[     1.756669328/         0xf974e0c] FF ID set          0 ?	
+[     1.756672973/         0xf974e51] FF SUSP clear      0 ?	
+[     1.756737140/         0xf975321] FF b_peripheral    0 ?	
+[     1.756741932/         0xf97537d] FF RWrk            1 ?	
+[     1.756744848/         0xf9753b4] FF ext_event       0 ?	
+[     1.756749328/         0xf97540d] FF ID set          0 ?	
+[     1.756751828/         0xf97543a] FF SUSP clear      0 ?	
+[     1.757073755/         0xf976c60] FF b_peripheral    0 ?	
+[    11.380214201/        0x1a9ab3ec] FF Pullup gsync    1 ?	
+[    11.381516076/        0x1a9b158b] FF Pullup put      0 ?	
+[    11.485636857/        0x1ab996a2] FF GAD SUS         0 ?	
+[    11.587328733/        0x1ad76182] FF BUS RST         0 ?	
+[    11.701115504/        0x1af8b785] 00 SETUP        ?	80 06 0100 0000 64
+[    11.701148420/        0x1af8b9fd] 01 QUEUE           0 ?	1 18
+[    11.701200139/        0x1af8bdd9] 00 DONE            0 ?	18
+[    11.701258368/        0x1af8c239] 00 DONE            0 ?	STATUS
+[    11.704874514/        0x1af9d171] FF BUS RST         0 ?	
+[    11.815282014/        0x1b1a2a01] 00 SETUP        ?	00 05 0027 0000 0
+[    11.815374410/        0x1b1a30eb] 00 DONE            0 ?	STATUS
+[    11.827093942/        0x1b1d9fed] 00 SETUP        ?	80 06 0100 0000 18
+[    11.827137379/        0x1b1da329] 01 QUEUE           0 ?	1 18
+[    11.827201337/        0x1b1da7f5] 00 DONE            0 ?	18
+[    11.827277015/        0x1b1dada0] 00 DONE            0 ?	STATUS
+[    11.827453681/        0x1b1dbade] 00 SETUP        ?	80 06 0200 0000 9
+[    11.827480660/        0x1b1dbce4] 01 QUEUE           0 ?	1 9
+[    11.827519098/        0x1b1dbfc4] 00 DONE            0 ?	9
+[    11.827604046/        0x1b1dc625] 00 DONE            0 ?	STATUS
+[    11.827728629/        0x1b1dcf7d] 00 SETUP        ?	80 06 0200 0000 157
+[    11.827755140/        0x1b1dd179] 01 QUEUE           0 ?	1 157
+[    11.827778004/        0x1b1dd32f] 00 DONE            0 ?	157
+[    11.827845296/        0x1b1dd83f] 00 DONE            0 ?	STATUS
+[    11.828031806/        0x1b1de63d] 00 SETUP        ?	80 06 0300 0000 255
+[    11.828060921/        0x1b1de86b] 01 QUEUE           0 ?	1 4
+[    11.828091181/        0x1b1deaaf] 00 DONE            0 ?	4
+[    11.828147223/        0x1b1deee3] 00 DONE            0 ?	STATUS
+[    11.828219671/        0x1b1df452] 00 SETUP        ?	80 06 0302 0409 255
+[    11.828244358/        0x1b1df62d] 01 QUEUE           0 ?	1 28
+[    11.828273733/        0x1b1df860] 00 DONE            0 ?	28
+[    11.828329827/        0x1b1dfc96] 00 DONE            0 ?	STATUS
+[    11.828427275/        0x1b1e03e8] 00 SETUP        ?	80 06 0301 0409 255
+[    11.828453733/        0x1b1e05e1] 01 QUEUE           0 ?	1 8
+[    11.828487379/        0x1b1e0866] 00 DONE            0 ?	8
+[    11.828537952/        0x1b1e0c31] 00 DONE            0 ?	STATUS
+[    11.828667483/        0x1b1e15e9] 00 SETUP        ?	80 06 0303 0409 255
+[    11.828693942/        0x1b1e17e4] 01 QUEUE           0 ?	1 26
+[    11.828726442/        0x1b1e1a54] 00 DONE            0 ?	26
+[    11.828800296/        0x1b1e1fdf] 00 DONE            0 ?	STATUS
+[    11.835558837/        0x1b201ac5] 00 SETUP        ?	00 09 0001 0000 0
+[    11.835573785/        0x1b201bdf] FF fifo_reset      1 ?	
+[    11.835579150/        0x1b201c45] FF fifo_reset      3 ?	
+[    11.835583473/        0x1b201c98] FF fifo_reset      5 ?	
+[    11.835587483/        0x1b201ce6] FF fifo_reset      7 ?	
+[    11.835591650/        0x1b201d35] FF fifo_reset      9 ?	
+[    11.835595712/        0x1b201d84] FF fifo_reset     11 ?	
+[    11.835600504/        0x1b201ddf] FF fifo_reset     13 ?	
+[    11.835604567/        0x1b201e2e] FF fifo_reset     15 ?	
+[    11.835608473/        0x1b201e78] FF fifo_reset     17 ?	
+[    11.835612483/        0x1b201ec5] FF fifo_reset     19 ?	
+[    11.835616494/        0x1b201f12] FF fifo_reset     21 ?	
+[    11.835620400/        0x1b201f5d] FF fifo_reset     23 ?	
+[    11.835624150/        0x1b201fa5] FF fifo_reset     25 ?	
+[    11.835628108/        0x1b201ff1] FF fifo_reset     27 ?	
+[    11.835631962/        0x1b20203c] FF fifo_reset     29 ?	
+[    11.835635817/        0x1b202086] FF fifo_reset     31 ?	
+[    11.835704515/        0x1b2025ae] FF resize_fifo     3 ?	
+[    11.835708681/        0x1b2025fc] FF fifo_depth    130 ?	
+[    11.835788525/        0x1b202bfa] FF resize_fifo     5 ?	
+[    11.835792431/        0x1b202c45] FF fifo_depth    130 ?	
+[    11.835830035/        0x1b202f17] FF resize_fifo     9 ?	
+[    11.835833733/        0x1b202f5e] FF fifo_depth    130 ?	
+[    11.835852431/        0x1b2030c5] FF resize_fifo     7 ?	
+[    11.835855035/        0x1b2030f6] FF fifo_depth    130 ?	
+[    11.835893317/        0x1b2033d5] FF resize_fifo    13 ?	
+[    11.835896337/        0x1b20340f] FF fifo_depth    130 ?	
+[    11.835942379/        0x1b203784] FF resize_fifo    11 ?	
+[    11.835945296/        0x1b2037bc] FF fifo_depth    388 ?	
+[    11.835977587/        0x1b203a28] FF resize_fifo    15 ?	
+[    11.835980296/        0x1b203a5b] FF fifo_depth    130 ?	
+[    11.836514723/        0x1b206276] 00 DONE            0 ?	0
+[    11.836520556/        0x1b2062e1] 00 DONE            0 ?	STATUS
+[    11.836748265/        0x1b2073f6] 00 SETUP        ?	80 06 0306 0409 255
+[    11.836775452/        0x1b207601] 01 QUEUE           0 ?	1 18
+[    11.836799671/        0x1b2077cf] 00 DONE            0 ?	18
+[    11.836885817/        0x1b207e49] 00 DONE            0 ?	STATUS
+[    11.837076285/        0x1b208c90] 00 SETUP        ?	80 06 0307 0409 255
+[    11.837098994/        0x1b208e44] 01 QUEUE           0 ?	1 28
+[    11.837142067/        0x1b20917f] 00 DONE            0 ?	28
+[    11.837204879/        0x1b209636] 00 DONE            0 ?	STATUS
+[    11.837360400/        0x1b20a1e2] 00 SETUP        ?	80 06 0308 0409 255
+[    11.837385400/        0x1b20a3be] 01 QUEUE           0 ?	1 22
+[    11.837415244/        0x1b20a5fc] 00 DONE            0 ?	22
+[    11.837492223/        0x1b20abc5] 00 DONE            0 ?	STATUS
+[    11.837765192/        0x1b20c03e] 00 SETUP        ?	80 06 0304 0409 255
+[    11.837798733/        0x1b20c2bf] 01 QUEUE           0 ?	1 26
+[    11.837829410/        0x1b20c50f] 00 DONE            0 ?	26
+[    11.837898160/        0x1b20ca35] 00 DONE            0 ?	STATUS
+[    12.845028424/        0x1c47d8fe] 00 SETUP        ?	A1 FE 0000 0004 1
+[    12.845057070/        0x1c47db1f] 01 QUEUE           0 ?	1 1
+[    12.845089882/        0x1c47dd94] 00 DONE            0 ?	1
+[    12.845153268/        0x1c47e259] 00 DONE            0 ?	STATUS
+[    16.847314582/        0x20dc6473] FF BUS RST         0 ?	
+[    16.957503020/        0x20fcac96] 00 SETUP        ?	80 06 0100 0000 64
+[    16.957535676/        0x20fcaf05] 01 QUEUE           0 ?	1 18
+[    16.957587238/        0x20fcb2e1] 00 DONE            0 ?	18
+[    16.957644113/        0x20fcb726] 00 DONE            0 ?	STATUS
+[    16.961315989/        0x20fdca91] FF BUS RST         0 ?	
+[    16.986884218/        0x2105482e] FF Pullup gsync    1 ?	
+[    16.986999322/        0x210550c7] FF Pullup put      0 ?	
+[    17.020132864/        0x210f05d3] FF Pullup gsync    1 ?	
+[    17.021396718/        0x210f649d] FF Pullup put      0 ?	
+[    17.125559895/        0x212de8da] FF GAD SUS         0 ?	
+[    17.285027812/        0x215ca0f2] FF BUS RST         0 ?	
+[    17.545079376/        0x21a8d0cd] 00 SETUP        ?	00 05 0027 0000 0
+[    17.545149480/        0x21a8d60c] 00 DONE            0 ?	STATUS
+[    17.557015782/        0x21ac500c] 00 SETUP        ?	80 06 0100 0000 18
+[    17.557051094/        0x21ac52ad] 01 QUEUE           0 ?	1 18
+[    17.557105105/        0x21ac56b9] 00 DONE            0 ?	18
+[    17.557174063/        0x21ac5be5] 00 DONE            0 ?	STATUS
+[    17.557466772/        0x21ac71de] 00 SETUP        ?	80 06 0200 0000 157
+[    17.557499792/        0x21ac7453] 01 QUEUE           0 ?	1 157
+[    17.557524740/        0x21ac7631] 00 DONE            0 ?	157
+[    17.557591667/        0x21ac7b38] 00 DONE            0 ?	STATUS
+[    17.557902397/        0x21ac9289] 00 SETUP        ?	80 06 0303 0409 255
+[    17.557933855/        0x21ac94e1] 01 QUEUE           0 ?	1 26
+[    17.557963230/        0x21ac9716] 00 DONE            0 ?	26
+[    17.558025105/        0x21ac9bba] 00 DONE            0 ?	STATUS
+[    17.558822917/        0x21acd794] 00 SETUP        ?	00 09 0001 0000 0
+[    17.558838282/        0x21acd8b6] FF fifo_reset      1 ?	
+[    17.558844011/        0x21acd924] FF fifo_reset      3 ?	
+[    17.558848803/        0x21acd980] FF fifo_reset      5 ?	
+[    17.558853438/        0x21acd9d9] FF fifo_reset      7 ?	
+[    17.558858126/        0x21acda33] FF fifo_reset      9 ?	
+[    17.558862605/        0x21acda89] FF fifo_reset     11 ?	
+[    17.558867605/        0x21acdae9] FF fifo_reset     13 ?	
+[    17.558872501/        0x21acdb47] FF fifo_reset     15 ?	
+[    17.558877553/        0x21acdba8] FF fifo_reset     17 ?	
+[    17.558882084/        0x21acdbff] FF fifo_reset     19 ?	
+[    17.558886615/        0x21acdc56] FF fifo_reset     21 ?	
+[    17.558891251/        0x21acdcaf] FF fifo_reset     23 ?	
+[    17.558895886/        0x21acdd08] FF fifo_reset     25 ?	
+[    17.558900522/        0x21acdd61] FF fifo_reset     27 ?	
+[    17.558905105/        0x21acddb9] FF fifo_reset     29 ?	
+[    17.558909584/        0x21acde0f] FF fifo_reset     31 ?	
+[    17.558976615/        0x21ace317] FF resize_fifo     3 ?	
+[    17.558980574/        0x21ace362] FF fifo_depth    130 ?	
+[    17.559071720/        0x21acea39] FF resize_fifo     5 ?	
+[    17.559075522/        0x21acea81] FF fifo_depth    130 ?	
+[    17.559120001/        0x21acedd8] FF resize_fifo     9 ?	
+[    17.559123595/        0x21acee1c] FF fifo_depth    130 ?	
+[    17.559147917/        0x21acefef] FF resize_fifo     7 ?	
+[    17.559150938/        0x21acf02a] FF fifo_depth    130 ?	
+[    17.559191407/        0x21acf332] FF resize_fifo    13 ?	
+[    17.559194688/        0x21acf371] FF fifo_depth    130 ?	
+[    17.559234220/        0x21acf669] FF resize_fifo    11 ?	
+[    17.559237553/        0x21acf6a8] FF fifo_depth    388 ?	
+[    17.559284897/        0x21acfa36] FF resize_fifo    15 ?	
+[    17.559288282/        0x21acfa76] FF fifo_depth    130 ?	
+[    17.559598647/        0x21ad11bf] 00 DONE            0 ?	0
+[    17.559603699/        0x21ad121c] 00 DONE            0 ?	STATUS
+[    17.559919115/        0x21ad29c7] 00 SETUP        ?	82 00 0000 0083 2
+[    17.559935417/        0x21ad2afd] 01 QUEUE           0 ?	1 2
+[    17.559961407/        0x21ad2cf0] 00 DONE            0 ?	2
+[    17.560050834/        0x21ad33aa] 00 DONE            0 ?	STATUS
+[    17.560239272/        0x21ad41cc] 00 SETUP        ?	82 00 0000 0003 2
+[    17.560261095/        0x21ad436a] 01 QUEUE           0 ?	1 2
+[    17.560282709/        0x21ad450a] 00 DONE            0 ?	2
+[    17.560379063/        0x21ad4c47] 00 DONE            0 ?	STATUS
+[    29.449009829/        0x2f484b95] FF BUS RST         0 ?	
+[    29.559108839/        0x2f688cfe] 00 SETUP        ?	80 06 0100 0000 64
+[    29.559132642/        0x2f688ec7] 01 QUEUE           0 ?	1 18
+[    29.559175819/        0x2f689206] 00 DONE            0 ?	18
+[    29.559236912/        0x2f68969b] 00 DONE            0 ?	STATUS
+[    29.562821860/        0x2f69a37c] FF BUS RST         0 ?	
+[    29.573636131/        0x2f6cce95] FF Pullup gsync    1 ?	
+[    29.573761652/        0x2f6cd7f5] FF Pullup put      0 ?	
+[    29.606852485/        0x2f7689c8] FF Pullup gsync    1 ?	
+[    29.608092902/        0x2f76e6cc] FF Pullup put      0 ?	
+[    29.712271705/        0x2f956c3c] FF GAD SUS         0 ?	
+[    29.885182799/        0x2fc81491] FF BUS RST         0 ?	
+[    30.146043685/        0x3014811c] 00 SETUP        ?	00 05 0027 0000 0
+[    30.146177175/        0x30148b1f] 00 DONE            0 ?	STATUS
+[    30.157856498/        0x3017f715] 00 SETUP        ?	80 06 0100 0000 18
+[    30.157892123/        0x3017f9bf] 01 QUEUE           0 ?	1 18
+[    30.157946862/        0x3017fdd8] 00 DONE            0 ?	18
+[    30.158018841/        0x3018033f] 00 DONE            0 ?	STATUS
+[    30.158097487/        0x30180925] 00 SETUP        ?	80 06 0200 0000 157
+[    30.158120300/        0x30180adb] 01 QUEUE           0 ?	1 157
+[    30.158155091/        0x30180d76] 00 DONE            0 ?	157
+[    30.158213841/        0x301811de] 00 DONE            0 ?	STATUS
+[    30.158269102/        0x30181603] 00 SETUP        ?	80 06 0303 0409 255
+[    30.158289050/        0x30181783] 01 QUEUE           0 ?	1 26
+[    30.158338529/        0x30181b39] 00 DONE            0 ?	26
+[    30.158433477/        0x30182259] 00 DONE            0 ?	STATUS
+[    30.159121237/        0x301855ef] 00 SETUP        ?	00 09 0001 0000 0
+[    30.159130143/        0x30185697] FF fifo_reset      1 ?	
+[    30.159134258/        0x301856e6] FF fifo_reset      3 ?	
+[    30.159137591/        0x30185726] FF fifo_reset      5 ?	
+[    30.159140768/        0x30185763] FF fifo_reset      7 ?	
+[    30.159143789/        0x3018579d] FF fifo_reset      9 ?	
+[    30.159146758/        0x301857d6] FF fifo_reset     11 ?	
+[    30.159150091/        0x30185816] FF fifo_reset     13 ?	
+[    30.159153112/        0x30185850] FF fifo_reset     15 ?	
+[    30.159156081/        0x30185889] FF fifo_reset     17 ?	
+[    30.159159675/        0x301858ce] FF fifo_reset     19 ?	
+[    30.159169362/        0x30185989] FF fifo_reset     21 ?	
+[    30.159173164/        0x301859d1] FF fifo_reset     23 ?	
+[    30.159176081/        0x30185a09] FF fifo_reset     25 ?	
+[    30.159178945/        0x30185a3f] FF fifo_reset     27 ?	
+[    30.159181966/        0x30185a7a] FF fifo_reset     29 ?	
+[    30.159185039/        0x30185ab7] FF fifo_reset     31 ?	
+[    30.159228164/        0x30185df2] FF resize_fifo     3 ?	
+[    30.159230664/        0x30185e21] FF fifo_depth    130 ?	
+[    30.159301393/        0x3018636f] FF resize_fifo     5 ?	
+[    30.159303945/        0x301863a0] FF fifo_depth    130 ?	
+[    30.159345404/        0x301866bd] FF resize_fifo     9 ?	
+[    30.159347852/        0x301866eb] FF fifo_depth    130 ?	
+[    30.159371654/        0x301868b4] FF resize_fifo     7 ?	
+[    30.159373529/        0x301868d8] FF fifo_depth    130 ?	
+[    30.159409362/        0x30186b88] FF resize_fifo    13 ?	
+[    30.159411602/        0x30186bb3] FF fifo_depth    130 ?	
+[    30.159451029/        0x30186ebf] FF resize_fifo    11 ?	
+[    30.159457904/        0x30186f2e] FF fifo_depth    388 ?	
+[    30.159501498/        0x30187272] FF resize_fifo    15 ?	
+[    30.159504518/        0x301872ab] FF fifo_depth    130 ?	
+[    30.159796602/        0x30188897] 00 DONE            0 ?	0
+[    30.159802800/        0x3018890a] 00 DONE            0 ?	STATUS
+[    41.714638564/        0x3d51bdba] FF Pullup gsync    1 ?	
+[    41.714670699/        0x3d51c022] FF Pullup put      0 ?	
+[    41.774091429/        0x3d6328b7] FF Pullup gsync    1 ?	
+[    41.778918720/        0x3d6492c0] FF Pullup put      0 ?	
+[    41.883561950/        0x3d833afe] FF GAD SUS         0 ?	
+[    41.985972315/        0x3da13bc9] FF BUS RST         0 ?	
+[    42.100078878/        0x3dc2a9c6] 00 SETUP        ?	80 06 0100 0000 64
+[    42.100112055/        0x3dc2ac3d] 01 QUEUE           0 ?	1 18
+[    42.100154086/        0x3dc2af62] 00 DONE            0 ?	18
+[    42.100224034/        0x3dc2b4a4] 00 DONE            0 ?	STATUS
+[    42.103833096/        0x3dc3c353] FF BUS RST         0 ?	
+[    42.213802836/        0x3de3fb0e] 00 SETUP        ?	00 05 0028 0000 0
+[    42.213874086/        0x3de40064] 00 DONE            0 ?	STATUS
+[    42.225952680/        0x3de78a4e] 00 SETUP        ?	80 06 0100 0000 18
+[    42.225985545/        0x3de78cc1] 01 QUEUE           0 ?	1 18
+[    42.226026691/        0x3de78fd4] 00 DONE            0 ?	18
+[    42.226090649/        0x3de794a4] 00 DONE            0 ?	STATUS
+[    42.226265597/        0x3de7a1c3] 00 SETUP        ?	80 06 0200 0000 9
+[    42.226294503/        0x3de7a3ea] 01 QUEUE           0 ?	1 9
+[    42.226327264/        0x3de7a660] 00 DONE            0 ?	9
+[    42.226371118/        0x3de7a9ac] 00 DONE            0 ?	STATUS
+[    42.226504347/        0x3de7b3ab] 00 SETUP        ?	80 06 0200 0000 157
+[    42.226529607/        0x3de7b58c] 01 QUEUE           0 ?	1 157
+[    42.226551586/        0x3de7b736] 00 DONE            0 ?	157
+[    42.226614972/        0x3de7bbf7] 00 DONE            0 ?	STATUS
+[    42.226669399/        0x3de7c009] 00 SETUP        ?	80 06 0300 0000 255
+[    42.226688201/        0x3de7c171] 01 QUEUE           0 ?	1 4
+[    42.226744764/        0x3de7c5b0] 00 DONE            0 ?	4
+[    42.226802889/        0x3de7ca0c] 00 DONE            0 ?	STATUS
+[    42.226958514/        0x3de7d5b8] 00 SETUP        ?	80 06 0302 0409 255
+[    42.227010545/        0x3de7d9a1] 01 QUEUE           0 ?	1 28
+[    42.227047784/        0x3de7dc69] 00 DONE            0 ?	28
+[    42.227108774/        0x3de7e100] 00 DONE            0 ?	STATUS
+[    42.227263305/        0x3de7ec97] 00 SETUP        ?	80 06 0301 0409 255
+[    42.227283670/        0x3de7ee1a] 01 QUEUE           0 ?	1 8
+[    42.227304920/        0x3de7efb3] 00 DONE            0 ?	8
+[    42.227373149/        0x3de7f4d1] 00 DONE            0 ?	STATUS
+[    42.227417836/        0x3de7f82b] 00 SETUP        ?	80 06 0303 0409 255
+[    42.227434920/        0x3de7f973] 01 QUEUE           0 ?	1 26
+[    42.227460961/        0x3de7fb67] 00 DONE            0 ?	26
+[    42.227505128/        0x3de7feb7] 00 DONE            0 ?	STATUS
+[    42.234006222/        0x3de9e64f] 00 SETUP        ?	00 09 0001 0000 0
+[    42.234016118/        0x3de9e709] FF fifo_reset      1 ?	
+[    42.234021586/        0x3de9e773] FF fifo_reset      3 ?	
+[    42.234026066/        0x3de9e7c8] FF fifo_reset      5 ?	
+[    42.234029503/        0x3de9e80b] FF fifo_reset      7 ?	
+[    42.234032993/        0x3de9e84d] FF fifo_reset      9 ?	
+[    42.234036222/        0x3de9e88b] FF fifo_reset     11 ?	
+[    42.234039659/        0x3de9e8cd] FF fifo_reset     13 ?	
+[    42.234042836/        0x3de9e90a] FF fifo_reset     15 ?	
+[    42.234046170/        0x3de9e94a] FF fifo_reset     17 ?	
+[    42.234049451/        0x3de9e988] FF fifo_reset     19 ?	
+[    42.234052628/        0x3de9e9c6] FF fifo_reset     21 ?	
+[    42.234055857/        0x3de9ea04] FF fifo_reset     23 ?	
+[    42.234058982/        0x3de9ea40] FF fifo_reset     25 ?	
+[    42.234062211/        0x3de9ea7e] FF fifo_reset     27 ?	
+[    42.234065389/        0x3de9eabb] FF fifo_reset     29 ?	
+[    42.234068566/        0x3de9eaf7] FF fifo_reset     31 ?	
+[    42.234123357/        0x3de9ef15] FF resize_fifo     3 ?	
+[    42.234126795/        0x3de9ef56] FF fifo_depth    130 ?	
+[    42.234206118/        0x3de9f549] FF resize_fifo     5 ?	
+[    42.234209347/        0x3de9f587] FF fifo_depth    130 ?	
+[    42.234247836/        0x3de9f86b] FF resize_fifo     9 ?	
+[    42.234250597/        0x3de9f89f] FF fifo_depth    130 ?	
+[    42.234268670/        0x3de9f9fa] FF resize_fifo     7 ?	
+[    42.234270753/        0x3de9fa22] FF fifo_depth    130 ?	
+[    42.234312941/        0x3de9fd4c] FF resize_fifo    13 ?	
+[    42.234315232/        0x3de9fd78] FF fifo_depth    130 ?	
+[    42.234346274/        0x3de9ffcc] FF resize_fifo    11 ?	
+[    42.234348670/        0x3de9fffa] FF fifo_depth    388 ?	
+[    42.234390441/        0x3dea031d] FF resize_fifo    15 ?	
+[    42.234393566/        0x3dea0358] FF fifo_depth    130 ?	
+[    42.234664868/        0x3dea17b3] 00 DONE            0 ?	0
+[    42.234669920/        0x3dea1812] 00 DONE            0 ?	STATUS
+[    42.234923514/        0x3dea2b18] 00 SETUP        ?	80 06 0306 0409 255
+[    42.234949920/        0x3dea2d14] 01 QUEUE           0 ?	1 18
+[    42.234970545/        0x3dea2e9e] 00 DONE            0 ?	18
+[    42.235036118/        0x3dea3389] 00 DONE            0 ?	STATUS
+[    42.235188461/        0x3dea3ef7] 00 SETUP        ?	80 06 0307 0409 255
+[    42.235213514/        0x3dea40d7] 01 QUEUE           0 ?	1 28
+[    42.235234243/        0x3dea4265] 00 DONE            0 ?	28
+[    42.235326847/        0x3dea4958] 00 DONE            0 ?	STATUS
+[    42.235436378/        0x3dea518f] 00 SETUP        ?	80 06 0308 0409 255
+[    42.235460389/        0x3dea535c] 01 QUEUE           0 ?	1 22
+[    42.235481743/        0x3dea54f5] 00 DONE            0 ?	22
+[    42.235567628/        0x3dea5b69] 00 DONE            0 ?	STATUS
+[    42.235793097/        0x3dea6c53] 00 SETUP        ?	80 06 0304 0409 255
+[    42.235819659/        0x3dea6e4d] 01 QUEUE           0 ?	1 26
+[    42.235840701/        0x3dea6fe1] 00 DONE            0 ?	26
+[    42.235887472/        0x3dea7363] 00 DONE            0 ?	STATUS
+[    43.244810600/        0x3f1208a7] 00 SETUP        ?	A1 FE 0000 0004 1
+[    43.244841902/        0x3f120af9] 01 QUEUE           0 ?	1 1
+[    43.244895496/        0x3f120efd] 00 DONE            0 ?	1
+[    43.247201433/        0x3f12bbf3] 00 DONE            0 ?	STATUS
+[    47.246063373/        0x43a6469c] FF BUS RST         0 ?	
+[    47.356725092/        0x43c6b23a] 00 SETUP        ?	80 06 0100 0000 64
+[    47.356753946/        0x43c6b461] 01 QUEUE           0 ?	1 18
+[    47.356788321/        0x43c6b6f3] 00 DONE            0 ?	18
+[    47.356857488/        0x43c6bc26] 00 DONE            0 ?	STATUS
+[    47.360565665/        0x43c7d245] FF BUS RST         0 ?	
+[    47.376921185/        0x43cc9cf0] FF Pullup gsync    1 ?	
+[    47.377051706/        0x43cca6b6] FF Pullup put      0 ?	
+[    47.413485561/        0x43d75345] FF Pullup gsync    1 ?	
+[    47.414742540/        0x43d7b184] FF Pullup put      0 ?	
+[    47.518912176/        0x43f63641] FF GAD SUS         0 ?	
+[    47.685104936/        0x4426e6b6] FF BUS RST         0 ?	
+[    47.945180614/        0x44731863] 00 SETUP        ?	00 05 0028 0000 0
+[    47.945235875/        0x44731c85] 00 DONE            0 ?	STATUS
+[    47.956911604/        0x44768837] 00 SETUP        ?	80 06 0100 0000 18
+[    47.956947281/        0x44768adf] 01 QUEUE           0 ?	1 18
+[    47.956980614/        0x44768d60] 00 DONE            0 ?	18
+[    47.957031135/        0x4476912a] 00 DONE            0 ?	STATUS
+[    47.957335354/        0x4476a7fe] 00 SETUP        ?	80 06 0200 0000 157
+[    47.957364156/        0x4476aa25] 01 QUEUE           0 ?	1 157
+[    47.957399156/        0x4476acc4] 00 DONE            0 ?	157
+[    47.957465354/        0x4476b1bb] 00 DONE            0 ?	STATUS
+[    47.957844885/        0x4476ce35] 00 SETUP        ?	80 06 0303 0409 255
+[    47.957874729/        0x4476d06e] 01 QUEUE           0 ?	1 26
+[    47.957901552/        0x4476d272] 00 DONE            0 ?	26
+[    47.957965354/        0x4476d73b] 00 DONE            0 ?	STATUS
+[    47.958951864/        0x4477213b] 00 SETUP        ?	00 09 0001 0000 0
+[    47.958961239/        0x447721eb] FF fifo_reset      1 ?	
+[    47.958965458/        0x4477223c] FF fifo_reset      3 ?	
+[    47.958968844/        0x4477227d] FF fifo_reset      5 ?	
+[    47.958972125/        0x447722bc] FF fifo_reset      7 ?	
+[    47.958975302/        0x447722f9] FF fifo_reset      9 ?	
+[    47.958978583/        0x44772338] FF fifo_reset     11 ?	
+[    47.958982229/        0x4477237d] FF fifo_reset     13 ?	
+[    47.958985354/        0x447723ba] FF fifo_reset     15 ?	
+[    47.958988635/        0x447723f9] FF fifo_reset     17 ?	
+[    47.958991812/        0x44772436] FF fifo_reset     19 ?	
+[    47.958994989/        0x44772473] FF fifo_reset     21 ?	
+[    47.958998010/        0x447724ad] FF fifo_reset     23 ?	
+[    47.959001187/        0x447724ea] FF fifo_reset     25 ?	
+[    47.959004625/        0x4477252c] FF fifo_reset     27 ?	
+[    47.959007541/        0x44772564] FF fifo_reset     29 ?	
+[    47.959010771/        0x447725a2] FF fifo_reset     31 ?	
+[    47.959065823/        0x447729c3] FF resize_fifo     3 ?	
+[    47.959068791/        0x447729fc] FF fifo_depth    130 ?	
+[    47.959137125/        0x44772f1d] FF resize_fifo     5 ?	
+[    47.959139833/        0x44772f50] FF fifo_depth    130 ?	
+[    47.959179885/        0x44773252] FF resize_fifo     9 ?	
+[    47.959182333/        0x44773280] FF fifo_depth    130 ?	
+[    47.959198791/        0x447733bc] FF resize_fifo     7 ?	
+[    47.959200771/        0x447733e2] FF fifo_depth    130 ?	
+[    47.959232802/        0x44773649] FF resize_fifo    13 ?	
+[    47.959234989/        0x44773673] FF fifo_depth    130 ?	
+[    47.959266864/        0x447738d7] FF resize_fifo    11 ?	
+[    47.959268896/        0x447738fe] FF fifo_depth    388 ?	
+[    47.959309416/        0x44773c08] FF resize_fifo    15 ?	
+[    47.959311448/        0x44773c2f] FF fifo_depth    130 ?	
+[    47.959530146/        0x44774c99] 00 DONE            0 ?	0
+[    47.959535666/        0x44774d00] 00 DONE            0 ?	STATUS
+[    47.960018219/        0x44777132] 00 SETUP        ?	82 00 0000 0083 2
+[    47.960034833/        0x44777270] 01 QUEUE           0 ?	1 2
+[    47.960093114/        0x447776d0] 00 DONE            0 ?	2
+[    47.960171656/        0x44777cb7] 00 DONE            0 ?	STATUS
+[    47.960366500/        0x44778b54] 00 SETUP        ?	82 00 0000 0003 2
+[    47.960382646/        0x44778c86] 01 QUEUE           0 ?	1 2
+[    47.960419208/        0x44778f44] 00 DONE            0 ?	2
+[    47.960514521/        0x4477966b] 00 DONE            0 ?	STATUS
+[    53.343660162/        0x4aa0ae57] FF BUS RST         0 ?	
+[    53.352372975/        0x4aa33bd0] FF Pullup gsync    1 ?	
+[    53.352609797/        0x4aa34d93] FF Pullup put      0 ?	
+[    53.402961152/        0x4ab20dee] FF Pullup gsync    1 ?	
+[    53.421094902/        0x4ab75df8] FF Pullup put      0 ?	
+[    53.463537402/        0x4ac3cd25] FF Pullup gsync    1 ?	
+[    53.463567975/        0x4ac3cf6d] FF Pullup put      0 ?	
+[    53.496784225/        0x4acd8aac] FF Pullup gsync    1 ?	
+[    53.498040996/        0x4acde8e6] FF Pullup put      0 ?	
+[    53.602208444/        0x4aec6d79] FF GAD SUS         0 ?	
+[    53.669131465/        0x4b0008b6] FF BUS RST         0 ?	
+[    53.929406935/        0x4b4c495c] 00 SETUP        ?	80 06 0100 0000 64
+[    53.929434903/        0x4b4c4b71] 01 QUEUE           0 ?	1 18
+[    53.929478133/        0x4b4c4eaf] 00 DONE            0 ?	18
+[    53.929525997/        0x4b4c5248] 00 DONE            0 ?	STATUS
+[    53.933158966/        0x4b4d62c3] FF BUS RST         0 ?	
+[    54.044051050/        0x4b6ddfb4] 00 SETUP        ?	00 05 0028 0000 0
+[    54.044124070/        0x4b6de522] 00 DONE            0 ?	STATUS
+[    54.055871570/        0x4b715632] 00 SETUP        ?	80 06 0100 0000 18
+[    54.055895216/        0x4b7157f8] 01 QUEUE           0 ?	1 18
+[    54.055929487/        0x4b715a89] 00 DONE            0 ?	18
+[    54.055997768/        0x4b715fab] 00 DONE            0 ?	STATUS
+[    54.062470008/        0x4b734517] FF GAD SUS         0 ?	
+[    54.119930164/        0x4b841a9f] FF BUS RST         0 ?	
+[    54.233869904/        0x4ba57c17] 00 SETUP        ?	80 06 0100 0000 64
+[    54.233900217/        0x4ba57e58] 01 QUEUE           0 ?	1 18
+[    54.233949071/        0x4ba58201] 00 DONE            0 ?	18
+[    54.234012248/        0x4ba586c1] 00 DONE            0 ?	STATUS
+[    54.237663602/        0x4ba698a0] FF BUS RST         0 ?	
+[    54.348005686/        0x4bc6ec48] 00 SETUP        ?	00 05 0029 0000 0
+[    54.348083082/        0x4bc6f210] 00 DONE            0 ?	STATUS
+[    54.359916363/        0x4bca6994] 00 SETUP        ?	80 06 0100 0000 18
+[    54.359947873/        0x4bca6beb] 01 QUEUE           0 ?	1 18
+[    54.359995582/        0x4bca6f7e] 00 DONE            0 ?	18
+[    54.360057092/        0x4bca741c] 00 DONE            0 ?	STATUS
+[    54.360260738/        0x4bca8362] 00 SETUP        ?	80 06 0200 0000 9
+[    54.360285009/        0x4bca8533] 01 QUEUE           0 ?	1 9
+[    54.360332873/        0x4bca88cb] 00 DONE            0 ?	9
+[    54.360386155/        0x4bca8ccb] 00 DONE            0 ?	STATUS
+[    54.360602092/        0x4bca9cff] 00 SETUP        ?	80 06 0200 0000 32
+[    54.360625478/        0x4bca9ebc] 01 QUEUE           0 ?	1 32
+[    54.360661988/        0x4bcaa17a] 00 DONE            0 ?	32
+[    54.360703290/        0x4bcaa494] 00 DONE            0 ?	STATUS
+[    54.360913134/        0x4bcab450] 00 SETUP        ?	80 06 0300 0000 255
+[    54.360935426/        0x4bcab5fd] 01 QUEUE           0 ?	1 4
+[    54.360955998/        0x4bcab786] 00 DONE            0 ?	4
+[    54.361022248/        0x4bcabc7f] 00 DONE            0 ?	STATUS
+[    54.361210790/        0x4bcacaa6] 00 SETUP        ?	80 06 0302 0409 255
+[    54.361241103/        0x4bcacce8] 01 QUEUE           0 ?	1 28
+[    54.361269488/        0x4bcacf09] 00 DONE            0 ?	28
+[    54.361335998/        0x4bcad409] 00 DONE            0 ?	STATUS
+[    54.361462457/        0x4bcadd82] 00 SETUP        ?	80 06 0301 0409 255
+[    54.361485165/        0x4bcadf36] 01 QUEUE           0 ?	1 8
+[    54.361505426/        0x4bcae0bb] 00 DONE            0 ?	8
+[    54.361573446/        0x4bcae5d6] 00 DONE            0 ?	STATUS
+[    54.361796623/        0x4bcaf693] 00 SETUP        ?	80 06 0303 0409 255
+[    54.361823134/        0x4bcaf88f] 01 QUEUE           0 ?	1 26
+[    54.361861780/        0x4bcafb76] 00 DONE            0 ?	26
+[    54.361929696/        0x4bcb008e] 00 DONE            0 ?	STATUS
+[    54.364179019/        0x4bcba948] 00 SETUP        ?	00 09 0001 0000 0
+[    54.364191884/        0x4bcbaa37] FF fifo_reset      1 ?	
+[    54.364196467/        0x4bcbaa8f] FF fifo_reset      3 ?	
+[    54.364199748/        0x4bcbaace] FF fifo_reset      5 ?	
+[    54.364202717/        0x4bcbab07] FF fifo_reset      7 ?	
+[    54.364205582/        0x4bcbab3e] FF fifo_reset      9 ?	
+[    54.364208446/        0x4bcbab75] FF fifo_reset     11 ?	
+[    54.364211623/        0x4bcbabb2] FF fifo_reset     13 ?	
+[    54.364214801/        0x4bcbabef] FF fifo_reset     15 ?	
+[    54.364217978/        0x4bcbac2c] FF fifo_reset     17 ?	
+[    54.364220894/        0x4bcbac64] FF fifo_reset     19 ?	
+[    54.364223811/        0x4bcbac9c] FF fifo_reset     21 ?	
+[    54.364226728/        0x4bcbacd4] FF fifo_reset     23 ?	
+[    54.364230009/        0x4bcbad13] FF fifo_reset     25 ?	
+[    54.364233238/        0x4bcbad51] FF fifo_reset     27 ?	
+[    54.364236155/        0x4bcbad89] FF fifo_reset     29 ?	
+[    54.364239123/        0x4bcbadc2] FF fifo_reset     31 ?	
+[    54.364310113/        0x4bcbb317] FF resize_fifo     3 ?	
+[    54.364314019/        0x4bcbb360] FF fifo_depth    130 ?	
+[    54.364430165/        0x4bcbbc16] 00 DONE            0 ?	0
+[    54.364434176/        0x4bcbbc63] 00 DONE            0 ?	STATUS
+[    54.364797144/        0x4bcbd7a0] 00 SETUP        ?	80 06 0307 0409 255
+[    54.364825998/        0x4bcbd9c8] 01 QUEUE           0 ?	1 28
+[    54.364885530/        0x4bcbde3d] 00 DONE            0 ?	28
+[    54.364948707/        0x4bcbe2fa] 00 DONE            0 ?	STATUS
+[    71.053632820/        0x5ee5264c] FF Pullup gsync    1 ?	
+[    71.053663445/        0x5ee52894] FF Pullup put      0 ?	
+[    71.120781623/        0x5ef8d279] FF Pullup gsync    1 ?	
+[    71.125415320/        0x5efa2dff] FF Pullup put      0 ?	
+[    71.177007091/        0x5f094b62] FF Pullup gsync    1 ?	
+[    71.177079383/        0x5f0950c7] FF Pullup put      0 ?	
+[    71.210155008/        0x5f13017c] FF Pullup gsync    1 ?	
+[    71.214702560/        0x5f145686] FF Pullup put      0 ?	
+[    71.319652821/        0x5f3315d5] FF GAD SUS         0 ?	
+[    71.422013498/        0x5f5112e8] FF BUS RST         0 ?	
+[    71.535978395/        0x5f727636] 00 SETUP        ?	80 06 0100 0000 64
+[    71.536009749/        0x5f727890] 01 QUEUE           0 ?	1 18
+[    71.536067457/        0x5f727ce2] 00 DONE            0 ?	18
+[    71.536155999/        0x5f728385] 00 DONE            0 ?	STATUS
+[    71.539718134/        0x5f738eb4] FF BUS RST         0 ?	
+[    71.649837301/        0x5f93d1a3] 00 SETUP        ?	00 05 002A 0000 0
+[    71.649915114/        0x5f93d777] 00 DONE            0 ?	STATUS
+[    71.661815426/        0x5f975403] 00 SETUP        ?	80 06 0100 0000 18
+[    71.661850947/        0x5f9756a5] 01 QUEUE           0 ?	1 18
+[    71.661908603/        0x5f975af7] 00 DONE            0 ?	18
+[    71.661973030/        0x5f975fd9] 00 DONE            0 ?	STATUS
+[    71.662144280/        0x5f976ca8] 00 SETUP        ?	80 06 0200 0000 9
+[    71.662171989/        0x5f976eb8] 01 QUEUE           0 ?	1 9
+[    71.662222145/        0x5f977280] 00 DONE            0 ?	9
+[    71.662260791/        0x5f977562] 00 DONE            0 ?	STATUS
+[    71.662343812/        0x5f977b9c] 00 SETUP        ?	80 06 0200 0000 98
+[    71.662365999/        0x5f977d46] 01 QUEUE           0 ?	1 98
+[    71.662457041/        0x5f978419] 00 DONE            0 ?	98
+[    71.662517145/        0x5f97889f] 00 DONE            0 ?	STATUS
+[    71.662726468/        0x5f97984f] 00 SETUP        ?	80 06 0300 0000 255
+[    71.662757874/        0x5f979aac] 01 QUEUE           0 ?	1 4
+[    71.662784176/        0x5f979ca3] 00 DONE            0 ?	4
+[    71.662871885/        0x5f97a338] 00 DONE            0 ?	STATUS
+[    71.663052093/        0x5f97b0be] 00 SETUP        ?	80 06 0302 0409 255
+[    71.663079541/        0x5f97b2c9] 01 QUEUE           0 ?	1 28
+[    71.663132301/        0x5f97b6bf] 00 DONE            0 ?	28
+[    71.663196468/        0x5f97bb8f] 00 DONE            0 ?	STATUS
+[    71.663338864/        0x5f97c640] 00 SETUP        ?	80 06 0301 0409 255
+[    71.663364801/        0x5f97c831] 01 QUEUE           0 ?	1 8
+[    71.663417770/        0x5f97cc2b] 00 DONE            0 ?	8
+[    71.663485218/        0x5f97d139] 00 DONE            0 ?	STATUS
+[    71.663626208/        0x5f97dbca] 00 SETUP        ?	80 06 0303 0409 255
+[    71.663651364/        0x5f97ddad] 01 QUEUE           0 ?	1 26
+[    71.663678916/        0x5f97dfbe] 00 DONE            0 ?	26
+[    71.663744385/        0x5f97e4a7] 00 DONE            0 ?	STATUS
+[    71.667343968/        0x5f98f2a3] 00 SETUP        ?	00 09 0001 0000 0
+[    71.667358551/        0x5f98f3b6] FF fifo_reset      1 ?	
+[    71.667362822/        0x5f98f408] FF fifo_reset      3 ?	
+[    71.667366155/        0x5f98f448] FF fifo_reset      5 ?	
+[    71.667369176/        0x5f98f482] FF fifo_reset      7 ?	
+[    71.667372041/        0x5f98f4b9] FF fifo_reset      9 ?	
+[    71.667375426/        0x5f98f4fa] FF fifo_reset     11 ?	
+[    71.667379645/        0x5f98f54b] FF fifo_reset     13 ?	
+[    71.667382822/        0x5f98f588] FF fifo_reset     15 ?	
+[    71.667386051/        0x5f98f5c6] FF fifo_reset     17 ?	
+[    71.667389280/        0x5f98f604] FF fifo_reset     19 ?	
+[    71.667392614/        0x5f98f644] FF fifo_reset     21 ?	
+[    71.667395739/        0x5f98f680] FF fifo_reset     23 ?	
+[    71.667399176/        0x5f98f6c2] FF fifo_reset     25 ?	
+[    71.667402249/        0x5f98f6fd] FF fifo_reset     27 ?	
+[    71.667405426/        0x5f98f73a] FF fifo_reset     29 ?	
+[    71.667408499/        0x5f98f775] FF fifo_reset     31 ?	
+[    71.667463968/        0x5f98fb9f] FF resize_fifo     5 ?	
+[    71.667466937/        0x5f98fbd7] FF fifo_depth    130 ?	
+[    71.667493760/        0x5f98fdda] FF resize_fifo     3 ?	
+[    71.667495843/        0x5f98fe02] FF fifo_depth    388 ?	
+[    71.667544176/        0x5f9901a2] FF resize_fifo     7 ?	
+[    71.667546155/        0x5f9901c8] FF fifo_depth    130 ?	
+[    71.667696572/        0x5f990d14] 00 DONE            0 ?	0
+[    71.667702822/        0x5f990d88] 00 DONE            0 ?	STATUS
+[    71.668029280/        0x5f992609] 00 SETUP        ?	80 06 030A 0409 255
+[    71.668063343/        0x5f992892] 01 QUEUE           0 ?	1 58
+[    71.668133812/        0x5f992ddd] 00 DONE            0 ?	58
+[    71.668196416/        0x5f99328e] 00 DONE            0 ?	STATUS
+[    71.668523916/        0x5f994b22] 00 SETUP        ?	80 06 030B 0409 255
+[    71.668555322/        0x5f994d79] 01 QUEUE           0 ?	1 40
+[    71.668583603/        0x5f994f98] 00 DONE            0 ?	40
+[    71.668626780/        0x5f9952d5] 00 DONE            0 ?	STATUS
+[    71.668878239/        0x5f9965b5] 00 SETUP        ?	80 06 0307 0409 255
+[    71.668911676/        0x5f996832] 01 QUEUE           0 ?	1 28
+[    71.668939853/        0x5f996a50] 00 DONE            0 ?	28
+[    71.669003551/        0x5f996f1b] 00 DONE            0 ?	STATUS
+[    71.719972458/        0x5fa85dc5] 00 SETUP        ?	21 00 0000 0000 24
+[    71.720012301/        0x5fa860c1] 00 QUEUE           0 ?	1 24
+[    71.720068083/        0x5fa864ee] 00 DONE            0 ?	24
+[    71.720136989/        0x5fa86a1b] 00 DONE            0 ?	STATUS
+[    71.720244749/        0x5fa8722d] 00 SETUP        ?	A1 01 0000 0000 1025
+[    71.720275426/        0x5fa8747b] 01 QUEUE           0 ?	1 52
+[    71.720311104/        0x5fa87728] 00 DONE            0 ?	52
+[    71.720387354/        0x5fa87cdf] 00 DONE            0 ?	STATUS
+[    71.720430531/        0x5fa8801d] 00 SETUP        ?	21 00 0000 0000 32
+[    71.720457093/        0x5fa8821b] 00 QUEUE           0 ?	1 32
+[    71.720531624/        0x5fa887b6] 00 DONE            0 ?	32
+[    71.720584906/        0x5fa88bb0] 00 DONE            0 ?	STATUS
+[    71.720617770/        0x5fa88e27] 00 SETUP        ?	A1 01 0000 0000 1025
+[    71.720635322/        0x5fa88f7a] 01 QUEUE           0 ?	1 28
+[    71.720668499/        0x5fa891f5] 00 DONE            0 ?	28
+[    71.720734124/        0x5fa896e1] 00 DONE            0 ?	STATUS
+[    71.720757145/        0x5fa8989b] 00 SETUP        ?	21 00 0000 0000 76
+[    71.720772145/        0x5fa899bb] 00 QUEUE           0 ?	1 76
+[    71.720844281/        0x5fa89f24] 00 DONE            0 ?	76
+[    71.720886104/        0x5fa8a247] 00 DONE            0 ?	STATUS
+[    71.720919176/        0x5fa8a4c2] 00 SETUP        ?	A1 01 0000 0000 1025
+[    71.720936520/        0x5fa8a612] 01 QUEUE           0 ?	1 30
+[    71.720963968/        0x5fa8a81e] 00 DONE            0 ?	30
+[    71.721007926/        0x5fa8ab6a] 00 DONE            0 ?	STATUS
+[    71.721040739/        0x5fa8ade0] 00 SETUP        ?	21 00 0000 0000 32
+[    71.721056624/        0x5fa8af12] 00 QUEUE           0 ?	1 32
+[    71.721119124/        0x5fa8b3c2] 00 DONE            0 ?	32
+[    71.721187458/        0x5fa8b8e3] 00 DONE            0 ?	STATUS
+[    71.721212249/        0x5fa8babd] 00 SETUP        ?	A1 01 0000 0000 1025
+[    71.721230635/        0x5fa8bc20] 01 QUEUE           0 ?	1 16
+[    71.721250166/        0x5fa8bd95] 00 DONE            0 ?	16
+[    71.721315791/        0x5fa8c285] 00 DONE            0 ?	STATUS
+[    76.504081847/        0x6521f5ff] FF Pullup gsync    1 ?	
+[    76.504116899/        0x6521f897] FF Pullup put      0 ?	
+[    76.557506535/        0x65319cd1] FF Pullup gsync    1 ?	
+[    76.561937577/        0x6532e928] FF Pullup put      0 ?	
+[    76.590222316/        0x653b3286] FF Pullup gsync    1 ?	
+[    76.590257629/        0x653b3524] FF Pullup put      0 ?	
+[    76.623767577/        0x65450667] FF Pullup gsync    1 ?	
+[    76.628974504/        0x65468cec] FF Pullup put      0 ?	
+[    76.733177994/        0x65651435] FF GAD SUS         0 ?	
+[    76.835027161/        0x6582eae7] FF BUS RST         0 ?	
+[    76.948726380/        0x65a43a52] 00 SETUP        ?	80 06 0100 0000 64
+[    76.948761953/        0x65a43cf8] 01 QUEUE           0 ?	1 18
+[    76.948806536/        0x65a44050] 00 DONE            0 ?	18
+[    76.948865130/        0x65a444b8] 00 DONE            0 ?	STATUS
+[    76.952458932/        0x65a55241] FF BUS RST         0 ?	
+[    77.062847682/        0x65c5a96b] 00 SETUP        ?	00 05 002B 0000 0
+[    77.062934766/        0x65c5afef] 00 DONE            0 ?	STATUS
+[    77.074733828/        0x65c924e3] 00 SETUP        ?	80 06 0100 0000 18
+[    77.074767422/        0x65c92761] 01 QUEUE           0 ?	1 18
+[    77.074814297/        0x65c92ae4] 00 DONE            0 ?	18
+[    77.074855755/        0x65c92e03] 00 DONE            0 ?	STATUS
+[    77.075053828/        0x65c93cdd] 00 SETUP        ?	80 06 0200 0000 9
+[    77.075077370/        0x65c93ea2] 01 QUEUE           0 ?	1 9
+[    77.075099193/        0x65c94042] 00 DONE            0 ?	9
+[    77.075158984/        0x65c944bf] 00 DONE            0 ?	STATUS
+[    77.075297214/        0x65c94f1e] 00 SETUP        ?	80 06 0200 0000 62
+[    77.075323932/        0x65c9511d] 01 QUEUE           0 ?	1 62
+[    77.075361537/        0x65c953f0] 00 DONE            0 ?	62
+[    77.075423359/        0x65c95893] 00 DONE            0 ?	STATUS
+[    77.075597266/        0x65c965a1] 00 SETUP        ?	80 06 0300 0000 255
+[    77.075623672/        0x65c96799] 01 QUEUE           0 ?	1 4
+[    77.075658099/        0x65c96a2e] 00 DONE            0 ?	4
+[    77.075720495/        0x65c96edc] 00 DONE            0 ?	STATUS
+[    77.075795599/        0x65c97481] 00 SETUP        ?	80 06 0302 0409 255
+[    77.075817266/        0x65c9761d] 01 QUEUE           0 ?	1 28
+[    77.075838984/        0x65c977bf] 00 DONE            0 ?	28
+[    77.075904505/        0x65c97ca9] 00 DONE            0 ?	STATUS
+[    77.075979141/        0x65c98242] 00 SETUP        ?	80 06 0301 0409 255
+[    77.076001797/        0x65c983f7] 01 QUEUE           0 ?	1 8
+[    77.076021224/        0x65c98569] 00 DONE            0 ?	8
+[    77.076089557/        0x65c98a8d] 00 DONE            0 ?	STATUS
+[    77.076176849/        0x65c99116] 00 SETUP        ?	80 06 0303 0409 255
+[    77.076196797/        0x65c99295] 01 QUEUE           0 ?	1 26
+[    77.076231068/        0x65c9952a] 00 DONE            0 ?	26
+[    77.076294766/        0x65c999ee] 00 DONE            0 ?	STATUS
+[    77.079597734/        0x65ca91aa] 00 SETUP        ?	00 09 0001 0000 0
+[    77.079611016/        0x65ca92a5] FF fifo_reset      1 ?	
+[    77.079615495/        0x65ca92fb] FF fifo_reset      3 ?	
+[    77.079619089/        0x65ca9340] FF fifo_reset      5 ?	
+[    77.079622266/        0x65ca937d] FF fifo_reset      7 ?	
+[    77.079625547/        0x65ca93bc] FF fifo_reset      9 ?	
+[    77.079628880/        0x65ca93fc] FF fifo_reset     11 ?	
+[    77.079632370/        0x65ca943f] FF fifo_reset     13 ?	
+[    77.079635859/        0x65ca9482] FF fifo_reset     15 ?	
+[    77.079638828/        0x65ca94bb] FF fifo_reset     17 ?	
+[    77.079642005/        0x65ca94f8] FF fifo_reset     19 ?	
+[    77.079645026/        0x65ca9532] FF fifo_reset     21 ?	
+[    77.079648047/        0x65ca956c] FF fifo_reset     23 ?	
+[    77.079651120/        0x65ca95a6] FF fifo_reset     25 ?	
+[    77.079653932/        0x65ca95dd] FF fifo_reset     27 ?	
+[    77.079656901/        0x65ca9616] FF fifo_reset     29 ?	
+[    77.079660078/        0x65ca9653] FF fifo_reset     31 ?	
+[    77.079727630/        0x65ca9b64] FF resize_fifo     3 ?	
+[    77.079731589/        0x65ca9bb0] FF fifo_depth    130 ?	
+[    77.079760964/        0x65ca9de4] FF resize_fifo     5 ?	
+[    77.079763151/        0x65ca9e0e] FF fifo_depth    130 ?	
+[    77.079811589/        0x65caa1b3] FF resize_fifo     7 ?	
+[    77.079814557/        0x65caa1e9] FF fifo_depth    130 ?	
+[    77.079922109/        0x65caa9fb] 00 DONE            0 ?	0
+[    77.079926849/        0x65caaa55] 00 DONE            0 ?	STATUS
+[    77.080251068/        0x65cac2a7] 00 SETUP        ?	80 06 030D 0409 255
+[    77.080282787/        0x65cac509] 01 QUEUE           0 ?	1 8
+[    77.080339505/        0x65cac948] 00 DONE            0 ?	8
+[    77.080468151/        0x65cad2ef] 00 DONE            0 ?	STATUS
+[    77.080661120/        0x65cae16c] 00 SETUP        ?	80 06 0307 0409 255
+[    77.080689505/        0x65cae38b] 01 QUEUE           0 ?	1 28
+[    77.080718880/        0x65cae5bc] 00 DONE            0 ?	28
+[    77.080790912/        0x65caeb24] 00 DONE            0 ?	STATUS
+[ 10707.033879912/      0x2feacefa73] FF GAD SUS         0 ?	
+[ 10707.033896892/      0x2feacefbaa] FF SUSPEND         0 ?	
+[ 10707.067628610/      0x2fead8dd88] FF Pullup gsync    2 ?	
+[ 10707.067672256/      0x2fead8e0cf] FF Pullup put      1 ?	
+[ 10707.101477048/      0x2feae2c832] FF Pullup gsync    1 ?	
+[ 10707.107286631/      0x2feae47be8] FF Pullup put      0 ?	
+[ 10707.114831423/      0x2feae6b1c7] FF RWrk            1 ?	
+[ 10707.114838038/      0x2feae6b23d] FF ext_event       0 ?	
+[ 10707.114842986/      0x2feae6b29c] FF ID set          0 ?	
+[ 10707.114844704/      0x2feae6b2bc] FF BSV clear       0 ?	
+[ 10707.114846527/      0x2feae6b2df] FF SUSP clear      0 ?	
+[ 10707.114898402/      0x2feae6b6c8] FF b_peripheral    0 ?	
+[ 10707.114902881/      0x2feae6b71a] FF !id || !bsv     0 ?	
+[ 10707.114906371/      0x2feae6b75d] FF StrtGdgt gsy    2 ?	
+[ 10707.114954392/      0x2feae6baf7] FF DISCONNECT      0 ?	
+[ 10707.118511215/      0x2feae7c5bc] FF StopGdgt psy    1 ?	
+[ 10707.118521267/      0x2feae7c67b] FF RT Idle         0 ?	
+[ 10707.118539652/      0x2feae7c7dd] FF RT Sus          0 ?	
+[ 10707.118543350/      0x2feae7c823] FF Ctl Sus         0 ?	
+[ 10707.119114548/      0x2feae7f2fb] FF SUSComplete     0 ?	
+[ 10707.119121371/      0x2feae7f37d] FF BPER psync      0 ?	
+[ 10707.119144027/      0x2feae7f530] FF b_idle          0 ?	
+[ 10707.119172986/      0x2feae7f75c] FF RelNodev        0 ?	
+[ 10707.594789862/      0x2feb734eab] FF RWrk            1 ?	
+[ 10707.594798247/      0x2feb734f41] FF ext_event       0 ?	
+[ 10707.594803560/      0x2feb734fa8] FF ID set          0 ?	
+[ 10707.594805852/      0x2feb734fd4] FF BSV clear       0 ?	
+[ 10707.594808195/      0x2feb735000] FF SUSP clear      0 ?	
+[ 10707.594838352/      0x2feb735245] FF b_idle          0 ?	
+[ 10707.594868299/      0x2feb735483] FF RelNodev        0 ?	
+[ 10708.928413095/      0x2fecfa0465] FF RWrk            1 ?	
+[ 10708.928423668/      0x2fecfa052a] FF ext_event       0 ?	
+[ 10708.928432574/      0x2fecfa05d6] FF ID set          0 ?	
+[ 10708.928437366/      0x2fecfa0631] FF SUSP clear      0 ?	
+[ 10708.928480595/      0x2fecfa0972] FF b_idle          0 ?	
+[ 10708.928487574/      0x2fecfa09f5] FF b_sess_vld      0 ?	
+[ 10708.928492991/      0x2fecfa0a5e] FF CDPCharger      0 ?	
+[ 10708.928537210/      0x2fecfa0dae] FF SDPCharger      0 ?	
+[ 10708.928546272/      0x2fecfa0e5b] FF RT Res          0 ?	
+[ 10708.928548981/      0x2fecfa0e8f] FF msmresume       1 ?	
+[ 10708.934856585/      0x2fecfbe7a4] FF Ctl Res         0 ?	
+[ 10708.934867470/      0x2fecfbe873] FF CHG gsync       1 ?	
+[ 10708.934871949/      0x2fecfbe8c9] FF StrtGdgt gsy    2 ?	
+[ 10708.937541533/      0x2fecfcb104] FF StopGdgt psy    1 ?	
+[ 10708.937573251/      0x2fecfcb362] FF b_peripheral    0 ?	
+[ 10709.041559450/      0x2fed1b2a60] FF GAD SUS         0 ?	
+[ 10709.143741065/      0x2fed391a01] FF BUS RST         0 ?	
+[ 10709.258655492/      0x2fed5ac499] 00 SETUP        ?	80 06 0100 0000 64
+[ 10709.258740700/      0x2fed5acaf5] 01 QUEUE           0 ?	1 18
+[ 10709.258800232/      0x2fed5acf69] 00 DONE            0 ?	18
+[ 10709.258866117/      0x2fed5ad45d] 00 DONE            0 ?	STATUS
+[ 10709.262457263/      0x2fed5be1b0] FF BUS RST         0 ?	
+[ 10709.372586326/      0x2fed7c2566] 00 SETUP        ?	00 05 002C 0000 0
+[ 10709.372646794/      0x2fed7c29e5] 00 DONE            0 ?	STATUS
+[ 10709.384684295/      0x2fed7fb0bf] 00 SETUP        ?	80 06 0100 0000 18
+[ 10709.384738253/      0x2fed7fb4c6] 01 QUEUE           0 ?	1 18
+[ 10709.384875753/      0x2fed7fbf12] 00 DONE            0 ?	18
+[ 10709.384950284/      0x2fed7fc4aa] 00 DONE            0 ?	STATUS
+[ 10709.385149711/      0x2fed7fd39d] 00 SETUP        ?	80 06 0200 0000 9
+[ 10709.385209138/      0x2fed7fd812] 01 QUEUE           0 ?	1 9
+[ 10709.385282315/      0x2fed7fdd90] 00 DONE            0 ?	9
+[ 10709.385359607/      0x2fed7fe35c] 00 DONE            0 ?	STATUS
+[ 10709.385572315/      0x2fed7ff34f] 00 SETUP        ?	80 06 0200 0000 62
+[ 10709.385608930/      0x2fed7ff611] 01 QUEUE           0 ?	1 62
+[ 10709.385635753/      0x2fed7ff811] 00 DONE            0 ?	62
+[ 10709.385696378/      0x2fed7ffc9d] 00 DONE            0 ?	STATUS
+[ 10709.385877732/      0x2fed800a3c] 00 SETUP        ?	80 06 0300 0000 255
+[ 10709.385904763/      0x2fed800c3e] 01 QUEUE           0 ?	1 4
+[ 10709.385944295/      0x2fed800f36] 00 DONE            0 ?	4
+[ 10709.386006534/      0x2fed8013e1] 00 DONE            0 ?	STATUS
+[ 10709.386098722/      0x2fed801acf] 00 SETUP        ?	80 06 0302 0409 255
+[ 10709.386122576/      0x2fed801c94] 01 QUEUE           0 ?	1 28
+[ 10709.386144815/      0x2fed801e40] 00 DONE            0 ?	28
+[ 10709.386189659/      0x2fed80219d] 00 DONE            0 ?	STATUS
+[ 10709.386222055/      0x2fed80240a] 00 SETUP        ?	80 06 0301 0409 255
+[ 10709.386241795/      0x2fed802585] 01 QUEUE           0 ?	1 8
+[ 10709.386265701/      0x2fed802751] 00 DONE            0 ?	8
+[ 10709.386313253/      0x2fed802ae1] 00 DONE            0 ?	STATUS
+[ 10709.386342524/      0x2fed802d14] 00 SETUP        ?	80 06 0303 0409 255
+[ 10709.386362732/      0x2fed802e97] 01 QUEUE           0 ?	1 26
+[ 10709.386386847/      0x2fed803067] 00 DONE            0 ?	26
+[ 10709.386451742/      0x2fed803549] 00 DONE            0 ?	STATUS
+[ 10709.389890180/      0x2fed813731] 00 SETUP        ?	00 09 0001 0000 0
+[ 10709.389907992/      0x2fed81387c] FF fifo_reset      1 ?	
+[ 10709.389913201/      0x2fed8138e0] FF fifo_reset      3 ?	
+[ 10709.389916638/      0x2fed813922] FF fifo_reset      5 ?	
+[ 10709.389920024/      0x2fed813963] FF fifo_reset      7 ?	
+[ 10709.389923201/      0x2fed8139a0] FF fifo_reset      9 ?	
+[ 10709.389926638/      0x2fed8139e2] FF fifo_reset     11 ?	
+[ 10709.389931274/      0x2fed813a3b] FF fifo_reset     13 ?	
+[ 10709.389935701/      0x2fed813a90] FF fifo_reset     15 ?	
+[ 10709.389939399/      0x2fed813ad6] FF fifo_reset     17 ?	
+[ 10709.389942940/      0x2fed813b1a] FF fifo_reset     19 ?	
+[ 10709.389946274/      0x2fed813b5b] FF fifo_reset     21 ?	
+[ 10709.389949242/      0x2fed813b94] FF fifo_reset     23 ?	
+[ 10709.389952211/      0x2fed813bcc] FF fifo_reset     25 ?	
+[ 10709.389955284/      0x2fed813c08] FF fifo_reset     27 ?	
+[ 10709.389958722/      0x2fed813c4a] FF fifo_reset     29 ?	
+[ 10709.389961899/      0x2fed813c87] FF fifo_reset     31 ?	
+[ 10709.390027263/      0x2fed81416f] FF resize_fifo     3 ?	
+[ 10709.390030597/      0x2fed8141ad] FF fifo_depth    130 ?	
+[ 10709.390081013/      0x2fed814576] FF resize_fifo     5 ?	
+[ 10709.390082940/      0x2fed81459b] FF fifo_depth    130 ?	
+[ 10709.390145649/      0x2fed814a4e] FF resize_fifo     7 ?	
+[ 10709.390147420/      0x2fed814a71] FF fifo_depth    130 ?	
+[ 10709.390264138/      0x2fed815332] 00 DONE            0 ?	0
+[ 10709.390269138/      0x2fed815392] 00 DONE            0 ?	STATUS
+[ 10709.390471847/      0x2fed8162d0] 00 SETUP        ?	80 06 030D 0409 255
+[ 10709.390506586/      0x2fed816561] 01 QUEUE           0 ?	1 8
+[ 10709.390556013/      0x2fed816918] 00 DONE            0 ?	8
+[ 10709.390620649/      0x2fed816df0] 00 DONE            0 ?	STATUS
+[ 10709.390788617/      0x2fed817a89] 00 SETUP        ?	80 06 0307 0409 255
+[ 10709.390816378/      0x2fed817c9d] 01 QUEUE           0 ?	1 28
+[ 10709.390840909/      0x2fed817e74] 00 DONE            0 ?	28
+[ 10709.390901326/      0x2fed8182fc] 00 DONE            0 ?	STATUS

@@ -1,0 +1,1214 @@
+[ 67719.166941857/     0x12ec80448fa] msm_pcie_pm_control: PCIe: RC0: pm_opt:1;busnr:1;options:0
+[ 67719.166966440/     0x12ec8044ad2] msm_pcie_pm_control: User of RC0 requests to resume the link
+[ 67719.166972169/     0x12ec8044b40] msm_pcie_pm_resume: RC0: entry
+[ 67719.167054461/     0x12ec804516d] msm_pcie_enable: RC0: entry
+[ 67719.167058836/     0x12ec80451c0] msm_pcie_enable: PCIe: Assert the reset of endpoint of RC0.
+[ 67719.168136336/     0x12ec804a290] msm_pcie_vreg_init: RC0: entry
+[ 67719.168185659/     0x12ec804a643] DBG2:msm_pcie_vreg_init: RC0 Vreg vreg-3.3 is being enabled
+[ 67719.168190138/     0x12ec804a69a] DBG2:msm_pcie_vreg_init: RC0 Vreg vreg-1.8 is being enabled
+[ 67719.168209565/     0x12ec804a80f] DBG2:msm_pcie_vreg_init: RC0 Vreg vreg-0.9 is being enabled
+[ 67719.168217065/     0x12ec804a89e] DBG2:msm_pcie_vreg_init: RC0 Vreg vreg-cx is being enabled
+[ 67719.168233419/     0x12ec804a9d8] msm_pcie_vreg_init: RC0: exit
+[ 67719.168237950/     0x12ec804aa2f] msm_pcie_clk_init: RC0: entry
+[ 67719.168310294/     0x12ec804af9c] msm_pcie_clk_init: PCIe: requesting bus vote for RC0
+[ 67719.169118628/     0x12ec804ec3f] DBG2:msm_pcie_clk_init: PCIe: set bus bandwidth for RC0.
+[ 67719.169152794/     0x12ec804eecd] DBG2:msm_pcie_clk_init: enable clk pcie_0_ref_clk_src for RC0.
+[ 67719.169158003/     0x12ec804ef30] DBG2:msm_pcie_clk_init: PCIe: RC0 set rate for clk pcie_0_aux_clk.
+[ 67719.169179044/     0x12ec804f0c5] DBG2:msm_pcie_clk_init: enable clk pcie_0_aux_clk for RC0.
+[ 67719.169197221/     0x12ec804f221] DBG2:msm_pcie_clk_init: enable clk pcie_0_cfg_ahb_clk for RC0.
+[ 67719.169214878/     0x12ec804f374] DBG2:msm_pcie_clk_init: enable clk pcie_0_mstr_axi_clk for RC0.
+[ 67719.169232586/     0x12ec804f4c8] DBG2:msm_pcie_clk_init: enable clk pcie_0_slv_axi_clk for RC0.
+[ 67719.169247742/     0x12ec804f5eb] DBG2:msm_pcie_clk_init: enable clk pcie_0_ldo for RC0.
+[ 67719.169266075/     0x12ec804f74b] DBG2:msm_pcie_clk_init: enable clk pcie_0_smmu_clk for RC0.
+[ 67719.169282534/     0x12ec804f887] DBG2:msm_pcie_clk_init: enable clk pcie_phy_cfg_ahb_clk for RC0.
+[ 67719.169297430/     0x12ec804f9a5] DBG2:msm_pcie_clk_init: enable clk pcie_phy_aux_clk for RC0.
+[ 67719.169311909/     0x12ec804fabb] DBG2:msm_pcie_clk_init: enable clk pcie_phy_reset for RC0.
+[ 67719.169324930/     0x12ec804fbb5] DBG2:msm_pcie_clk_init: enable clk pcie_phy_com_reset for RC0.
+[ 67719.169336596/     0x12ec804fc95] DBG2:msm_pcie_clk_init: enable clk pcie_phy_nocsr_com_phy_reset for RC0.
+[ 67719.169349200/     0x12ec804fd87] DBG2:msm_pcie_clk_init: enable clk pcie_0_phy_reset for RC0.
+[ 67719.169354409/     0x12ec804fdeb] msm_pcie_clk_init: RC0: exit
+[ 67719.169402065/     0x12ec805017e] pcie_phy_init: RC0: Initializing 14nm QMP phy - 19.2MHz with Common Mode Clock (SSC ON)
+[ 67719.170656128/     0x12ec8055f8c] msm_pcie_pipe_clk_init: RC0: entry
+[ 67719.171191700/     0x12ec80587b8] DBG2:msm_pcie_pipe_clk_init: RC0 enabled pipe clk pcie_0_pipe_clk.
+[ 67719.171207378/     0x12ec80588e5] msm_pcie_pipe_clk_init: RC0: exit
+[ 67719.171212638/     0x12ec805894a] msm_pcie_enable: RC0: waiting for phy ready...
+[ 67719.171225971/     0x12ec8058a49] msm_pcie_enable: RC0: number of PHY retries:0.
+[ 67719.171232638/     0x12ec8058ac9] msm_pcie_enable: PCIe RC0 PHY is ready!
+[ 67719.171237950/     0x12ec8058b2f] pcie_pcs_port_phy_init: RC0: Initializing PCIe PHY Port
+[ 67719.181458315/     0x12ec80889b6] msm_pcie_enable: PCIe: Release the reset of endpoint of RC0.
+[ 67719.182667690/     0x12ec808e46a] msm_pcie_enable: check if link is up
+[ 67719.208685815/     0x12ec81083c6] msm_pcie_confirm_linkup: PCIe: device ID and vender ID of RC 0 are 0x10417cb.
+[ 67719.208722482/     0x12ec8108686] msm_pcie_confirm_linkup: PCIe: device ID and vender ID of RC 0 are 0x10417cb.
+[ 67719.208729721/     0x12ec8108711] msm_pcie_enable: Link is up after 4 checkings
+[ 67719.208735242/     0x12ec810877b] msm_pcie_enable: PCIe RC0 link initialized
+[ 67719.208741180/     0x12ec81087ed] msm_pcie_config_controller: RC0
+[ 67719.208772273/     0x12ec8108a42] DBG2:msm_pcie_iatu_config: IATU for Endpoint 01:00.0
+[ 67719.208779617/     0x12ec8108acf] DBG2:msm_pcie_iatu_config: PCIE20_PLR_IATU_VIEWPORT:0x0
+[ 67719.208784565/     0x12ec8108b2e] DBG2:msm_pcie_iatu_config: PCIE20_PLR_IATU_CTRL1:0x4
+[ 67719.208789096/     0x12ec8108b85] DBG2:msm_pcie_iatu_config: PCIE20_PLR_IATU_LBAR:0xc100000
+[ 67719.208793419/     0x12ec8108bd8] DBG2:msm_pcie_iatu_config: PCIE20_PLR_IATU_UBAR:0x0
+[ 67719.208801857/     0x12ec8108c7a] DBG2:msm_pcie_iatu_config: PCIE20_PLR_IATU_LAR:0xc100fff
+[ 67719.208806961/     0x12ec8108cdc] DBG2:msm_pcie_iatu_config: PCIE20_PLR_IATU_LTAR:0x1000000
+[ 67719.208811232/     0x12ec8108d2e] DBG2:msm_pcie_iatu_config: PCIE20_PLR_IATU_UTAR:0x0
+[ 67719.208815398/     0x12ec8108d7e] DBG2:msm_pcie_iatu_config: PCIE20_PLR_IATU_CTRL2:0x80000000
+
+[ 67719.208820086/     0x12ec8108dd8] DBG2:msm_pcie_config_controller: Original PCIE20_ACK_F_ASPM_CTRL_REG:0x1b808000
+[ 67719.208830763/     0x12ec8108ea5] DBG2:msm_pcie_config_controller: Updated PCIE20_ACK_F_ASPM_CTRL_REG:0x1b808000
+[ 67719.208849409/     0x12ec810900b] msm_pcie_config_controller: RC's PCIE20_CAP_DEVCTRLSTATUS:0x10581f
+[ 67719.208886492/     0x12ec81092d4] msm_pcie_config_link_state: RC0: ep_link_cap_offset: 0xb8
+[ 67719.208909513/     0x12ec810948d] DBG2:msm_pcie_config_link_state: RC's CAP_LINKCTRLSTATUS:0x3011000a
+[ 67719.208915346/     0x12ec81094fd] DBG2:msm_pcie_config_link_state: EP's CAP_LINKCTRLSTATUS:0x10110002
+[ 67719.208946753/     0x12ec8109758] DBG2:msm_pcie_config_link_state: EP's L1SUB_CAPABILITY_REG_1: 0x9001f
+[ 67719.208950451/     0x12ec810979f] DBG2:msm_pcie_config_link_state: RC0: ep_l1sub_ctrl1_offset: 0x248
+[ 67719.208954513/     0x12ec81097ed] DBG2:msm_pcie_config_link_state: RC0: ep_l1sub_ctrl2_offset: 0x24c
+[ 67719.208957951/     0x12ec810982f] DBG2:msm_pcie_config_link_state: BCM4359: TPOWERON 120us, 0x61
+[ 67719.208961648/     0x12ec8109876] DBG2:msm_pcie_config_link_state: BCM4359: L12THRESHOLD 0us, 0x40a0000f
+[ 67719.208965346/     0x12ec81098bd] DBG2:msm_pcie_config_link_state: BCM4359: LTR_LATENCY 3ms, 0x10031003
+[ 67719.209079201/     0x12ec810a148] DBG2:msm_pcie_config_link_state: RC's L1SUB_CONTROL1 (L12THRESHOLD):0x40a0460f
+[ 67719.209084044/     0x12ec810a1a4] DBG2:msm_pcie_config_link_state: RC's L1SUB_CONTROL2 (TPOWERON):0x61
+[ 67719.209088315/     0x12ec810a1f6] DBG2:msm_pcie_config_link_state: RC's DEVICE_CONTROL2_STATUS2:0x400
+[ 67719.209093836/     0x12ec810a261] DBG2:msm_pcie_config_link_state: EP's L1SUB_CONTROL1 (L12THRESHOLD):0x40a0000f
+[ 67719.209100919/     0x12ec810a2e9] DBG2:msm_pcie_config_link_state: EP's L1SUB_CONTROL2 (TPOWERON):0x61
+[ 67719.209107378/     0x12ec810a365] DBG2:msm_pcie_config_link_state: EP's PCIE20_LTR_MAX_SNOOP_LATENCY_BRCM:0x10031003
+[ 67719.209113940/     0x12ec810a3e2] DBG2:msm_pcie_config_link_state: EP's DEVICE_CONTROL2_STATUS2:0x400
+[ 67719.209120398/     0x12ec810a45e] msm_pcie_enable: RC0: exit
+[ 67719.209126440/     0x12ec810a4d2] msm_pcie_pm_resume: dev->bus->number = 0 dev->bus->primary = 0
+[ 67719.209132273/     0x12ec810a542] msm_pcie_pm_resume: RC0: entry of PCI framework restore state
+[ 67719.209147065/     0x12ec810a65e] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0078[2] <- 0x0010581f; rd 0x0010581f val 0x0000581f
+[ 67719.209159253/     0x12ec810a748] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0080[2] <- 0x3011004a; rd 0x3011004a val 0x0000004a
+[ 67719.209168680/     0x12ec810a7fd] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x008c[2] <- 0x00000000; rd 0x00000000 val 0x00000000
+[ 67719.209178523/     0x12ec810a8ba] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0098[2] <- 0x00000400; rd 0x00000400 val 0x00000400
+[ 67719.209188471/     0x12ec810a979] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x00a0[2] <- 0x00010002; rd 0x00010002 val 0x00000002
+[ 67719.209204096/     0x12ec810aaa5] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0100[4] -> 0x15020001; rd 0x15020001
+[ 67719.209211023/     0x12ec810ab2b] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0150[4] -> 0x0001001e; rd 0x0001001e
+[ 67719.209218471/     0x12ec810abba] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0100[4] -> 0x15020001; rd 0x15020001
+[ 67719.209224826/     0x12ec810ac33] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0150[4] -> 0x0001001e; rd 0x0001001e
+[ 67719.209231961/     0x12ec810acbc] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0100[4] -> 0x15020001; rd 0x15020001
+[ 67719.209239201/     0x12ec810ad48] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0150[4] -> 0x0001001e; rd 0x0001001e
+[ 67719.209246961/     0x12ec810addc] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x003c[4] -> 0x00030000; rd 0x00030000
+[ 67719.209253992/     0x12ec810ae63] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0038[4] -> 0x00000000; rd 0x00000000
+[ 67719.209259982/     0x12ec810aed6] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0034[4] -> 0x00000040; rd 0x00000040
+[ 67719.209267898/     0x12ec810af6f] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0030[4] -> 0x00000000; rd 0x00000000
+[ 67719.209275815/     0x12ec810b006] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x002c[4] -> 0x00000000; rd 0x00000000
+[ 67719.209286023/     0x12ec810b0ca] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x002c[4] <- 0x00000000; rd 0x00000000 val 0x00000000
+[ 67719.209292846/     0x12ec810b14d] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0028[4] -> 0x00000000; rd 0x00000000
+[ 67719.209303263/     0x12ec810b215] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0028[4] <- 0x00000000; rd 0x00000000 val 0x00000000
+[ 67719.209309721/     0x12ec810b292] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0024[4] -> 0x00010001; rd 0x00010001
+[ 67719.209319826/     0x12ec810b353] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0024[4] <- 0x0001fff1; rd 0x00010001 val 0x0001fff1
+[ 67719.209326857/     0x12ec810b3da] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0020[4] -> 0x00000000; rd 0x00000000
+[ 67719.209335763/     0x12ec810b485] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0020[4] <- 0x0c900c40; rd 0x00000000 val 0x0c900c40
+[ 67719.209342273/     0x12ec810b502] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x001c[4] -> 0x00000000; rd 0x00000000
+[ 67719.209351023/     0x12ec810b5aa] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x001c[4] <- 0x000000f0; rd 0x00000000 val 0x000000f0
+[ 67719.209357638/     0x12ec810b629] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0018[4] -> 0x00000000; rd 0x00000000
+[ 67719.209366440/     0x12ec810b6d3] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0018[4] <- 0x00010100; rd 0x00000000 val 0x00010100
+[ 67719.209373419/     0x12ec810b758] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0014[4] -> 0x00000000; rd 0x00000000
+[ 67719.209380867/     0x12ec810b7e7] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0010[4] -> 0x00000004; rd 0x00000004
+[ 67719.209388888/     0x12ec810b881] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0010[4] <- 0x0c300004; rd 0x00000004 val 0x0c300004
+[ 67719.209396440/     0x12ec810b912] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x000c[4] -> 0x00010000; rd 0x00010000
+[ 67719.209403367/     0x12ec810b997] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0008[4] -> 0xff000000; rd 0xff000000
+[ 67719.209409461/     0x12ec810ba0c] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0004[4] -> 0x00100000; rd 0x00100000
+[ 67719.209418107/     0x12ec810bab3] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0004[4] <- 0x00100006; rd 0x00100000 val 0x00100006
+[ 67719.209424721/     0x12ec810bb31] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0000[4] -> 0x010417cb; rd 0x010417cb
+[ 67719.209433107/     0x12ec810bbd2] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0006[2] -> 0x00000010; rd 0x00100006
+[ 67719.209507690/     0x12ec810c16b] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0034[1] -> 0x00000040; rd 0x00000040
+[ 67719.209525711/     0x12ec810c2c9] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0040[1] -> 0x00000001; rd 0xc8035001
+[ 67719.209557169/     0x12ec810c521] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0041[1] -> 0x00000050; rd 0xc8035001
+[ 67719.209573680/     0x12ec810c65e] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0050[1] -> 0x00000005; rd 0x018a7005
+[ 67719.209580763/     0x12ec810c6e6] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0051[1] -> 0x00000070; rd 0x018a7005
+[ 67719.209601648/     0x12ec810c876] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0070[1] -> 0x00000010; rd 0x00420010
+[ 67719.209622898/     0x12ec810ca0e] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0071[1] -> 0x00000000; rd 0x00420010
+[ 67719.209631805/     0x12ec810cab9] msm_pcie_pm_resume: RC0: exit of PCI framework restore state
+[ 67719.209637378/     0x12ec810cb24] msm_pcie_pm_resume: RC0: exit
+[ 67719.209643523/     0x12ec810cb9b] msm_pcie_pm_control: PCIe: RC0: user succeeded to resume the link.
+[ 67719.209749930/     0x12ec810d396] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00b4[2] <- 0x00102c1f; rd 0x00102c10 val 0x00002c1f
+[ 67719.209801909/     0x12ec810d77c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00bc[2] <- 0x10110142; rd 0x10110142 val 0x00000142
+[ 67719.209838523/     0x12ec810da3b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00d4[2] <- 0x00000400; rd 0x00000400 val 0x00000400
+[ 67719.209889044/     0x12ec810de05] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00dc[2] <- 0x00010001; rd 0x00010001 val 0x00000001
+[ 67719.209935763/     0x12ec810e186] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0100[4] -> 0x13c10001; rd 0x13c10001
+[ 67719.209985346/     0x12ec810e53e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x013c[4] -> 0x15010003; rd 0x15010003
+[ 67719.210019305/     0x12ec810e7ca] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0150[4] -> 0x16010004; rd 0x16010004
+[ 67719.210065503/     0x12ec810eb41] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0160[4] -> 0x1b010002; rd 0x1b010002
+[ 67719.210195763/     0x12ec810f507] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x01b0[4] -> 0x22010018; rd 0x22010018
+[ 67719.210241544/     0x12ec810f875] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0220[4] -> 0x24010015; rd 0x24010015
+[ 67719.210288211/     0x12ec810fbf4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0240[4] -> 0x0001001e; rd 0x0001001e
+[ 67719.210321701/     0x12ec810fe78] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0100[4] -> 0x13c10001; rd 0x13c10001
+[ 67719.210368419/     0x12ec81101f9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x013c[4] -> 0x15010003; rd 0x15010003
+[ 67719.210402013/     0x12ec811047e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0150[4] -> 0x16010004; rd 0x16010004
+[ 67719.210448367/     0x12ec81107f7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0160[4] -> 0x1b010002; rd 0x1b010002
+[ 67719.210482169/     0x12ec8110a80] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0164[4] -> 0x00000000; rd 0x00000000
+[ 67719.210534565/     0x12ec8110e6e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0170[4] -> 0x00000000; rd 0x00000000
+[ 67719.210580971/     0x12ec81111e9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0164[4] -> 0x00000000; rd 0x00000000
+[ 67719.210614669/     0x12ec8111470] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x016c[2] <- 0x00000000; rd 0x00000000 val 0x00000000
+[ 67719.210644773/     0x12ec81116b2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0170[4] -> 0x00000000; rd 0x00000000
+[ 67719.210654253/     0x12ec8111768] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0174[4] -> 0x800000ff; rd 0x800000ff
+[ 67719.210667378/     0x12ec8111864] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0174[4] <- 0x800000ff; rd 0x800000ff val 0x800000ff
+[ 67719.210677326/     0x12ec8111924] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0100[4] -> 0x13c10001; rd 0x13c10001
+[ 67719.210686805/     0x12ec81119da] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x013c[4] -> 0x15010003; rd 0x15010003
+[ 67719.210696076/     0x12ec8111a8b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0150[4] -> 0x16010004; rd 0x16010004
+[ 67719.210706388/     0x12ec8111b52] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0160[4] -> 0x1b010002; rd 0x1b010002
+[ 67719.210740346/     0x12ec8111ddd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x01b0[4] -> 0x22010018; rd 0x22010018
+[ 67719.210750607/     0x12ec8111ea2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0220[4] -> 0x24010015; rd 0x24010015
+[ 67719.210783836/     0x12ec8112120] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0240[4] -> 0x0001001e; rd 0x0001001e
+[ 67719.210817638/     0x12ec81123aa] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x003c[4] -> 0x00000100; rd 0x00000100
+[ 67719.210864044/     0x12ec8112725] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0038[4] -> 0x00000000; rd 0x00000000
+[ 67719.210897690/     0x12ec81129ab] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0034[4] -> 0x00000048; rd 0x00000048
+[ 67719.210907534/     0x12ec8112a68] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0030[4] -> 0x00000000; rd 0x00000000
+[ 67719.210916753/     0x12ec8112b19] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x002c[4] -> 0x075114e4; rd 0x075114e4
+[ 67719.210926701/     0x12ec8112bd7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0028[4] -> 0x00000000; rd 0x00000000
+[ 67719.210958107/     0x12ec8112e32] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0024[4] -> 0x00000000; rd 0x00000000
+[ 67719.210967898/     0x12ec8112eee] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0020[4] -> 0x00000000; rd 0x00000000
+[ 67719.210978367/     0x12ec8112fb7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x001c[4] -> 0x00000000; rd 0x00000000
+[ 67719.211009148/     0x12ec8113206] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0018[4] -> 0x00000004; rd 0x00000004
+[ 67719.211022169/     0x12ec8113300] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0018[4] <- 0x0c400004; rd 0x00000004 val 0x0c400004
+[ 67719.211051909/     0x12ec811353c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0018[4] -> 0x0c400004; rd 0x0c400004
+[ 67719.211061701/     0x12ec81135f7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0014[4] -> 0x00000000; rd 0x00000000
+[ 67719.211092482/     0x12ec8113846] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0010[4] -> 0x00000004; rd 0x00000004
+[ 67719.211125503/     0x12ec8113ac0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0010[4] <- 0x0c800004; rd 0x00000004 val 0x0c800004
+[ 67719.211135086/     0x12ec8113b78] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0010[4] -> 0x0c800004; rd 0x0c800004
+[ 67719.211145086/     0x12ec8113c38] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x000c[4] -> 0x00000000; rd 0x00000000
+[ 67719.211156961/     0x12ec8113d1c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0008[4] -> 0x02800009; rd 0x02800009
+[ 67719.211190867/     0x12ec8113fa7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0004[4] -> 0x00100000; rd 0x00100000
+[ 67719.211204044/     0x12ec81140a5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0004[4] <- 0x00100006; rd 0x00100000 val 0x00100006
+[ 67719.211213628/     0x12ec811415c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0000[4] -> 0x441514e4; rd 0x441514e4
+[ 67719.211224044/     0x12ec8114224] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0006[2] -> 0x00000010; rd 0x00100006
+[ 67719.211254044/     0x12ec8114465] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0034[1] -> 0x00000048; rd 0x00000048
+[ 67719.211264044/     0x12ec8114524] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0048[1] -> 0x00000001; rd 0xfe035801
+[ 67719.211295763/     0x12ec8114785] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0049[1] -> 0x00000058; rd 0xfe035801
+[ 67719.211329721/     0x12ec8114a11] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0058[1] -> 0x00000005; rd 0x00886805
+[ 67719.211627169/     0x12ec8116064] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0059[1] -> 0x00000068; rd 0x00886805
+[ 67719.211673523/     0x12ec81163db] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0068[1] -> 0x00000009; rd 0x0044ac09
+[ 67719.211720190/     0x12ec811675a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0069[1] -> 0x000000ac; rd 0x0044ac09
+[ 67719.211729617/     0x12ec8116810] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[1] -> 0x00000010; rd 0x00020010
+[ 67719.211738836/     0x12ec81168c0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ad[1] -> 0x00000000; rd 0x00020010
+[ 67719.211772638/     0x12ec8116b4a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x004c[2] -> 0x00004108; rd 0x00004108
+[ 67719.211806076/     0x12ec8116dcc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0004[2] -> 0x00000006; rd 0x00100006
+[ 67719.211852794/     0x12ec811714c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x003d[1] -> 0x00000001; rd 0x00000100
+[ 67719.211861857/     0x12ec81171fb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0004[2] -> 0x00000006; rd 0x00100006
+[ 67719.211892846/     0x12ec811744d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0004[2] -> 0x00000006; rd 0x00100006
+[ 67719.212540034/     0x12ec811a4d8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18000000; rd 0x18003000 val 0x18000000
+[ 67719.212573107/     0x12ec811a752] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18000000; rd 0x18000000
+[ 67719.212581909/     0x12ec811a7fb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0000[4] -> 0x441514e4; rd 0x441514e4
+[ 67719.212591753/     0x12ec811a8b9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0088[4] -> 0x00000080; rd 0x00000080
+[ 67719.212625659/     0x12ec811ab43] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0088[4] -> 0x00000080; rd 0x00000080
+[ 67719.212635138/     0x12ec811abfa] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18000000; rd 0x18000000
+[ 67719.212647117/     0x12ec811acdf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18000000; rd 0x18000000 val 0x18000000
+[ 67719.212656284/     0x12ec811ad90] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18000000; rd 0x18000000
+[ 67719.212676805/     0x12ec811af19] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x1810c000; rd 0x18000000 val 0x1810c000
+[ 67719.212685555/     0x12ec811afc2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x1810c000; rd 0x1810c000
+[ 67719.213352794/     0x12ec811e1cf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18000000; rd 0x1810c000 val 0x18000000
+[ 67719.213493628/     0x12ec811ec5f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18000000; rd 0x18000000
+[ 67719.213531492/     0x12ec811ef34] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[4] <- 0x18100000; rd 0x00020010 val 0x18100000
+[ 67719.213562742/     0x12ec811f18b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18000000; rd 0x18000000 val 0x18000000
+[ 67719.213573367/     0x12ec811f257] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18000000; rd 0x18000000
+[ 67719.213587482/     0x12ec811f367] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[4] <- 0x18100000; rd 0x00020010 val 0x18100000
+[ 67719.213622638/     0x12ec811f60a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18001000; rd 0x18000000 val 0x18001000
+[ 67719.213632013/     0x12ec811f6bd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18001000; rd 0x18001000
+[ 67719.213644461/     0x12ec811f7ad] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[4] <- 0x18101000; rd 0x00020010 val 0x18101000
+[ 67719.213658211/     0x12ec811f8b4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18001000 val 0x18002000
+[ 67719.213667221/     0x12ec811f962] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.213682065/     0x12ec811fa7e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[4] <- 0x18102000; rd 0x00020010 val 0x18102000
+[ 67719.213715294/     0x12ec811fcfd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18003000; rd 0x18002000 val 0x18003000
+[ 67719.213762534/     0x12ec8120087] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18003000; rd 0x18003000
+[ 67719.213795815/     0x12ec8120306] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[4] <- 0x18103000; rd 0x00020010 val 0x18103000
+[ 67719.213850451/     0x12ec8120720] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18004000; rd 0x18003000 val 0x18004000
+[ 67719.213897430/     0x12ec8120aa5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18004000; rd 0x18004000
+[ 67719.213910607/     0x12ec8120ba2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[4] <- 0x18104000; rd 0x00020010 val 0x18104000
+[ 67719.213923419/     0x12ec8120c99] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18005000; rd 0x18004000 val 0x18005000
+[ 67719.213932482/     0x12ec8120d47] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18005000; rd 0x18005000
+[ 67719.213944930/     0x12ec8120e35] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[4] <- 0x18105000; rd 0x00020010 val 0x18105000
+[ 67719.213957586/     0x12ec8120f28] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x1800a000; rd 0x18005000 val 0x1800a000
+[ 67719.213966596/     0x12ec8120fd5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x1800a000; rd 0x1800a000
+[ 67719.213978888/     0x12ec81210c1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x00ac[4] <- 0x00000000; rd 0x00020010 val 0x00000000
+[ 67719.213991596/     0x12ec81211b6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18000000; rd 0x1800a000 val 0x18000000
+[ 67719.214000659/     0x12ec8121263] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18000000; rd 0x18000000
+[ 67719.214013003/     0x12ec8121351] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18100000; rd 0x18103000 val 0x18100000
+[ 67719.214026857/     0x12ec812145a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18000000; rd 0x18000000 val 0x18000000
+[ 67719.214056596/     0x12ec8121695] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18000000; rd 0x18000000
+[ 67719.214068940/     0x12ec8121782] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18100000; rd 0x18100000 val 0x18100000
+[ 67719.214085607/     0x12ec81218c2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18000000; rd 0x18000000 val 0x18000000
+[ 67719.214133576/     0x12ec8121c5b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18000000; rd 0x18000000
+[ 67719.214184305/     0x12ec8122029] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18100000; rd 0x18100000 val 0x18100000
+[ 67719.214234044/     0x12ec81223e4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18003000; rd 0x18000000 val 0x18003000
+[ 67719.214280242/     0x12ec812275b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18003000; rd 0x18003000
+[ 67719.214293419/     0x12ec8122859] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18103000; rd 0x18100000 val 0x18103000
+[ 67719.214314201/     0x12ec81229e7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18003000 val 0x18002000
+[ 67719.214415815/     0x12ec8123187] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.214429357/     0x12ec812328a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18103000 val 0x18102000
+[ 67719.214442430/     0x12ec8123385] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.214451805/     0x12ec812343a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.214464096/     0x12ec8123525] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.214476805/     0x12ec812361a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.214485763/     0x12ec81236c5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.214497794/     0x12ec81237ac] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.214564617/     0x12ec8123caf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.214616805/     0x12ec812409a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.214653992/     0x12ec8124363] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.215185503/     0x12ec8126b42] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0084[4] <- 0x00000000; rd 0x00000000 val 0x00000000
+[ 67719.215295034/     0x12ec8127377] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.215329044/     0x12ec8127604] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.215364096/     0x12ec81278a5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.215485451/     0x12ec81281bf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18003000; rd 0x18002000 val 0x18003000
+[ 67719.215532690/     0x12ec812854a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18003000; rd 0x18003000
+[ 67719.215566336/     0x12ec81287d1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18103000; rd 0x18102000 val 0x18103000
+[ 67719.215694305/     0x12ec812916a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18003000 val 0x18002000
+[ 67719.215741023/     0x12ec81294eb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.215776336/     0x12ec8129791] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18103000 val 0x18102000
+[ 67719.216568732/     0x12ec812d2ff] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.216678732/     0x12ec812db3e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.216715763/     0x12ec812de06] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.217860555/     0x12ec81333e4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.217999253/     0x12ec8133e4a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.218037794/     0x12ec813412c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.218687221/     0x12ec81371e3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.218737221/     0x12ec81375a1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.218751701/     0x12ec81376b7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.219377117/     0x12ec813a5a0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.219423471/     0x12ec813a919] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.219457117/     0x12ec813ab9f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.220277690/     0x12ec813e92c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.220378992/     0x12ec813f0c4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.220415867/     0x12ec813f388] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.221457482/     0x12ec81441a9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.221575815/     0x12ec8144a88] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.221631388/     0x12ec8144eb3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.222399774/     0x12ec8148853] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.222502065/     0x12ec8148fff] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.222514930/     0x12ec81490f5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.223107846/     0x12ec814bd6d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.223159774/     0x12ec814c152] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.223175763/     0x12ec814c285] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.223939982/     0x12ec814fbd8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.224058263/     0x12ec81504b5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.224095815/     0x12ec8150786] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.224797794/     0x12ec8153c2d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.224848888/     0x12ec8154001] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.224861180/     0x12ec81540ed] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.225422013/     0x12ec8156afe] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.225468315/     0x12ec8156e77] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.225480451/     0x12ec8156f5f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.226035919/     0x12ec8159909] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.226081805/     0x12ec8159c79] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.226116440/     0x12ec8159f13] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.226908003/     0x12ec815da72] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.226957638/     0x12ec815de29] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.226970919/     0x12ec815df28] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.227547013/     0x12ec8160a5d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.227595138/     0x12ec8160df9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.227607586/     0x12ec8160ee9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.228376961/     0x12ec816489d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.228423211/     0x12ec8164c14] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.228459669/     0x12ec8164ed1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.229039305/     0x12ec8167a4a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.229088680/     0x12ec8167dfd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.229143003/     0x12ec8168210] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.229846388/     0x12ec816b6d2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.229894826/     0x12ec816ba73] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.229907846/     0x12ec816bb6d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.230666232/     0x12ec816f450] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.230718211/     0x12ec816f835] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.230733263/     0x12ec816f955] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.231435971/     0x12ec8172e09] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.231537794/     0x12ec81735ac] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.231572378/     0x12ec8173844] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.232180086/     0x12ec81765d8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.232281857/     0x12ec8176d7a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.232295971/     0x12ec8176e89] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.232903315/     0x12ec8179c17] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.232950086/     0x12ec8179f98] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.232987221/     0x12ec817a261] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.233865815/     0x12ec817e447] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.233911440/     0x12ec817e7b3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.233923836/     0x12ec817e8a0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.234560711/     0x12ec8181865] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.234607117/     0x12ec8181be0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.234619617/     0x12ec8181ccf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.235266596/     0x12ec8184d55] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.235368367/     0x12ec81854f7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.235418419/     0x12ec81858b8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.236136857/     0x12ec8188e9a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.236242065/     0x12ec818967e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.236255086/     0x12ec8189778] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.237096544/     0x12ec818d696] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.237198888/     0x12ec818de42] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.237251753/     0x12ec818e239] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.238105294/     0x12ec819223d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.238201336/     0x12ec8192971] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.238241492/     0x12ec8192c73] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.239169774/     0x12ec8197212] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.239215659/     0x12ec8197583] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.239227742/     0x12ec819766b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.239847430/     0x12ec819a4e5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.239897586/     0x12ec819a8a8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.239937899/     0x12ec819abae] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.240707274/     0x12ec819e566] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.240810971/     0x12ec819ed29] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.240823419/     0x12ec819ee19] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.241644096/     0x12ec81a2ba8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.241786024/     0x12ec81a364b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.241838003/     0x12ec81a3a31] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.242512586/     0x12ec81a6cc8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.242558680/     0x12ec81a703d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.242569253/     0x12ec81a7107] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.242996857/     0x12ec81a911a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.243043107/     0x12ec81a9492] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.243052794/     0x12ec81a954b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.243911857/     0x12ec81ad5c0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.243958628/     0x12ec81ad93c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.243968107/     0x12ec81ad9f2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.244883263/     0x12ec81b1e95] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.244929253/     0x12ec81b2208] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.244940347/     0x12ec81b22dc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.245412899/     0x12ec81b464e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.245447794/     0x12ec81b48ec] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.245456857/     0x12ec81b499a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.245903003/     0x12ec81b6b10] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.245936753/     0x12ec81b6d98] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.245945555/     0x12ec81b6e41] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.246335555/     0x12ec81b8b81] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.246369149/     0x12ec81b8e05] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.246378159/     0x12ec81b8eb3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.246893888/     0x12ec81bb562] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.246940086/     0x12ec81bb8d8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.246948524/     0x12ec81bb97a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.247400347/     0x12ec81bdb5d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.247433992/     0x12ec81bdde3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.247442899/     0x12ec81bde8d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.247945190/     0x12ec81c043a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.247992065/     0x12ec81c07be] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.248041076/     0x12ec81c0b6a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.248450190/     0x12ec81c2a1a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.248496701/     0x12ec81c2d97] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.248507274/     0x12ec81c2e62] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.248948836/     0x12ec81c4f80] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.248995555/     0x12ec81c5300] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.249006232/     0x12ec81c53ce] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.249481701/     0x12ec81c7777] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.249528003/     0x12ec81c7af0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.249538784/     0x12ec81c7bbe] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.249989617/     0x12ec81c9d8f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.250036701/     0x12ec81ca117] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.250191180/     0x12ec81cacae] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.250890034/     0x12ec81ce117] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.250936024/     0x12ec81ce48a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.250951232/     0x12ec81ce5ae] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.251548784/     0x12ec81d1280] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.251662638/     0x12ec81d1b09] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.251671857/     0x12ec81d1bb9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.252380815/     0x12ec81d50ea] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.252482117/     0x12ec81d587f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.252493628/     0x12ec81d595b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.253009201/     0x12ec81d8007] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.253055867/     0x12ec81d8386] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.253067586/     0x12ec81d8468] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.253649930/     0x12ec81db015] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.253696180/     0x12ec81db38d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.253705294/     0x12ec81db43c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.254124461/     0x12ec81dd3ab] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.254158367/     0x12ec81dd636] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.254167117/     0x12ec81dd6df] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.254631440/     0x12ec81df9b2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.254664878/     0x12ec81dfc34] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.254674044/     0x12ec81dfce4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.255096232/     0x12ec81e1c8e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.255129930/     0x12ec81e1f15] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.255140086/     0x12ec81e1fd7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.255916232/     0x12ec81e5a0e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.255963263/     0x12ec81e5d94] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.255973003/     0x12ec81e5e50] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.256422847/     0x12ec81e800c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.256468940/     0x12ec81e8382] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.256478367/     0x12ec81e8437] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.257149044/     0x12ec81eb687] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.257195190/     0x12ec81eb9fa] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.257205086/     0x12ec81ebab7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.257634826/     0x12ec81edaf3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.257681180/     0x12ec81ede6d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.257691388/     0x12ec81edf31] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.258139617/     0x12ec81f00cf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.258185763/     0x12ec81f0445] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.258195294/     0x12ec81f04fc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.258643315/     0x12ec81f2696] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.258689409/     0x12ec81f2a0b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.258698315/     0x12ec81f2ab6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.259111597/     0x12ec81f49b5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.259157638/     0x12ec81f4d29] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.259166753/     0x12ec81f4dd8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.259656336/     0x12ec81f728f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.259792169/     0x12ec81f7cc0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.259802742/     0x12ec81f7d8a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.260405763/     0x12ec81faac5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.260453836/     0x12ec81fae60] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.260463784/     0x12ec81faf1f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.261012222/     0x12ec81fd841] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.261058576/     0x12ec81fdbbb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.261070451/     0x12ec81fdc9f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.261586076/     0x12ec820034b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.261632534/     0x12ec82006c6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.261641440/     0x12ec8200772] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.262031336/     0x12ec82024b0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.262065034/     0x12ec8202737] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.262073940/     0x12ec82027e1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.262477534/     0x12ec8204627] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.262511440/     0x12ec82048b1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.262520138/     0x12ec8204959] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.262936805/     0x12ec8206899] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.262970399/     0x12ec8206b1e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.262979305/     0x12ec8206bc9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.263378888/     0x12ec82089c1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.263489044/     0x12ec8209204] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.263498836/     0x12ec82092c0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.264084201/     0x12ec820bea7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.264131232/     0x12ec820c22d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.264140503/     0x12ec820c2e0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.264603211/     0x12ec820e594] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.264649826/     0x12ec820e913] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.264661597/     0x12ec820e9f5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.265077117/     0x12ec821091f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.265110919/     0x12ec8210ba7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.265119774/     0x12ec8210c51] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.265511597/     0x12ec82129b5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.265545242/     0x12ec8212c3b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.265554305/     0x12ec8212ce8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.265947013/     0x12ec8214a5d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.265980972/     0x12ec8214ce8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.265990347/     0x12ec8214d9c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.266447847/     0x12ec8216fed] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.266494513/     0x12ec821736c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.266506701/     0x12ec8217457] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.267150972/     0x12ec821a4aa] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.267197065/     0x12ec821a81e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.267206649/     0x12ec821a8d5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.267807586/     0x12ec821d5e8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.267858107/     0x12ec821d9b1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.267896232/     0x12ec821dc8e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.268404409/     0x12ec82202ab] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.268451024/     0x12ec8220629] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.268464097/     0x12ec8220724] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.269081024/     0x12ec822356a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.269127638/     0x12ec82238e8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.269138315/     0x12ec82239b6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.269574826/     0x12ec8225a73] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.269621753/     0x12ec8225df8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.269630711/     0x12ec8225ea3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.270171076/     0x12ec822872b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.270217169/     0x12ec8228aa0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.270226753/     0x12ec8228b58] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.270696024/     0x12ec822ae8a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.270742638/     0x12ec822b209] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.270753732/     0x12ec822b2de] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.271264201/     0x12ec822d927] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.271310659/     0x12ec822dca2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.271323628/     0x12ec822dd9c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.272102378/     0x12ec8231804] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.272148836/     0x12ec8231b80] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.272188159/     0x12ec8231e72] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.272651492/     0x12ec8234133] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.272753524/     0x12ec82348da] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.272763836/     0x12ec82349a0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.273254357/     0x12ec8236e6a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.273287951/     0x12ec82370ee] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.273297326/     0x12ec82371a3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.273876961/     0x12ec8239d1d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.273924149/     0x12ec823a0a6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.273935972/     0x12ec823a188] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.274432951/     0x12ec823c6cf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.274545555/     0x12ec823cf41] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.274595190/     0x12ec823d2fa] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.275038367/     0x12ec823f437] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.275084930/     0x12ec823f7b5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.275095347/     0x12ec823f87d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.275514045/     0x12ec82417e4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.275559930/     0x12ec8241b54] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.275569201/     0x12ec8241c06] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.276035555/     0x12ec8243f01] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.276082847/     0x12ec824428d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.276093211/     0x12ec8244354] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.276620242/     0x12ec8246adb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.276666388/     0x12ec8246e51] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.276675659/     0x12ec8246f03] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.277292326/     0x12ec8249d45] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.277338107/     0x12ec824a0b2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.277347899/     0x12ec824a16e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.278071284/     0x12ec824d7af] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.278113940/     0x12ec824dae2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.278131284/     0x12ec824dc2f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.278734565/     0x12ec825096e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.278780972/     0x12ec8250ce8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.278790920/     0x12ec8250da8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.279285555/     0x12ec82532c1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.279319461/     0x12ec825354b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.279328836/     0x12ec82535ff] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.279862117/     0x12ec8255dff] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.279898367/     0x12ec82560b7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.279908524/     0x12ec825617a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.280523784/     0x12ec8258fa0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.280570086/     0x12ec8259318] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.280579253/     0x12ec82593c7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.280979774/     0x12ec825b1d2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.281013680/     0x12ec825b45d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.281022690/     0x12ec825b509] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.281537951/     0x12ec825dbaf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.281571649/     0x12ec825de36] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.281581805/     0x12ec825def9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.281994149/     0x12ec825fde6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.282027847/     0x12ec826006d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.282036961/     0x12ec826011c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.282427586/     0x12ec8261e68] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.282461232/     0x12ec82620ee] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.282470451/     0x12ec826219f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.282873940/     0x12ec8263fe2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.282907586/     0x12ec8264268] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.282917117/     0x12ec826431e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.283346336/     0x12ec8266350] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.283379670/     0x12ec82665d0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.283495607/     0x12ec8266e82] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.284057638/     0x12ec82698a9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.284172534/     0x12ec826a147] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.284185815/     0x12ec826a246] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.284856753/     0x12ec826d498] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.284905399/     0x12ec826d83e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.284915399/     0x12ec826d8fe] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.285365347/     0x12ec826fabd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.285411440/     0x12ec826fe31] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.285421128/     0x12ec826feec] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.285907430/     0x12ec8272365] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.285957586/     0x12ec8272727] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.286007795/     0x12ec8272aec] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.286706753/     0x12ec8275f58] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.286880086/     0x12ec8276c58] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.286929409/     0x12ec827700b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.287439565/     0x12ec827964e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.287473524/     0x12ec82798da] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.287483628/     0x12ec827999c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.288206545/     0x12ec827cfd4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.288311701/     0x12ec827d7b7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.288328367/     0x12ec827d8f7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.288833784/     0x12ec827fedf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.288878784/     0x12ec828023f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.288933159/     0x12ec8280653] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.289671128/     0x12ec8283dac] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.289704305/     0x12ec8284028] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.289713680/     0x12ec82840dc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.290315659/     0x12ec8286e04] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.290362170/     0x12ec828717f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.290372690/     0x12ec8287249] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.290849201/     0x12ec8289607] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.290882795/     0x12ec828988c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.290892378/     0x12ec8289944] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.291404149/     0x12ec828bfa6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.291450920/     0x12ec828c328] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.291463003/     0x12ec828c410] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.291994565/     0x12ec828ebee] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.292041492/     0x12ec828ef73] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.292051232/     0x12ec828f02e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.292548940/     0x12ec8291581] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.292595555/     0x12ec8291901] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.292606388/     0x12ec82919d1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.293042742/     0x12ec8293a8b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.293076701/     0x12ec8293d17] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.293086336/     0x12ec8293dd0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.293590711/     0x12ec82963a4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.293624930/     0x12ec8296635] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.293635190/     0x12ec82966fa] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.294022065/     0x12ec82983fe] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.294032899/     0x12ec82984ce] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.294043836/     0x12ec82985a0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.294439930/     0x12ec829a355] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.294473836/     0x12ec829a5df] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.294483263/     0x12ec829a695] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.294972586/     0x12ec829cb47] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.295006180/     0x12ec829cdcd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.295015555/     0x12ec829ce81] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.295556492/     0x12ec829f712] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.295566128/     0x12ec829f7cc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.295575607/     0x12ec829f882] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.296140295/     0x12ec82a22dc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.296174149/     0x12ec82a2566] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.296183524/     0x12ec82a261a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.296613003/     0x12ec82a4650] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.296659774/     0x12ec82a49d2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.296671909/     0x12ec82a4aba] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.297294409/     0x12ec82a796b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.297340711/     0x12ec82a7ce4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.297351180/     0x12ec82a7dad] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.297739253/     0x12ec82a9ac8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.297841545/     0x12ec82aa274] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.297878055/     0x12ec82aa530] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.298256961/     0x12ec82ac19c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.298290711/     0x12ec82ac423] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.298299930/     0x12ec82ac4d4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.298657899/     0x12ec82adfae] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.298691492/     0x12ec82ae232] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.298700607/     0x12ec82ae2e2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.299058055/     0x12ec82afdb1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.299091180/     0x12ec82b002c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.299100451/     0x12ec82b00df] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.299457326/     0x12ec82b1ba3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.299491024/     0x12ec82b1e2a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.299499878/     0x12ec82b1ed4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.299932951/     0x12ec82b3f4f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.299967013/     0x12ec82b41dc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.299976909/     0x12ec82b429a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.300712222/     0x12ec82b79c2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.300756440/     0x12ec82b7d12] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.300792534/     0x12ec82b7fc6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.301341649/     0x12ec82ba8f6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.301388055/     0x12ec82bac71] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.301397951/     0x12ec82bad2f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.301917222/     0x12ec82bd421] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.301952222/     0x12ec82bd6c0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.301962170/     0x12ec82bd780] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.302403940/     0x12ec82bf8a2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.302450034/     0x12ec82bfc17] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.302459357/     0x12ec82bfcca] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.302879982/     0x12ec82c1c56] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.302925920/     0x12ec82c1fc7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.302936076/     0x12ec82c208a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.303750034/     0x12ec82c5d98] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.303801805/     0x12ec82c6179] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.303813315/     0x12ec82c6255] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.304352118/     0x12ec82c8abf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.304466701/     0x12ec82c9356] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.304476753/     0x12ec82c9418] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.304893784/     0x12ec82cb35f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.304941649/     0x12ec82cb6f6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.304951388/     0x12ec82cb7b1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.305483368/     0x12ec82cdf97] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.305529774/     0x12ec82ce312] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.305539982/     0x12ec82ce3d5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.306068836/     0x12ec82d0b80] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.306198940/     0x12ec82d1542] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.306248159/     0x12ec82d18f3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.306988732/     0x12ec82d507f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.307033836/     0x12ec82d53e0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.307047638/     0x12ec82d54e8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.307742378/     0x12ec82d8904] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.307864982/     0x12ec82d9236] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.307875972/     0x12ec82d9309] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.308346909/     0x12ec82db65b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.308393784/     0x12ec82db9df] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.308405399/     0x12ec82dbabe] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.308859722/     0x12ec82ddcd1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.308893055/     0x12ec82ddf50] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.308902430/     0x12ec82de004] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.309300295/     0x12ec82dfddc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.309334461/     0x12ec82e006c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.309342951/     0x12ec82e010f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.309758888/     0x12ec82e2041] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.309792690/     0x12ec82e22ca] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.309802170/     0x12ec82e237f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.310356597/     0x12ec82e4d15] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.310403263/     0x12ec82e5095] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.310412795/     0x12ec82e514b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.310816597/     0x12ec82e6f95] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.310850451/     0x12ec82e721e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.310859045/     0x12ec82e72c4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.311288576/     0x12ec82e92fb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.311322482/     0x12ec82e9586] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.311331857/     0x12ec82e963a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.311925138/     0x12ec82ec2b9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.311958888/     0x12ec82ec541] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.311968940/     0x12ec82ec601] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.312428368/     0x12ec82ee877] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.312474618/     0x12ec82eebef] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.312486961/     0x12ec82eecdb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.313056336/     0x12ec82f1790] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.313090034/     0x12ec82f1a16] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.313098993/     0x12ec82f1ac3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.313695347/     0x12ec82f477e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.313741909/     0x12ec82f4afb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.313752847/     0x12ec82f4bcd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.314150503/     0x12ec82f69a0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.314184201/     0x12ec82f6c27] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.314193472/     0x12ec82f6cd8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.314585399/     0x12ec82f8a3e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.314618836/     0x12ec82f8cbf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.314627586/     0x12ec82f8d68] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.314985451/     0x12ec82fa83f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.315019618/     0x12ec82faacf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.315028472/     0x12ec82fab79] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.315386180/     0x12ec82fc64d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.315419305/     0x12ec82fc8c8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.315428107/     0x12ec82fc972] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.315846232/     0x12ec82fe8ce] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.315880451/     0x12ec82feb5f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.315889826/     0x12ec82fec12] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.316280451/     0x12ec830095f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.316313940/     0x12ec8300be1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.316322743/     0x12ec8300c8b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.316680347/     0x12ec830275d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.316713732/     0x12ec83029de] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.316876805/     0x12ec830361a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.317292170/     0x12ec8305540] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.317338993/     0x12ec83058c3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.317348003/     0x12ec830596f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.317836961/     0x12ec8307e1c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.317883576/     0x12ec830819a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.317893940/     0x12ec8308262] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.318370190/     0x12ec830a61a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.318416805/     0x12ec830a999] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.318427065/     0x12ec830aa5d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.318944878/     0x12ec830d134] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.318978888/     0x12ec830d3c1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.318988784/     0x12ec830d47e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.319377899/     0x12ec830f1ae] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.319411284/     0x12ec830f42e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.319420086/     0x12ec830f4d8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.319898836/     0x12ec83118c0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.319908524/     0x12ec831197a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.319918784/     0x12ec8311a3f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.320704930/     0x12ec8315535] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.320751388/     0x12ec83158b0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.320763472/     0x12ec8315998] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.321314826/     0x12ec83182f3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.321361336/     0x12ec8318670] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.321371597/     0x12ec8318735] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.321845347/     0x12ec831aabd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.321892326/     0x12ec831ae43] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.321902690/     0x12ec831af09] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.322440711/     0x12ec831d764] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.322473107/     0x12ec831d9d1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.322482586/     0x12ec831da87] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.322937274/     0x12ec831fca2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.323090659/     0x12ec8320823] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.323102013/     0x12ec83208fd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.323760399/     0x12ec8323a5f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.323805086/     0x12ec8323db7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.323820138/     0x12ec8323ed9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.324571180/     0x12ec832772d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.324617951/     0x12ec8327aaf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.324627378/     0x12ec8327b64] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.325153628/     0x12ec832a2dc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.325189461/     0x12ec832a58b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.325198732/     0x12ec832a63d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.325633888/     0x12ec832c6e1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.325667743/     0x12ec832c96b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.325677222/     0x12ec832ca21] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.326139982/     0x12ec832ecd6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.326188472/     0x12ec832f079] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.326204930/     0x12ec832f1b4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.326855920/     0x12ec8332289] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.326900555/     0x12ec83325e0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.326937378/     0x12ec83328a3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.327474618/     0x12ec83350ef] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.327522170/     0x12ec8335480] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.327532326/     0x12ec8335543] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.328190086/     0x12ec8338698] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.328241493/     0x12ec8338a73] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.328251232/     0x12ec8338b2e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.328712430/     0x12ec833adc5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.328759045/     0x12ec833b144] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.328769670/     0x12ec833b20f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.329239097/     0x12ec833d545] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.329285347/     0x12ec833d8bd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.329295191/     0x12ec833d979] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.329758888/     0x12ec833fc41] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.329802795/     0x12ec833ff8c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.329821388/     0x12ec83400f1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.330556857/     0x12ec834381c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.330602534/     0x12ec8343b86] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.330613941/     0x12ec8343c62] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.331080243/     0x12ec8345f5b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.331228263/     0x12ec8346a75] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.331336909/     0x12ec834729b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.331939670/     0x12ec8349fcf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.331986076/     0x12ec834a34b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.331996076/     0x12ec834a40b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.332403472/     0x12ec834c298] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.332437170/     0x12ec834c520] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.332446232/     0x12ec834c5ce] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.332833055/     0x12ec834e2d1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.332866649/     0x12ec834e556] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.332875607/     0x12ec834e601] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.333274305/     0x12ec83503e9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.333308211/     0x12ec8350674] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.333317066/     0x12ec835071d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.333865138/     0x12ec8353039] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.333911701/     0x12ec83533b7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.333920763/     0x12ec8353465] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.334321180/     0x12ec835526d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.334355034/     0x12ec83554f7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.334364201/     0x12ec83555a6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.334807118/     0x12ec83576df] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.334841180/     0x12ec835796c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.334850503/     0x12ec8357a1f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.335304305/     0x12ec8359c29] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.335350972/     0x12ec8359fa9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.335364826/     0x12ec835a0b2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.335846076/     0x12ec835c4cb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.335899201/     0x12ec835c8c7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.335910243/     0x12ec835c99b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.336384826/     0x12ec835ed33] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.336418420/     0x12ec835efb8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.336430034/     0x12ec835f096] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.337008055/     0x12ec8361bf1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.337054566/     0x12ec8361f6e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.337065920/     0x12ec8362048] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.337478055/     0x12ec8363f31] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.337511805/     0x12ec83641b9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.337520711/     0x12ec8364264] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.337999982/     0x12ec8366656] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.338050711/     0x12ec8366a24] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.338103055/     0x12ec8366e10] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.338586805/     0x12ec8369259] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.338633055/     0x12ec83695d1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.338642951/     0x12ec836968f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.339073420/     0x12ec836b6d8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.339107118/     0x12ec836b95e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.339119045/     0x12ec836ba43] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.339538107/     0x12ec836d9b2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.339586024/     0x12ec836dd4a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.339595816/     0x12ec836de06] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.340265138/     0x12ec837103a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.340313316/     0x12ec83713d5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.340323107/     0x12ec8371492] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.341073107/     0x12ec8374cd2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.341259670/     0x12ec8375ad0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.341275243/     0x12ec8375bfb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.341818316/     0x12ec83784b6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.341865138/     0x12ec8378838] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.341874774/     0x12ec83788f2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.342320295/     0x12ec837aa5c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.342366649/     0x12ec837add6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.342376128/     0x12ec837ae8b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.342813836/     0x12ec837cf60] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.342860451/     0x12ec837d2df] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.342869930/     0x12ec837d394] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.343293003/     0x12ec837f350] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.343339618/     0x12ec837f6cf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.343349670/     0x12ec837f78f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.344176909/     0x12ec838359d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.344225191/     0x12ec838393a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.344234774/     0x12ec83839f2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.344940920/     0x12ec8386eec] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.344987378/     0x12ec8387263] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.344996545/     0x12ec8387314] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.345477013/     0x12ec838971d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.345523524/     0x12ec8389a9a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.345559722/     0x12ec8389d51] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.346053888/     0x12ec838c261] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.346100555/     0x12ec838c5e1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.346111024/     0x12ec838c6aa] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.346585972/     0x12ec838ea49] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.346619930/     0x12ec838ecd5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.346631180/     0x12ec838edad] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.347410243/     0x12ec839281c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.347521701/     0x12ec8393078] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.347559722/     0x12ec8393350] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.348100868/     0x12ec8395be6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.348133941/     0x12ec8395e62] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.348144566/     0x12ec8395f2e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.348633420/     0x12ec83983d8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.348668472/     0x12ec8398679] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.348677795/     0x12ec839872b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.349131128/     0x12ec839a92c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.349161076/     0x12ec839ab6b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.349170451/     0x12ec839ac1f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.349583159/     0x12ec839cb13] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.349614461/     0x12ec839cd6c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.349623472/     0x12ec839ce19] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.350029566/     0x12ec839ec8e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.350063941/     0x12ec839ef22] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.350184097/     0x12ec839f825] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.350849982/     0x12ec83a2a16] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.350965451/     0x12ec83a32bf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.350974461/     0x12ec83a336c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.351389618/     0x12ec83a528f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.351425295/     0x12ec83a553c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.351434409/     0x12ec83a55ea] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.351854618/     0x12ec83a756f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.351888784/     0x12ec83a77fe] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.351897482/     0x12ec83a78a6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.352433628/     0x12ec83aa0db] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.352463836/     0x12ec83aa31f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.352474201/     0x12ec83aa3e7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.352873003/     0x12ec83ac1d0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.352903107/     0x12ec83ac411] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.352911909/     0x12ec83ac4ba] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.353274670/     0x12ec83adfef] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.353304618/     0x12ec83ae22f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.353313159/     0x12ec83ae2d2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.353838680/     0x12ec83b0a3e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.353885972/     0x12ec83b0dc9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.353897691/     0x12ec83b0eaa] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.354298055/     0x12ec83b2cb1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.354308889/     0x12ec83b2d80] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.354319618/     0x12ec83b2e4f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.354767639/     0x12ec83b4fe9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.354801753/     0x12ec83b5278] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.354840764/     0x12ec83b5565] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.355311649/     0x12ec83b78b6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.355346232/     0x12ec83b7b4e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.355355086/     0x12ec83b7bf7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.355774566/     0x12ec83b9b6e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.355783576/     0x12ec83b9c1a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.355793159/     0x12ec83b9cd2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.356280503/     0x12ec83bc160] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.356287795/     0x12ec83bc1ec] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.356297899/     0x12ec83bc2ad] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.356930659/     0x12ec83bf224] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.356977066/     0x12ec83bf59d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.357010920/     0x12ec83bf827] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.357616441/     0x12ec83c2592] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.357649826/     0x12ec83c2812] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.357661909/     0x12ec83c28fb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.358250764/     0x12ec83c5525] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.358294409/     0x12ec83c586a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.358305555/     0x12ec83c5941] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.358981909/     0x12ec83c8bfb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.359015711/     0x12ec83c8e83] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.359025451/     0x12ec83c8f3e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.359526180/     0x12ec83cb4cd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.359559826/     0x12ec83cb752] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.359569149/     0x12ec83cb806] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.360079774/     0x12ec83cde52] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.360191180/     0x12ec83ce6ad] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.360241857/     0x12ec83cea7a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.360801857/     0x12ec83d147a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.360812639/     0x12ec83d1549] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.360823784/     0x12ec83d161e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.361222014/     0x12ec83d33fd] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.361258264/     0x12ec83d36b5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.361267795/     0x12ec83d376c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.361713003/     0x12ec83d58cf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.361743003/     0x12ec83d5b0f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.361753003/     0x12ec83d5bd0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.362184045/     0x12ec83d7c24] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.362214045/     0x12ec83d7e63] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.362223003/     0x12ec83d7f10] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.362608941/     0x12ec83d9c02] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.362619566/     0x12ec83d9cce] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.362630555/     0x12ec83d9da1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.363007118/     0x12ec83db9df] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.363037014/     0x12ec83dbc1d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.363046493/     0x12ec83dbcd3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.363472639/     0x12ec83ddcca] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.363519045/     0x12ec83de044] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.363528472/     0x12ec83de0f9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.364062222/     0x12ec83e0901] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.364095920/     0x12ec83e0b88] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.364106649/     0x12ec83e0c55] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.364648368/     0x12ec83e34f7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.364659149/     0x12ec83e35c5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.364669982/     0x12ec83e3696] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.365147847/     0x12ec83e5a6d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.365181701/     0x12ec83e5cf7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.365191493/     0x12ec83e5db3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.365627274/     0x12ec83e7e62] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.365657274/     0x12ec83e80a1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.365665868/     0x12ec83e8146] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.366089409/     0x12ec83ea10b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.366135399/     0x12ec83ea47e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.366147274/     0x12ec83ea562] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.366550139/     0x12ec83ec398] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.366583784/     0x12ec83ec61e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.366593576/     0x12ec83ec6db] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.367206493/     0x12ec83ef4d4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.367252170/     0x12ec83ef83f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.367263993/     0x12ec83ef923] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.367648472/     0x12ec83f15f9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.367657274/     0x12ec83f16a2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.367666597/     0x12ec83f1755] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.368099878/     0x12ec83f37d3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.368130139/     0x12ec83f3a19] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.368139930/     0x12ec83f3ad5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.368544930/     0x12ec83f5935] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.368575034/     0x12ec83f5b77] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.368584514/     0x12ec83f5c2c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.368973576/     0x12ec83f795a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.369005034/     0x12ec83f7bb6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.369013889/     0x12ec83f7c61] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.369416441/     0x12ec83f9a92] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.369450555/     0x12ec83f9d20] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.369459878/     0x12ec83f9dd3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.369915816/     0x12ec83fc006] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.369949514/     0x12ec83fc28c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.369958784/     0x12ec83fc33e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.370423211/     0x12ec83fe615] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.370457586/     0x12ec83fe8a7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.370469357/     0x12ec83fe989] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.370869514/     0x12ec840078d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.370899722/     0x12ec84009d1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.370908836/     0x12ec8400a80] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.371309982/     0x12ec8402896] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.371341493/     0x12ec8402af2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.371350451/     0x12ec8402b9f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.371824045/     0x12ec8404f23] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.371832274/     0x12ec8404fc2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.371841232/     0x12ec840506e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.372449930/     0x12ec8407e15] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.372479774/     0x12ec8408051] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.372490399/     0x12ec840811d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.372906128/     0x12ec840a04c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.372937534/     0x12ec840a2a6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.372947378/     0x12ec840a364] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.373378003/     0x12ec840c3b0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.373516909/     0x12ec840ce1c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.373528941/     0x12ec840cf02] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.373970607/     0x12ec840f022] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.374002795/     0x12ec840f28c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.374015086/     0x12ec840f378] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.374588420/     0x12ec8411e77] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.374599045/     0x12ec8411f44] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.374613003/     0x12ec841204f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.375137482/     0x12ec84147a6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.375146493/     0x12ec8414852] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.375156128/     0x12ec841490c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.375660764/     0x12ec8416ee5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.375707482/     0x12ec8417266] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.375749618/     0x12ec841758e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.376482899/     0x12ec841ac8e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.376493420/     0x12ec841ad58] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.376504357/     0x12ec841ae2a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.377112222/     0x12ec841dbc2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.377158524/     0x12ec841df39] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.377167691/     0x12ec841dfea] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.377628628/     0x12ec842027c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.377658889/     0x12ec84204c1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.377668159/     0x12ec8420573] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.378084774/     0x12ec84224b2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.378118420/     0x12ec8422738] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.378127743/     0x12ec84227eb] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.378557639/     0x12ec8424829] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.378588576/     0x12ec8424a7b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.378597118/     0x12ec8424b1e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.378982743/     0x12ec842680b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.379012691/     0x12ec8426a4a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.379021805/     0x12ec8426af8] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.379427743/     0x12ec842896a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.379461232/     0x12ec8428bee] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.379470659/     0x12ec8428ca2] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.380002274/     0x12ec842b482] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.380049253/     0x12ec842b808] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.380102847/     0x12ec842bc0d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.380554722/     0x12ec842ddf1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.380588628/     0x12ec842e07b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.380599045/     0x12ec842e144] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.380984722/     0x12ec842fe31] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.381014618/     0x12ec843006e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.381023107/     0x12ec8430112] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.381690972/     0x12ec8433329] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.381737326/     0x12ec84336a3] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.381746962/     0x12ec843375b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.382167847/     0x12ec84356ed] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.382201441/     0x12ec8435972] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.382210868/     0x12ec8435a27] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.382675295/     0x12ec8437cfc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.382705243/     0x12ec8437f3b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.382714670/     0x12ec8437ff0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.383210712/     0x12ec843a524] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.383244566/     0x12ec843a7ad] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.383254566/     0x12ec843a86e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.383932014/     0x12ec843db3e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.383979097/     0x12ec843dec5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.383991649/     0x12ec843dfb5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.384496284/     0x12ec844058f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.384543368/     0x12ec8440916] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.384554930/     0x12ec84409f5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.384979097/     0x12ec84429c5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.385009878/     0x12ec8442c13] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.385020868/     0x12ec8442ce7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.385433264/     0x12ec8444bd5] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.385465399/     0x12ec8444e3e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.385475191/     0x12ec8444ef9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.385876649/     0x12ec8446d16] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.385908576/     0x12ec8446f7a] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.385918784/     0x12ec844703e] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.386330764/     0x12ec8448f25] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.386361701/     0x12ec8449176] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.386371493/     0x12ec8449233] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.386944357/     0x12ec844bd2b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.386978680/     0x12ec844bfbc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.386990191/     0x12ec844c099] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.387465243/     0x12ec844e43b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.387499201/     0x12ec844e6c6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.387510399/     0x12ec844e79d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.388107222/     0x12ec8451461] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.388116545/     0x12ec8451514] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.388132743/     0x12ec845164b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.388581701/     0x12ec84537f7] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.388615399/     0x12ec8453a7d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.388625347/     0x12ec8453b3c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.389070868/     0x12ec8455ca6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.389101649/     0x12ec8455ef6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.389111389/     0x12ec8455fb0] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.389401493/     0x12ec8457573] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.389448680/     0x12ec84578fc] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.389458368/     0x12ec84579b6] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.392816962/     0x12ec846759d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18002000; rd 0x18002000 val 0x18002000
+[ 67719.392919409/     0x12ec8467d4b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18002000; rd 0x18002000
+[ 67719.392930503/     0x12ec8467e1f] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18102000; rd 0x18102000 val 0x18102000
+[ 67719.393058212/     0x12ec84687b4] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18003000; rd 0x18002000 val 0x18003000
+[ 67719.393102691/     0x12ec8468b09] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18003000; rd 0x18003000
+[ 67719.393146337/     0x12ec8468e50] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18103000; rd 0x18102000 val 0x18103000
+[ 67719.393199774/     0x12ec8469252] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18003000; rd 0x18003000 val 0x18003000
+[ 67719.393207899/     0x12ec84692ed] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18003000; rd 0x18003000
+[ 67719.393220191/     0x12ec84693d9] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18103000; rd 0x18103000 val 0x18103000
+[ 67719.632023473/     0x12ec88c8a1b] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] <- 0x18003000; rd 0x18003000 val 0x18003000
+[ 67719.632041181/     0x12ec88c8b6d] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0080[4] -> 0x18003000; rd 0x18003000
+[ 67719.632052379/     0x12ec88c8c43] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0070[4] <- 0x18103000; rd 0x18103000 val 0x18103000
+[ 67730.482192725/     0x12ed4f74ccf] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0090[4] -> 0x00000000; rd 0x00000000
+[ 67730.482268089/     0x12ed4f75271] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0090[4] <- 0x00000000; rd 0x00000000 val 0x00000000
+[ 67730.487889287/     0x12ed4f8f80c] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0004[2] -> 0x00000006; rd 0x00100006
+[ 67730.488181370/     0x12ed4f90df1] DBG3:msm_pcie_oper_conf: RC0 1:0x00 + 0x0004[2] <- 0x00100002; rd 0x00100006 val 0x00000002
+[ 67730.488188089/     0x12ed4f90e71] msm_pcie_pm_control: PCIe: RC0: pm_opt:0;busnr:1;options:0
+[ 67730.488192620/     0x12ed4f90ec8] msm_pcie_pm_control: User of RC0 requests to suspend the link
+[ 67730.488197568/     0x12ed4f90f27] msm_pcie_pm_suspend: RC0: entry
+[ 67730.488205225/     0x12ed4f90fba] msm_pcie_confirm_linkup: PCIe: device ID and vender ID of RC 0 are 0x10417cb.
+[ 67730.488241579/     0x12ed4f91274] msm_pcie_confirm_linkup: PCIe: device ID and vender ID of EP of RC 0 are 0x441514e4.
+[ 67730.488414131/     0x12ed4f91f65] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0000[4] -> 0x010417cb; rd 0x010417cb
+[ 67730.488418662/     0x12ed4f91fbb] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0004[4] -> 0x00100006; rd 0x00100006
+[ 67730.488422620/     0x12ed4f92007] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0008[4] -> 0xff000000; rd 0xff000000
+[ 67730.488426006/     0x12ed4f92048] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x000c[4] -> 0x00010000; rd 0x00010000
+[ 67730.488429964/     0x12ed4f92095] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0010[4] -> 0x0c300004; rd 0x0c300004
+[ 67730.488433714/     0x12ed4f920dd] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0014[4] -> 0x00000000; rd 0x00000000
+[ 67730.488437829/     0x12ed4f9212c] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0018[4] -> 0x00010100; rd 0x00010100
+[ 67730.488441475/     0x12ed4f92171] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x001c[4] -> 0x000000f0; rd 0x000000f0
+[ 67730.488445745/     0x12ed4f921c3] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0020[4] -> 0x0c900c40; rd 0x0c900c40
+[ 67730.488449547/     0x12ed4f9220d] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0024[4] -> 0x0001fff1; rd 0x0001fff1
+[ 67730.488453141/     0x12ed4f92252] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0028[4] -> 0x00000000; rd 0x00000000
+[ 67730.488457256/     0x12ed4f922a1] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x002c[4] -> 0x00000000; rd 0x00000000
+[ 67730.488461058/     0x12ed4f922e9] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0030[4] -> 0x00000000; rd 0x00000000
+[ 67730.488464391/     0x12ed4f9232a] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0034[4] -> 0x00000040; rd 0x00000040
+[ 67730.488467725/     0x12ed4f92369] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0038[4] -> 0x00000000; rd 0x00000000
+[ 67730.488470745/     0x12ed4f923a4] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x003c[4] -> 0x00030000; rd 0x00030000
+[ 67730.488475068/     0x12ed4f923f6] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0078[2] -> 0x0000581f; rd 0x0010581f
+[ 67730.488478662/     0x12ed4f9243c] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0080[2] -> 0x0000004a; rd 0x3811004a
+[ 67730.488481839/     0x12ed4f92479] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x008c[2] -> 0x00000000; rd 0x00000000
+[ 67730.488484860/     0x12ed4f924b3] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0098[2] -> 0x00000400; rd 0x00000400
+[ 67730.488488297/     0x12ed4f924f5] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x00a0[2] -> 0x00000002; rd 0x00010002
+[ 67730.488491839/     0x12ed4f92539] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0006[2] -> 0x00000010; rd 0x00100006
+[ 67730.488496266/     0x12ed4f9258e] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0034[1] -> 0x00000040; rd 0x00000040
+[ 67730.488499443/     0x12ed4f925cb] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0040[1] -> 0x00000001; rd 0xc8035001
+[ 67730.488502620/     0x12ed4f92608] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0041[1] -> 0x00000050; rd 0xc8035001
+[ 67730.488505902/     0x12ed4f92646] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0050[1] -> 0x00000005; rd 0x018a7005
+[ 67730.488509131/     0x12ed4f92685] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0051[1] -> 0x00000070; rd 0x018a7005
+[ 67730.488512256/     0x12ed4f926c1] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0070[1] -> 0x00000010; rd 0x00420010
+[ 67730.488515172/     0x12ed4f926f9] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0071[1] -> 0x00000000; rd 0x00420010
+[ 67730.488518975/     0x12ed4f92741] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0100[4] -> 0x15020001; rd 0x15020001
+[ 67730.488522152/     0x12ed4f9277f] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0150[4] -> 0x0001001e; rd 0x0001001e
+[ 67730.488542360/     0x12ed4f92902] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0100[4] -> 0x15020001; rd 0x15020001
+[ 67730.488545693/     0x12ed4f92943] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0150[4] -> 0x0001001e; rd 0x0001001e
+[ 67730.488549339/     0x12ed4f92988] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0100[4] -> 0x15020001; rd 0x15020001
+[ 67730.488553245/     0x12ed4f929d4] DBG3:msm_pcie_oper_conf: RC0 0:0x00 + 0x0150[4] -> 0x0001001e; rd 0x0001001e
+[ 67730.488560068/     0x12ed4f92a56] msm_pcie_pm_suspend: RC0: PME_TURNOFF_MSG is sent out
+[ 67730.488573610/     0x12ed4f92b5b] msm_pcie_pm_suspend: RC0: PCIE20_PARF_PM_STTS is 0xc0000420.
+[ 67730.488576370/     0x12ed4f92b90] msm_pcie_pm_suspend: RC0: PM_Enter_L23 is received
+[ 67730.488578818/     0x12ed4f92bbf] msm_pcie_disable: RC0: entry
+[ 67730.488581631/     0x12ed4f92bf4] msm_pcie_disable: PCIe: Assert the reset of endpoint of RC0.
+[ 67730.488594287/     0x12ed4f92ce8] msm_pcie_disable: PCIe: RC0 is powering down the common phy
+[ 67730.488604339/     0x12ed4f92da9] msm_pcie_clk_deinit: RC0: entry
+[ 67730.488669964/     0x12ed4f93295] msm_pcie_clk_deinit: PCIe: removing bus vote for RC0
+[ 67730.489319183/     0x12ed4f96346] msm_pcie_clk_deinit: PCIe: relinquish bus bandwidth for RC0.
+[ 67730.489445850/     0x12ed4f96cc6] msm_pcie_clk_deinit: RC0: exit
+[ 67730.489448870/     0x12ed4f96d00] msm_pcie_vreg_deinit: RC0: entry
+[ 67730.489451370/     0x12ed4f96d2f] msm_pcie_vreg_deinit: Vreg vreg-cx is being disabled
+[ 67730.489459183/     0x12ed4f96dc5] msm_pcie_vreg_deinit: RC0: Removing vreg-cx vote.
+[ 67730.489464652/     0x12ed4f96e2f] msm_pcie_vreg_deinit: Vreg vreg-0.9 is being disabled
+[ 67730.489471006/     0x12ed4f96ea8] msm_pcie_vreg_deinit: Vreg vreg-1.8 is being disabled
+[ 67730.489475485/     0x12ed4f96eff] msm_pcie_vreg_deinit: Vreg vreg-3.3 is being disabled
+[ 67730.489478714/     0x12ed4f96f3c] msm_pcie_vreg_deinit: RC0: exit
+[ 67730.489481318/     0x12ed4f96f6f] msm_pcie_pipe_clk_deinit: RC0: entry
+[ 67730.489994183/     0x12ed4f995e6] msm_pcie_pipe_clk_deinit: RC0: exit
+[ 67730.490007360/     0x12ed4f996e2] msm_pcie_disable: RC0: exit
+[ 67730.490094860/     0x12ed4f99d72] msm_pcie_pm_suspend: RC0: exit

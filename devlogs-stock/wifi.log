@@ -1,0 +1,168 @@
+# Enabling WiFi
+[53475.141056] [WLAN] wl_android_wifi_on in
+[53475.141063] [WLAN] wifi_platform_set_power = 1
+[53475.141102] [WLAN] wlan-en-gpio gpio is now enabled, retry 0 time
+[53475.343905] [WLAN] dhd_bus_devreset: == Power ON ==
+[53475.391372] [WLAN] dhd_bus_devreset: dhdpcie_bus_clock_start OK
+[53475.392670] [WLAN] dhdpcie_alloc_resource: bar0_addr 0x0x000000000c800000 bar1_addr 0x0x000000000c400000
+[53475.396089] [WLAN] DHD: dongle ram size is set to 917504(orig 917504) at 0x160000
+[53475.396635] [WLAN] dhdpcie_chipmatch: WIFI_OTP: OTP is NOT empty
+[53475.396646] [WLAN] dhd_bus_devreset: WIFI_OTP: bus->device: 4415
+[53475.396825] [WLAN] dhd_bus_download_firmware: firmware path=/vendor/firmware/fw_bcm4359.bin, nvram path=/vendor/etc/calibration
+[53475.396838] [WLAN] _dhdpcie_download_firmware: dongle_ram_base 0x160000
+[53475.396846] [WLAN] _dhdpcie_download_firmware: fw_path /vendor/firmware/fw_bcm4359.bin
+[53475.396853] [WLAN] dhdpcie_ramsize_adj: Enter
+[53475.401661] [WLAN] dhdpcie_download_code_file: download firmware /vendor/firmware/fw_bcm4359.bin
+[53475.593779] [WLAN] dhdpcie_download_code_file: firmware crc32 = 0x8c947c49
+[53475.601424] [WLAN] dhdpcie_bus_write_vars: Download, Upload and compare of NVRAM succeeded.
+[53475.601760] [WLAN] dhdpcie_readshared: dongle_ram_base 0x160000 ramsize 0xe0000 tcm ffffff8008f80000 shaddr 0x23fffc nvram_csm 0xfb60049f
+[53475.839873] [WLAN] PCIe shared addr (0x001b0f4c) read took 224073 usec before dongle is ready
+[53475.840116] [WLAN] DMA RX offset from shared Area 0
+[53475.840121] [WLAN] dhdpcie_readshared: Dongle advertizes 4 size indices
+[53475.840166] [WLAN] ring_info_raw: 56
+[53475.840173] [WLAN] 68 25 20 00 58 28 20 00 08 29 20 00 b8 29 20 00
+[53475.840179] [WLAN] c4 29 20 00 00 00 00 00 00 00 00 00 00 00 00 00
+[53475.840184] [WLAN] 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[53475.840188] [WLAN] 00 00 00 00 2c 00 00 00
+[53475.840191] [WLAN]
+[53475.840194] [WLAN] dhdpcie_readshared: max H2D queues 44
+[53475.841104] [WLAN] dhd_bus_start: Initializing 44 h2drings
+[53475.841140] [WLAN] htc_wifi_mem_prealloc: request section 9 size 32896
+[53475.841158] [WLAN] htc_wifi_mem_prealloc: request section 13 size 159840
+[53475.841200] [WLAN] dhd_pktid_map_init:1409: pktid_audit init succeeded 3073
+[53475.841471] [WLAN] dhd_bus_cmn_writeshared:
+[53475.841476] [WLAN]   0000: 00 70 86 f6 00 00 00 00
+[53475.841515] [WLAN] dhd_bus_cmn_writeshared:
+[53475.841519] [WLAN]   0000: 00 c0 8a f6 00 00 00 00
+[53475.841767] [WLAN] dhd_bus_cmn_writeshared:
+[53475.841772] [WLAN]   0000: 00 30 87 f6 00 00 00 00
+[53475.841861] [WLAN] dhd_bus_cmn_writeshared:
+[53475.841864] [WLAN]   0000: 00 c0 8b f6 00 00 00 00
+[53475.841884] [WLAN] dhd_bus_cmn_writeshared:
+[53475.841887] [WLAN]   0000: 00 c0 8c f6 00 00 00 00
+[53475.841912] [WLAN] dhd_bus_cmn_writeshared:
+[53475.841963] [WLAN]   0000: 00 90 8b f6 00 00 00 00
+[53475.842095] [WLAN] dhd_bus_cmn_writeshared:
+[53475.842098] [WLAN]   0000: 08 00 00 00
+[53475.842101] [WLAN] Attach flowrings pool for 42 rings
+[53475.854134] [WLAN] [WIFI_SEC] dhd_get_memdump_info: File [/installmedia/.memdump.info] doesn't exist
+[53475.854970] [WLAN] dhd_sync_with_dongle: GET_REVINFO device 0x43ef, vendor 0x14e4, chipnum 0xaa4c
+[53475.854978] [WLAN] Disable tdls_auto_op failed. -1
+[53475.860709] [WLAN] dhd_preinit_ioctls: set rsdb_mode 0
+[53475.863182] [WLAN] wifi_platform_get_mac_addr
+[53475.863210] [WLAN] htc_wifi_get_mac_addr: 40:4e:36:08:XX:XX
+[53475.867972] [WLAN] Firmware up: op_mode=0x0405, Broadcom Dongle Host Driver
+[53475.884369] [WLAN] dhd_preinit_ioctls: bw_cap param ffffffc0f0373900 len 8 iov ffffffc0f0373918 size 28
+[53475.902885] [WLAN] Firmware version = wl0: Nov 30 2017 19:31:39 version 9.75.98.36 (r734068) FWID 01-130e6f85
+[53475.904572] [WLAN] dhd_prot_ioctl: status ret value is -26
+[53475.904584] [WLAN] dhd_pno_init: Support Android Location Service
+[53475.928239] [WLAN] CFG80211-LOG) wl_cfg80211_event : Event handler is not created
+[53475.930431] [WLAN] dhd_rtt_init : FTM is supported
+[53475.932350] [WLAN] dhd_prot_ioctl: status ret value is -16
+[53475.932362] [WLAN] dhd_interworking_enable: failed to set WNM info, ret=-16
+[53475.932375] [WLAN] dhd_bus_devreset: WLAN Power On Done
+[53475.932383] [WLAN] dhd_set_perf_state(): dhd perf state = 0 \x0d
+[53475.933459] [WLAN] CFG80211-LOG) wl_cfg80211_event : Event handler is not created
+[53475.976765] wl_create_event_handler(): thread:wl_event_handler:175e started
+[53476.102502] init: starting service 'wpa_supplicant'...
+[53476.106435] init: Created socket '/dev/socket/wpa_wlan0', mode 660, user 1010, group 1010
+[53476.108961] libprocessgroup: Failed to make and chown /sys/fs/cgroup/uid_0: Operation not permitted
+[53476.109045] init: createProcessGroup(0, 5986) failed for service 'wpa_supplicant': Operation not permitted
+[53476.111607] init: Control message: Processed ctl.interface_start for 'android.hardware.wifi.supplicant@1.0::ISupplicant/default' from pid: 773 (/system/bin/hwservicemanager)
+[53476.239757] capability: warning: `wpa_supplicant' uses 32-bit capabilities (legacy support in use)
+[53476.379804] [WLAN] CFGP2P-LOG) wl_cfgp2p_add_p2p_disc_if : P2P interface registered
+[53476.391852] [WLAN] WLC_E_IF: NO_IF set, event Ignored\x0d
+[53476.493408] [WLAN] get_customized_country_code op_mode = 1029
+[53476.550915] [WLAN] WLDEV-LOG) wldev_set_country : wldev_set_country: set country for FR as FR rev 8
+[53476.591438] [WLAN] wl_android_set_screen_off 1
+[53476.595948] [WLAN] dhd_set_suspend: force extra Suspend setting
+[53476.595968] [WLAN] dhd_enable_packet_filter: enter, value = 1, multicast_lock = 0, is_screen_off= 1
+[53476.600784] [WLAN] dhd_prot_ioctl: status ret value is -17
+[53476.724625] [WLAN] RXFILTER-ADD MULTICAST filter
+[53476.724644] [WLAN] dhd_enable_packet_filter: enter, value = 0, multicast_lock = 1, is_screen_off= 1
+[53476.735214] [WLAN] RXFILTER-ADD MULTICAST filter
+[53476.735234] [WLAN] dhd_enable_packet_filter: enter, value = 0, multicast_lock = 1, is_screen_off= 1
+[53476.743734] [WLAN] wl_android_set_screen_off 1
+[53476.745953] [WLAN] dhd_set_suspend: force extra Suspend setting
+[53476.745963] [WLAN] dhd_enable_packet_filter: enter, value = 0, multicast_lock = 1, is_screen_off= 1
+[53476.751301] [WLAN] dhd_prot_ioctl: status ret value is -17
+[53476.822544] [WLAN] wl_android_set_screen_off 0
+[53476.826852] [WLAN] dhd_set_suspend: Remove extra suspend setting
+[53476.826870] [WLAN] dhd_enable_packet_filter: enter, value = 0, multicast_lock = 1, is_screen_off= 0
+[53480.180005] [WLAN] CFG80211-LOG) wl_escan_handler : SCAN COMPLETED: scanned AP count=18
+[53480.182124] cfg80211: Calling CRDA to update world regulatory domain
+
+# Device going into suspend mode
+[53506.173081] [WLAN] Setting rand mac oui to FW - 00:00:00
+[53506.175858] [WLAN] dhd_prot_ioctl: status ret value is -17
+[53506.185238] [S_HUB] set_ges_mot: set param = (0x0, 0x80, 0x0, 0x0)
+[53506.195486] [S_HUB] ate_set: snr_id = 24, en = 1, en_lst = 0x1100000, v03-get_lock low cpu
+[53506.207454] [WLAN] wl_android_set_screen_off 1
+[53506.209100] [WLAN] dhd_set_suspend: force extra Suspend setting
+[53506.209112] [WLAN] dhd_enable_packet_filter: enter, value = 0, multicast_lock = 1, is_screen_off= 1
+[53506.213801] [WLAN] dhd_prot_ioctl: status ret value is -17
+
+# Disabling WiFi
+[53633.416892] [WLAN] WLC_E_IF: NO_IF set, event Ignored\x0d
+[53633.429650] [WLAN] CFGP2P-LOG) wl_cfgp2p_del_p2p_disc_if : P2P interface unregistered
+[53633.450471] [WLAN] CFG80211-LOG) wl_event_handler : was terminated
+[53633.450540] wl_destroy_event_handler(): thread:wl_event_handler:175e terminated OK
+[53633.450557] [WLAN] CFGP2P-LOG) wl_cfgp2p_deinit_priv : In
+[53633.459696] [WLAN] wl_android_wifi_off in
+[53633.566406] [WLAN] dhd_bus_devreset: == Power OFF ==
+[53633.567092] [WLAN] dhd_dpc_kill: tasklet disabled
+[53633.569190] [WLAN] dhd_clear: Delete sta list before clear
+[53633.575140] [WLAN] dhd_bus_devreset:  WLAN OFF Done
+[53633.575149] [WLAN] wifi_platform_set_power = 0
+[53633.575176] [WLAN] wlan-en-gpio gpio is now disabled, retry 0 time
+[53633.575180] [WLAN] CFG80211-LOG) wl_cfg80211_send_priv_event : "PERF_UNLOCK" 11
+[53633.575512] [WLAN] CFG80211-LOG) htc_send_hotspot_event : Send hotspot event 'PERF_UNLOCK' through netlink.
+[53633.575535] dhdpcie_interrupt_set_cpucore: set: 0, pcie->irq=35, oobirq=436
+[53633.575565] [WLAN] dhd_lb_set_default_cpus: set rx napi cpu to core0
+[53633.575569] [WLAN] dhd_set_perf_state(): dhd perf state = 0 \x0d
+[53633.999309] healthd: battery l=100 v=4352 t=31.0 h=2 st=5 c=-1373 fc=2830000 chg=a
+[53634.133072] init: Service 'wpa_supplicant' (pid 5986) exited with status 0 oneshot service took 158.024002 seconds in background
+[53634.133134] init: Sending signal 9 to service 'wpa_supplicant' (pid 5986) process group...
+[53634.133337] libprocessgroup: Successfully killed process cgroup uid 0 pid 5986 in 0ms
+
+# Connecting to AP
+55797.458440] [WLAN] dhd_prot_ioctl: status ret value is -17
+[55797.473302] [WLAN] CFG80211-LOG) wl_cfg80211_connect : Connecting with [redacted] channel (13) , SSID len (10)\x0a
+[55797.542509] [WLAN] CFG80211-LOG) wl_notify_connect_status : wl_bss_connect_done succeeded with [redacted]
+[55797.545522] [WLAN] dhd_prot_ioctl: status ret value is -25
+[55797.545537] [WLAN] CFG80211-LOG) wl_cfg80211_scan_abort : scan abort  failed
+[55797.554506] [WLAN] CFG80211-LOG) wl_bss_connect_done : Report connect result - connection succeeded
+[55797.555238] cfg80211: Calling CRDA to update world regulatory domain
+[55797.562011] [WLAN] dhd_prot_ioctl: status ret value is -16
+[55797.562021] [WLAN] CFG80211-LOG) wl_run_escan :  Escan set error (-16)
+[55797.562027] [WLAN] CFG80211-LOG) wl_run_escan : error (-16)
+[55797.562032] [WLAN] CFG80211-LOG) __wl_cfg80211_scan : Scan err = (-16), busy?-16
+[55797.562038] [WLAN] CFG80211-LOG) wl_cfg80211_scan :
+[55797.562041] scan error (-16)
+[55797.578206] [WLAN] CFG80211-LOG) wl_notify_connect_status : wl_bss_connect_done succeeded with [redacted]
+[55797.578219] [WLAN] CFG80211-LOG) wl_bss_connect_done :  Connected event of connected device e=0 s=0, ignore it
+[55798.607226] [WLAN] dhd_prot_flow_ring_create: Send Flow Create Req flow ID 43 for peer [redacted] prio 0 ifindex 0
+[55798.607655] [WLAN] dhd_prot_flow_ring_create_response_process: Flow Create Response status = 0 Flow 43
+[55798.732537] [WLAN] dhd_prot_flow_ring_create: Send Flow Create Req flow ID 42 for peer 33:33:00:00:00:16 prio 3 ifindex 0
+[55798.732921] [WLAN] dhd_prot_flow_ring_create_response_process: Flow Create Response status = 0 Flow 42
+[55798.741167] [WLAN] RXFILTER-REMOVE MULTICAST filter
+[55798.741181] [WLAN] dhd_enable_packet_filter: enter, value = 0, multicast_lock = 0, is_screen_off= 0
+[55798.924671] [WLAN] wl_android_set_screen_off 0
+[55798.927516] [WLAN] dhd_set_suspend: Remove extra suspend setting
+[55798.927532] [WLAN] dhd_enable_packet_filter: enter, value = 0, multicast_lock = 0, is_screen_off= 0
+[55799.192440] [WLAN] CFG80211-LOG) wl_escan_handler : SCAN COMPLETED: scanned AP count=2
+
+# Disconnecting from AP
+[55940.420851] [WLAN] CFG80211-LOG) wl_cfg80211_disconnect : Reason 3
+[55940.427190] [WLAN] CFG80211-LOG) wl_escan_handler : ESCAN ABORTED
+[55940.427210] [WLAN] CFG80211-LOG) wl_escan_handler : SCAN ABORTED: scanned AP count=15
+[55940.427437] cfg80211: Calling CRDA to update world regulatory domain
+[55940.447416] [WLAN] dhd_prot_flow_ring_delete: Send Flow Delete Req RING ID 42 for peer 33:33:00:00:00:16 prio 3 ifindex 0
+[55940.447446] [WLAN] dhd_prot_flow_ring_delete: Send Flow Delete Req RING ID 43 for peer [redacted] prio 0 ifindex 0
+[55940.447532] [WLAN] dhd_bus_flow_ring_delete_request :Delete Pending
+[55940.447538] [WLAN] dhd_bus_flow_ring_delete_request :Delete Pending
+[55940.447621] [WLAN] CFG80211-LOG) wl_is_linkdown : Link down Reason : WLC_E_LINK
+[55940.447688] [WLAN] CFG80211-LOG) wl_notify_connect_status : link down if wlan0 may call cfg80211_disconnected. event : 16, reason=2 from [redacted]
+[55940.463245] cfg80211: Calling CRDA for country: FR
+[55940.488697] [WLAN] CFG80211-LOG) wl_cfg80211_get_station : NOT assoc
+[55940.495106] [WLAN] get_customized_country_code op_mode = 1029

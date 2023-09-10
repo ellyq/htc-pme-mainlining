@@ -1,0 +1,117 @@
+[55021.353533] [S_HUB] fl_set: handle = 0
+[55021.357716] [S_HUB] snd_fl: flush snr: 0!!
+[55021.361688] [S_HUB] fl_set: handle = 0
+[55021.364923] [S_HUB] snd_fl: flush snr: 0!!
+[55021.367074] [S_HUB] bch_set: snr_id = 1, tot = 0, bch_lst = 0x1, delay_ms = 200
+[55021.372161] compass_notifier_fn: action=1
+[55021.372177] mdss_dsi_vddio_gpio_enable: ctrl_0, en=1
+[55021.420354] msm_pm_qos_update_request: update request 100
+[55021.420379] [CAM]camera_v4l2_open: + MSM_CAMERA_NEW_SESSION
+[55021.434998] msm_csid_init: CSID_VERSION = 0x30050000
+[55021.436151] msm_csid_irq CSID0_IRQ_STATUS_ADDR = 0x800
+[55021.457392] [CAM]Sensor 0 tagged as NON-SECURE
+[55021.457403] [CAM]msm_camera_power_up: +
+[55021.473155] [S_HUB] ate_set: snr_id = 1, en = 1, en_lst = 0x100003, v03-get_lock low cpu
+[55021.475346] [CAM]camera_v4l2_open: -
+[55021.475356] msm_pm_qos_update_request: update request -1
+[55021.483330] [CAM]msm_camera_power_up: -
+[55021.483673] [CAM]msm_sensor_match_id: read id: 0xb000 expected id 0xb000, name:ov12890_htc
+[55021.483686] [CAM]msm_sensor_match_id eng_id = 0x1  bit 0 = 0x1
+[55021.483692] [CAM]htc_ois_FWupdate:E s_ctrl->id = 0.
+[55021.483697] [CAM]msm_sensor_config32:2401 sensor state 1
+[55021.508028] [CAM]msm_sensor_read_fuseid32: +
+[55021.508038] [CAM]msm_sensor_read_fuseid32: OTP Module vendor = 0x2
+[55021.508045] [CAM]msm_sensor_read_fuseid32: OTP LENS = 0x84
+[55021.508049] [CAM]msm_sensor_read_fuseid32: OTP Sensor Version = 0x89
+[55021.508053] [CAM]msm_sensor_read_fuseid32: OTP Driver IC Vendor & Version = 0x52
+[55021.508057] [CAM]msm_sensor_read_fuseid32: OTP Actuator vender ID & Version = 0x8b
+[55021.508061] [CAM]PMEos: fuse->fuse_id : 0x0 0xc4 0xb0 0x4e
+[55021.508065] [CAM]msm_sensor_read_fuseid32: OTP Infinity position code (MSByte) = 0xd9
+[55021.508068] [CAM]msm_sensor_read_fuseid32: OTP Infinity position code (LSByte) = 0xb3
+[55021.508072] [CAM]msm_sensor_read_fuseid32: OTP Macro position code (MSByte) = 0x27
+[55021.508076] [CAM]msm_sensor_read_fuseid32: OTP Macro position code (LSByte) = 0xe9
+[55021.508080] [CAM]msm_sensor_read_fuseid32: OTP Actuator Name = lc898214_act
+[55021.508084] [CAM]msm_sensor_read_fuseid32: -
+[55021.530784] msm_flash_init:492 [CAM][FL]Enter
+[55021.530794] msm_flash_init:550 [CAM][FL]Exit
+[55021.552503] msm_actuator_set_param:1625 ACT_NAME = lc898214
+[55021.552516] msm_actuator_set_param:1635 closeloop = 1 FSTmode=0
+[55021.655679] [CAM]camera_v4l2_streamon: +
+[55021.661610] [CAM]camera_v4l2_streamon: -
+[55021.661842] [CAM]camera_v4l2_streamon: +
+[55021.663819] msm_csid_irq CSID0_IRQ_STATUS_ADDR = 0x800
+[55021.671578] [LSR] iio_en
+[55021.671729] [LSR] bch_set: lsr->delay = delay_ms = 200
+[55021.748128] [LSR] lsr_on: v13
+[55021.748138] [LSR] lsr_on: Spd = 3, Apt = 0
+[55021.752162] [LSR] lsr_on: Vhv = 28, Phs = 1
+[55021.754900] [LSR] ate_set: en = 1
+[55021.756002] [LSR] bch_set: lsr->delay = delay_ms = 25
+[55021.770385] [S_HUB] bch_set: snr_id = 2, tot = 0, bch_lst = 0x3, delay_ms = 200
+[55021.774179] [S_HUB] ate_set: snr_id = 2, en = 1, en_lst = 0x100007, v03-get_lock low cpu
+[55021.776332] [S_HUB] bch_set: snr_id = 2, tot = 0, bch_lst = 0x7, delay_ms = 100
+[55021.778547] [S_HUB] ate_set: snr_id = 3, en = 1, en_lst = 0x10000f, v03-get_lock low cpu
+[55021.785960] [S_HUB] bch_set: snr_id = 9, tot = 0, bch_lst = 0x7, delay_ms = 200
+[55021.788528] [S_HUB] ate_set: snr_id = 9, en = 1, en_lst = 0x10020f, v03-get_lock low cpu
+[55021.791497] [S_HUB] bch_set: snr_id = 9, tot = 0, bch_lst = 0x207, delay_ms = 100
+[55021.804245] [CAM]camera_v4l2_streamon: -
+[55021.804902] [CAM]camera_v4l2_streamon: +
+[55021.807620] [CAM]camera_v4l2_streamon: -
+[55021.807867] [CAM]camera_v4l2_streamon: +
+[55021.828070] [CAM]camera_v4l2_streamon: -
+[55021.829622] [CAM]msm_isp_notify:(0)PIX0 frame id: 1
+[55021.831962] msm_ois_power_up:648 [CAM][OIS]msm_ois_power_up called
+[55021.831973] msm_ois_power_up:684 [CAM][OIS]Exit
+[55021.831984] msm_ois_init:335 [CAM][OIS]Enter
+[55021.834387] msm_ois_init:349 [CAM][OIS]Exit
+[55021.862952] [CAM]msm_isp_notify:(0)PIX0 frame id: 2
+[55021.886847] msm_ois_control:359 [CAM][OIS]Enter
+[55021.886870] msm_ois_write_settings:166 [CAM][OIS]Enter
+[55021.896054] [LSR] rpt_lsr++
+[55021.898844] [LSR] rpt_lsr--
+[55021.908650] msm_ois_write_settings:249 [CAM][OIS]Exit
+[55021.908672] msm_ois_control:412 [CAM][OIS]Exit
+[55021.909084] msm_ois_control:359 [CAM][OIS]Enter
+[55021.909102] msm_ois_write_settings:166 [CAM][OIS]Enter
+[55021.910015] msm_ois_write_settings:249 [CAM][OIS]Exit
+[55021.910033] msm_ois_control:412 [CAM][OIS]Exit
+[55021.951064] [S_HUB] irq_hndl: INT_st(1, 2, 3, 4) = (0x8, 0x0, 0x0, 0x0), err_st = 0x0, bch_st = 0x0
+[55021.951736] [S_HUB] irq_hndl: ls int val: is 255, adc: 6 ls_k: 1
+[55022.067280] msm_fd_hw_set_dt_parms_by_name: Error property does not exist
+[55022.163622] [CAM]msm_isp_notify:(0)PIX0 frame id: 10
+[55022.604815] [LSR] db_cnt 20
+[55022.691326] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3dc28f40
+[55022.763470] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3dc28f40
+[55022.831242] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3dc28f40
+[55022.902710] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3dc28f40
+[55022.973274] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3dcc5cc0
+[55023.041554] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3df39280
+[55023.113246] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3e1faec0
+[55023.182813] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3e559880
+[55023.253851] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3e46e480
+[55023.325882] hw_vsync_handler: count=0
+[55023.326963] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3e2e6300
+[55023.395874] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3e15e140
+[55023.464520] msm_actuator_subdev_do_ioctl:1995 [VCM][OIS] msm_actuator_subdev_do_ioctl : E CFG_OIS_GAIN_WRITE =  ois_gain 3e2e6300
+[55023.558365] [LSR] db_cnt 21
+[55024.514049] [LSR] db_cnt 22
+[55024.978055] [CAM]msm_isp_notify:(0)PIX0 frame id: 50
+[55025.467100] [LSR] db_cnt 23
+[55026.421366] [LSR] db_cnt 24
+[55026.736220] charger_exist_lock Unlock
+[55027.379048] [LSR] db_cnt 25
+[55027.821160] [LED]qpnp_mpp_set, name:button-backlight, brightness = 0 status: 0
+[55027.821206] [LED]color_table[0] = 0, current_table[0] = 20
+[55028.330119] [LSR] db_cnt 26
+[55028.496087] [CAM]msm_isp_notify:(0)PIX0 frame id: 100
+[55029.284269] [LSR] db_cnt 27
+[55030.238110] [LSR] db_cnt 28
+[55031.191655] [LSR] db_cnt 29
+[55032.014111] [CAM]msm_isp_notify:(0)PIX0 frame id: 150
+[55032.150266] [LSR] db_cnt 30
+[55033.101415] [LSR] db_cnt 31
+[55034.055711] [LSR] db_cnt 32
+[55035.010863] [LSR] db_cnt 33
+[55035.532052] [CAM]msm_isp_notify:(0)PIX0 frame id: 200
+[55035.963671] [LSR] db_cnt 34
+[55036.766934] charger_exist_lock Unlock

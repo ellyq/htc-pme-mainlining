@@ -1,0 +1,206 @@
+GPIOs 0-149, platform/1010000.pinctrl, 1010000.pinctrl:
+ gpio0   : in  0 2mA pull down
+ gpio1   : in  0 2mA pull down
+ gpio2   : in  0 2mA pull down
+ gpio3   : in  0 2mA pull down
+ gpio4   : out 2 2mA no pull
+ gpio5   : out 2 2mA no pull
+ gpio6   : in  3 8mA no pull
+ gpio7   : in  3 8mA no pull
+ gpio8   : in  0 2mA pull down
+ gpio9   : in  0 2mA pull down
+ gpio10  : in  1 2mA pull down
+ gpio11  : out 0 2mA pull down
+ gpio12  : out 0 2mA pull down
+ gpio13  : out 1 2mA no pull
+ gpio14  : out 1 2mA no pull
+ gpio15  : in  0 2mA pull down
+ gpio16  : in  0 2mA pull down
+ gpio17  : out 1 2mA pull down
+ gpio18  : out 1 2mA pull down
+ gpio19  : out 1 2mA pull down
+ gpio20  : out 1 2mA pull down
+ gpio21  : in  0 2mA pull down
+ gpio22  : out 0 2mA pull down
+ gpio23  : out 0 2mA no pull
+ gpio24  : out 0 2mA no pull
+ gpio25  : out 0 2mA pull down
+ gpio26  : in  0 2mA pull down
+ gpio27  : in  3 8mA no pull
+ gpio28  : in  3 8mA no pull
+ gpio29  : in  0 2mA pull down
+ gpio30  : out 0 2mA pull down
+ gpio31  : in  1 2mA pull up
+ gpio32  : in  1 2mA pull up
+ gpio33  : in  1 2mA pull up
+ gpio34  : in  1 2mA pull down
+ gpio35  : out 0 2mA no pull
+ gpio36  : in  0 2mA no pull
+ gpio37  : in  0 2mA no pull
+ gpio38  : in  0 2mA no pull
+ gpio39  : out 0 2mA no pull
+ gpio40  : in  0 2mA no pull
+ gpio41  : in  0 2mA no pull
+ gpio42  : in  0 2mA no pull
+ gpio43  : in  0 2mA no pull
+ gpio44  : in  0 2mA no pull
+ gpio45  : out 1 2mA pull down
+ gpio46  : out 1 2mA pull down
+ gpio47  : in  1 2mA pull down
+ gpio48  : in  1 2mA pull down
+ gpio49  : out 0 2mA pull down
+ gpio50  : in  0 2mA pull down
+ gpio51  : in  4 8mA no pull
+ gpio52  : in  4 8mA no pull
+ gpio53  : in  0 2mA pull down
+ gpio54  : in  0 2mA pull down
+ gpio55  : in  3 8mA no pull
+ gpio56  : in  3 8mA no pull
+ gpio57  : in  0 2mA pull down
+ gpio58  : out 1 2mA pull down
+ gpio59  : out 1 2mA pull down
+ gpio60  : in  1 2mA pull down
+ gpio61  : in  1 2mA pull down
+ gpio62  : in  0 2mA pull down
+ gpio63  : in  0 2mA pull down
+ gpio64  : out 0 16mA no pull
+ gpio65  : out 1 2mA pull down
+ gpio66  : out 1 2mA pull down
+ gpio67  : in  1 2mA pull down
+ gpio68  : in  1 2mA pull down
+ gpio69  : in  0 2mA pull down
+ gpio70  : in  1 8mA keeper
+ gpio71  : in  1 8mA keeper
+ gpio72  : in  1 8mA keeper
+ gpio73  : in  0 2mA pull down
+ gpio74  : out 0 2mA pull down
+ gpio75  : in  0 2mA pull down
+ gpio76  : in  0 2mA pull down
+ gpio77  : in  0 2mA pull down
+ gpio78  : in  0 2mA no pull
+ gpio79  : in  0 2mA pull down
+ gpio80  : in  0 2mA pull down
+ gpio81  : in  0 2mA pull down
+ gpio82  : in  0 2mA pull down
+ gpio83  : out 0 2mA no pull
+ gpio84  : out 0 2mA pull down
+ gpio85  : out 0 2mA no pull
+ gpio86  : in  0 12mA pull down
+ gpio87  : in  0 8mA pull down
+ gpio88  : in  0 8mA pull down
+ gpio89  : out 0 2mA no pull
+ gpio90  : in  0 2mA pull down
+ gpio91  : in  0 2mA pull down
+ gpio92  : in  0 2mA no pull
+ gpio93  : out 0 2mA no pull
+ gpio94  : out 0 2mA no pull
+ gpio95  : in  0 2mA no pull
+ gpio96  : out 0 2mA pull down
+ gpio97  : out 0 2mA no pull
+ gpio98  : out 0 2mA no pull
+ gpio99  : out 0 2mA no pull
+ gpio100 : out 0 2mA no pull
+ gpio101 : out 0 2mA no pull
+ gpio102 : out 0 2mA no pull
+ gpio103 : out 0 2mA no pull
+ gpio104 : out 0 2mA no pull
+ gpio105 : out 0 2mA pull down
+ gpio106 : in  0 2mA no pull
+ gpio107 : out 0 2mA no pull
+ gpio108 : in  0 2mA pull down
+ gpio109 : out 0 8mA no pull
+ gpio110 : out 0 8mA no pull
+ gpio111 : out 0 8mA no pull
+ gpio112 : in  1 2mA pull up
+ gpio113 : in  0 2mA pull down
+ gpio114 : out 0 2mA no pull
+ gpio115 : out 0 2mA no pull
+ gpio116 : out 0 2mA no pull
+ gpio117 : in  0 2mA pull down
+ gpio118 : out 0 2mA pull down
+ gpio119 : in  0 2mA pull down
+ gpio120 : in  0 2mA no pull
+ gpio121 : in  0 2mA no pull
+ gpio122 : in  0 2mA pull down
+ gpio123 : in  0 2mA pull down
+ gpio124 : in  0 2mA pull down
+ gpio125 : in  0 2mA pull up
+ gpio126 : in  0 2mA no pull
+ gpio127 : out 0 2mA no pull
+ gpio128 : out 0 2mA no pull
+ gpio129 : out 0 2mA no pull
+ gpio130 : out 0 2mA no pull
+ gpio131 : out 0 2mA no pull
+ gpio132 : in  0 2mA pull down
+ gpio133 : out 0 2mA no pull
+ gpio134 : out 0 2mA no pull
+ gpio135 : in  0 2mA pull down
+ gpio136 : out 0 2mA no pull
+ gpio137 : out 0 2mA no pull
+ gpio138 : out 0 2mA no pull
+ gpio139 : out 0 2mA no pull
+ gpio140 : out 0 2mA no pull
+ gpio141 : out 0 2mA no pull
+ gpio142 : out 0 2mA no pull
+ gpio143 : in  0 2mA pull down
+ gpio144 : out 1 2mA pull up
+ gpio145 : in  1 2mA pull up
+ gpio146 : out 0 2mA no pull
+ gpio147 : out 0 2mA no pull
+ gpio148 : out 0 2mA no pull
+ gpio149 : out 0 2mA no pull
+
+GPIOs 380-411, platform/soc:qcom,smp2pgpio-rdbg-1-out, rdbg:
+
+GPIOs 412-443, platform/soc:qcom,smp2pgpio-rdbg-1-in, rdbg:
+
+GPIOs 444-475, platform/soc:qcom,smp2pgpio-rdbg-2-out, rdbg:
+
+GPIOs 476-507, platform/soc:qcom,smp2pgpio-rdbg-2-in, rdbg:
+
+GPIOs 508-539, platform/soc:qcom,smp2pgpio-ssr-smp2p-3-out, master-kernel:
+
+GPIOs 540-571, platform/soc:qcom,smp2pgpio-ssr-smp2p-3-in, slave-kernel:
+
+GPIOs 572-603, platform/soc:qcom,smp2pgpio-ssr-smp2p-2-out, master-kernel:
+
+GPIOs 604-635, platform/soc:qcom,smp2pgpio-ssr-smp2p-2-in, slave-kernel:
+
+GPIOs 636-667, platform/soc:qcom,smp2pgpio-ssr-smp2p-1-out, master-kernel:
+
+GPIOs 668-699, platform/soc:qcom,smp2pgpio-ssr-smp2p-1-in, slave-kernel:
+
+GPIOs 700-731, platform/soc:qcom,smp2pgpio-sleepstate-gpio-3-out, sleepstate:
+
+GPIOs 732-763, platform/soc:qcom,smp2pgpio-smp2p-3-out, smp2p:
+
+GPIOs 764-795, platform/soc:qcom,smp2pgpio-smp2p-3-in, smp2p:
+
+GPIOs 796-827, platform/soc:qcom,smp2pgpio-smp2p-2-out, smp2p:
+
+GPIOs 828-859, platform/soc:qcom,smp2pgpio-smp2p-2-in, smp2p:
+
+GPIOs 860-891, platform/soc:qcom,smp2pgpio-smp2p-1-out, smp2p:
+
+GPIOs 892-923, platform/soc:qcom,smp2pgpio-smp2p-1-in, smp2p:
+
+GPIOs 924-955, platform/soc:qcom,smp2pgpio-smp2p-15-out, smp2p:
+
+GPIOs 956-987, platform/soc:qcom,smp2pgpio-smp2p-15-in, smp2p:
+
+GPIOs 988-997, spmi/qpnp-pin-12, pmi8994-gpio:
+ gpio-991 (vddio_enable        ) out lo    
+ gpio-992 (nxp_spk_source      ) in  hi    
+
+GPIOs 998-1002, spmi/qpnp-pin-4, pm8994-mpp:
+
+GPIOs 1003-1023, spmi/qpnp-pin-3, pm8994-gpio:
+ gpio-1003 (ohio_usb_ptn_c1     ) out hi    
+ gpio-1004 (hall_gpio_att_s     ) in  hi    
+ gpio-1006 (TFA98XX_RST         ) out lo    
+ gpio-1010 (wlan-en-gpio        ) out lo    
+ gpio-1012 (ohio_usb_ptn_c2     ) out hi    
+ gpio-1013 (hall_gpio_att_n     ) in  hi    
+ gpio-1014 (ohio_reset_n        ) out hi    
+ gpio-1017 (EXT_CLK             ) in  lo    
+ gpio-1021 (BRCM_BT_EN          ) out lo    

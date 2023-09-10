@@ -1,0 +1,160 @@
+[55270.095082] msm_vfe47_process_error_status: camif error status: 0x1380c78
+[55270.095108] ffffff8002258478: 00000001 00000040 00000000 0bb70f9f
+[55270.095124] ffffff8002258488: 00000f9f 00000bb7 00000000 00001f1f
+[55270.095140] ffffff8002258498: ffffffff ffffffff 00140000 01380c78
+[55270.095152] ffffff80022584a8: 83e00000 00000001 00000000
+[55270.098393] [CAM]camera_v4l2_streamoff: -
+[55270.099038] [CAM]camera_v4l2_streamoff: +
+[55270.101430] [CAM]camera_v4l2_streamoff: -
+[55270.101988] [CAM]camera_v4l2_streamoff: +
+[55270.110692] [S_HUB] ate_set: snr_id = 2, en = 0, en_lst = 0x10020b, v03-get_lock low cpu
+[55270.115031] [S_HUB] ate_set: snr_id = 9, en = 0, en_lst = 0x10000b, v03-get_lock low cpu
+[55270.116762] [LSR] lsr_off: stp meas
+[55270.121055] [LSR] ate_set: en = 0
+[55270.121383] [LSR] iio_dis
+[55270.124794] [S_HUB] ate_set: snr_id = 3, en = 0, en_lst = 0x100003, v03-get_lock low cpu
+[55270.148677] [CAM]camera_v4l2_streamoff: -
+[55270.149485] [CAM]camera_v4l2_streamoff: +
+[55270.150637] [CAM]camera_v4l2_streamoff: -
+[55270.218847] [CAM]camera_v4l2_streamon: +
+[55270.220007] [CAM]camera_v4l2_streamon: -
+[55270.220690] [CAM]camera_v4l2_streamon: +
+[55270.234398] [LSR] iio_en
+[55270.234786] [LSR] bch_set: lsr->delay = delay_ms = 200
+[55270.337543] [LSR] lsr_on: v13
+[55270.337556] [LSR] lsr_on: Spd = 3, Apt = 0
+[55270.341834] [LSR] lsr_on: Vhv = 28, Phs = 1
+[55270.345576] [LSR] ate_set: en = 1
+[55270.347685] [LSR] bch_set: lsr->delay = delay_ms = 25
+[55270.368464] [S_HUB] bch_set: snr_id = 2, tot = 0, bch_lst = 0x3, delay_ms = 200
+[55270.374187] [S_HUB] ate_set: snr_id = 2, en = 1, en_lst = 0x100007, v03-get_lock low cpu
+[55270.377446] [S_HUB] bch_set: snr_id = 2, tot = 0, bch_lst = 0x7, delay_ms = 100
+[55270.380319] [S_HUB] ate_set: snr_id = 3, en = 1, en_lst = 0x10000f, v03-get_lock low cpu
+[55270.382926] [S_HUB] bch_set: snr_id = 9, tot = 0, bch_lst = 0x7, delay_ms = 200
+[55270.385945] [S_HUB] ate_set: snr_id = 9, en = 1, en_lst = 0x10020f, v03-get_lock low cpu
+[55270.389266] [S_HUB] bch_set: snr_id = 9, tot = 0, bch_lst = 0x207, delay_ms = 100
+[55270.406851] [CAM]camera_v4l2_streamon: -
+[55270.407624] [CAM]camera_v4l2_streamon: +
+[55270.412374] [CAM]camera_v4l2_streamon: -
+[55270.412777] [CAM]camera_v4l2_streamon: +
+[55270.415635] msm_fd_hw_set_dt_parms_by_name: Error property does not exist
+[55270.432684] [LSR] rpt_lsr++
+[55270.436775] [LSR] rpt_lsr--
+[55270.445444] [CAM]camera_v4l2_streamon: -
+[55270.449373] [CAM]camera_v4l2_streamoff: +
+[55270.458612] [CAM]camera_v4l2_streamoff: -
+[55270.459154] [CAM]camera_v4l2_streamoff: +
+[55270.463847] [CAM]camera_v4l2_streamoff: -
+[55270.464517] [CAM]camera_v4l2_streamoff: +
+[55270.470716] [S_HUB] ate_set: snr_id = 2, en = 0, en_lst = 0x10020b, v03-get_lock low cpu
+[55270.476878] [S_HUB] ate_set: snr_id = 9, en = 0, en_lst = 0x10000b, v03-get_lock low cpu
+[55270.480110] [LSR] lsr_off: stp meas
+[55270.480546] [LSR] ate_set: en = 0
+[55270.480712] [LSR] iio_dis
+[55270.483600] [S_HUB] ate_set: snr_id = 3, en = 0, en_lst = 0x100003, v03-get_lock low cpu
+[55270.502891] [CAM]camera_v4l2_streamoff: -
+[55270.503326] [CAM]camera_v4l2_streamoff: +
+[55270.503916] [CAM]camera_v4l2_streamoff: -
+[55270.518088] [CAM]camera_v4l2_close: close stream_id=2 +
+[55270.520084] [CAM]camera_v4l2_close: close -
+[55270.523432] [CAM]camera_v4l2_close: close stream_id=3 +
+[55270.525430] [CAM]camera_v4l2_close: close -
+[55270.526588] [CAM]camera_v4l2_close: close stream_id=4 +
+[55270.528935] [CAM]camera_v4l2_close: close -
+[55270.529749] [CAM]camera_v4l2_close: close stream_id=1 +
+[55270.530347] [CAM]camera_v4l2_close: close -
+[55270.537981] [CAM]camera_v4l2_close: close stream_id=0 +
+[55270.543389] msm_ois_power_down:283 [CAM][OIS]Enter
+[55270.543405] msm_ois_power_down:328 [CAM][OIS]Exit
+[55270.544729] msm_ois_close:587 [CAM][OIS]Enter
+[55270.544748] msm_ois_close:602 [CAM][OIS]Exit
+[55270.549051] msm_flash_off:402 [CAM][FL]Enter
+[55270.549068] [FLT] pmi8994_flash_mode: camera flash current 0+0.
+[55270.549110] [FLT] set_backlight_all: ++
+[55270.549120] [FLT] set_backlight_all: set_backlight1
+[55270.549141] [FLT] pmi8994_torch_mode: camera torch current 0+0.
+[55270.549153] msm_flash_off:444 [CAM][FL]Exit
+[55270.551689] SMBCHG: smbchg_switch_buck_frequency: Fsw not changed, flash_active: 0
+[55270.551700] SMBCHG: smbchg_otg_pulse_skip_disable: enabling pulse skip, reason 2
+[55270.551706] SMBCHG: smbchg_battery_set_property: POWER_SUPPLY_PROP_FLASH_ACTIVE: 0
+[55270.551712] SMBCHG: pmi8994_set_htc_chg_flash_active: pmi8994_set_htc_chg_flash_active: 0
+[55270.551718] HTCCHG: htcchg_set_property: POWER_SUPPLY_PROP_FLASH_ACTIVE set: 0.
+[55270.551724] HTCCHG: htcchg_en_control: CHARGE_DISABLE
+[55270.551729] HTCCHG: htcchg_en_control: HTCCHG_EXT_MODE: 0.
+[55270.557154] [S_HUB] irq_hndl: INT_st(1, 2, 3, 4) = (0x8, 0x0, 0x0, 0x0), err_st = 0x0, bch_st = 0x0
+[55270.566645] [CAM]msm_camera_power_down: +
+[55270.582069] [CAM]msm_camera_power_down: -
+[55270.582117] [CAM]msm_sensor_config32:2430 sensor state 0
+[55270.585980] [CAM]camera_v4l2_close: close -
+[55270.675748] msm_pm_qos_update_request: update request 100
+[55270.675772] [CAM]camera_v4l2_open: + MSM_CAMERA_NEW_SESSION
+[55270.689488] msm_csid_init: CSID_VERSION = 0x30050000
+[55270.690381] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+[55270.717959] [CAM]Sensor 1 tagged as NON-SECURE
+[55270.717976] [CAM]msm_camera_power_up: +
+[55270.726270] [CAM]camera_v4l2_open: -
+[55270.726289] msm_pm_qos_update_request: update request -1
+[55270.737512] [CAM]msm_camera_power_up: -
+[55270.737813] [CAM]msm_sensor_match_id: read id: 0x4e60 expected id 0x4e60, name:s5k4e6_htc
+[55270.737831] [CAM]msm_sensor_match_id eng_id = 0x1  bit 0 = 0x1
+[55270.737839] [CAM]htc_ois_FWupdate:E s_ctrl->id = 1.
+[55270.737848] [CAM]msm_sensor_config32:2401 sensor state 1
+[55270.738125] [CAM]msm_sensor_read_fuseid32: +
+[55270.738133] [CAM]s5k4e6_htc: fuse->fuse_id : 0x0 0x10 0x84 0xe1
+[55270.738141] [CAM]msm_sensor_read_fuseid32: s5k4e6_htcOTP Actuator Name = lc898123
+[55270.738148] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP Module vendor = 0x2
+[55270.738155] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP LENS = 0x85
+[55270.738162] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP Sensor Version = 0x83
+[55270.738168] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP Driver IC Vendor & Version = 0x52
+[55270.738175] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP Actuator vender ID & Version = 0x85
+[55270.738182] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP Infinity position code (MSByte) = 0x3
+[55270.738188] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP Infinity position code (LSByte) = 0xce
+[55270.738195] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP Macro position code (MSByte) = 0x4
+[55270.738201] [CAM]msm_sensor_read_fuseid32: s5k4e6_htc OTP Macro position code (LSByte) = 0xb
+[55270.743653] msm_flash_init:492 [CAM][FL]Enter
+[55270.743667] msm_flash_init:550 [CAM][FL]Exit
+[55270.750595] msm_actuator_set_param:1625 ACT_NAME = lc898123
+[55270.750611] msm_actuator_set_param:1635 closeloop = 0 FSTmode=1
+[55270.869678] [CAM]camera_v4l2_streamon: +
+[55270.870592] [CAM]camera_v4l2_streamon: -
+[55270.871247] [CAM]camera_v4l2_streamon: +
+[55270.873378] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+[55270.888252] [CAM]awb_calibration_front_show(4000)
+[55270.901802] [CAM]awb_calibration_front_show(4000)
+[55270.902374] [CAM]awb_calibration_front_show(4000)
+[55270.942744] [S_HUB] bch_set: snr_id = 2, tot = 0, bch_lst = 0x3, delay_ms = 200
+[55270.949118] [S_HUB] ate_set: snr_id = 2, en = 1, en_lst = 0x100007, v03-get_lock low cpu
+[55270.954937] [S_HUB] bch_set: snr_id = 2, tot = 0, bch_lst = 0x7, delay_ms = 100
+[55270.964598] [S_HUB] ate_set: snr_id = 3, en = 1, en_lst = 0x10000f, v03-get_lock low cpu
+[55270.971355] [S_HUB] bch_set: snr_id = 9, tot = 0, bch_lst = 0x7, delay_ms = 200
+[55270.977670] [S_HUB] ate_set: snr_id = 9, en = 1, en_lst = 0x10020f, v03-get_lock low cpu
+[55270.980750] [S_HUB] bch_set: snr_id = 9, tot = 0, bch_lst = 0x207, delay_ms = 100
+[55271.003267] healthd: battery l=100 v=4405 t=35.7 h=2 st=5 c=83007 fc=2830000 chg=a
+[55271.003505] [CAM]camera_v4l2_streamon: -
+[55271.004603] [CAM]camera_v4l2_streamon: +
+[55271.014737] [CAM]camera_v4l2_streamon: -
+[55271.015162] [CAM]camera_v4l2_streamon: +
+[55271.047922] [CAM]camera_v4l2_streamon: -
+[55271.087367] [CAM]msm_isp_notify:(0)PIX0 frame id: 1
+[55271.091995] msm_ois_power_up:648 [CAM][OIS]msm_ois_power_up called
+[55271.092015] msm_ois_power_up:684 [CAM][OIS]Exit
+[55271.092034] msm_ois_init:335 [CAM][OIS]Enter
+[55271.092119] msm_ois_init:349 [CAM][OIS]Exit
+[55271.096014] msm_ois_control:359 [CAM][OIS]Enter
+[55271.096037] msm_ois_write_settings:166 [CAM][OIS]Enter
+[55271.118178] msm_ois_write_settings:249 [CAM][OIS]Exit
+[55271.118214] msm_ois_control:412 [CAM][OIS]Exit
+[55271.118954] msm_ois_control:359 [CAM][OIS]Enter
+[55271.118985] msm_ois_write_settings:166 [CAM][OIS]Enter
+[55271.119685] msm_ois_write_settings:249 [CAM][OIS]Exit
+[55271.119719] msm_ois_control:412 [CAM][OIS]Exit
+[55271.136791] [CAM]msm_isp_notify:(0)PIX0 frame id: 2
+[55271.173945] [S_HUB] irq_hndl: INT_st(1, 2, 3, 4) = (0x8, 0x0, 0x0, 0x0), err_st = 0x0, bch_st = 0x0
+[55271.175159] [S_HUB] irq_hndl: ls int val: is 255, adc: 12 ls_k: 1
+[55271.177978] [S_HUB] irq_hndl: INT_st(1, 2, 3, 4) = (0x0, 0x0, 0x0, 0x0), err_st = 0x0, bch_st = 0x0
+[55271.466493] msm_fd_hw_set_dt_parms_by_name: Error property does not exist
+[55271.594557] [CAM]msm_isp_notify:(0)PIX0 frame id: 10
+[55272.576652] FG: fg_soc_irq_handler: triggered 0x25
+[55274.397160] [CAM]msm_isp_notify:(0)PIX0 frame id: 50
+[55277.900326] [CAM]msm_isp_notify:(0)PIX0 frame id: 100
+[55281.403564] [CAM]msm_isp_notify:(0)PIX0 frame id: 150

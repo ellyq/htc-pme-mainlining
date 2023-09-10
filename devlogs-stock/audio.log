@@ -1,0 +1,13 @@
+[55201.224756] msm_fd_hw_set_dt_parms_by_name: Error property does not exist
+[55201.623965] [AUD] snd_soc_tfa98xx: tfa_start profile 0, vstep 0 success with 6 ms
+[55201.629707] [AUD] q6asm: q6asm_callback: payload size of 8 is less than expected.
+[55201.630748] [AUD] q6asm: q6asm_callback: payload size of 8 is less than expected.
+[55201.631276] [AUD] q6adm: adm_callback: cmd = 0x10335 returned error = 0x2
+[55201.631332] [AUD] q6adm: send_adm_custom_topology: DSP returned error[ADSP_EBADPARAM]
+[55201.643155] [AUD] q6asm: q6asm_callback: payload size of 8 is less than expected.
+[55201.650823] [AUD] q6asm: q6asm_callback: payload size of 8 is less than expected.
+[55201.775476] msm_fd_hw_set_dt_parms_by_name: Error property does not exist
+[55205.037932] [AUD] q6asm: __q6asm_cmd_nowait: CMD_EOS
+[55205.051899] [AUD] q6asm: __q6asm_cmd:q6asm close session 1
+[55205.057254] [AUD] q6asm: q6asm_callback: payload size of 8 is less than expected.
+[55205.070655] [AUD] snd_soc_tfa98xx: tfa98xx_shutdown: tfa_stop
