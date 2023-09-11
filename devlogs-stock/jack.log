@@ -1,0 +1,50 @@
+# Insertion
+[243289.590250] wcd_mbhc_mech_plug_detect_irq: enter
+[243289.590613] wcd_mbhc_swch_irq_handler: mbhc->current_plug: 0 detection_type: 1
+[243289.590744] [AUD] snd_soc_wcd9335: tasha_mbhc_request_micbias: req 2
+[243289.601548] tasha_codec tasha_codec: tasha_micbias_control: micb_num:2, micb_ref: 1, pullup_ref: 0
+[243289.601578] wcd_mbhc_mech_plug_detect_irq: leave 1
+[243289.643547] wcd_mbhc_btn_press_handler: enter
+[243289.644273] wcd_mbhc_get_button_mask: btn 0, key_code 226, mask 0x4000000
+[243289.644284] wcd_mbhc_btn_press_handler: Plug isn't headset, ignore button press
+[243289.644771] wcd_correct_swch_plug: Valid plug found, plug type is 2
+[243289.645056] wcd_mbhc_find_plug_and_report: enter current_plug(0) new_plug(2)
+[243289.645074] wcd_mbhc_report_plug: Reporting insertion 1(1)
+[243289.669207] wcd_correct_swch_plug: hs_comp_res: 0
+[243289.686827] wcd_mbhc_btn_press_handler: enter
+[243289.687118] wcd_mbhc_get_button_mask: btn 0, key_code 226, mask 0x4000000
+[243289.687124] wcd_mbhc_btn_press_handler: Plug isn't headset, ignore button press
+[243289.854475] wcd_correct_swch_plug: cable might be headset: 1
+[243289.875913] wcd_correct_swch_plug: hs_comp_res: 0
+[243289.886185] [AUD] snd_soc_tfa98xx: tfa98xx_shutdown: tfa_stop
+[243289.896213] wcd_mbhc_btn_press_handler: enter
+[243289.896632] wcd_mbhc_get_button_mask: btn 0, key_code 226, mask 0x4000000
+[243289.896651] wcd_mbhc_btn_press_handler: Plug isn't headset, ignore button press
+[243290.059509] wcd_correct_swch_plug: cable might be headset: 1
+[243290.082592] wcd_correct_swch_plug: hs_comp_res: 0
+[243290.101202] wcd_mbhc_btn_press_handler: enter
+[243290.101610] wcd_mbhc_get_button_mask: btn 0, key_code 226, mask 0x4000000
+[243290.101616] wcd_mbhc_btn_press_handler: Plug isn't headset, ignore button press
+[243290.266023] wcd_correct_swch_plug: cable might be headset: 1
+[243290.289200] wcd_correct_swch_plug: hs_comp_res: 0
+[243290.307714] wcd_mbhc_btn_press_handler: enter
+[243290.308117] wcd_mbhc_get_button_mask: btn 0, key_code 226, mask 0x4000000
+[243290.308124] wcd_mbhc_btn_press_handler: Plug isn't headset, ignore button press
+[243290.503121] wcd_correct_swch_plug: cable might be headset: 1
+[243290.525867] wcd_correct_swch_plug: hs_comp_res: 0
+[243290.544775] wcd_mbhc_btn_press_handler: enter
+[243290.545167] wcd_mbhc_get_button_mask: btn 0, key_code 226, mask 0x4000000
+[243290.545173] wcd_mbhc_btn_press_handler: Plug isn't headset, ignore button press
+[243290.709707] wcd_correct_swch_plug: cable might be headset: 1
+[243290.709969] wcd_correct_swch_plug: Can be slow insertion of headphone
+[243290.710232] wcd_correct_swch_plug: Valid plug found, plug type 2 wrk_cmpt 0 btn_intr 1
+[243290.710248] wcd_mbhc_find_plug_and_report: enter current_plug(2) new_plug(2)
+[243290.711061] [AUD] snd_soc_wcd9335: tasha_mbhc_request_micbias: req 3
+[243290.712602] tasha_codec tasha_codec: tasha_micbias_control: micb_num:2, micb_ref: 0, pullup_ref: 0
+
+# Removal
+[243695.904329] wcd_mbhc_mech_plug_detect_irq: enter
+[243695.904902] wcd_mbhc_swch_irq_handler: mbhc->current_plug: 2 detection_type: 0
+[243695.905875] wcd_mbhc_report_plug: Reporting removal 1(0)
+[243695.928219] wcd_mbhc_mech_plug_detect_irq: leave 1
+[243697.257811] [AUD] snd_soc_tfa98xx: tfa_start profile 0, vstep 0 success with 8 ms
