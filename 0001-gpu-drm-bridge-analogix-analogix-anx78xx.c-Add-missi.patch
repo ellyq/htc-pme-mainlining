@@ -1,0 +1,36 @@
+From 2a7453e2256b1338cf9315656ab340b23c4e2003 Mon Sep 17 00:00:00 2001
+From: Alicja Michalska <ahplka19@gmail.com>
+Date: Sat, 9 Sep 2023 04:01:51 +0200
+Subject: [PATCH] drm/bridge/analogix/anx78xx: Add missing definition
+
+Analogix ANX78XX driver is missing definitions for anx7816.
+It uses the same I2C register set as anx7818.
+
+Signed-off-by: Alicja Michalska <ahplka19@gmail.com>
+---
+ drivers/gpu/drm/bridge/analogix/analogix-anx78xx.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/gpu/drm/bridge/analogix/analogix-anx78xx.c b/drivers/gpu/drm/bridge/analogix/analogix-anx78xx.c
+index 800555aef97f..1ce4acc01bf3 100644
+--- a/drivers/gpu/drm/bridge/analogix/analogix-anx78xx.c
++++ b/drivers/gpu/drm/bridge/analogix/analogix-anx78xx.c
+@@ -1211,6 +1211,7 @@ static const u16 anx78xx_chipid_list[] = {
+ 	0x7808,
+ 	0x7812,
+ 	0x7814,
++	0x7816,
+ 	0x7818,
+ };
+ 
+@@ -1377,6 +1378,7 @@ static const struct of_device_id anx78xx_match_table[] = {
+ 	{ .compatible = "analogix,anx7808", .data = anx7808_i2c_addresses },
+ 	{ .compatible = "analogix,anx7812", .data = anx781x_i2c_addresses },
+ 	{ .compatible = "analogix,anx7814", .data = anx781x_i2c_addresses },
++	{ .compatible = "analogix,anx7816", .data = anx781x_i2c_addresses },
+ 	{ .compatible = "analogix,anx7818", .data = anx781x_i2c_addresses },
+ 	{ /* sentinel */ },
+ };
+-- 
+2.41.0
+
