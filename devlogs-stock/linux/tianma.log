@@ -1,0 +1,351 @@
+[ 3915.884385] mdss_dsi_panel_power_on_hx8396c2: ctrl0 ext-vdd_en=0
+[ 3915.902107] ------------[ cut here ]------------
+[ 3915.902136] WARNING: CPU: 0 PID: 5151 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 3915.902147] Trying to switch RCG source while it is prepared!
+[ 3915.902162] CPU: 0 PID: 5151 Comm: pbsplash Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.902175] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.902185] Call trace:
+[ 3915.902217] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 3915.902230] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 3915.902243] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 3915.902260] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 3915.902274] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 3915.902285] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 3915.902298] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 3915.902312] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 3915.902324] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 3915.902339] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 3915.902353] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 3915.902365] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 3915.902377] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 3915.902393] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 3915.902406] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 3915.902420] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 3915.902431] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 3915.902442] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 3915.902457] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 3915.902470] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 3915.902484] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 3915.902495] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 3915.902506] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 3915.902516] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 3915.902526] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 3915.902537] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 3915.902549] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 3915.902559] ---[ end trace a0f7da3c66ecb7e8 ]---
+[ 3915.904393] dsi0pll_vco_clk_8996
+[ 3915.904404] dsi0pll_post_n1_div_clk
+[ 3915.904413] dsi0pll_byte_clk_src
+[ 3915.904421] dsi0pll_byte_clk_mux
+[ 3915.904430] ext_byte0_clk_src
+[ 3915.904438] byte0_clk_src
+[ 3915.904456]             CMD_RCGR: 0x00000001
+[ 3915.904468]             CFG_RCGR: 0x00000100
+[ 3915.904476] ------------[ cut here ]------------
+[ 3915.904491] WARNING: CPU: 0 PID: 5151 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 3915.904502] byte0_clk_src: rcg didn't update its configuration.
+[ 3915.904518] CPU: 0 PID: 5151 Comm: pbsplash Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.904528] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.904537] Call trace:
+[ 3915.904559] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 3915.904570] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 3915.904582] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 3915.904594] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 3915.904606] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 3915.904617] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 3915.904632] [<ffffffc000a3c4dc>] __set_rate_hid+0xb0/0xc0
+[ 3915.904643] [<ffffffc000a3c524>] set_rate_hid+0x38/0x54
+[ 3915.904653] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 3915.904666] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 3915.904677] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 3915.904692] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 3915.904706] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 3915.904723] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 3915.904735] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 3915.904748] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 3915.904760] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 3915.904770] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 3915.904781] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 3915.904792] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 3915.904803] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 3915.904814] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 3915.904826] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 3915.904842] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 3915.904853] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 3915.904864] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 3915.904877] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 3915.904894] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 3915.904907] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 3915.904918] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 3915.904927] ---[ end trace a0f7da3c66ecb7e9 ]---
+[ 3915.905023] ------------[ cut here ]------------
+[ 3915.905039] WARNING: CPU: 0 PID: 5151 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 3915.905051] Trying to switch RCG source while it is prepared!
+[ 3915.905069] CPU: 0 PID: 5151 Comm: pbsplash Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.905078] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.905086] Call trace:
+[ 3915.905114] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 3915.905127] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 3915.905137] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 3915.905149] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 3915.905164] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 3915.905179] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 3915.905199] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 3915.905220] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 3915.905236] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 3915.905249] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 3915.905264] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 3915.905276] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 3915.905287] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 3915.905302] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 3915.905316] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 3915.905333] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 3915.905353] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 3915.905370] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 3915.905391] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 3915.905411] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 3915.905434] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 3915.905446] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 3915.905460] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 3915.905469] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 3915.905482] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 3915.905498] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 3915.905509] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 3915.905522] ---[ end trace a0f7da3c66ecb7ea ]---
+[ 3915.907425] dsi0pll_vco_clk_8996
+[ 3915.907437] dsi0pll_post_n1_div_clk
+[ 3915.907445] dsi0pll_n2_div_clk
+[ 3915.907453] dsi0pll_pixel_clk_src
+[ 3915.907461] dsi0pll_pixel_clk_mux
+[ 3915.907471] ext_pclk0_clk_src
+[ 3915.907479] pclk0_clk_src
+[ 3915.907500]             CMD_RCGR: 0x00000001
+[ 3915.907513]             CFG_RCGR: 0x00000100
+[ 3915.907524]                M_VAL: 0x00000000
+[ 3915.907535]                N_VAL: 0x00000000
+[ 3915.907548]                D_VAL: 0x00000000
+[ 3915.907556] ------------[ cut here ]------------
+[ 3915.907570] WARNING: CPU: 0 PID: 5151 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 3915.907581] pclk0_clk_src: rcg didn't update its configuration.
+[ 3915.907593] CPU: 0 PID: 5151 Comm: pbsplash Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.907603] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.907613] Call trace:
+[ 3915.907637] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 3915.907652] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 3915.907663] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 3915.907675] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 3915.907689] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 3915.907699] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 3915.907709] [<ffffffc000a3c70c>] __set_rate_mnd+0x1cc/0x1dc
+[ 3915.907720] [<ffffffc000a3c754>] set_rate_mnd+0x38/0x54
+[ 3915.907730] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 3915.907742] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 3915.907763] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 3915.907774] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 3915.907787] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 3915.907802] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 3915.907813] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 3915.907831] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 3915.907852] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 3915.907872] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 3915.907888] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 3915.907899] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 3915.907909] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 3915.907922] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 3915.907936] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 3915.907950] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 3915.907972] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 3915.907988] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 3915.908006] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 3915.908024] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 3915.908045] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 3915.908068] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 3915.908079] ---[ end trace a0f7da3c66ecb7eb ]---
+[ 3915.931766] swapoff[5200]: syscall 291
+[ 3915.931778] Code: f9002be5 aa0603e5 f9002fe6 d4000001 (97ff9704) 
+[ 3915.931788] CPU: 2 PID: 5200 Comm: swapoff Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.931793] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.931799] task: ffffffc0f6b93ac0 ti: ffffffc0f80d0000 task.ti: ffffffc0f80d0000
+[ 3915.931804] PC is at 0x7f95970784
+[ 3915.931809] LR is at 0x7f958e978c
+[ 3915.931814] pc : [<0000007f95970784>] lr : [<0000007f958e978c>] pstate: 60000000
+[ 3915.931818] sp : 0000007fefb918b0
+[ 3915.931822] x29: 0000007fefb918b0 x28: 0000007f959f5258 
+[ 3915.931831] x27: 0000000000000000 x26: 0000007fefb91b70 
+[ 3915.931839] x25: 0000000000000000 x24: 0000000000000000 
+[ 3915.931847] x23: 0000007f959f4ff0 x22: 0000000000000000 
+[ 3915.931854] x21: 0000000000000000 x20: 0000007f9590716e 
+[ 3915.931862] x19: 0000007fefb91a88 x18: 0000000000000001 
+[ 3915.931870] x17: 0000007f95970734 x16: 0000007f95931640 
+[ 3915.931878] x15: 0000000800000000 x14: 0000000000000001 
+[ 3915.931885] x13: 0a797469726f6972 x12: 5009646573550965 
+[ 3915.931893] x11: 7a69530909657079 x10: 0000007fefb91910 
+[ 3915.931900] x9 : 0000007fefb918e0 x8 : 0000000000000123 
+[ 3915.931908] x7 : 00000000fffffff8 x6 : 0000000000000000 
+[ 3915.931915] x5 : 0000000000000000 x4 : 0000007fefb91958 
+[ 3915.931922] x3 : 0000000000000103 x2 : 0000000000004800 
+[ 3915.931929] x1 : 0000007f9590716e x0 : 00000000ffffff9c 
+
+[ 3915.934178] mdss_dsi_panel_power_on_hx8396c2: ctrl1 ext-vdd_en=0
+[ 3915.934198] ------------[ cut here ]------------
+[ 3915.934214] WARNING: CPU: 0 PID: 5151 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 3915.934221] Trying to switch RCG source while it is prepared!
+[ 3915.934231] CPU: 0 PID: 5151 Comm: pbsplash Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.934237] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.934242] Call trace:
+[ 3915.934265] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 3915.934273] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 3915.934282] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 3915.934292] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 3915.934299] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 3915.934305] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 3915.934314] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 3915.934325] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 3915.934332] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 3915.934341] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 3915.934349] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 3915.934356] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 3915.934363] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 3915.934373] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 3915.934382] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 3915.934392] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 3915.934398] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 3915.934404] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 3915.934413] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 3915.934421] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 3915.934429] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 3915.934436] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 3915.934444] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 3915.934449] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 3915.934455] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 3915.934461] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 3915.934468] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 3915.934475] ---[ end trace a0f7da3c66ecb7ec ]---
+[ 3915.936004] dsi0pll_vco_clk_8996
+[ 3915.936009] dsi0pll_post_n1_div_clk
+[ 3915.936014] dsi0pll_byte_clk_src
+[ 3915.936018] dsi0pll_byte_clk_mux
+[ 3915.936022] ext_byte0_clk_src
+[ 3915.936027] byte1_clk_src
+[ 3915.936037]             CMD_RCGR: 0x00000001
+[ 3915.936043]             CFG_RCGR: 0x00000100
+[ 3915.936048] ------------[ cut here ]------------
+[ 3915.936055] WARNING: CPU: 0 PID: 5151 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 3915.936060] byte1_clk_src: rcg didn't update its configuration.
+[ 3915.936067] CPU: 0 PID: 5151 Comm: pbsplash Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.936072] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.936076] Call trace:
+[ 3915.936087] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 3915.936095] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 3915.936101] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 3915.936108] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 3915.936114] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 3915.936120] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 3915.936125] [<ffffffc000a3c4dc>] __set_rate_hid+0xb0/0xc0
+[ 3915.936130] [<ffffffc000a3c524>] set_rate_hid+0x38/0x54
+[ 3915.936136] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 3915.936142] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 3915.936148] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 3915.936154] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 3915.936160] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 3915.936167] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 3915.936173] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 3915.936179] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 3915.936185] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 3915.936190] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 3915.936196] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 3915.936202] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 3915.936207] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 3915.936213] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 3915.936219] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 3915.936226] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 3915.936232] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 3915.936237] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 3915.936242] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 3915.936247] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 3915.936252] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 3915.936258] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 3915.936264] ---[ end trace a0f7da3c66ecb7ed ]---
+[ 3915.936315] ------------[ cut here ]------------
+[ 3915.936323] WARNING: CPU: 0 PID: 5151 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 3915.936327] Trying to switch RCG source while it is prepared!
+[ 3915.936333] CPU: 0 PID: 5151 Comm: pbsplash Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.936338] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.936341] Call trace:
+[ 3915.936352] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 3915.936357] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 3915.936362] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 3915.936368] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 3915.936376] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 3915.936381] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 3915.936387] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 3915.936394] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 3915.936399] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 3915.936405] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 3915.936411] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 3915.936418] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 3915.936424] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 3915.936429] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 3915.936436] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 3915.936441] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 3915.936447] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 3915.936453] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 3915.936459] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 3915.936464] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 3915.936471] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 3915.936477] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 3915.936482] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 3915.936488] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 3915.936494] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 3915.936502] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 3915.936509] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 3915.936513] ---[ end trace a0f7da3c66ecb7ee ]---
+[ 3915.938036] dsi0pll_vco_clk_8996
+[ 3915.938042] dsi0pll_post_n1_div_clk
+[ 3915.938046] dsi0pll_n2_div_clk
+[ 3915.938050] dsi0pll_pixel_clk_src
+[ 3915.938054] dsi0pll_pixel_clk_mux
+[ 3915.938060] ext_pclk0_clk_src
+[ 3915.938063] pclk1_clk_src
+[ 3915.938075]             CMD_RCGR: 0x00000001
+[ 3915.938082]             CFG_RCGR: 0x00000100
+[ 3915.938088]                M_VAL: 0x00000000
+[ 3915.938097]                N_VAL: 0x00000000
+[ 3915.938103]                D_VAL: 0x00000000
+[ 3915.938108] ------------[ cut here ]------------
+[ 3915.938118] WARNING: CPU: 0 PID: 5151 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 3915.938123] pclk1_clk_src: rcg didn't update its configuration.
+[ 3915.938130] CPU: 0 PID: 5151 Comm: pbsplash Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 3915.938138] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 3915.938142] Call trace:
+[ 3915.938154] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 3915.938160] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 3915.938167] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 3915.938176] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 3915.938182] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 3915.938191] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 3915.938197] [<ffffffc000a3c70c>] __set_rate_mnd+0x1cc/0x1dc
+[ 3915.938202] [<ffffffc000a3c754>] set_rate_mnd+0x38/0x54
+[ 3915.938211] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 3915.938217] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 3915.938224] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 3915.938233] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 3915.938241] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 3915.938251] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 3915.938260] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 3915.938270] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 3915.938276] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 3915.938283] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 3915.938292] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 3915.938299] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 3915.938307] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 3915.938315] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 3915.938322] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 3915.938331] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 3915.938339] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 3915.938346] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 3915.938353] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 3915.938359] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 3915.938368] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 3915.938375] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 3915.938382] ---[ end trace a0f7da3c66ecb7ef ]---
