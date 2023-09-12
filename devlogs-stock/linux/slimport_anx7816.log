@@ -1,0 +1,855 @@
+[ 6414.339764] [USB] suspend
+[ 6414.339861] [USB] android_work : sw_suspended 0	suspended 1 config 1,connect2pc 1
+[ 6414.339872] [USB] android_work : sw_connected 1	connected 1 last_uevent 2
+[ 6414.339940] [USB] android_work: android_work: sent uevent USB_STATE=SUSPENDED
+[ 6414.340711] [USB] charger type: UNKNOWN_CHARGER
+[ 6414.341020] [USB] check_vbus_in : 1 -> 0
+[ 6414.341032] [USB] dwc3_msm_power_set_property_usb: delay 500ms to confirm disconnect or pr_swap
+[ 6414.341571] SMBCHG: set_aicl_enable: Enable AICL...
+[ 6414.341796] HTCCHG: htcchg_set_property: POWER_SUPPLY_PROP_CHARGING_ENABLED set: 1.
+[ 6414.341806] HTCCHG: htcchg_en_control: CHARGE_DISABLE
+[ 6414.341815] HTCCHG: htcchg_en_control: HTCCHG_EXT_MODE: 0.
+[ 6414.344346] [BATT] htc_batt_stats_1.1: end charging: level=100, at=1976-06-21 15:52:29 UTC
+[ 6414.344382] [BATT] cancel chg_full_check_work when plug out.
+[ 6414.344761] [BATT] batt_worker: total_time since last batt update = 30290 ms.
+[ 6414.358844] [OHIO] ohio_work_func : detect cable insertion/remove, cable_connected = 0
+[ 6414.359151] [USB] Exit from Host mode or Disconnected
+[ 6414.359226] [USB] dwc3_otg_sm_work: b_peripheral state
+[ 6414.359893] msm-dwc3 6a00000.ssusb: dwc3_msm_suspend unvote for TCXO buffer
+[ 6414.360020] msm-dwc3 6a00000.ssusb: DWC3 in low power mode
+[ 6414.360327] [USB] android_work : sw_suspended 1	suspended 1 config 0,connect2pc 1
+[ 6414.360339] [USB] android_work : sw_connected 1	connected 0 last_uevent 2
+[ 6414.360404] [USB] android_work: android_work: sent uevent USB_STATE=DISCONNECTED
+[ 6414.360656] [USB] dwc3_otg_sm_work: b_idle state
+[ 6414.360680] [USB] charger type: UNKNOWN_CHARGER
+[ 6414.360721] msm-dwc3 6a00000.ssusb: Avail curr from USB = 0
+[ 6414.361966] [OHIO] smart_5v disabled
+[ 6414.368189] [BATT] set_batt_psy_property. value(0) prop(89) at 6414368805757 (1976-06-21 15:52:29.474380139 UTC)
+[ 6414.368226] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 6414.368240] [BATT] batt_level_adjust: Cable plug out when level 100, reset timer.
+[ 6414.370211] [BATT] ID=1,level=100,level_raw=99,vol=4364mV,temp=332,current=915uA,chg_name=NONE,chg_src=0,chg_en=0,health=1,overload=0,duration=0min,vbus=758mV,max_iusb=0mA,chg_limit_reason=0,chg_stop_reason=0,consistent=-1,flag=0x00000000,AICL=1500mA,htc_ext=0x00,level_accu=59226,htcchg=0,usb_temp=313,usb_overheat=0,usb_overheat_stat=0,batt_state=0 at 6414370824195 (1976-06-21 15:52:29.476359723 UTC)
+[ 6414.838942] [USB] dwc3_notify_vbus_work: pd_vbus_change = 0
+[ 6414.838959] [USB] dwc3_notify_vbus_work: maybe cable out or SINK first connect, resume state machine
+[ 6414.839064] [USB] dwc3_otg_sm_work: b_idle state
+[ 6414.839086] [USB] charger type: UNKNOWN_CHARGER
+[ 6417.525774] [WLAN] CFG80211-LOG) wl_escan_handler : SCAN COMPLETED: scanned AP count=19
+[ 6440.158951] FG: fg_is_batt_id_valid: fg batt sts 0x8
+[ 6445.107580] [OHIO] ohio_work_func : detect cable insertion/remove, cable_connected = 1
+[ 6445.142646] [OHIO] ohio_main_process: smart_5v enabled
+[ 6445.142917] [OHIO] ohio_main_process: DFP(0) FW version 0x13
+[ 6445.226860] [OHIO] vbus control 1
+[ 6445.227177] [OHIO] smart_5v disabled
+[ 6445.227195] [USB] dwc3_pd_vbus_ctrl: set pd vbus flag to 1
+[ 6445.234355] [OHIO] pd_vbus_control_default_func: CC1 Ra
+[ 6445.234687] [OHIO] ohio_hardware_enable_vconn: smart_5v enabled
+[ 6445.235468] [OHIO] for FW1.2 WA, start host
+[ 6445.235859] [OHIO] vconn control 1
+[ 6445.236234] [OHIO] ohio_hardware_enable_vconn: ERR: smart_5v regulator is already enabled
+[ 6445.236278] [OHIO] ohio_hardware_enable_vconn: smart_5v enabled
+[ 6445.236649] [OHIO] cc status 0x12
+[ 6445.283460] [OHIO] >>RDO
+[ 6445.285920] [OHIO] succ << ACCEPT
+[ 6445.292167] [OHIO] oc_enable_work_func: set oc_enable=1
+[ 6445.476992] [OHIO] >>snk cap
+[ 6445.485140] [OHIO] >>snk identity
+[ 6445.493659] [OHIO] >>svid
+[ 6445.499881] [OHIO] >>DPALT_ENTER
+[ 6445.954559] [OHIO] >>PR_SWAP
+[ 6445.984389] [OHIO] vbus control 0
+[ 6445.984405] [USB] dwc3_pd_vbus_ctrl: set pd vbus flag to 1
+[ 6446.151198] [OHIO] >>Response to Request
+[ 6446.151219] [OHIO] pd_cmd PRSwap result is successful
+[ 6446.180780] [OHIO] >>src cap
+[ 6446.180800] PD list [0]: 5000mV-100mA
+[ 6446.180810] PD list [1]: 9000mV-1330mA
+[ 6446.180821] PD list [2]: 12000mV-1750mA
+[ 6446.180831] PD list [3]: 15000mV-2000mA
+[ 6446.180840] PD list [4]: 20000mV-2500mA
+[ 6446.180851] [OHIO] device_max_ma=100, cnt 5 index 0
+[ 6446.180862] [USB] usb_set_dwc_property: current_max = 100000
+[ 6446.180872] [OHIO] FIXED PDO: selected current value < 1000mA, +cap_mismatch
+[ 6446.184051] [OHIO] succ << RDO
+[ 6446.185860] [OHIO] cc status 0x8c
+[ 6446.192477] [OHIO] >>Response to Request
+[ 6446.192490] [OHIO] pd_cmd RDO request result is successful
+[ 6446.738988] [OHIO] data role change 1
+[ 6446.739005] [USB] dwc3_pd_drswap: 0:HOST 1:DEVICE; new_role = 0
+[ 6446.739013] [USB] Enter Host mode
+[ 6446.739068] [USB] dwc3_otg_sm_work: b_idle state
+[ 6446.739088] [USB] dwc3_otg_sm_work: a_idle state
+[ 6446.739135] msm-dwc3 6a00000.ssusb: dwc3_msm_resume vote for TCXO buffer
+[ 6446.743332] [USB] USB3_QSERDES_TX_EMP_POST1_LVL = f
+[ 6446.743351] [USB] USB3_QSERDES_TX_DRV_LVL = 1
+[ 6446.744485] msm-dwc3 6a00000.ssusb: DWC3 exited from low power mode
+[ 6446.745213] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[ 6446.745683] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[ 6446.745869] xhci-hcd xhci-hcd.1.auto: irq 515, io mem 0x06a00000
+[ 6446.748017] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[ 6446.748036] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[ 6446.748049] usb usb1: Product: xHCI Host Controller
+[ 6446.748060] usb usb1: Manufacturer: Linux 3.18.31-04300 xhci-hcd
+[ 6446.748071] usb usb1: SerialNumber: xhci-hcd.1.auto
+[ 6446.749582] hub 1-0:1.0: USB hub found
+[ 6446.749673] hub 1-0:1.0: 1 port detected
+[ 6446.750293] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[ 6446.750677] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[ 6446.751184] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+[ 6446.751200] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[ 6446.751212] usb usb2: Product: xHCI Host Controller
+[ 6446.751224] usb usb2: Manufacturer: Linux 3.18.31-04300 xhci-hcd
+[ 6446.751235] usb usb2: SerialNumber: xhci-hcd.1.auto
+[ 6446.753003] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6446.753092] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6446.753172] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6446.753251] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6446.753571] hub 2-0:1.0: USB hub found
+[ 6446.753676] hub 2-0:1.0: 1 port detected
+[ 6446.759499] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6446.762577] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6446.763515] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6446.763541] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6446.763564] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6446.763588] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6446.765710] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6446.933616] [USB] charger type: USB_SDP_CHARGER
+[ 6446.933806] [USB] check_vbus_in : 0 -> 1
+[ 6446.933840] SMBCHG: set_aicl_enable: Disable AICL...
+[ 6446.936021] [BATT] chg_full_check_worker: vol:4299, curr=105, is_full_count=0, is_full=0 at 6446936661762 (1976-06-21 15:53:02.042214477 UTC)
+[ 6446.937615] [BATT] batt_worker: total_time since last batt update = 32593 ms.
+[ 6446.937803] FG: fg_is_batt_id_valid: fg batt sts 0x8
+[ 6446.938289] [BATT] chg_full_check_worker: vol:4299, curr=105, is_full_count=0, is_full=0 at 6446938904940 (1976-06-21 15:53:02.044483488 UTC)
+[ 6446.962064] [BATT] set_batt_psy_property. value(0) prop(89) at 6446962678015 (1976-06-21 15:53:02.068261615 UTC)
+[ 6446.962081] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 6446.962115] [BATT] batt_level_adjust: pre_level=100, new_level=99, level drop but overloading doesn't happen!
+[ 6446.962124] [BATT] set charging_enable(1) at 6446962736088 (1976-06-21 15:53:02.068324480 UTC)
+[ 6446.962133] [BATT] set_batt_psy_property. value(1) prop(68) at 6446962744786 (1976-06-21 15:53:02.068333438 UTC)
+[ 6446.962143] [BATT] set pwrsrc_enable(1) at 6446962754838 (1976-06-21 15:53:02.068343751 UTC)
+[ 6446.962151] [BATT] set_batt_psy_property. value(1) prop(69) at 6446962763015 (1976-06-21 15:53:02.068351615 UTC)
+[ 6446.962171] HTCCHG: htcchg_set_property: POWER_SUPPLY_PROP_CHARGING_ENABLED set: 1.
+[ 6446.962177] HTCCHG: htcchg_en_control: CHARGE_DISABLE
+[ 6446.962181] HTCCHG: htcchg_en_control: HTCCHG_EXT_MODE: 0.
+[ 6446.963963] SMBCHG: set_aicl_enable: Disable AICL...
+[ 6446.964059] [BATT] ID=1,level=100,level_raw=99,vol=4299mV,temp=332,current=105437uA,chg_name=PD5V_0.1A,chg_src=1,chg_en=1,health=1,overload=0,duration=0min,vbus=5086mV,max_iusb=100mA,chg_limit_reason=0,chg_stop_reason=0,consistent=-1,flag=0x00000000,AICL=1500mA,htc_ext=0x00,level_accu=59226,htcchg=0,usb_temp=314,usb_overheat=0,usb_overheat_stat=0,batt_state=0 at 6446964670932 (1976-06-21 15:53:02.070235574 UTC)
+[ 6446.972120] [USB] dwc3_notify_vbus_work: pd_vbus_change = 1
+[ 6446.972126] [USB] dwc3_notify_vbus_work: during PR_SWAP, skip this PMIC event
+[ 6447.055513] usb 1-1: new high-speed USB device number 2 using xhci-hcd
+[ 6447.178545] usb 1-1: New USB device found, idVendor=2109, idProduct=2822
+[ 6447.178564] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 6447.178578] usb 1-1: Product: USB2.0 Hub
+[ 6447.178589] usb 1-1: Manufacturer: VIA Labs, Inc.
+[ 6447.178601] usb 1-1: SerialNumber: 000000001
+[ 6447.199450] hub 1-1:1.0: USB hub found
+[ 6447.199707] hub 1-1:1.0: 5 ports detected
+[ 6447.359493] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6447.362929] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6447.363015] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6447.363085] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6447.363153] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6447.368457] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6447.932240] usb 1-1.2: new high-speed USB device number 3 using xhci-hcd
+[ 6448.063935] usb 1-1.2: New USB device found, idVendor=2109, idProduct=2817
+[ 6448.063954] usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 6448.063967] usb 1-1.2: Product: USB2.0 Hub
+[ 6448.063979] usb 1-1.2: Manufacturer: VIA Labs, Inc.
+[ 6448.095530] hub 1-1.2:1.0: USB hub found
+[ 6448.095779] hub 1-1.2:1.0: 4 ports detected
+[ 6448.254243] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6448.257495] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6448.257619] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6448.257724] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6448.257823] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6448.263728] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6448.828905] usb 1-1.2.1: new high-speed USB device number 4 using xhci-hcd
+[ 6449.212387] usb 1-1.2.1: New USB device found, idVendor=0b95, idProduct=1790
+[ 6449.212406] usb 1-1.2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 6449.212421] usb 1-1.2.1: Product: AX88179A
+[ 6449.212434] usb 1-1.2.1: Manufacturer: ASIX
+[ 6449.212449] usb 1-1.2.1: SerialNumber: 007D96FB
+[ 6449.254405] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0002: -32
+[ 6449.264718] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0002: -32
+[ 6449.473550] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6449.581497] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to read reg index 0x0006: -32
+[ 6449.591848] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0005: -32
+[ 6449.602205] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6449.612576] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6449.624452] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6449.634818] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6449.645167] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0002: -32
+[ 6449.655682] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6449.666045] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0002: -32
+[ 6449.677933] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to read reg index 0x0001: -32
+[ 6449.688461] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6449.698801] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x001f: -32
+[ 6449.709159] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0019: -32
+[ 6449.719674] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x001f: -32
+[ 6449.731575] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x000d: -32
+[ 6449.741930] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x000e: -32
+[ 6449.752450] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x000d: -32
+[ 6449.762796] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to read reg index 0x000e: -32
+[ 6449.773175] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x000d: -32
+[ 6449.785040] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x000e: -32
+[ 6449.795567] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x000d: -32
+[ 6449.805915] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x000e: -32
+[ 6449.816432] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to read reg index 0x0000: -32
+[ 6449.826789] ax88179_178a 1-1.2.1:2.0 (unnamed net_device) (uninitialized): Failed to write reg index 0x0000: -32
+[ 6449.828294] ax88179_178a 1-1.2.1:2.0 eth0: register 'ax88179_178a' at usb-xhci-hcd.1.auto-1.2.1, ASIX AX88179 USB 3.0 Gigabit Ethernet, ffffffc0f66d6710
+[ 6449.835647] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6449.838113] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6449.838187] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6449.838258] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6449.838327] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6449.844407] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6449.908609] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0002: -32
+[ 6449.918952] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0002: -32
+[ 6450.128452] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6450.235745] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to read reg index 0x0006: -32
+[ 6450.246055] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0005: -32
+[ 6450.256406] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6450.266767] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6450.278562] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6450.288910] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6450.299270] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0002: -32
+[ 6450.309615] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6450.319969] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0002: -32
+[ 6450.331770] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to read reg index 0x0001: -32
+[ 6450.342140] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0001: -32
+[ 6450.352632] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x001f: -32
+[ 6450.362980] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0019: -32
+[ 6450.373503] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x001f: -32
+[ 6450.385287] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x000d: -32
+[ 6450.395639] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x000e: -32
+[ 6450.406002] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x000d: -32
+[ 6450.416506] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to read reg index 0x000e: -32
+[ 6450.426852] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x000d: -32
+[ 6450.438660] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x000e: -32
+[ 6450.449008] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x000d: -32
+[ 6450.459523] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x000e: -32
+[ 6450.469882] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to read reg index 0x0000: -32
+[ 6450.480378] ax88179_178a 1-1.2.1:2.1 (unnamed net_device) (uninitialized): Failed to write reg index 0x0000: -32
+[ 6450.481562] ax88179_178a 1-1.2.1:2.1 eth1: register 'ax88179_178a' at usb-xhci-hcd.1.auto-1.2.1, ASIX AX88179 USB 3.0 Gigabit Ethernet, ffffffc0f563f890
+[ 6450.487249] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6450.490253] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6450.490333] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6450.490405] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6450.490475] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6450.496600] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6450.620124] usb 1-1.2.4: new high-speed USB device number 5 using xhci-hcd
+[ 6450.634566] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[ 6450.641365] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0002: -32
+[ 6450.653474] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0002: -32
+[ 6450.763326] usb 1-1.2.4: New USB device found, idVendor=2537, idProduct=1081
+[ 6450.763345] usb 1-1.2.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 6450.763359] usb 1-1.2.4: Product: NS1081
+[ 6450.763371] usb 1-1.2.4: Manufacturer: Norelsys
+[ 6450.763384] usb 1-1.2.4: SerialNumber: 0123456789ABCDE
+[ 6450.766575] usb-storage 1-1.2.4:1.0: USB Mass Storage device detected
+[ 6450.767388] scsi host1: usb-storage 1-1.2.4:1.0
+[ 6450.772421] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6450.775284] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6450.775368] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6450.775541] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6450.775668] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6450.781748] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6450.785907] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6450.788991] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6450.789083] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6450.789154] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6450.789224] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6450.793278] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6450.862622] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0001: -32
+[ 6450.971524] ax88179_178a 1-1.2.1:2.1 eth1: Failed to read reg index 0x0001: -32
+[ 6450.981846] ax88179_178a 1-1.2.1:2.1 eth1: Failed to read reg index 0x0006: -32
+[ 6450.992352] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0005: -32
+[ 6451.002704] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0001: -32
+[ 6451.013057] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0001: -32
+[ 6451.025017] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0001: -32
+[ 6451.035364] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0001: -32
+[ 6451.045721] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0002: -32
+[ 6451.056078] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0001: -32
+[ 6451.066599] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0002: -32
+[ 6451.078381] ax88179_178a 1-1.2.1:2.1 eth1: Failed to read reg index 0x0001: -32
+[ 6451.088731] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0001: -32
+[ 6451.099097] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x001f: -32
+[ 6451.109594] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0019: -32
+[ 6451.119953] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x001f: -32
+[ 6451.131753] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x000d: -32
+[ 6451.142157] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x000e: -32
+[ 6451.152456] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x000d: -32
+[ 6451.162803] ax88179_178a 1-1.2.1:2.1 eth1: Failed to read reg index 0x000e: -32
+[ 6451.173491] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x000d: -32
+[ 6451.185491] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x000e: -32
+[ 6451.195785] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x000d: -32
+[ 6451.206459] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x000e: -32
+[ 6451.216799] ax88179_178a 1-1.2.1:2.1 eth1: Failed to read reg index 0x0000: -32
+[ 6451.227467] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0000: -32
+[ 6451.227829] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[ 6451.241839] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[ 6451.270760] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0002: -32
+[ 6451.281425] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0002: -32
+[ 6451.490633] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0001: -32
+[ 6451.545584] usb 1-1.5: new high-speed USB device number 6 using xhci-hcd
+[ 6451.600611] ax88179_178a 1-1.2.1:2.0 eth0: Failed to read reg index 0x0001: -32
+[ 6451.612410] ax88179_178a 1-1.2.1:2.0 eth0: Failed to read reg index 0x0006: -32
+[ 6451.622751] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0005: -32
+[ 6451.627201] usb 1-1.5: New USB device found, idVendor=291a, idProduct=8383
+[ 6451.627217] usb 1-1.5: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 6451.627230] usb 1-1.5: Product: Anker USB-C HUB Device
+[ 6451.627242] usb 1-1.5: Manufacturer: Anker
+[ 6451.627253] usb 1-1.5: SerialNumber: 0000000000000001
+[ 6451.633503] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0001: -32
+[ 6451.634620] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6451.637970] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6451.638106] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6451.638204] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6451.638296] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6451.643854] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0001: -32
+[ 6451.644623] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6451.654491] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0001: -32
+[ 6451.666350] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0001: -32
+[ 6451.676686] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0002: -32
+[ 6451.687037] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0001: -32
+[ 6451.697395] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0002: -32
+[ 6451.707742] ax88179_178a 1-1.2.1:2.0 eth0: Failed to read reg index 0x0001: -32
+[ 6451.719723] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0001: -32
+[ 6451.730364] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x001f: -32
+[ 6451.740718] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0019: -32
+[ 6451.751293] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x001f: -32
+[ 6451.761638] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x000d: -32
+[ 6451.769612] scsi 1:0:0:0: Direct-Access     NORELSYS 1081CS0               PQ: 0 ANSI: 6
+[ 6451.770091] scsi 1:0:0:1: Direct-Access     NORELSYS 1081CS1               PQ: 0 ANSI: 6
+[ 6451.775186] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x000e: -32
+[ 6451.777754] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6451.783761] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x000d: -32
+[ 6451.785624] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6451.785746] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6451.785831] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6451.785907] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6451.789606] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6451.794265] ax88179_178a 1-1.2.1:2.0 eth0: Failed to read reg index 0x000e: -32
+[ 6451.804600] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x000d: -32
+[ 6451.814950] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x000e: -32
+[ 6451.826921] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x000d: -32
+[ 6451.837263] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x000e: -32
+[ 6451.847628] ax88179_178a 1-1.2.1:2.0 eth0: Failed to read reg index 0x0000: -32
+[ 6451.857984] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0000: -32
+[ 6451.858103] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[ 6451.859747] multipath[4822]: syscall 283
+[ 6451.859757] Code: f9002be5 aa0603e5 f9002fe6 d4000001 (97ff9704)
+[ 6451.859763] CPU: 2 PID: 4822 Comm: multipath Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 6451.859767] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 6451.859772] task: ffffffc0f67f5e00 ti: ffffffc0f47d0000 task.ti: ffffffc0f47d0000
+[ 6451.859776] PC is at 0x7fa7749784
+[ 6451.859779] LR is at 0x7fa755c1e8
+[ 6451.859782] pc : [<0000007fa7749784>] lr : [<0000007fa755c1e8>] pstate: 80000000
+[ 6451.859785] sp : 0000007ff092eea0
+[ 6451.859788] x29: 0000007ff092eea0 x28: 0000007fa77ce258
+[ 6451.859794] x27: 0000000000000000 x26: 0000007fa7579b50
+[ 6451.859799] x25: 0000007fa77ce000 x24: 0000007fa75fd8d8
+[ 6451.859804] x23: 0000007fa77ceed4 x22: 0000007fa77cea60
+[ 6451.859809] x21: 0000007fa77cb038 x20: 0000000000000001
+[ 6451.859816] x19: 0000007fa757a128 x18: 0000000000000001
+[ 6451.859821] x17: 0000007fa7749734 x16: 0000007fa7579df0
+[ 6451.859826] x15: 0000000800000000 x14: 0000007fa77acc18
+[ 6451.859831] x13: 0000000000000000 x12: 00000000b3d3c623
+[ 6451.859836] x11: 0000000000000018 x10: 0000007ff092ef00
+[ 6451.859841] x9 : 0000007ff092eed0 x8 : 000000000000011b
+[ 6451.859846] x7 : 00000000fffffff8 x6 : 0000000000000000
+[ 6451.859850] x5 : 0000000000000000 x4 : 0000007ff092ef78
+[ 6451.859855] x3 : 0000000000000001 x2 : ffffffffffffffff
+[ 6451.859861] x1 : 0000000000000000 x0 : 0000000000000000
+
+[ 6451.859917] multipath[4823]: syscall 283
+[ 6451.859925] Code: f9002be5 aa0603e5 f9002fe6 d4000001 (97ff9704)
+[ 6451.859933] CPU: 0 PID: 4823 Comm: multipath Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 6451.859937] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 6451.859943] task: ffffffc0f3a1c680 ti: ffffffc0f3970000 task.ti: ffffffc0f3970000
+[ 6451.859947] PC is at 0x7f9ee8c784
+[ 6451.859951] LR is at 0x7f9ec9f1e8
+[ 6451.859956] pc : [<0000007f9ee8c784>] lr : [<0000007f9ec9f1e8>] pstate: 80000000
+[ 6451.859959] sp : 0000007fe901a030
+[ 6451.859964] x29: 0000007fe901a030 x28: 0000007f9ef11258
+[ 6451.859974] x27: 0000000000000000 x26: 0000007f9ecbcb50
+[ 6451.859984] x25: 0000007f9ef11000 x24: 0000007f9ed408d8
+[ 6451.859992] x23: 0000007f9ef11ed4 x22: 0000007f9ef11a60
+[ 6451.859998] x21: 0000007f9ef0e038 x20: 0000000000000001
+[ 6451.860005] x19: 0000007f9ecbd128 x18: 0000000000000001
+[ 6451.860011] x17: 0000007f9ee8c734 x16: 0000007f9ecbcdf0
+[ 6451.860021] x15: 0000000800000000 x14: 0000007f9eeefc18
+[ 6451.860027] x13: 0000000000000000 x12: 00000000b3d3c623
+[ 6451.860034] x11: 0000000000000018 x10: 0000007fe901a090
+[ 6451.860042] x9 : 0000007fe901a060 x8 : 000000000000011b
+[ 6451.860051] x7 : 00000000fffffff8 x6 : 0000000000000000
+[ 6451.860059] x5 : 0000000000000000 x4 : 0000007fe901a108
+[ 6451.860065] x3 : 0000000000000001 x2 : ffffffffffffffff
+[ 6451.860072] x1 : 0000000000000000 x0 : 0000000000000000
+
+[ 6453.151391] usb 1-1.2.1: USB disconnect, device number 4
+[ 6453.151626] ax88179_178a 1-1.2.1:2.0 eth0: unregister 'ax88179_178a' usb-xhci-hcd.1.auto-1.2.1, ASIX AX88179 USB 3.0 Gigabit Ethernet
+[ 6453.151698] ax88179_178a 1-1.2.1:2.0 eth0: Failed to read reg index 0x0002: -19
+[ 6453.151718] ax88179_178a 1-1.2.1:2.0 eth0: Failed to write reg index 0x0002: -19
+[ 6453.156667] [RMNET:HI] rmnet_config_notify_cb(): Kernel is trying to unregister eth0
+[ 6453.165720] [RMNET:HI] rmnet_config_notify_cb(): Kernel is trying to unregister eth0
+[ 6453.165798] ax88179_178a 1-1.2.1:2.0 eth0 (unregistered): Failed to write reg index 0x0002: -19
+[ 6453.165822] ax88179_178a 1-1.2.1:2.0 eth0 (unregistered): Failed to write reg index 0x0001: -19
+[ 6453.165845] ax88179_178a 1-1.2.1:2.0 eth0 (unregistered): Failed to write reg index 0x0002: -19
+[ 6453.166271] ax88179_178a 1-1.2.1:2.1 eth1: unregister 'ax88179_178a' usb-xhci-hcd.1.auto-1.2.1, ASIX AX88179 USB 3.0 Gigabit Ethernet
+[ 6453.166342] ax88179_178a 1-1.2.1:2.1 eth1: Failed to read reg index 0x0002: -19
+[ 6453.166361] ax88179_178a 1-1.2.1:2.1 eth1: Failed to write reg index 0x0002: -19
+[ 6453.171377] [RMNET:HI] rmnet_config_notify_cb(): Kernel is trying to unregister eth1
+[ 6453.193029] [RMNET:HI] rmnet_config_notify_cb(): Kernel is trying to unregister eth1
+[ 6453.193067] ax88179_178a 1-1.2.1:2.1 eth1 (unregistered): Failed to write reg index 0x0002: -19
+[ 6453.193078] ax88179_178a 1-1.2.1:2.1 eth1 (unregistered): Failed to write reg index 0x0001: -19
+[ 6453.193087] ax88179_178a 1-1.2.1:2.1 eth1 (unregistered): Failed to write reg index 0x0002: -19
+[ 6453.898870] usb 1-1.2.1: new high-speed USB device number 7 using xhci-hcd
+[ 6454.171985] usb 1-1.2.1: New USB device found, idVendor=0b95, idProduct=1790
+[ 6454.172005] usb 1-1.2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 6454.172018] usb 1-1.2.1: Product: AX88179A
+[ 6454.172030] usb 1-1.2.1: Manufacturer: ASIX
+[ 6454.172041] usb 1-1.2.1: SerialNumber: 007D96FB
+[ 6454.800534] ax88179_178a 1-1.2.1:1.0 (unnamed net_device) (uninitialized): Failed to read reg index 0x0040: -32
+[ 6455.111977] ax88179_178a 1-1.2.1:1.0 eth0: register 'ax88179_178a' at usb-xhci-hcd.1.auto-1.2.1, ASIX AX88179 USB 3.0 Gigabit Ethernet, ffffffc0f0907390
+[ 6455.113740] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6455.117966] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-dout no 67
+[ 6455.118116] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-din no 68
+[ 6455.118235] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-clock no 65
+[ 6455.118326] msm8994_init_ftm_btpcm: btpcm gpio ftm-btpcm-sync no 66
+[ 6455.123374] msm8996-asoc-snd soc:sound-9335: ASoC: platform (null) not registered
+[ 6455.125745] pil-q6v5-mss 2080000.qcom,mss: Failed to find the pas_id.
+[ 6455.137821] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[ 6455.676972] ax88179_178a 1-1.2.1:1.0 eth0: Failed to read reg index 0x0040: -32
+[ 6455.987155] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[ 6456.958988] [BATT] chg_full_check_worker: vol:4284, curr=126, is_full_count=0, is_full=0 at 6456959608177 (1976-06-21 15:53:12.065180788 UTC)
+[ 6466.985897] [BATT] chg_full_check_worker: vol:4284, curr=126, is_full_count=0, is_full=0 at 6466986518187 (1976-06-21 15:53:22.092091319 UTC)
+[ 6477.012563] [BATT] chg_full_check_worker: vol:4284, curr=126, is_full_count=0, is_full=0 at 6477013184498 (1976-06-21 15:53:32.118759297 UTC)
+[ 6477.065523] FG: fg_is_batt_id_valid: fg batt sts 0x8
+[ 6481.492704] [WLAN] CFG80211-LOG) wl_escan_handler : SCAN COMPLETED: scanned AP count=22
+[ 6487.039150] [BATT] chg_full_check_worker: vol:4314, curr=72, is_full_count=0, is_full=0 at 6487039773466 (1976-06-21 15:53:42.145344410 UTC)
+[ 6495.523739] SlimPort Colorado3 anx7816_cbl_det_isr : detect cable insertion, cable_connected = 1
+[ 6495.523745] SlimPort Colorado3 anx7816_cbl_det_isr : detect HPD High
+[ 6495.523750] hdmi_tx_sysfs_enable_hpd: on=1, sdev=0
+[ 6495.523754] hdmi_tx_enable_power: 0, en=1
+[ 6495.523857] hdmi_tx_enable_power: 0, en=1 done
+[ 6495.523895] hdmi_tx_hpd_on: HDMI HW version = 0x40000002
+[ 6495.523914] hdmi_tx_hpd_on: HPD is now ON
+[ 6495.523926] anx7816_cbl_det_isr done
+[ 6495.523958] SlimPort Colorado3 sink_is_connected : Downstream HPD is detected
+[ 6495.526040] sp_tx_hardware_poweron enable vdd10 ffffffc0f74b3500
+[ 6495.539546] SlimPort Colorado3 sp_tx_hardware_poweron: anx7816 power on
+[ 6495.539560] SlimPort Colorado3 slimport_waitting_cable_plug_process : next: clean_status: 0,
+
+[ 6495.539569] SlimPort Colorado3 print_sys_state : -STATE_SP_INITIALIZED-
+[ 6495.655684] SlimPort Colorado3 hdmi_rx_initialization : HDMI Rx is initialized...
+[ 6495.661779] SlimPort Colorado3 xtal_clk_sel : define XTAL_CLK:  4
+
+[ 6495.872274] SlimPort Colorado3 slimport_initialization : next: clean_status: 0,
+
+[ 6495.872292] SlimPort Colorado3 print_sys_state : -STATE_SINK_CONNECTION-
+[ 6495.878030] SlimPort Colorado3 sp_tx_get_cable_type : DPCD 0x005: 1d
+[ 6495.887689] SlimPort Colorado3 sp_tx_get_cable_type : Downstream is HDMI dongle.
+[ 6495.898228] SlimPort Colorado3 slimport_sink_connection : next: clean_status: 0,
+
+[ 6495.898234] SlimPort Colorado3 print_sys_state : -STATE_PARSE_EDID-
+[ 6495.898239] SlimPort Colorado3 slimport_edid_process : edid_process
+[ 6495.910062] SlimPort Colorado3 sp_tx_get_edid_block : EDID Block = 2
+[ 6496.116594] SlimPort Colorado3 edid_header_result : Good EDID header!
+[ 6496.116605] SlimPort Colorado3 check_edid_data : Block 0 edid checksum OK
+[ 6496.116611] SlimPort Colorado3 check_edid_data : Block 1 edid checksum OK
+[ 6496.137554] SlimPort Colorado3 parse_edid_to_get_bandwidth : bandwidth via EDID : 14
+[ 6496.137561] SlimPort Colorado3 parse_edid_to_get_bandwidth : bandwidth via EDID : a
+[ 6496.137567] SlimPort Colorado3 slimport_edid_process : set link bw in edid 14
+[ 6496.138041] hdmi_tx_set_mhl_max_pclk: 162000
+[ 6496.143150] SlimPort Colorado3 slimport_hdcp_cap_check :hdcp cap check:  Supported
+[ 6496.143157] hdmi_tx_set_sp_hdcp: 1
+[ 6496.143630] SlimPort Colorado3 slimport_edid_process : hdmi_rx_set_hpd 1 !
+[ 6496.144105] SlimPort Colorado3 slimport_edid_process : next: clean_status: 0,
+
+[ 6496.144111] SlimPort Colorado3 print_sys_state : -STATE_LINK_TRAINING-
+[ 6496.144116] SlimPort Colorado3 slimport_link_training : sp_tx_LT_state : 0
+[ 6496.144591] SlimPort Colorado3 slimport_block_power_ctrl : sp_tx_power_on: 08
+[ 6496.155655] hdmi_tx_hpd_int_work: Got HPD CONNECT interrupt
+[ 6496.155663] hdmi_tx_enable_power: 1, en=1
+[ 6496.155739] hdmi_tx_enable_power: 1, en=1 done
+[ 6496.155762] EDID: reading block(0) with block-size=128
+[ 6496.188501] EDID: reading block(1) with block-size=128
+[ 6496.221198] HDMI EDID: 00 ff ff ff ff ff ff 00 21 57 30 21 0a 66 34 01
+[ 6496.221207] HDMI EDID: 31 1f 01 03 80 3c 22 78 02 28 95 a7 55 4e a3 26
+[ 6496.221212] HDMI EDID: 0f 50 54 21 08 00 81 00 81 40 81 80 6e c0 95 00
+[ 6496.221216] HDMI EDID: a9 c0 d1 c0 01 00 02 3a 80 18 71 38 2d 40 58 2c
+[ 6496.221221] HDMI EDID: 45 00 c4 8e 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+[ 6496.221225] HDMI EDID: 6e 28 55 00 55 50 21 00 00 1e 00 00 00 fd 00 17
+[ 6496.221229] HDMI EDID: 55 1e 64 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+[ 6496.221233] HDMI EDID: 00 48 44 4d 49 20 54 4f 20 55 53 42 0a 20 01 54
+[ 6496.221240] hdmi_edid_find_block: EDID: type=3 block not found in EDID block
+[ 6496.221246] hdmi_edid_find_block: EDID: type=1 block not found in EDID block
+[ 6496.221253] hdmi_edid_find_block: EDID: type=7 block not found in EDID block
+[ 6496.221258] HDMI EDID: 02 03 2f 71 54 01 02 03 04 10 11 12 13 1e 22 3e
+[ 6496.221262] HDMI EDID: 4b 45 4c 5f 64 21 22 3c 3d 23 09 07 07 83 01 00
+[ 6496.221266] HDMI EDID: 00 67 03 0c 00 00 00 00 3c e5 0e 61 60 66 65 8c
+[ 6496.221270] HDMI EDID: 0a d0 8a 20 e0 2d 10 10 3e 96 00 c4 8e 21 00 00
+[ 6496.221274] HDMI EDID: 18 8c 0a d0 90 20 40 31 20 0c 40 55 00 c4 8e 21
+[ 6496.221277] HDMI EDID: 00 00 18 4e 1f 00 80 51 00 1e 30 40 80 37 00 c4
+[ 6496.221281] HDMI EDID: 8e 21 00 00 18 00 00 00 00 00 00 00 00 00 00 00
+[ 6496.221285] HDMI EDID: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 72
+[ 6496.221296] hdmi_edid_add_sink_video_format: video format: ??? is not supported
+[ 6496.221300] hdmi_edid_add_sink_video_format: video format: ??? is not supported
+[ 6496.221304] hdmi_edid_add_sink_video_format: video format: ??? is not supported
+[ 6496.221310] hdmi_tx_enable_power: 1, en=0
+[ 6496.221412] hdmi_tx_enable_power: 1, en=0 done
+[ 6496.221470] hdmi_tx_send_cable_notification: cable state switched to 1
+[ 6496.238558] SlimPort Colorado3 sp_tx_enhancemode_set : Enhance mode enabled
+[ 6496.355487] SlimPort Colorado3 slimport_link_training : sp_tx_LT_state : 4
+[ 6496.363875] SlimPort Colorado3 sp_tx_lt_done_int_handler : lt_done: LT Finish
+[ 6496.462199] SlimPort Colorado3 slimport_link_training : sp_tx_LT_state : 6
+[ 6496.484826] SlimPort Colorado3 sp_tx_link_err_check :  Err of Lane = 0
+[ 6496.485081] SlimPort Colorado3 slimport_link_training : LT succeed, bw: 14
+[ 6496.485540] Lane0 Set: 2e
+[ 6496.499912] SlimPort Colorado3 sp_tx_link_err_check :  Err of Lane = 0
+[ 6496.499918] SlimPort Colorado3 slimport_link_training : next: clean_status: 0,
+
+[ 6496.499923] SlimPort Colorado3 print_sys_state : -STATE_VIDEO_OUTPUT-
+[ 6496.500177] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6496.605890] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6496.712645] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6496.819373] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6496.925902] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.032551] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.065599] [BATT] chg_full_check_worker: vol:4314, curr=72, is_full_count=0, is_full=0 at 6497066220558 (1976-06-21 15:53:52.171795669 UTC)
+[ 6497.139260] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.245949] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.352712] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.459281] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.565948] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.672716] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.779365] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.886028] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6497.992533] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6498.000324] SlimPort Colorado3 sp_tx_hpd_int_handler : sp_tx_hpd_int_handler
+[ 6498.000329] HPD:____________HPD changed!
+[ 6498.005688] SlimPort Colorado3 sp_tx_hpd_int_handler : set: clean_status: 0,
+
+[ 6498.006283] SlimPort Colorado3 print_sys_state : -STATE_SP_INITIALIZED-
+[ 6498.006296] SlimPort Colorado3 sp_tx_hpd_int_handler : sp_tx_hpd_int_handler
+[ 6498.006305] HPD:____________HPD LOST!
+[ 6498.014691] SlimPort Colorado3 clean_system_status : clean_system_status. A -> B;
+[ 6498.014701] A:
+[ 6498.014710] SlimPort Colorado3 print_sys_state : -STATE_VIDEO_OUTPUT-
+[ 6498.014718] B:
+[ 6498.014726] SlimPort Colorado3 print_sys_state : -STATE_SP_INITIALIZED-
+[ 6498.037024] SlimPort Colorado3 anx7816_cbl_det_isr : detect cable insertion, cable_connected = 0
+[ 6498.037028] SlimPort Colorado3 anx7816_cbl_det_isr : detect HPD LOW
+[ 6498.043162] SlimPort Colorado3 sp_tx_hardware_powerdown: anx7816 power down
+[ 6498.043167] hdmi_tx_sysfs_enable_hpd: on=0, sdev=1
+[ 6498.043177] hdmi_tx_sysfs_enable_hpd+0x84/0x94 -> hdmi_tx_hpd_off:
+[ 6498.043204] hdmi_tx_enable_power: 0, en=0
+[ 6498.043292] hdmi_tx_enable_power: 0, en=0 done
+[ 6498.043295] hdmi_tx_hpd_off: HPD is now OFF
+[ 6498.043298] anx7816_cbl_det_isr done
+[ 6502.386389] SlimPort Colorado3 anx7816_cbl_det_isr : detect cable insertion, cable_connected = 1
+[ 6502.386394] SlimPort Colorado3 anx7816_cbl_det_isr : detect HPD High
+[ 6502.386398] hdmi_tx_sysfs_enable_hpd: on=1, sdev=1
+[ 6502.386402] hdmi_tx_enable_power: 0, en=1
+[ 6502.386496] hdmi_tx_enable_power: 0, en=1 done
+[ 6502.386533] hdmi_tx_hpd_on: HDMI HW version = 0x40000002
+[ 6502.386551] hdmi_tx_hpd_on: HPD is now ON
+[ 6502.386562] anx7816_cbl_det_isr done
+[ 6502.386594] SlimPort Colorado3 sink_is_connected : Downstream HPD is detected
+[ 6502.388673] sp_tx_hardware_poweron enable vdd10 ffffffc0f74b3500
+[ 6502.402194] SlimPort Colorado3 sp_tx_hardware_poweron: anx7816 power on
+[ 6502.402207] SlimPort Colorado3 slimport_waitting_cable_plug_process : next: clean_status: 0,
+
+[ 6502.402217] SlimPort Colorado3 print_sys_state : -STATE_SP_INITIALIZED-
+[ 6502.519537] SlimPort Colorado3 hdmi_rx_initialization : HDMI Rx is initialized...
+[ 6502.525842] SlimPort Colorado3 xtal_clk_sel : define XTAL_CLK:  4
+
+[ 6502.738892] SlimPort Colorado3 slimport_initialization : next: clean_status: 0,
+
+[ 6502.738911] SlimPort Colorado3 print_sys_state : -STATE_SINK_CONNECTION-
+[ 6502.744671] SlimPort Colorado3 sp_tx_get_cable_type : DPCD 0x005: 1d
+[ 6502.754347] SlimPort Colorado3 sp_tx_get_cable_type : Downstream is HDMI dongle.
+[ 6502.764907] SlimPort Colorado3 slimport_sink_connection : next: clean_status: 0,
+
+[ 6502.764912] SlimPort Colorado3 print_sys_state : -STATE_PARSE_EDID-
+[ 6502.764918] SlimPort Colorado3 slimport_edid_process : edid_process
+[ 6502.777469] SlimPort Colorado3 sp_tx_get_edid_block : EDID Block = 2
+[ 6502.981585] SlimPort Colorado3 edid_header_result : Good EDID header!
+[ 6502.981594] SlimPort Colorado3 check_edid_data : Block 0 edid checksum OK
+[ 6502.981600] SlimPort Colorado3 check_edid_data : Block 1 edid checksum OK
+[ 6503.003868] SlimPort Colorado3 parse_edid_to_get_bandwidth : bandwidth via EDID : 14
+[ 6503.003876] SlimPort Colorado3 parse_edid_to_get_bandwidth : bandwidth via EDID : a
+[ 6503.003882] SlimPort Colorado3 slimport_edid_process : set link bw in edid 14
+[ 6503.004409] hdmi_tx_set_mhl_max_pclk: 162000
+[ 6503.009847] SlimPort Colorado3 slimport_hdcp_cap_check :hdcp cap check:  Supported
+[ 6503.009854] hdmi_tx_set_sp_hdcp: 1
+[ 6503.010377] SlimPort Colorado3 slimport_edid_process : hdmi_rx_set_hpd 1 !
+[ 6503.010900] SlimPort Colorado3 slimport_edid_process : next: clean_status: 0,
+
+[ 6503.010906] SlimPort Colorado3 print_sys_state : -STATE_LINK_TRAINING-
+[ 6503.010912] SlimPort Colorado3 slimport_link_training : sp_tx_LT_state : 0
+[ 6503.011434] SlimPort Colorado3 slimport_block_power_ctrl : sp_tx_power_on: 08
+[ 6503.022399] hdmi_tx_hpd_int_work: Got HPD CONNECT interrupt
+[ 6503.022415] hdmi_tx_enable_power: 1, en=1
+[ 6503.022515] hdmi_tx_enable_power: 1, en=1 done
+[ 6503.022546] EDID: reading block(0) with block-size=128
+[ 6503.055363] EDID: reading block(1) with block-size=128
+[ 6503.088312] HDMI EDID: 00 ff ff ff ff ff ff 00 21 57 30 21 0a 66 34 01
+[ 6503.088325] HDMI EDID: 31 1f 01 03 80 3c 22 78 02 28 95 a7 55 4e a3 26
+[ 6503.088333] HDMI EDID: 0f 50 54 21 08 00 81 00 81 40 81 80 6e c0 95 00
+[ 6503.088342] HDMI EDID: a9 c0 d1 c0 01 00 02 3a 80 18 71 38 2d 40 58 2c
+[ 6503.088351] HDMI EDID: 45 00 c4 8e 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+[ 6503.088359] HDMI EDID: 6e 28 55 00 55 50 21 00 00 1e 00 00 00 fd 00 17
+[ 6503.088367] HDMI EDID: 55 1e 64 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+[ 6503.088375] HDMI EDID: 00 48 44 4d 49 20 54 4f 20 55 53 42 0a 20 01 54
+[ 6503.088387] hdmi_edid_find_block: EDID: type=3 block not found in EDID block
+[ 6503.088399] hdmi_edid_find_block: EDID: type=1 block not found in EDID block
+[ 6503.088413] hdmi_edid_find_block: EDID: type=7 block not found in EDID block
+[ 6503.088422] HDMI EDID: 02 03 2f 71 54 01 02 03 04 10 11 12 13 1e 22 3e
+[ 6503.088430] HDMI EDID: 4b 45 4c 5f 64 21 22 3c 3d 23 09 07 07 83 01 00
+[ 6503.088438] HDMI EDID: 00 67 03 0c 00 00 00 00 3c e5 0e 61 60 66 65 8c
+[ 6503.088446] HDMI EDID: 0a d0 8a 20 e0 2d 10 10 3e 96 00 c4 8e 21 00 00
+[ 6503.088454] HDMI EDID: 18 8c 0a d0 90 20 40 31 20 0c 40 55 00 c4 8e 21
+[ 6503.088462] HDMI EDID: 00 00 18 4e 1f 00 80 51 00 1e 30 40 80 37 00 c4
+[ 6503.088471] HDMI EDID: 8e 21 00 00 18 00 00 00 00 00 00 00 00 00 00 00
+[ 6503.088528] HDMI EDID: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 72
+[ 6503.088549] hdmi_edid_add_sink_video_format: video format: ??? is not supported
+[ 6503.088558] hdmi_edid_add_sink_video_format: video format: ??? is not supported
+[ 6503.088567] hdmi_edid_add_sink_video_format: video format: ??? is not supported
+[ 6503.088578] hdmi_tx_enable_power: 1, en=0
+[ 6503.088671] hdmi_tx_enable_power: 1, en=0 done
+[ 6503.088683] hdmi_tx_send_cable_notification: cable state is same 1
+[ 6503.108874] SlimPort Colorado3 sp_tx_enhancemode_set : Enhance mode enabled
+[ 6503.228829] SlimPort Colorado3 slimport_link_training : sp_tx_LT_state : 4
+[ 6503.237351] SlimPort Colorado3 sp_tx_lt_done_int_handler : lt_done: LT Finish
+[ 6503.335836] SlimPort Colorado3 slimport_link_training : sp_tx_LT_state : 6
+[ 6503.358446] SlimPort Colorado3 sp_tx_link_err_check :  Err of Lane = 0
+[ 6503.358702] SlimPort Colorado3 slimport_link_training : LT succeed, bw: 14
+[ 6503.359185] Lane0 Set: 2e
+[ 6503.373836] SlimPort Colorado3 sp_tx_link_err_check :  Err of Lane = 0
+[ 6503.373847] SlimPort Colorado3 slimport_link_training : next: clean_status: 0,
+
+[ 6503.373856] SlimPort Colorado3 print_sys_state : -STATE_VIDEO_OUTPUT-
+[ 6503.374183] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6503.479218] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6503.586146] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6503.692542] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6503.799207] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6503.905934] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6503.945535] mmc0 Statistics: write 288 KB in 22 ms, perf 12728 KB/s, rq 31
+[ 6503.945550] mmc0 Statistics: read 2776 KB in 167 ms, perf 16584 KB/s, rq 33
+[ 6504.012589] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.119295] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.225978] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.332617] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.439531] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.546061] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.652647] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.759345] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.865936] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6504.972716] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.079279] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.186250] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.292563] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.399222] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.505885] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.612746] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.719290] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.825960] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6505.932666] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.039361] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.146086] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.208675] [KEY] gpio_keys_gpio_isr, irq=398, gpio=40
+[ 6506.245545] [KEY] gpio_keys_gpio_report_event: key 1-74, (40) changed to 1
+[ 6506.252559] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.343702] [KEY] gpio_keys_gpio_isr, irq=398, gpio=40
+[ 6506.359206] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.382209] [KEY] gpio_keys_gpio_report_event: key 1-74, (40) changed to 0
+[ 6506.466212] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.575975] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.682911] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.789251] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6506.895920] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.002582] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.092202] [BATT] chg_full_check_worker: vol:4314, curr=72, is_full_count=0, is_full=0 at 6507092824786 (1976-06-21 15:54:02.198399793 UTC)
+[ 6507.109340] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.145513] [BATT] batt_worker: total_time since last batt update = 60210 ms.
+[ 6507.145590] FG: fg_is_batt_id_valid: fg batt sts 0x8
+[ 6507.171492] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 6507.171502] [BATT] batt_level_adjust: pre_level=100, new_level=99, level drop but overloading doesn't happen!
+[ 6507.173223] SMBCHG: set_aicl_enable: Disable AICL...
+[ 6507.173321] [BATT] ID=1,level=100,level_raw=99,vol=4314mV,temp=332,current=72173uA,chg_name=PD5V_0.1A,chg_src=1,chg_en=1,health=1,overload=0,duration=0min,vbus=5078mV,max_iusb=100mA,chg_limit_reason=0,chg_stop_reason=0,consistent=-1,flag=0x00000000,AICL=1500mA,htc_ext=0x00,level_accu=59226,htcchg=0,usb_temp=311,usb_overheat=0,usb_overheat_stat=0,batt_state=0 at 6507173938857 (1976-06-21 15:54:02.279503343 UTC)
+[ 6507.215784] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.319237] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.426006] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.428994] [KEY] gpio_keys_gpio_isr, irq=398, gpio=40
+[ 6507.468877] [KEY] gpio_keys_gpio_report_event: key 1-74, (40) changed to 1
+[ 6507.536075] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.630284] [KEY] gpio_keys_gpio_isr, irq=398, gpio=40
+[ 6507.642693] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.668884] [KEY] gpio_keys_gpio_report_event: key 1-74, (40) changed to 0
+[ 6507.749419] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.855882] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6507.965902] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.072591] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.179261] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.285996] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.392538] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.499211] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.605977] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.712682] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.819286] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6508.926401] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.032667] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.142858] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.249352] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.356027] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.462818] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.569516] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.675948] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.782639] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.889201] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6509.995878] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.102558] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.209317] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.315956] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.422681] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.529287] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.636185] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.742668] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.849373] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6510.955999] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6511.062704] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6511.130505] usb 1-1: USB disconnect, device number 2
+[ 6511.130525] usb 1-1.2: USB disconnect, device number 3
+[ 6511.130541] usb 1-1.2.1: USB disconnect, device number 7
+[ 6511.131109] ax88179_178a 1-1.2.1:1.0 eth0: unregister 'ax88179_178a' usb-xhci-hcd.1.auto-1.2.1, ASIX AX88179 USB 3.0 Gigabit Ethernet
+[ 6511.131181] ax88179_178a 1-1.2.1:1.0 eth0: Failed to read reg index 0x0002: -19
+[ 6511.131202] ax88179_178a 1-1.2.1:1.0 eth0: Failed to write reg index 0x0002: -19
+[ 6511.135957] [RMNET:HI] rmnet_config_notify_cb(): Kernel is trying to unregister eth0
+[ 6511.137808] [USB] charger type: UNKNOWN_CHARGER
+[ 6511.138128] [USB] check_vbus_in : 1 -> 0
+[ 6511.138143] [USB] dwc3_msm_power_set_property_usb: delay 500ms to confirm disconnect or pr_swap
+[ 6511.138561] SMBCHG: set_aicl_enable: Enable AICL...
+[ 6511.138863] HTCCHG: htcchg_set_property: POWER_SUPPLY_PROP_CHARGING_ENABLED set: 1.
+[ 6511.138876] HTCCHG: htcchg_en_control: CHARGE_DISABLE
+[ 6511.138886] HTCCHG: htcchg_en_control: HTCCHG_EXT_MODE: 0.
+[ 6511.139867] [BATT] cancel chg_full_check_work when plug out.
+[ 6511.141975] [BATT] batt_worker: total_time since last batt update = 3993 ms.
+[ 6511.149020] [RMNET:HI] rmnet_config_notify_cb(): Kernel is trying to unregister eth0
+[ 6511.149139] ax88179_178a 1-1.2.1:1.0 eth0 (unregistered): Failed to write reg index 0x0002: -19
+[ 6511.149186] ax88179_178a 1-1.2.1:1.0 eth0 (unregistered): Failed to write reg index 0x0001: -19
+[ 6511.149229] ax88179_178a 1-1.2.1:1.0 eth0 (unregistered): Failed to write reg index 0x0002: -19
+[ 6511.155311] [OHIO] ohio_work_func : detect cable insertion/remove, cable_connected = 0
+[ 6511.155345] [USB] Exit from Host mode or Disconnected
+[ 6511.155385] [USB] dwc3_otg_sm_work: a_host state
+[ 6511.156230] [OHIO] smart_5v disabled
+[ 6511.165125] [OHIO] ohio_work_func : detect cable insertion/remove, cable_connected = 0
+[ 6511.165152] [USB] Exit from Host mode or Disconnected
+[ 6511.165337] i2c-msm-v2 75b7000.i2c: NACK: slave not responding, ensure its powered: msgs(n:2 cur:0 tx) bc(rx:1 tx:1) mode:FIFO slv_addr:0x28 MSTR_STS:0x0d1300c8 OPER:0x00000010
+[ 6511.165444] xhci-hcd xhci-hcd.1.auto: remove, state 4
+[ 6511.165469] [OHIO] Ohio ohio_read_reg: failed to read i2c addr=50
+[ 6511.165635] i2c-msm-v2 75b7000.i2c: NACK: slave not responding, ensure its powered: msgs(n:1 cur:0 tx) bc(rx:0 tx:2) mode:FIFO slv_addr:0x28 MSTR_STS:0x0d1300c8 OPER:0x00000090
+[ 6511.165697] [OHIO] Ohio ohio_write_reg: failed to write i2c addr=50
+[ 6511.167072] usb 1-1.2.4: USB disconnect, device number 5
+[ 6511.167928] [BATT] set_batt_psy_property. value(0) prop(89) at 6511168547171 (1976-06-21 15:54:06.274131449 UTC)
+[ 6511.167942] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 6511.167947] [BATT] batt_level_adjust: Cable plug out when level 100, reset timer.
+[ 6511.169794] [BATT] ID=1,level=100,level_raw=98,vol=4276mV,temp=332,current=131529uA,chg_name=NONE,chg_src=0,chg_en=0,health=1,overload=0,duration=0min,vbus=754mV,max_iusb=0mA,chg_limit_reason=0,chg_stop_reason=0,consistent=-1,flag=0x00000000,AICL=1500mA,htc_ext=0x00,level_accu=59226,htcchg=0,usb_temp=311,usb_overheat=0,usb_overheat_stat=0,batt_state=0 at 6511170414984 (1976-06-21 15:54:06.275964210 UTC)
+[ 6511.170024] SlimPort Colorado3 slimport_config_video_output :HDMI input video not stable!, RX_STAT=0x8
+[ 6511.175069] usb 1-1.5: USB disconnect, device number 6
+[ 6511.176548] SlimPort Colorado3 sp_tx_hpd_int_handler : sp_tx_hpd_int_handler
+[ 6511.176554] HPD:____________HPD changed!
+[ 6511.179681] SlimPort Colorado3 sp_tx_hpd_int_handler : set: clean_status: 0,
+
+[ 6511.180095] SlimPort Colorado3 print_sys_state : -STATE_SP_INITIALIZED-
+[ 6511.185451] SlimPort Colorado3 sp_tx_hpd_int_handler : sp_tx_hpd_int_handler
+[ 6511.185459] HPD:____________HPD LOST!
+[ 6511.192431] SlimPort Colorado3 clean_system_status : clean_system_status. A -> B;
+[ 6511.192437] A:
+[ 6511.192442] SlimPort Colorado3 print_sys_state : -STATE_VIDEO_OUTPUT-
+[ 6511.192445] B:
+[ 6511.192449] SlimPort Colorado3 print_sys_state : -STATE_SP_INITIALIZED-
+[ 6511.203034] SlimPort Colorado3 anx7816_cbl_det_isr : detect cable insertion, cable_connected = 0
+[ 6511.203041] SlimPort Colorado3 anx7816_cbl_det_isr : detect HPD LOW
+[ 6511.209190] SlimPort Colorado3 sp_tx_hardware_powerdown: anx7816 power down
+[ 6511.209198] hdmi_tx_sysfs_enable_hpd: on=0, sdev=1
+[ 6511.209208] hdmi_tx_sysfs_enable_hpd+0x84/0x94 -> hdmi_tx_hpd_off:
+[ 6511.209235] hdmi_tx_enable_power: 0, en=0
+[ 6511.209324] hdmi_tx_enable_power: 0, en=0 done
+[ 6511.209327] hdmi_tx_hpd_off: HPD is now OFF
+[ 6511.209330] anx7816_cbl_det_isr done
+[ 6511.319067] usb usb2: USB disconnect, device number 1
+[ 6511.320196] xhci-hcd xhci-hcd.1.auto: USB bus 2 deregistered
+[ 6511.320490] xhci-hcd xhci-hcd.1.auto: remove, state 4
+[ 6511.320530] usb usb1: USB disconnect, device number 1
+[ 6511.321857] xhci-hcd xhci-hcd.1.auto: USB bus 1 deregistered
+[ 6511.338046] [USB] USB3_QSERDES_TX_EMP_POST1_LVL = f
+[ 6511.338067] [USB] USB3_QSERDES_TX_DRV_LVL = 1
+[ 6511.340242] [USB] dwc3_otg_sm_work: b_idle state
+[ 6511.340254] [USB] charger type: UNKNOWN_CHARGER
+[ 6511.635581] [USB] dwc3_notify_vbus_work: pd_vbus_change = 0
+[ 6511.635599] [USB] dwc3_notify_vbus_work: maybe cable out or SINK first connect, resume state machine
+[ 6511.635695] [USB] dwc3_otg_sm_work: b_idle state
+[ 6511.635716] [USB] charger type: UNKNOWN_CHARGER
+[ 6512.339576] msm-dwc3 6a00000.ssusb: dwc3_msm_suspend unvote for TCXO buffer
+[ 6512.339708] msm-dwc3 6a00000.ssusb: DWC3 in low power mode
+[ 6537.226470] FG: fg_is_batt_id_valid: fg batt sts 0x8
+[ 6545.988776] [KEY] gpio_keys_gpio_isr, irq=398, gpio=40
+[ 6546.028870] [KEY] gpio_keys_gpio_report_event: key 1-74, (40) changed to 1
+[ 6546.068573] [KEY] gpio_keys_gpio_isr, irq=398, gpio=40
+[ 6546.105525] [KEY] gpio_keys_gpio_report_event: key 1-74, (40) changed to 0
+[ 6548.410877] [OHIO] ohio_work_func : detect cable insertion/remove, cable_connected = 1
+[ 6548.442656] [OHIO] ohio_main_process: smart_5v enabled
+[ 6548.442922] [OHIO] ohio_main_process: UFP(8) FW version 0x13
+[ 6548.559675] [OHIO] cc status 0x4
+[ 6549.004242] [OHIO] >>Hard Reset
+[ 6549.315609] [USB] charger type: USB_CDP_CHARGER
+[ 6549.315797] [USB] check_vbus_in : 0 -> 1
+[ 6549.316751] [BATT] htc_batt_stats_1.1: sampling: dischg_time=135(s), level=100->100, prev_chg_time=6409(s)
+[ 6549.316768] [BATT] htc_batt_stats_1.1: statistics_all: This sampling is invalid, chg_time=6409, dischg_time=135
+[ 6549.316780] [BATT] htc_batt_stats_1.1: statistics_full_low: This sampling is invalid, chg_time=6409, dischg_time=135
+[ 6549.316791] [BATT] htc_batt_stats_1.1: begin charging: level=100, at=1976-06-21 15:54:44 UTC
+[ 6549.317919] [BATT] chg_full_check_worker: vol:4292, curr=105, is_full_count=0, is_full=0 at 6549318571493 (1976-06-21 15:54:44.424119260 UTC)
+[ 6549.319533] FG: fg_is_batt_id_valid: fg batt sts 0x8
+[ 6549.322300] [BATT] batt_worker: total_time since last batt update = 38183 ms.
+[ 6549.346468] [BATT] set_batt_psy_property. value(0) prop(89) at 6549347092589 (1976-06-21 15:54:44.452676242 UTC)
+[ 6549.346486] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 6549.346494] [BATT] batt_level_adjust: pre_level=100, new_level=98, level drop but overloading doesn't happen!
+[ 6549.346503] [BATT] set charging_enable(1) at 6549347124725 (1976-06-21 15:54:44.452713482 UTC)
+[ 6549.346512] [BATT] set_batt_psy_property. value(1) prop(68) at 6549347133058 (1976-06-21 15:54:44.452721867 UTC)
+[ 6549.346520] [BATT] set pwrsrc_enable(1) at 6549347141496 (1976-06-21 15:54:44.452730721 UTC)
+[ 6549.346528] [BATT] set_batt_psy_property. value(1) prop(69) at 6549347148839 (1976-06-21 15:54:44.452737804 UTC)
+[ 6549.346547] HTCCHG: htcchg_set_property: POWER_SUPPLY_PROP_CHARGING_ENABLED set: 1.
+[ 6549.346564] HTCCHG: htcchg_en_control: CHARGE_DISABLE
+[ 6549.346569] HTCCHG: htcchg_en_control: HTCCHG_EXT_MODE: 0.
+[ 6549.355431] [USB] dwc3_notify_vbus_work: pd_vbus_change = 0
+[ 6549.355439] [USB] dwc3_notify_vbus_work: maybe cable out or SINK first connect, resume state machine
+[ 6549.355470] [USB] dwc3_otg_sm_work: b_idle state
+[ 6549.355483] msm-dwc3 6a00000.ssusb: Avail curr from USB = 1500
+[ 6549.355510] msm-dwc3 6a00000.ssusb: dwc3_msm_resume vote for TCXO buffer
+[ 6549.358883] [USB] USB3_QSERDES_TX_EMP_POST1_LVL = f
+[ 6549.358893] [USB] USB3_QSERDES_TX_DRV_LVL = 1
+[ 6549.359993] msm-dwc3 6a00000.ssusb: DWC3 exited from low power mode
+[ 6549.362541] [USB] dwc3_otg_sm_work: b_peripheral state
+[ 6549.466676] [USB] suspend
+[ 6549.568860] [USB] reset
+[ 6549.623615] [USB] HIGHSPEED
+[ 6549.684058] [USB] android_work : sw_suspended 1	suspended 1 config 0,connect2pc 0
+[ 6549.684070] [USB] android_work : sw_connected 0	connected 1 last_uevent 0
+[ 6549.684187] [USB] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[ 6549.687951] [USB] reset
+[ 6549.688078] [USB] android_work : sw_suspended 1	suspended 1 config 0,connect2pc 1
+[ 6549.688089] [USB] android_work : sw_connected 1	connected 0 last_uevent 1
+[ 6549.688203] [USB] android_work: android_work: sent uevent USB_STATE=DISCONNECTED
+[ 6549.739171] [USB] HIGHSPEED
+[ 6549.810020] [USB] android_work : sw_suspended 1	suspended 1 config 0,connect2pc 0
+[ 6549.810032] [USB] android_work : sw_connected 0	connected 1 last_uevent 0
+[ 6549.810146] [USB] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[ 6549.819380] android_usb gadget: high-speed config #1: 66bf0c8.android_usb
+[ 6549.820185] [USB] android_work : sw_suspended 1	suspended 1 config 1,connect2pc 1
+[ 6549.820260] [USB] android_work : sw_connected 1	connected 1 last_uevent 1
+[ 6549.872269] [USB] android_work: android_work: sent uevent USB_STATE=CONFIGURED
+[ 6550.193851] [KEY] gpio_keys_gpio_isr, irq=398, gpio=40
+[ 6550.232195] [KEY] gpio_keys_gpio_report_event: key 1-74, (40) changed to 1
+[ 6550.310646] [KEY] gpio_keys_gpio_isr, irq=398, gpio=40
+[ 6550.348887] [KEY] gpio_keys_gpio_report_event: key 1-74, (40) changed to 0
+[ 6554.222064] [OHIO] >>Hard Reset
+[ 6559.440235] [OHIO] >>Hard Reset

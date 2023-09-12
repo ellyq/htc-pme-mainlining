@@ -1,0 +1,1715 @@
+[ 1437.852064] ----[STARTING XORG]----
+[ 1438.559936] [BATT] batt_worker: total_time since last batt update = 60043 ms.
+[ 1438.582462] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 1438.584461] [BATT] ID=1,level=100,level_raw=100,vol=4369mV,temp=332,current=762uA,chg_name=USB_CDP,chg_src=1,chg_en=1,health=1,overload=0,duration=0min,vbus=5156mV,max_iusb=1500mA,chg_limit_reason=0,chg_stop_reason=0,consistent=-1,flag=0x00000000,AICL=1500mA,htc_ext=0x08,level_accu=59226,htcchg=0,usb_temp=312,usb_overheat=0,usb_overheat_stat=0,batt_state=0 at 1438584596796 (1976-06-21 14:29:33.690122219 UTC)
+[ 1438.933268] charger_exist_lock Unlock
+[ 1440.139122] Xorg[4645]: syscall 283
+[ 1440.139132] Code: 93407c21 d2802368 a90153f3 d4000001 (7100001f)
+[ 1440.139139] CPU: 3 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.139142] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.139147] task: ffffffc0f3a1c680 ti: ffffffc033150000 task.ti: ffffffc033150000
+[ 1440.139151] PC is at 0x7fae6dea94
+[ 1440.139154] LR is at 0x7fae727440
+[ 1440.139157] pc : [<0000007fae6dea94>] lr : [<0000007fae727440>] pstate: 60000000
+[ 1440.139160] sp : 0000007fd59221d0
+[ 1440.139163] x29: 0000007fd59221d0 x28: 0000000000000001
+[ 1440.139169] x27: 0000007fae2265b0 x26: 0000007fae2263f0
+[ 1440.139175] x25: 0000007fae77c000 x24: 0000007fae226598
+[ 1440.139180] x23: 0000007fae6b9090 x22: 0000007fae226578
+[ 1440.139185] x21: 0000000000000001 x20: 0000000000000020
+[ 1440.139190] x19: 0000007fae226598 x18: 0000000000000000
+[ 1440.139196] x17: 0000007fd59221b0 x16: 0000000000000000
+[ 1440.139201] x15: 2000000000000000 x14: 0000007fadd67ff8
+[ 1440.139206] x13: 0000007fae6b9158 x12: 0000000000000001
+[ 1440.139211] x11: 0000000000000018 x10: 000000000001fff8
+[ 1440.139216] x9 : 0000007fadd48000 x8 : 000000000000011b
+[ 1440.139221] x7 : 0000007fae1160e0 x6 : 0000007fae1160e0
+[ 1440.139227] x5 : 0000007fae2265a0 x4 : 0000007fae112c90
+[ 1440.139232] x3 : 0000000000000008 x2 : 0000000000000008
+[ 1440.139237] x1 : 0000000000000000 x0 : 0000000000000008
+
+[ 1440.144640] mdss_dsi_panel_power_on_hx8396c2: ctrl0 ext-vdd_en=0
+[ 1440.162221] ------------[ cut here ]------------
+[ 1440.162233] WARNING: CPU: 2 PID: 4645 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 1440.162237] Trying to switch RCG source while it is prepared!
+[ 1440.162243] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.162246] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.162251] Call trace:
+[ 1440.162265] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1440.162270] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1440.162276] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1440.162282] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1440.162287] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1440.162291] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 1440.162298] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1440.162304] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 1440.162308] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1440.162316] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1440.162322] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1440.162327] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1440.162331] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1440.162337] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1440.162341] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1440.162346] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1440.162350] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1440.162354] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1440.162361] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1440.162367] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1440.162373] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1440.162377] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1440.162381] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1440.162385] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1440.162388] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1440.162392] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1440.162396] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1440.162399] ---[ end trace 6ff96182a7c8989c ]---
+[ 1440.163853] dsi0pll_vco_clk_8996
+[ 1440.163856] dsi0pll_post_n1_div_clk
+[ 1440.163860] dsi0pll_byte_clk_src
+[ 1440.163863] dsi0pll_byte_clk_mux
+[ 1440.163866] ext_byte0_clk_src
+[ 1440.163869] byte0_clk_src
+[ 1440.163876]             CMD_RCGR: 0x00000001
+[ 1440.163881]             CFG_RCGR: 0x00000100
+[ 1440.163884] ------------[ cut here ]------------
+[ 1440.163889] WARNING: CPU: 2 PID: 4645 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 1440.163892] byte0_clk_src: rcg didn't update its configuration.
+[ 1440.163896] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.163899] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.163902] Call trace:
+[ 1440.163909] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1440.163912] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1440.163916] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1440.163920] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1440.163924] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1440.163928] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 1440.163931] [<ffffffc000a3c4dc>] __set_rate_hid+0xb0/0xc0
+[ 1440.163934] [<ffffffc000a3c524>] set_rate_hid+0x38/0x54
+[ 1440.163938] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 1440.163942] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1440.163946] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 1440.163949] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1440.163953] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1440.163957] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1440.163961] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1440.163965] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1440.163969] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1440.163973] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1440.163977] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1440.163980] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1440.163984] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1440.163988] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1440.163992] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1440.163996] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1440.164000] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1440.164003] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1440.164006] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1440.164010] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1440.164013] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1440.164017] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1440.164020] ---[ end trace 6ff96182a7c8989d ]---
+[ 1440.164062] ------------[ cut here ]------------
+[ 1440.164068] WARNING: CPU: 2 PID: 4645 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 1440.164071] Trying to switch RCG source while it is prepared!
+[ 1440.164075] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.164078] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.164081] Call trace:
+[ 1440.164087] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1440.164091] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1440.164094] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1440.164098] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1440.164102] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1440.164105] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 1440.164113] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1440.164116] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 1440.164120] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1440.164124] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1440.164128] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1440.164134] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1440.164138] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1440.164141] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1440.164145] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1440.164150] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1440.164154] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1440.164157] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1440.164161] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1440.164166] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1440.164170] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1440.164174] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1440.164178] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1440.164182] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1440.164186] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1440.164189] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1440.164193] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1440.164197] ---[ end trace 6ff96182a7c8989e ]---
+[ 1440.165590] dsi0pll_vco_clk_8996
+[ 1440.165593] dsi0pll_post_n1_div_clk
+[ 1440.165596] dsi0pll_n2_div_clk
+[ 1440.165599] dsi0pll_pixel_clk_src
+[ 1440.165603] dsi0pll_pixel_clk_mux
+[ 1440.165606] ext_pclk0_clk_src
+[ 1440.165608] pclk0_clk_src
+[ 1440.165615]             CMD_RCGR: 0x00000001
+[ 1440.165620]             CFG_RCGR: 0x00000100
+[ 1440.165625]                M_VAL: 0x00000000
+[ 1440.165630]                N_VAL: 0x00000000
+[ 1440.165634]                D_VAL: 0x00000000
+[ 1440.165637] ------------[ cut here ]------------
+[ 1440.165641] WARNING: CPU: 2 PID: 4645 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 1440.165646] pclk0_clk_src: rcg didn't update its configuration.
+[ 1440.165649] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.165653] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.165655] Call trace:
+[ 1440.165661] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1440.165665] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1440.165668] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1440.165672] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1440.165677] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1440.165681] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 1440.165684] [<ffffffc000a3c70c>] __set_rate_mnd+0x1cc/0x1dc
+[ 1440.165687] [<ffffffc000a3c754>] set_rate_mnd+0x38/0x54
+[ 1440.165692] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 1440.165696] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1440.165699] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 1440.165704] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1440.165709] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1440.165713] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1440.165717] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1440.165722] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1440.165726] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1440.165729] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1440.165734] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1440.165738] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1440.165741] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1440.165745] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1440.165750] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1440.165754] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1440.165758] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1440.165762] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1440.165766] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1440.165769] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1440.165773] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1440.165778] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1440.165781] ---[ end trace 6ff96182a7c8989f ]---
+[ 1440.183477] mdss_dsi_panel_power_on_hx8396c2: ctrl1 ext-vdd_en=0
+[ 1440.183484] ------------[ cut here ]------------
+[ 1440.183489] WARNING: CPU: 2 PID: 4645 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 1440.183493] Trying to switch RCG source while it is prepared!
+[ 1440.183497] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.183500] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.183503] Call trace:
+[ 1440.183509] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1440.183513] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1440.183517] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1440.183521] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1440.183525] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1440.183528] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 1440.183532] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1440.183537] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 1440.183540] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1440.183545] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1440.183549] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1440.183553] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1440.183557] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1440.183561] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1440.183564] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1440.183568] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1440.183572] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1440.183576] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1440.183580] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1440.183584] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1440.183588] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1440.183592] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1440.183595] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1440.183599] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1440.183602] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1440.183606] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1440.183610] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1440.183613] ---[ end trace 6ff96182a7c898a0 ]---
+[ 1440.185063] dsi0pll_vco_clk_8996
+[ 1440.185066] dsi0pll_post_n1_div_clk
+[ 1440.185069] dsi0pll_byte_clk_src
+[ 1440.185071] dsi0pll_byte_clk_mux
+[ 1440.185074] ext_byte0_clk_src
+[ 1440.185077] byte1_clk_src
+[ 1440.185083]             CMD_RCGR: 0x00000001
+[ 1440.185088]             CFG_RCGR: 0x00000100
+[ 1440.185091] ------------[ cut here ]------------
+[ 1440.185095] WARNING: CPU: 2 PID: 4645 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 1440.185098] byte1_clk_src: rcg didn't update its configuration.
+[ 1440.185102] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.185105] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.185108] Call trace:
+[ 1440.185114] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1440.185118] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1440.185121] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1440.185126] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1440.185130] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1440.185133] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 1440.185136] [<ffffffc000a3c4dc>] __set_rate_hid+0xb0/0xc0
+[ 1440.185140] [<ffffffc000a3c524>] set_rate_hid+0x38/0x54
+[ 1440.185143] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 1440.185148] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1440.185151] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 1440.185155] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1440.185159] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1440.185163] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1440.185167] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1440.185171] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1440.185175] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1440.185179] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1440.185183] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1440.185186] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1440.185190] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1440.185194] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1440.185198] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1440.185202] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1440.185206] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1440.185209] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1440.185213] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1440.185216] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1440.185220] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1440.185224] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1440.185227] ---[ end trace 6ff96182a7c898a1 ]---
+[ 1440.185231] ------------[ cut here ]------------
+[ 1440.185236] WARNING: CPU: 2 PID: 4645 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 1440.185239] Trying to switch RCG source while it is prepared!
+[ 1440.185243] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.185246] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.185248] Call trace:
+[ 1440.185254] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1440.185258] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1440.185261] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1440.185265] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1440.185269] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1440.185273] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 1440.185277] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1440.185280] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 1440.185284] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1440.185288] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1440.185292] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1440.185296] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1440.185300] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1440.185304] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1440.185308] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1440.185311] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1440.185315] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1440.185319] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1440.185323] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1440.185326] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1440.185330] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1440.185334] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1440.185338] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1440.185341] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1440.185344] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1440.185348] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1440.185352] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1440.185355] ---[ end trace 6ff96182a7c898a2 ]---
+[ 1440.186814] dsi0pll_vco_clk_8996
+[ 1440.186816] dsi0pll_post_n1_div_clk
+[ 1440.186819] dsi0pll_n2_div_clk
+[ 1440.186822] dsi0pll_pixel_clk_src
+[ 1440.186824] dsi0pll_pixel_clk_mux
+[ 1440.186827] ext_pclk0_clk_src
+[ 1440.186830] pclk1_clk_src
+[ 1440.186836]             CMD_RCGR: 0x00000001
+[ 1440.186841]             CFG_RCGR: 0x00000100
+[ 1440.186845]                M_VAL: 0x00000000
+[ 1440.186850]                N_VAL: 0x00000000
+[ 1440.186854]                D_VAL: 0x00000000
+[ 1440.186857] ------------[ cut here ]------------
+[ 1440.186862] WARNING: CPU: 2 PID: 4645 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 1440.186865] pclk1_clk_src: rcg didn't update its configuration.
+[ 1440.186869] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1440.186872] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1440.186875] Call trace:
+[ 1440.186880] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1440.186884] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1440.186888] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1440.186892] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1440.186896] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1440.186899] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 1440.186902] [<ffffffc000a3c70c>] __set_rate_mnd+0x1cc/0x1dc
+[ 1440.186906] [<ffffffc000a3c754>] set_rate_mnd+0x38/0x54
+[ 1440.186909] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 1440.186913] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1440.186917] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 1440.186920] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1440.186924] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1440.186928] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1440.186932] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1440.186936] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1440.186940] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1440.186944] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1440.186948] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1440.186951] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1440.186955] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1440.186959] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1440.186962] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1440.186966] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1440.186970] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1440.186974] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1440.186977] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1440.186980] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1440.186984] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1440.186988] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1440.186991] ---[ end trace 6ff96182a7c898a3 ]---
+[ 1440.386712] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x11
+[ 1440.386725] mdss_dsi_cmds_tx: failed to call
+[ 1440.586691] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x35
+[ 1440.586706] mdss_dsi_cmds_tx: failed to call
+[ 1440.587108] mdss_mdp_cmd_panel_on: INTR2 Status = 0x410110, 5
+[ 1440.587649] mdss_mdp_cmd_kickoff: INTR2 Status = 0x410110, 4
+[ 1440.588239] mdss_fb_set_backlight: defer backlight value 0
+[ 1441.586639] mdss_mdp_cmd_wait4pingpong:wait4pingpong timed out ctl=0 rc=0 cnt=0 koff_cnt=1
+[ 1441.586662] TE ISR status 0x410110
+[ 1441.586688] xlog buffer overflow before dump: 263
+[ 1441.586706] mdss_mdp_cmd_ctx_stop:2848      =>[282148  :1382534284 :       19][4614]:0
+[ 1441.586723] mdss_dsi_event_handler:2730     =>[282149  :1382534287 :        3][4614]:16 0 0 3333
+[ 1441.586739] mdss_dsi_event_handler:2730     =>[282150  :1382534290 :        3][4614]:16 0 1 3333
+[ 1441.586754] mdss_dsi_event_handler:2730     =>[282151  :1382534292 :        2][4614]:17 0 0 3333
+[ 1441.586769] mdss_dsi_event_handler:2730     =>[282152  :1382534294 :        2][4614]:17 0 1 3333
+[ 1441.586785] mdss_mdp_resource_control:593   =>[282153  :1382534296 :        2][4614]:0 0 3 1111
+[ 1441.586801] mdss_dsi_event_handler:2730     =>[282154  :1382534315 :       19][4614]:6 0 0 3333
+[ 1441.586817] mdss_dsi_clk_req_state:769      =>[282155  :1382534318 :        3][4614]:0 3 1 0 0
+[ 1441.586833] mdss_dsi_clk_req_state:835      =>[282156  :1382534319 :        1][4614]:0 3 1 1 1
+[ 1441.586849] dsi_recheck_clk_state:587       =>[282157  :1382534321 :        2][4614]:1 1 1 1
+[ 1441.586865] mdss_dsi_cmdlist_commit:2611    =>[282158  :1382534342 :       21][4614]:0 0 1 1206 1111
+[ 1441.586882] mdss_dsi_cmdlist_commit:2665    =>[282159  :1382534344 :        2][4614]:0 2 1 0 1206
+[ 1441.586897] mdss_dsi_clk_req_state:769      =>[282160  :1382534639 :      295][4614]:0 3 1 1 1
+[ 1441.586911] mdss_dsi_clk_req_state:835      =>[282161  :1382534640 :        1][4614]:0 3 1 1 1
+[ 1441.586925] mdss_dsi_delay_cmd:2580         =>[282162  :1382534642 :        2][4614]:0 0 0
+[ 1441.586940] mdss_dsi_clk_req_state:769      =>[282163  :1382733738 :   199096][4614]:0 3 0 1 1
+[ 1441.586953] mdss_dsi_clk_req_state:835      =>[282164  :1382733740 :        2][4614]:0 3 0 1 1
+[ 1441.586968] mdss_dsi_cmdlist_commit:2731    =>[282165  :1382733742 :        2][4614]:0 0 1 1206 2222
+[ 1441.586982] mdss_dsi_cmdlist_commit:2611    =>[282166  :1382733750 :        8][4614]:0 0 1 1206 1111
+[ 1441.586995] mdss_dsi_cmdlist_commit:2665    =>[282167  :1382733752 :        2][4614]:0 22 5 0 1206
+[ 1441.587009] mdss_dsi_clk_req_state:769      =>[282168  :1382734031 :      279][4614]:0 3 1 1 1
+[ 1441.587022] mdss_dsi_clk_req_state:835      =>[282169  :1382734033 :        2][4614]:0 3 1 1 1
+[ 1441.587035] mdss_dsi_delay_cmd:2580         =>[282170  :1382734035 :        2][4614]:0 0 0
+[ 1441.587049] mdss_dsi_clk_req_state:769      =>[282171  :1382933978 :   199943][4614]:0 3 0 1 1
+[ 1441.587062] mdss_dsi_clk_req_state:835      =>[282172  :1382933980 :        2][4614]:0 3 0 1 1
+[ 1441.587076] mdss_dsi_cmdlist_commit:2731    =>[282173  :1382933982 :        2][4614]:0 0 1 1206 2222
+[ 1441.587089] mdss_dsi_clk_req_state:769      =>[282174  :1382933986 :        4][4614]:0 3 0 1 1
+[ 1441.587102] mdss_dsi_clk_req_state:835      =>[282175  :1382933988 :        2][4614]:0 3 0 0 0
+[ 1441.587115] dsi_recheck_clk_state:587       =>[282176  :1382933990 :        2][4614]:1 1 1 1
+[ 1441.587128] mdss_dsi_event_handler:2730     =>[282177  :1382933995 :        5][4614]:6 0 1 3333
+[ 1441.587141] mdss_dsi_clk_req_state:769      =>[282178  :1382933998 :        3][4614]:0 3 1 0 0
+[ 1441.587154] mdss_dsi_clk_req_state:835      =>[282179  :1382934000 :        2][4614]:0 3 1 1 1
+[ 1441.592517] dsi_recheck_clk_state:587       =>[282180  :1382934001 :        1][4614]:1 1 1 1
+[ 1441.592539] mdss_dsi_clk_req_state:769      =>[282181  :1382934003 :        2][4614]:1 3 1 0 0
+[ 1441.592554] mdss_dsi_clk_req_state:835      =>[282182  :1382934005 :        2][4614]:1 3 1 1 1
+[ 1441.592568] dsi_recheck_clk_state:587       =>[282183  :1382934006 :        1][4614]:1 1 1 1
+[ 1441.592583] mdss_dsi_clk_req_state:769      =>[282184  :1382934031 :       25][4614]:0 3 1 1 1
+[ 1441.592598] mdss_dsi_clk_req_state:835      =>[282185  :1382934032 :        1][4614]:0 3 1 1 1
+[ 1441.592612] mdss_dsi_clk_req_state:769      =>[282186  :1382934034 :        2][4614]:1 3 0 1 1
+[ 1441.592626] mdss_dsi_clk_req_state:835      =>[282187  :1382934035 :        1][4614]:1 3 0 0 0
+[ 1441.592640] dsi_recheck_clk_state:587       =>[282188  :1382934037 :        2][4614]:1 1 1 1
+[ 1441.592655] mdss_dsi_clk_req_state:769      =>[282189  :1382934038 :        1][4614]:0 3 0 1 1
+[ 1441.592669] mdss_dsi_clk_req_state:835      =>[282190  :1382934040 :        2][4614]:0 3 0 1 1
+[ 1441.592683] mdss_dsi_clk_req_state:769      =>[282191  :1382934041 :        1][4614]:0 3 0 1 1
+[ 1441.592696] mdss_dsi_clk_req_state:835      =>[282192  :1382934043 :        2][4614]:0 3 0 0 0
+[ 1441.593178] dsi_recheck_clk_state:587       =>[282193  :1382934044 :        1][4614]:1 1 1 1
+[ 1441.593202] mdss_dsi_event_handler:2730     =>[282194  :1382934048 :        4][4614]:7 0 0 3333
+[ 1441.593219] mdss_dsi_clk_req_state:769      =>[282195  :1382934050 :        2][4614]:0 1 1 0 0
+[ 1441.593234] mdss_dsi_clk_req_state:835      =>[282196  :1382934052 :        2][4614]:0 1 1 1 0
+[ 1441.593248] dsi_recheck_clk_state:587       =>[282197  :1382934053 :        1][4614]:1 1 1 1
+[ 1441.593263] mdss_dsi_clk_req_state:769      =>[282198  :1382934081 :       28][4614]:0 1 0 1 0
+[ 1441.593277] mdss_dsi_clk_req_state:835      =>[282199  :1382934082 :        1][4614]:0 1 0 0 0
+[ 1441.593291] dsi_recheck_clk_state:587       =>[282200  :1382934084 :        2][4614]:1 1 1 1
+[ 1441.593305] mdss_dsi_event_handler:2730     =>[282201  :1382934116 :       32][4614]:7 0 1 3333
+[ 1441.593319] mdss_dsi_clk_req_state:769      =>[282202  :1382934118 :        2][4614]:1 1 1 0 0
+[ 1441.593333] mdss_dsi_clk_req_state:835      =>[282203  :1382934119 :        1][4614]:1 1 1 1 0
+[ 1441.593347] dsi_recheck_clk_state:587       =>[282204  :1382934120 :        1][4614]:1 1 1 1
+[ 1441.593371] mdss_dsi_clk_req_state:769      =>[282205  :1382934170 :       50][4614]:1 1 0 1 0
+[ 1441.593385] mdss_dsi_clk_req_state:835      =>[282206  :1382934172 :        2][4614]:1 1 0 0 0
+[ 1441.593399] dsi_recheck_clk_state:587       =>[282207  :1382934173 :        1][4614]:1 1 1 1
+[ 1441.593413] mdss_mdp_cmd_stop:3122          =>[282208  :1383263349 :   329176][4614]:0 0 2222
+[ 1441.593428] mdss_mdp_clk_ctrl:1495          =>[282209  :1383263515 :      166][4614]:0 0 1206
+[ 1441.593441] mdss_smmu_detach:141            =>[282210  :1383263543 :       28][4614]:1
+[ 1441.593455] mdss_update_reg_bus_vote:653    =>[282211  :1383263556 :       13][4614]:0 1 2 0
+[ 1441.598472] mdss_update_reg_bus_vote:653    =>[282212  :1383263566 :       10][4614]:0 1 3 0
+[ 1441.598487] mdss_update_reg_bus_vote:653    =>[282213  :1383263594 :       28][4614]:0 1 4 0
+[ 1441.598500] mdss_update_reg_bus_vote:653    =>[282214  :1383263627 :       33][4614]:0 1 5 0
+[ 1441.598513] mdss_update_reg_bus_vote:653    =>[282215  :1383263684 :       57][4614]:0 1 0 0
+[ 1441.598526] mdss_smmu_attach:122            =>[282216  :1383263690 :        6][4614]:0
+[ 1441.598540] mdss_update_reg_bus_vote:653    =>[282217  :1383263705 :       15][4614]:0 1 2 1
+[ 1441.598553] mdss_update_reg_bus_vote:653    =>[282218  :1383263810 :      105][4614]:0 1 3 1
+[ 1441.598566] mdss_update_reg_bus_vote:653    =>[282219  :1383263903 :       93][4614]:0 1 4 1
+[ 1441.598589] mdss_update_reg_bus_vote:653    =>[282220  :1383263913 :       10][4614]:0 1 5 1
+[ 1441.598602] mdss_smmu_detach:141            =>[282221  :1383263926 :       13][4614]:1
+[ 1441.598615] mdss_update_reg_bus_vote:653    =>[282222  :1383263931 :        5][4614]:0 1 2 0
+[ 1441.598629] mdss_update_reg_bus_vote:653    =>[282223  :1383263938 :        7][4614]:0 1 3 0
+[ 1441.598641] mdss_update_reg_bus_vote:653    =>[282224  :1383263962 :       24][4614]:0 1 4 0
+[ 1441.598655] mdss_update_reg_bus_vote:653    =>[282225  :1383263994 :       32][4614]:0 1 5 0
+[ 1441.598669] mdss_dsi_event_handler:2730     =>[282226  :1383264014 :       20][4614]:8 0 0 3333
+[ 1441.598682] mdss_dsi_event_handler:2730     =>[282227  :1383264017 :        3][4614]:8 0 1 3333
+[ 1441.598697] mdss_mdp_footswitch_ctrl:4752   =>[282228  :1383264078 :       61][45  ]:0 1 0 0 0
+[ 1441.598711] mdss_dsi_event_handler:2730     =>[282229  :1383264092 :       14][45  ]:9 0 0 3333
+[ 1441.598724] mdss_dsi_event_handler:2730     =>[282230  :1383264094 :        2][45  ]:9 0 1 3333
+[ 1441.598738] mdss_dsi_event_handler:2730     =>[282231  :1440143679 : 56879585][4645]:1 0 0 3333
+[ 1441.598751] mdss_dsi_event_handler:2730     =>[282232  :1440143681 :        2][4645]:1 0 1 3333
+[ 1441.598765] mdss_mdp_clk_ctrl:1495          =>[282233  :1440143684 :        3][4645]:1 1 1225
+[ 1441.598779] mdss_dsi_event_handler:2730     =>[282234  :1440143694 :       10][4645]:a 0 0 3333
+[ 1441.598792] mdss_dsi_event_handler:2730     =>[282235  :1440143695 :        1][4645]:a 0 1 3333
+[ 1441.598807] mdss_mdp_footswitch_ctrl:4752   =>[282236  :1440143701 :        6][4645]:1 0 0 0 0
+[ 1441.598820] mdss_update_reg_bus_vote:653    =>[282237  :1440143709 :        8][4645]:0 1 0 1
+[ 1441.598833] mdss_smmu_attach:122            =>[282238  :1440143711 :        2][4645]:0
+[ 1441.598846] mdss_update_reg_bus_vote:653    =>[282239  :1440143723 :       12][4645]:0 1 2 1
+[ 1441.598860] mdss_update_reg_bus_vote:653    =>[282240  :1440143820 :       97][4645]:0 1 3 1
+[ 1441.598873] mdss_update_reg_bus_vote:653    =>[282241  :1440143943 :      123][4645]:0 1 4 1
+[ 1441.598887] mdss_update_reg_bus_vote:653    =>[282242  :1440143949 :        6][4645]:0 1 5 1
+[ 1441.598900] mdss_mdp_cmd_ctx_setup:3233     =>[282243  :1440144052 :      103][4645]:0 0
+[ 1441.603917] mdss_mdp_cmd_ctx_setup:3233     =>[282244  :1440144080 :       28][4645]:0 0
+[ 1441.603933] mdss_mdp_clk_ctrl:1495          =>[282245  :1440144142 :       62][4645]:0 0 1225
+[ 1441.603946] mdss_smmu_detach:141            =>[282246  :1440144152 :       10][4645]:1
+[ 1441.603959] mdss_update_reg_bus_vote:653    =>[282247  :1440144155 :        3][4645]:0 1 2 0
+[ 1441.603972] mdss_update_reg_bus_vote:653    =>[282248  :1440144158 :        3][4645]:0 1 3 0
+[ 1441.603985] mdss_update_reg_bus_vote:653    =>[282249  :1440144169 :       11][4645]:0 1 4 0
+[ 1441.603998] mdss_update_reg_bus_vote:653    =>[282250  :1440144189 :       20][4645]:0 1 5 0
+[ 1441.604010] mdss_update_reg_bus_vote:653    =>[282251  :1440144201 :       12][4645]:0 1 0 0
+[ 1441.604028] mdss_mdp_footswitch_ctrl:4752   =>[282252  :1440144221 :       20][4523]:0 1 0 0 1
+[ 1441.604040] mdss_smmu_attach:122            =>[282253  :1440144252 :       31][4645]:0
+[ 1441.604053] mdss_update_reg_bus_vote:653    =>[282254  :1440144256 :        4][4645]:0 1 2 1
+[ 1441.604065] mdss_update_reg_bus_vote:653    =>[282255  :1440144345 :       89][4645]:0 1 3 1
+[ 1441.604077] mdss_update_reg_bus_vote:653    =>[282256  :1440144423 :       78][4645]:0 1 4 1
+[ 1441.604090] mdss_update_reg_bus_vote:653    =>[282257  :1440144427 :        4][4645]:0 1 5 1
+[ 1441.604103] mdss_mdp_clk_ctrl:1495          =>[282258  :1440144430 :        3][4645]:1 1 1225
+[ 1441.604116] mdss_mdp_footswitch_ctrl:4752   =>[282259  :1440144432 :        2][4645]:1 0 1 0 1
+[ 1441.604132] mdss_update_reg_bus_vote:653    =>[282260  :1440144435 :        3][4645]:0 1 0 1
+[ 1441.604146] mdss_mdp_set_mixer_roi:4414     =>[282261  :1440144606 :      171][4645]:0 0 1 0 0 5a0 a00
+[ 1441.604159] mdss_mdp_cmd_pre_programming:2281=>[282262  :1440144608 :        2][4645]:0
+[ 1441.604173] __mdss_mdp_mixer_write_cfg:4589 =>[282263  :1440144711 :      103][4645]:0 1000000 0 0
+[ 1441.604187] mdss_mdp_mixer_setup:4868       =>[282264  :1440144712 :        1][4645]:0 0 0 a00 5a0
+[ 1441.604200] mdss_mdp_cmd_wait4pingpong:1895 =>[282265  :1440144719 :        7][4645]:0 0 5a0 a00
+[ 1441.604214] mdss_mdp_cmd_wait4pingpong:1973 =>[282266  :1440144722 :        3][4645]:0 0 0
+[ 1441.604228] mdss_mdp_display_commit:5669    =>[282267  :1440144758 :       36][4645]:2 22040 0 0
+[ 1441.604241] mdss_dsi_event_handler:2730     =>[282268  :1440144760 :        2][4645]:2 0 0 3333
+[ 1441.604255] mdss_dsi_clk_req_state:769      =>[282269  :1440165911 :    21151][4645]:0 1 1 0 0
+[ 1441.604267] mdss_dsi_clk_req_state:835      =>[282270  :1440165912 :        1][4645]:0 1 1 1 0
+[ 1441.604280] dsi_recheck_clk_state:587       =>[282271  :1440165913 :        1][4645]:1 1 1 1
+[ 1441.604294] mdss_dsi_clk_req_state:769      =>[282272  :1440168517 :     2604][4645]:0 2 1 1 0
+[ 1441.604306] mdss_dsi_clk_req_state:835      =>[282273  :1440168517 :        0][4645]:0 2 1 1 1
+[ 1441.604319] dsi_recheck_clk_state:587       =>[282274  :1440168518 :        1][4645]:1 1 1 1
+[ 1441.604332] mdss_dsi_clk_req_state:769      =>[282275  :1440183582 :    15064][4645]:0 3 0 1 1
+[ 1441.609355] mdss_dsi_clk_req_state:835      =>[282276  :1440183583 :        1][4645]:0 3 0 0 0
+[ 1441.609383] dsi_recheck_clk_state:587       =>[282277  :1440183583 :        0][4645]:1 1 1 1
+[ 1441.609411] mdss_dsi_event_handler:2730     =>[282278  :1440183599 :       16][4645]:2 0 1 3333
+[ 1441.609438] mdss_dsi_clk_req_state:769      =>[282279  :1440187370 :     3771][4645]:1 1 1 0 0
+[ 1441.609465] mdss_dsi_clk_req_state:835      =>[282280  :1440187371 :        1][4645]:1 1 1 1 0
+[ 1441.609490] dsi_recheck_clk_state:587       =>[282281  :1440187371 :        0][4645]:1 1 1 1
+[ 1441.609516] mdss_dsi_clk_req_state:769      =>[282282  :1440187739 :      368][4645]:0 3 1 0 0
+[ 1441.609545] mdss_dsi_clk_req_state:835      =>[282283  :1440187739 :        0][4645]:0 3 1 1 1
+[ 1441.609570] dsi_recheck_clk_state:587       =>[282284  :1440187739 :        0][4645]:1 1 1 1
+[ 1441.609598] mdss_dsi_clk_req_state:769      =>[282285  :1440187740 :        1][4645]:1 2 1 1 0
+[ 1441.609626] mdss_dsi_clk_req_state:835      =>[282286  :1440187741 :        1][4645]:1 2 1 1 1
+[ 1441.609652] dsi_recheck_clk_state:587       =>[282287  :1440187741 :        0][4645]:1 1 1 1
+[ 1441.609678] mdss_dsi_clk_req_state:769      =>[282288  :1440187757 :       16][4645]:0 3 1 1 1
+[ 1441.609733] mdss_dsi_clk_req_state:835      =>[282289  :1440187758 :        1][4645]:0 3 1 1 1
+[ 1441.609975] mdss_dsi_clk_req_state:769      =>[282290  :1440187758 :        0][4645]:1 3 0 1 1
+[ 1441.610002] mdss_dsi_clk_req_state:835      =>[282291  :1440187759 :        1][4645]:1 3 0 0 0
+[ 1441.610027] dsi_recheck_clk_state:587       =>[282292  :1440187759 :        0][4645]:1 1 1 1
+[ 1441.610040] mdss_dsi_clk_req_state:769      =>[282293  :1440187760 :        1][4645]:0 3 0 1 1
+[ 1441.610049] mdss_dsi_clk_req_state:835      =>[282294  :1440187760 :        0][4645]:0 3 0 1 1
+[ 1441.610057] mdss_dsi_clk_req_state:769      =>[282295  :1440187761 :        1][4645]:0 3 0 1 1
+[ 1441.610066] mdss_dsi_clk_req_state:835      =>[282296  :1440187761 :        0][4645]:0 3 0 0 0
+[ 1441.610075] dsi_recheck_clk_state:587       =>[282297  :1440187762 :        1][4645]:1 1 1 1
+[ 1441.610085] mdss_dsi_event_handler:2730     =>[282298  :1440187772 :       10][4645]:3 0 0 3333
+[ 1441.610091] mdss_dsi_clk_req_state:769      =>[282299  :1440187779 :        7][4645]:0 3 1 0 0
+[ 1441.610095] mdss_dsi_clk_req_state:835      =>[282300  :1440187780 :        1][4645]:0 3 1 1 1
+[ 1441.610100] dsi_recheck_clk_state:587       =>[282301  :1440187780 :        0][4645]:1 1 1 1
+[ 1441.610108] mdss_dsi_clk_req_state:769      =>[282302  :1440187781 :        1][4645]:0 3 1 1 1
+[ 1441.610113] mdss_dsi_clk_req_state:835      =>[282303  :1440187781 :        0][4645]:0 3 1 1 1
+[ 1441.610117] mdss_dsi_clk_req_state:769      =>[282304  :1440187782 :        1][4645]:1 3 1 0 0
+[ 1441.610124] mdss_dsi_clk_req_state:835      =>[282305  :1440187782 :        0][4645]:1 3 1 1 1
+[ 1441.610128] dsi_recheck_clk_state:587       =>[282306  :1440187783 :        1][4645]:1 1 1 1
+[ 1441.610133] mdss_dsi_cmdlist_commit:2611    =>[282307  :1440187786 :        3][4645]:0 0 0 1225 1111
+[ 1441.615140] mdss_dsi_cmdlist_commit:2665    =>[282308  :1440187787 :        1][4645]:0 12 18 0 1225
+[ 1441.615145] mdss_dsi_clk_req_state:769      =>[282309  :1440188104 :      317][4645]:0 3 1 1 1
+[ 1441.615150] mdss_dsi_clk_req_state:835      =>[282310  :1440188104 :        0][4645]:0 3 1 1 1
+[ 1441.615155] mdss_dsi_delay_cmd:2580         =>[282311  :1440188105 :        1][4645]:0 0 0
+[ 1441.615159] mdss_dsi_clk_req_state:769      =>[282312  :1440387097 :   198992][4645]:0 3 0 1 1
+[ 1441.615164] mdss_dsi_clk_req_state:835      =>[282313  :1440387099 :        2][4645]:0 3 0 1 1
+[ 1441.615169] mdss_dsi_cmdlist_commit:2731    =>[282314  :1440387101 :        2][4645]:0 0 0 1225 2222
+[ 1441.615174] mdss_dsi_cmdlist_commit:2611    =>[282315  :1440387105 :        4][4645]:0 0 0 1225 1111
+[ 1441.615178] mdss_dsi_cmdlist_commit:2665    =>[282316  :1440387107 :        2][4645]:0 2 1 0 1225
+[ 1441.615183] mdss_dsi_clk_req_state:769      =>[282317  :1440387372 :      265][4645]:0 3 1 1 1
+[ 1441.615188] mdss_dsi_clk_req_state:835      =>[282318  :1440387374 :        2][4645]:0 3 1 1 1
+[ 1441.615193] mdss_dsi_delay_cmd:2580         =>[282319  :1440387377 :        3][4645]:0 0 0
+[ 1441.615197] mdss_dsi_clk_req_state:769      =>[282320  :1440587110 :   199733][4645]:0 3 0 1 1
+[ 1441.615202] mdss_dsi_clk_req_state:835      =>[282321  :1440587112 :        2][4645]:0 3 0 1 1
+[ 1441.615207] mdss_dsi_cmdlist_commit:2731    =>[282322  :1440587115 :        3][4645]:0 0 0 1225 2222
+[ 1441.615211] mdss_dsi_clk_req_state:769      =>[282323  :1440587118 :        3][4645]:0 3 0 1 1
+[ 1441.615216] mdss_dsi_clk_req_state:835      =>[282324  :1440587119 :        1][4645]:0 3 0 1 1
+[ 1441.615220] mdss_dsi_clk_req_state:769      =>[282325  :1440587123 :        4][4645]:0 3 1 1 1
+[ 1441.615225] mdss_dsi_clk_req_state:835      =>[282326  :1440587124 :        1][4645]:0 3 1 1 1
+[ 1441.615230] mdss_dsi_clk_req_state:769      =>[282327  :1440587126 :        2][4645]:1 3 0 1 1
+[ 1441.615234] mdss_dsi_clk_req_state:835      =>[282328  :1440587128 :        2][4645]:1 3 0 0 0
+[ 1441.615239] dsi_recheck_clk_state:587       =>[282329  :1440587130 :        2][4645]:1 1 1 1
+[ 1441.615243] mdss_dsi_clk_req_state:769      =>[282330  :1440587132 :        2][4645]:0 3 0 1 1
+[ 1441.615248] mdss_dsi_clk_req_state:835      =>[282331  :1440587134 :        2][4645]:0 3 0 1 1
+[ 1441.615252] mdss_dsi_clk_req_state:769      =>[282332  :1440587135 :        1][4645]:0 3 0 1 1
+[ 1441.615257] mdss_dsi_clk_req_state:835      =>[282333  :1440587136 :        1][4645]:0 3 0 0 0
+[ 1441.615261] dsi_recheck_clk_state:587       =>[282334  :1440587138 :        2][4645]:1 1 1 1
+[ 1441.615266] mdss_dsi_event_handler:2730     =>[282335  :1440587157 :       19][4645]:3 0 1 3333
+[ 1441.615270] mdss_dsi_clk_req_state:769      =>[282336  :1440587166 :        9][4645]:0 3 1 0 0
+[ 1441.615275] mdss_dsi_clk_req_state:835      =>[282337  :1440587167 :        1][4645]:0 3 1 1 1
+[ 1441.615279] dsi_recheck_clk_state:587       =>[282338  :1440587168 :        1][4645]:1 1 1 1
+[ 1441.615284] mdss_dsi_clk_req_state:769      =>[282339  :1440587170 :        2][4645]:1 3 1 0 0
+[ 1441.620290] mdss_dsi_clk_req_state:835      =>[282340  :1440587171 :        1][4645]:1 3 1 1 1
+[ 1441.620296] dsi_recheck_clk_state:587       =>[282341  :1440587172 :        1][4645]:1 1 1 1
+[ 1441.620300] mdss_dsi_clk_req_state:769      =>[282342  :1440587176 :        4][4645]:0 3 1 1 1
+[ 1441.620305] mdss_dsi_clk_req_state:835      =>[282343  :1440587178 :        2][4645]:0 3 1 1 1
+[ 1441.620309] mdss_dsi_clk_req_state:769      =>[282344  :1440587179 :        1][4645]:1 3 0 1 1
+[ 1441.620314] mdss_dsi_clk_req_state:835      =>[282345  :1440587181 :        2][4645]:1 3 0 0 0
+[ 1441.620318] dsi_recheck_clk_state:587       =>[282346  :1440587182 :        1][4645]:1 1 1 1
+[ 1441.620323] mdss_dsi_clk_req_state:769      =>[282347  :1440587184 :        2][4645]:0 3 0 1 1
+[ 1441.620327] mdss_dsi_clk_req_state:835      =>[282348  :1440587186 :        2][4645]:0 3 0 1 1
+[ 1441.620332] mdss_dsi_clk_req_state:769      =>[282349  :1440587187 :        1][4645]:0 3 0 1 1
+[ 1441.620337] mdss_dsi_clk_req_state:835      =>[282350  :1440587189 :        2][4645]:0 3 0 0 0
+[ 1441.620341] dsi_recheck_clk_state:587       =>[282351  :1440587190 :        1][4645]:1 1 1 1
+[ 1441.620345] mdss_dsi_event_handler:2730     =>[282352  :1440587198 :        8][4645]:4 0 0 3333
+[ 1441.620350] mdss_dsi_event_handler:2730     =>[282353  :1440587200 :        2][4645]:4 0 1 3333
+[ 1441.620355] mdss_dsi_event_handler:2730     =>[282354  :1440587217 :       17][4645]:16 1ae8d08 0 3333
+[ 1441.620359] mdss_dsi_event_handler:2730     =>[282355  :1440587219 :        2][4645]:16 1ae8d08 1 3333
+[ 1441.620364] mdss_dsi_event_handler:2730     =>[282356  :1440587221 :        2][4645]:17 1ae8d18 0 3333
+[ 1441.620368] mdss_dsi_event_handler:2730     =>[282357  :1440587222 :        1][4645]:17 1ae8d18 1 3333
+[ 1441.620373] mdss_mdp_cmd_kickoff:2703       =>[282358  :1440587245 :       23][4645]:0 0 0 0 5a0 a00
+[ 1441.620378] mdss_mdp_resource_control:593   =>[282359  :1440587249 :        4][4645]:0 0 1 1111
+[ 1441.620382] mdss_mdp_resource_control:633   =>[282360  :1440587255 :        6][4645]:0 0 1 11
+[ 1441.620387] mdss_dsi_event_handler:2730     =>[282361  :1440587257 :        2][4645]:10 33153818 0 3333
+[ 1441.620392] mdss_dsi_clk_req:162            =>[282362  :1440587260 :        3][4645]:0 1 0 1225 0
+[ 1441.620397] mdss_dsi_clk_req:171            =>[282363  :1440587261 :        1][4645]:0 1 0 1225 0
+[ 1441.620401] mdss_dsi_clk_req_state:769      =>[282364  :1440587263 :        2][4645]:0 3 1 1 1
+[ 1441.620406] mdss_dsi_clk_req_state:835      =>[282365  :1440587264 :        1][4645]:0 3 1 1 1
+[ 1441.620411] mdss_dsi_event_handler:2730     =>[282366  :1440587266 :        2][4645]:10 33153818 1 3333
+[ 1441.620415] mdss_dsi_clk_req:162            =>[282367  :1440587267 :        1][4645]:1 1 0 1225 0
+[ 1441.620420] mdss_dsi_clk_req:171            =>[282368  :1440587269 :        2][4645]:1 1 0 1225 0
+[ 1441.620425] mdss_dsi_clk_req_state:769      =>[282369  :1440587270 :        1][4645]:0 3 1 1 1
+[ 1441.620429] mdss_dsi_clk_req_state:835      =>[282370  :1440587272 :        2][4645]:0 3 1 1 1
+[ 1441.620434] mdss_dsi_clk_req_state:769      =>[282371  :1440587273 :        1][4645]:1 3 1 1 1
+[ 1441.625439] mdss_dsi_clk_req_state:835      =>[282372  :1440587275 :        2][4645]:1 3 1 1 1
+[ 1441.625445] mdss_update_reg_bus_vote:653    =>[282373  :1440587280 :        5][4645]:0 1 0 1
+[ 1441.625449] mdss_mdp_cmd_clk_on:933         =>[282374  :1440587282 :        2][4645]:0 1 0
+[ 1441.625454] mdss_bus_bandwidth_ctrl:1450    =>[282375  :1440587285 :        3][4645]:1 1
+[ 1441.625458] mdss_mdp_cmd_clk_on:933         =>[282376  :1440587733 :      448][4645]:0 0 1
+[ 1441.625463] mdss_mdp_resource_control:902   =>[282377  :1440587738 :        5][4645]:1 1 2222
+[ 1441.625467] mdss_dsi_event_handler:2730     =>[282378  :1440587741 :        3][4645]:11 0 0 3333
+[ 1441.625472] mdss_dsi_cmdlist_commit:2611    =>[282379  :1440587744 :        3][4645]:0 1 0 1225 1111
+[ 1441.625477] mdss_dsi_cmd_mdp_busy:2459      =>[282380  :1440587746 :        2][4645]:0 0 1225 1111
+[ 1441.625481] mdss_dsi_cmd_mdp_busy:2495      =>[282381  :1440587748 :        2][4645]:0 0 1225 2222
+[ 1441.625486] mdss_dsi_cmdlist_commit:2731    =>[282382  :1440587750 :        2][4645]:0 1 0 1225 2222
+[ 1441.625490] mdss_dsi_cmd_mdp_start:2399     =>[282383  :1440587753 :        3][4645]:0 1 1225
+[ 1441.625495] mdss_dsi_event_handler:2730     =>[282384  :1440587755 :        2][4645]:11 0 1 3333
+[ 1441.625500] mdss_dsi_cmdlist_commit:2611    =>[282385  :1440587757 :        2][4645]:1 1 0 1225 1111
+[ 1441.625504] mdss_dsi_cmd_mdp_busy:2459      =>[282386  :1440587758 :        1][4645]:1 0 1225 1111
+[ 1441.625509] mdss_dsi_cmd_mdp_busy:2495      =>[282387  :1440587760 :        2][4645]:1 0 1225 2222
+[ 1441.625513] mdss_dsi_cmdlist_commit:2731    =>[282388  :1440587761 :        1][4645]:1 1 0 1225 2222
+[ 1441.625518] mdss_dsi_cmd_mdp_start:2399     =>[282389  :1440587763 :        2][4645]:1 1 1225
+[ 1441.625522] __mdss_mdp_kickoff:2611         =>[282390  :1440587806 :       43][4645]:0
+[ 1441.625526] __mdss_mdp_kickoff:2636         =>[282391  :1440587810 :        4][4645]:11 0
+[ 1441.625531] mdss_mdp_cmd_kickoff:2792       =>[282392  :1440587813 :        3][4645]:0 0
+[ 1441.625535] mdss_mdp_cmd_stop:2997          =>[282393  :1440588539 :      726][4645]:1 0
+[ 1441.625540] mdss_mdp_cmd_stop_sub:2958      =>[282394  :1440588542 :        3][4645]:0 1 1111
+[ 1441.625544] mdss_mdp_cmd_ctx_stop:2848      =>[282395  :1440588545 :        3][4645]:0
+[ 1441.625549] mdss_dsi_event_handler:2730     =>[282396  :1440588548 :        3][4645]:16 0 0 3333
+[ 1441.625553] mdss_dsi_event_handler:2730     =>[282397  :1440588550 :        2][4645]:16 0 1 3333
+[ 1441.625558] mdss_dsi_event_handler:2730     =>[282398  :1440588552 :        2][4645]:17 0 0 3333
+[ 1441.625562] mdss_dsi_event_handler:2730     =>[282399  :1440588554 :        2][4645]:17 0 1 3333
+[ 1441.625566] mdss_mdp_resource_control:593   =>[282400  :1440588557 :        3][4645]:0 1 3 1111
+[ 1441.625571] mdss_mdp_cmd_wait4pingpong:1895 =>[282401  :1440588562 :        5][4645]:0 1 5a0 a00
+[ 1441.625575] mdss_mdp_cmd_wait4pingpong:1914 =>[282402  :1441586752 :   998190][4645]:0 0 1
+[ 1441.625580] mdss_mdp_cmd_wait4pingpong:1939 =>[282403  :1441586796 :       44][4645]:bad
+[ 1441.630584] ======== Debug bus DUMP =========
+[ 1441.630590] mdss_dump_debug_bus: start_addr:0xffffff8001971000 end_addr:0xffffff800197d100
+[ 1441.636149] ========End Debug bus=========
+[ 1441.636154] ======== VBIF Debug bus DUMP =========
+[ 1441.636158] mdss_dump_vbif_debug_bus: start_addr:0xffffff80019c1000 end_addr:0xffffff80019c8480
+[ 1441.638482] ========End VBIF Debug bus=========
+[ 1441.638486] ======== NRT VBIF Debug bus DUMP =========
+[ 1441.638490] mdss_dump_vbif_debug_bus: start_addr:0xffffff80019d0000 end_addr:0xffffff80019d6100
+[ 1441.640674] ========End VBIF Debug bus=========
+[ 1441.640685] __mdss_fb_sync_buf_done_callback: mdp-fence: frame timeout
+[ 1441.840483] mdss_dsi_cmd_mdp_busy: timeout error, TE ISR status=0x410110
+[ 1441.840510] mdss_mdp_cmd_wait4pingpong:1973 =>[282404  :1441640816 :    54020][4645]:0 0
+[ 1441.840524] mdss_mdp_resource_control:787   =>[282405  :1441640819 :        3][4645]:0 1 3 33
+[ 1441.840538] mdss_mdp_cmd_clk_off:952        =>[282406  :1441640820 :        1][4645]:0 0 2
+[ 1441.840553] mdss_dsi_event_handler:2730     =>[282407  :1441640822 :        2][4645]:10 33153b08 1 3333
+[ 1441.840567] mdss_dsi_clk_req:162            =>[282408  :1441640823 :        1][4645]:1 0 1 1225 0
+[ 1441.840581] mdss_dsi_cmd_mdp_busy:2459      =>[282409  :1441640824 :        1][4645]:1 1 1225 1111
+[ 1441.840596] mdss_dsi_mdp_busy_tout_check:2410=>[282410  :1441840557 :   199733][4645]:1 1 1225 badf
+[ 1441.840609] mdss_dsi_clk_req_state:769      =>[282411  :1441840561 :        4][4645]:0 3 1 0 0
+[ 1441.840623] mdss_dsi_clk_req_state:835      =>[282412  :1441840563 :        2][4645]:0 3 1 1 1
+[ 1441.840637] dsi_recheck_clk_state:587       =>[282413  :1441840565 :        2][4645]:1 1 1 1
+[ 1441.840650] mdss_dsi_clk_req_state:769      =>[282414  :1441840567 :        2][4645]:1 3 1 0 0
+[ 1441.840663] mdss_dsi_clk_req_state:835      =>[282415  :1441840568 :        1][4645]:1 3 1 1 1
+[ 1441.840677] dsi_recheck_clk_state:587       =>[282416  :1441840570 :        2][4645]:1 1 1 1
+[ 1441.840690] mdss_dsi_clk_req_state:769      =>[282417  :1441840583 :       13][4645]:0 3 1 1 1
+[ 1441.840704] mdss_dsi_clk_req_state:835      =>[282418  :1441840585 :        2][4645]:0 3 1 1 1
+[ 1441.840717] mdss_dsi_clk_req_state:769      =>[282419  :1441840587 :        2][4645]:1 3 0 1 1
+[ 1441.840731] mdss_dsi_clk_req_state:835      =>[282420  :1441840588 :        1][4645]:1 3 0 0 0
+[ 1441.840743] dsi_recheck_clk_state:587       =>[282421  :1441840589 :        1][4645]:1 1 1 1
+[ 1441.840757] mdss_dsi_clk_req_state:769      =>[282422  :1441840591 :        2][4645]:0 3 0 1 1
+[ 1441.840770] mdss_dsi_clk_req_state:835      =>[282423  :1441840593 :        2][4645]:0 3 0 1 1
+[ 1441.840784] mdss_dsi_clk_req_state:769      =>[282424  :1441840594 :        1][4645]:0 3 0 1 1
+[ 1441.840797] mdss_dsi_clk_req_state:835      =>[282425  :1441840595 :        1][4645]:0 3 0 0 0
+[ 1441.840810] dsi_recheck_clk_state:587       =>[282426  :1441840597 :        2][4645]:1 1 1 1
+[ 1442.040415] mdss_dsi_cmd_mdp_busy: timeout error, TE ISR status=0x410110
+[ 1442.040440] mdss_dsi_cmd_mdp_busy:2495      =>[282427  :1441840944 :      347][4645]:1 1 1225 2222
+[ 1442.040457] mdss_dsi_clk_req:171            =>[282428  :1441840946 :        2][4645]:1 0 1 1225 0
+[ 1442.040474] mdss_dsi_clk_req_state:769      =>[282429  :1441840948 :        2][4645]:0 3 1 1 1
+[ 1442.040489] mdss_dsi_clk_req_state:835      =>[282430  :1441840949 :        1][4645]:0 3 1 1 1
+[ 1442.040504] mdss_dsi_clk_req_state:769      =>[282431  :1441840951 :        2][4645]:1 3 0 1 1
+[ 1442.040518] mdss_dsi_clk_req_state:835      =>[282432  :1441840952 :        1][4645]:1 3 0 1 1
+[ 1442.040532] mdss_dsi_clk_req_state:769      =>[282433  :1441840954 :        2][4645]:0 3 0 1 1
+[ 1442.040545] mdss_dsi_clk_req_state:835      =>[282434  :1441840955 :        1][4645]:0 3 0 1 1
+[ 1442.040559] mdss_dsi_clk_req_state:769      =>[282435  :1441840957 :        2][4645]:0 3 0 1 1
+[ 1442.040572] mdss_dsi_clk_req_state:835      =>[282436  :1441840958 :        1][4645]:0 3 0 1 1
+[ 1442.040586] mdss_mdp_cmd_clk_off:952        =>[282437  :1441840964 :        6][4645]:0 0 1
+[ 1442.040601] mdss_dsi_event_handler:2730     =>[282438  :1441840968 :        4][4645]:10 33153b08 0 3333
+[ 1442.040615] mdss_dsi_clk_req:162            =>[282439  :1441840970 :        2][4645]:0 0 1 1225 0
+[ 1442.040629] mdss_dsi_cmd_mdp_busy:2459      =>[282440  :1441840971 :        1][4645]:0 1 1225 1111
+[ 1442.040643] mdss_dsi_mdp_busy_tout_check:2410=>[282441  :1442040509 :   199538][4645]:0 1 1225 badf
+[ 1442.040657] mdss_dsi_clk_req_state:769      =>[282442  :1442040512 :        3][4645]:0 3 1 0 0
+[ 1442.040671] mdss_dsi_clk_req_state:835      =>[282443  :1442040513 :        1][4645]:0 3 1 1 1
+[ 1442.040684] dsi_recheck_clk_state:587       =>[282444  :1442040515 :        2][4645]:1 1 1 1
+[ 1442.040698] mdss_dsi_clk_req_state:769      =>[282445  :1442040525 :       10][4645]:0 3 0 1 1
+[ 1442.040711] mdss_dsi_clk_req_state:835      =>[282446  :1442040527 :        2][4645]:0 3 0 0 0
+[ 1442.040725] dsi_recheck_clk_state:587       =>[282447  :1442040528 :        1][4645]:1 1 1 1
+[ 1442.240558] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x34
+[ 1442.240570] mdss_dsi_cmds_tx: failed to call
+[ 1442.440057] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x28
+[ 1442.440074] mdss_dsi_cmds_tx: failed to call
+[ 1442.440480] mdss_dsi_panel_power_off_hx8396c2: ctrl0 vddio=0, lab=1, ibb=2, ext-vdd_en=0
+[ 1442.440568] mdss_dsi_panel_power_off_hx8396c2: ctrl1 vddio=0, lab=1, ibb=2, ext-vdd_en=0
+[ 1442.770797] vgaarb: this pci device is not a vga device
+[ 1442.772631] mdss_dsi_panel_power_on_hx8396c2: ctrl0 ext-vdd_en=0
+[ 1442.790792] ------------[ cut here ]------------
+[ 1442.790828] WARNING: CPU: 0 PID: 4645 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 1442.790838] Trying to switch RCG source while it is prepared!
+[ 1442.790855] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1442.790866] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1442.790877] Call trace:
+[ 1442.790910] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1442.790925] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1442.790942] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1442.790958] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1442.790973] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1442.790986] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 1442.791004] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1442.791021] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 1442.791034] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1442.791054] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1442.791070] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1442.791084] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1442.791098] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1442.791114] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1442.791126] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1442.791143] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1442.791155] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1442.791167] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1442.791184] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1442.791199] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1442.791215] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1442.791229] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1442.791242] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1442.791253] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1442.791264] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1442.791276] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1442.791288] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1442.791300] ---[ end trace 6ff96182a7c898a4 ]---
+[ 1442.793422] dsi0pll_vco_clk_8996
+[ 1442.793431] dsi0pll_post_n1_div_clk
+[ 1442.793441] dsi0pll_byte_clk_src
+[ 1442.793450] dsi0pll_byte_clk_mux
+[ 1442.793460] ext_byte0_clk_src
+[ 1442.793469] byte0_clk_src
+[ 1442.793488]             CMD_RCGR: 0x00000001
+[ 1442.793501]             CFG_RCGR: 0x00000100
+[ 1442.793511] ------------[ cut here ]------------
+[ 1442.793526] WARNING: CPU: 0 PID: 4645 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 1442.793536] byte0_clk_src: rcg didn't update its configuration.
+[ 1442.793548] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1442.793558] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1442.793567] Call trace:
+[ 1442.793586] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1442.793598] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1442.793610] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1442.793623] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1442.793635] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1442.793647] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 1442.793659] [<ffffffc000a3c4dc>] __set_rate_hid+0xb0/0xc0
+[ 1442.793670] [<ffffffc000a3c524>] set_rate_hid+0x38/0x54
+[ 1442.793682] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 1442.793696] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1442.793708] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 1442.793720] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1442.793733] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1442.793746] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1442.793759] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1442.793772] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1442.793786] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1442.793797] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1442.793809] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1442.793821] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1442.793833] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1442.793845] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1442.793858] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1442.793871] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1442.793883] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1442.793895] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1442.793906] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1442.793917] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1442.793929] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1442.793942] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1442.793951] ---[ end trace 6ff96182a7c898a5 ]---
+[ 1442.794161] ------------[ cut here ]------------
+[ 1442.794182] WARNING: CPU: 0 PID: 4645 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 1442.794191] Trying to switch RCG source while it is prepared!
+[ 1442.794205] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1442.794215] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1442.794223] Call trace:
+[ 1442.794244] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1442.794256] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1442.794267] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1442.794281] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1442.794293] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1442.794304] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 1442.794319] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1442.794331] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 1442.794342] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1442.794356] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1442.794370] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1442.794383] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1442.794395] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1442.794408] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1442.794419] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1442.794432] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1442.794444] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1442.794456] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1442.794469] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1442.794483] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1442.794497] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1442.794509] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1442.794521] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1442.794531] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1442.794542] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1442.794555] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1442.794567] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1442.794577] ---[ end trace 6ff96182a7c898a6 ]---
+[ 1442.796694] dsi0pll_vco_clk_8996
+[ 1442.796703] dsi0pll_post_n1_div_clk
+[ 1442.796712] dsi0pll_n2_div_clk
+[ 1442.796721] dsi0pll_pixel_clk_src
+[ 1442.796729] dsi0pll_pixel_clk_mux
+[ 1442.796738] ext_pclk0_clk_src
+[ 1442.796751] pclk0_clk_src
+[ 1442.796769]             CMD_RCGR: 0x00000001
+[ 1442.796782]             CFG_RCGR: 0x00000100
+[ 1442.796794]                M_VAL: 0x00000000
+[ 1442.796806]                N_VAL: 0x00000000
+[ 1442.796817]                D_VAL: 0x00000000
+[ 1442.796826] ------------[ cut here ]------------
+[ 1442.796842] WARNING: CPU: 0 PID: 4645 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 1442.796855] pclk0_clk_src: rcg didn't update its configuration.
+[ 1442.796869] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1442.796879] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1442.796887] Call trace:
+[ 1442.796907] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1442.796920] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1442.796932] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1442.796946] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1442.796962] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1442.796974] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 1442.796985] [<ffffffc000a3c70c>] __set_rate_mnd+0x1cc/0x1dc
+[ 1442.796995] [<ffffffc000a3c754>] set_rate_mnd+0x38/0x54
+[ 1442.797006] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 1442.797020] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1442.797032] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 1442.797043] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1442.797061] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1442.797075] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1442.797087] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1442.797100] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1442.797113] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1442.797124] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1442.797137] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1442.797152] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1442.797164] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1442.797177] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1442.797192] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1442.797207] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1442.797219] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1442.797231] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1442.797244] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1442.797254] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1442.797266] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1442.797278] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1442.797288] ---[ end trace 6ff96182a7c898a7 ]---
+[ 1442.815457] mdss_dsi_panel_power_on_hx8396c2: ctrl1 ext-vdd_en=0
+[ 1442.815489] ------------[ cut here ]------------
+[ 1442.815514] WARNING: CPU: 0 PID: 4645 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 1442.815578] Trying to switch RCG source while it is prepared!
+[ 1442.815607] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1442.815626] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1442.815644] Call trace:
+[ 1442.815694] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1442.815721] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1442.815747] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1442.815775] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1442.815799] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1442.815824] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 1442.815853] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1442.815880] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 1442.815902] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1442.815932] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1442.815960] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1442.815986] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1442.816013] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1442.816041] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1442.816063] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1442.816089] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1442.816118] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1442.816148] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1442.816180] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1442.816208] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1442.816236] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1442.816259] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1442.816283] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1442.816304] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1442.816325] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1442.816362] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1442.816384] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1442.816499] ---[ end trace 6ff96182a7c898a8 ]---
+[ 1442.818246] dsi0pll_vco_clk_8996
+[ 1442.818251] dsi0pll_post_n1_div_clk
+[ 1442.818256] dsi0pll_byte_clk_src
+[ 1442.818260] dsi0pll_byte_clk_mux
+[ 1442.818264] ext_byte0_clk_src
+[ 1442.818268] byte1_clk_src
+[ 1442.818279]             CMD_RCGR: 0x00000001
+[ 1442.818289]             CFG_RCGR: 0x00000100
+[ 1442.818296] ------------[ cut here ]------------
+[ 1442.818305] WARNING: CPU: 0 PID: 4645 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 1442.818310] byte1_clk_src: rcg didn't update its configuration.
+[ 1442.818317] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1442.818321] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1442.818327] Call trace:
+[ 1442.818343] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1442.818348] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1442.818354] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1442.818362] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1442.818367] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1442.818372] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 1442.818377] [<ffffffc000a3c4dc>] __set_rate_hid+0xb0/0xc0
+[ 1442.818382] [<ffffffc000a3c524>] set_rate_hid+0x38/0x54
+[ 1442.818387] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 1442.818395] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1442.818402] [<ffffffc0003d87b8>] mdss_dsi_on+0x450/0x518
+[ 1442.818407] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1442.818415] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1442.818423] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1442.818430] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1442.818436] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1442.818442] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1442.818447] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1442.818456] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1442.818461] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1442.818467] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1442.818475] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1442.818484] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1442.818492] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1442.818498] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1442.818504] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1442.818509] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1442.818514] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1442.818520] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1442.818525] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1442.818530] ---[ end trace 6ff96182a7c898a9 ]---
+[ 1442.818909] ------------[ cut here ]------------
+[ 1442.818925] WARNING: CPU: 0 PID: 4645 at ../drivers/clk/msm/clock-local2.c:1542 rcg_clk_set_parent+0x70/0x2ac()
+[ 1442.818929] Trying to switch RCG source while it is prepared!
+[ 1442.818973] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1442.818977] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1442.818983] Call trace:
+[ 1442.818999] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1442.819005] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1442.819012] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1442.819020] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1442.819026] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1442.819032] [<ffffffc000a3dfa0>] rcg_clk_set_parent+0x70/0x2ac
+[ 1442.819039] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1442.819046] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 1442.819052] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1442.819062] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1442.819069] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1442.819076] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1442.819082] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1442.819088] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1442.819094] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1442.819102] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1442.819108] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1442.819114] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1442.819121] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1442.819129] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1442.819137] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1442.819143] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1442.819149] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1442.819156] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1442.819161] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1442.819167] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1442.819172] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1442.819227] ---[ end trace 6ff96182a7c898aa ]---
+[ 1442.820968] dsi0pll_vco_clk_8996
+[ 1442.820972] dsi0pll_post_n1_div_clk
+[ 1442.820976] dsi0pll_n2_div_clk
+[ 1442.820981] dsi0pll_pixel_clk_src
+[ 1442.820985] dsi0pll_pixel_clk_mux
+[ 1442.820990] ext_pclk0_clk_src
+[ 1442.820994] pclk1_clk_src
+[ 1442.821006]             CMD_RCGR: 0x00000001
+[ 1442.821013]             CFG_RCGR: 0x00000100
+[ 1442.821019]                M_VAL: 0x00000000
+[ 1442.821025]                N_VAL: 0x00000000
+[ 1442.821031]                D_VAL: 0x00000000
+[ 1442.821035] ------------[ cut here ]------------
+[ 1442.821047] WARNING: CPU: 0 PID: 4645 at ../drivers/clk/msm/clock-local2.c:128 rcg_update_config+0xe4/0x150()
+[ 1442.821052] pclk1_clk_src: rcg didn't update its configuration.
+[ 1442.821060] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1442.821064] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1442.821071] Call trace:
+[ 1442.821088] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1442.821094] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1442.821101] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1442.821109] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1442.821114] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1442.821120] [<ffffffc000a3c3c0>] rcg_update_config+0xe4/0x150
+[ 1442.821125] [<ffffffc000a3c70c>] __set_rate_mnd+0x1cc/0x1dc
+[ 1442.821130] [<ffffffc000a3c754>] set_rate_mnd+0x38/0x54
+[ 1442.821135] [<ffffffc000a3e17c>] rcg_clk_set_parent+0x24c/0x2ac
+[ 1442.821143] [<ffffffc000a3a014>] clk_set_parent+0x88/0xa8
+[ 1442.821151] [<ffffffc0003d87f8>] mdss_dsi_on+0x490/0x518
+[ 1442.821156] [<ffffffc0003d8ab8>] mdss_dsi_event_handler+0x1f4/0x11ac
+[ 1442.821165] [<ffffffc0003842f0>] mdss_mdp_ctl_intf_event+0x100/0x14c
+[ 1442.821173] [<ffffffc0003aa24c>] mdss_mdp_cmd_panel_on+0xa8/0x220
+[ 1442.821180] [<ffffffc0003adb38>] mdss_mdp_cmd_kickoff+0x128/0x898
+[ 1442.821186] [<ffffffc000387a40>] mdss_mdp_display_commit+0xde0/0x106c
+[ 1442.821193] [<ffffffc0003bcb1c>] mdss_mdp_overlay_kickoff+0x11a0/0x1510
+[ 1442.821198] [<ffffffc0003bdab0>] mdss_mdp_overlay_on+0x1f4/0x218
+[ 1442.821208] [<ffffffc00040bc8c>] mdss_fb_blank_unblank+0x250/0x360
+[ 1442.821214] [<ffffffc00040c000>] mdss_fb_blank_sub.isra.0+0x264/0x428
+[ 1442.821220] [<ffffffc00040c328>] mdss_fb_open+0x164/0x1e4
+[ 1442.821228] [<ffffffc00036aa2c>] fb_open+0x9c/0xc0
+[ 1442.821236] [<ffffffc000195860>] chrdev_open+0xe0/0x13c
+[ 1442.821244] [<ffffffc00018f9f0>] do_dentry_open+0x220/0x298
+[ 1442.821251] [<ffffffc000190858>] vfs_open+0x64/0x68
+[ 1442.821257] [<ffffffc00019d7f8>] do_last.constprop.0+0x87c/0xa04
+[ 1442.821264] [<ffffffc00019db94>] path_openat+0x214/0x570
+[ 1442.821269] [<ffffffc00019df48>] do_filp_open+0x30/0x80
+[ 1442.821274] [<ffffffc000190c5c>] do_sys_open+0x140/0x1c4
+[ 1442.821280] [<ffffffc000190d14>] SyS_openat+0x10/0x18
+[ 1442.821285] ---[ end trace 6ff96182a7c898ab ]---
+[ 1443.020068] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x11
+[ 1443.020085] mdss_dsi_cmds_tx: failed to call
+[ 1443.220064] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x35
+[ 1443.220081] mdss_dsi_cmds_tx: failed to call
+[ 1443.220486] mdss_mdp_cmd_panel_on: INTR2 Status = 0x410110, 5
+[ 1443.221050] mdss_mdp_cmd_kickoff: INTR2 Status = 0x410110, 4
+[ 1443.226190] vgaarb: this pci device is not a vga device
+[ 1444.229901] mdss_mdp_cmd_wait4pingpong:wait4pingpong timed out ctl=0 rc=0 cnt=0 koff_cnt=1
+[ 1444.229910] TE ISR status 0x410110
+[ 1444.229937] mdss_dsi_cmd_mdp_busy:2495      =>[282448  :1442040858 :      330][4645]:0 1 1225 2222
+[ 1444.229949] mdss_dsi_clk_req:171            =>[282449  :1442040860 :        2][4645]:0 0 1 1225 0
+[ 1444.229960] mdss_dsi_clk_req_state:769      =>[282450  :1442040862 :        2][4645]:0 3 0 1 1
+[ 1444.229971] mdss_dsi_clk_req_state:835      =>[282451  :1442040863 :        1][4645]:0 3 0 1 1
+[ 1444.229980] mdss_bus_bandwidth_ctrl:1450    =>[282452  :1442040867 :        4][4645]:0 0
+[ 1444.229991] mdss_update_reg_bus_vote:653    =>[282453  :1442041323 :      456][4645]:0 1 0 0
+[ 1444.230000] mdss_mdp_resource_control:902   =>[282454  :1442041326 :        3][4645]:3 0 2222
+[ 1444.230008] mdss_mdp_cmd_ctx_stop:2848      =>[282455  :1442041341 :       15][4645]:0
+[ 1444.230018] mdss_dsi_event_handler:2730     =>[282456  :1442041344 :        3][4645]:16 0 0 3333
+[ 1444.230027] mdss_dsi_event_handler:2730     =>[282457  :1442041346 :        2][4645]:16 0 1 3333
+[ 1444.230036] mdss_dsi_event_handler:2730     =>[282458  :1442041348 :        2][4645]:17 0 0 3333
+[ 1444.230044] mdss_dsi_event_handler:2730     =>[282459  :1442041349 :        1][4645]:17 0 1 3333
+[ 1444.230053] mdss_mdp_resource_control:593   =>[282460  :1442041352 :        3][4645]:0 0 3 1111
+[ 1444.230061] mdss_dsi_event_handler:2730     =>[282461  :1442041370 :       18][4645]:6 0 0 3333
+[ 1444.230070] mdss_dsi_clk_req_state:769      =>[282462  :1442041373 :        3][4645]:0 3 1 0 0
+[ 1444.230078] mdss_dsi_clk_req_state:835      =>[282463  :1442041374 :        1][4645]:0 3 1 1 1
+[ 1444.230086] dsi_recheck_clk_state:587       =>[282464  :1442041376 :        2][4645]:1 1 1 1
+[ 1444.230096] mdss_dsi_cmdlist_commit:2611    =>[282465  :1442041396 :       20][4645]:0 0 1 1225 1111
+[ 1444.230105] mdss_dsi_cmdlist_commit:2665    =>[282466  :1442041398 :        2][4645]:0 2 1 0 1225
+[ 1444.230114] mdss_dsi_clk_req_state:769      =>[282467  :1442041668 :      270][4645]:0 3 1 1 1
+[ 1444.230122] mdss_dsi_clk_req_state:835      =>[282468  :1442041670 :        2][4645]:0 3 1 1 1
+[ 1444.230130] mdss_dsi_delay_cmd:2580         =>[282469  :1442041672 :        2][4645]:0 0 0
+[ 1444.230139] mdss_dsi_clk_req_state:769      =>[282470  :1442240945 :   199273][4645]:0 3 0 1 1
+[ 1444.230147] mdss_dsi_clk_req_state:835      =>[282471  :1442240947 :        2][4645]:0 3 0 1 1
+[ 1444.230156] mdss_dsi_cmdlist_commit:2731    =>[282472  :1442240948 :        1][4645]:0 0 1 1225 2222
+[ 1444.230165] mdss_dsi_cmdlist_commit:2611    =>[282473  :1442240953 :        5][4645]:0 0 1 1225 1111
+[ 1444.230174] mdss_dsi_cmdlist_commit:2665    =>[282474  :1442240955 :        2][4645]:0 22 5 0 1225
+[ 1444.230182] mdss_dsi_clk_req_state:769      =>[282475  :1442241223 :      268][4645]:0 3 1 1 1
+[ 1444.230190] mdss_dsi_clk_req_state:835      =>[282476  :1442241224 :        1][4645]:0 3 1 1 1
+[ 1444.230198] mdss_dsi_delay_cmd:2580         =>[282477  :1442241227 :        3][4645]:0 0 0
+[ 1444.230207] mdss_dsi_clk_req_state:769      =>[282478  :1442440497 :   199270][4645]:0 3 0 1 1
+[ 1444.230215] mdss_dsi_clk_req_state:835      =>[282479  :1442440499 :        2][4645]:0 3 0 1 1
+[ 1444.235227] mdss_dsi_cmdlist_commit:2731    =>[282480  :1442440501 :        2][4645]:0 0 1 1225 2222
+[ 1444.235237] mdss_dsi_clk_req_state:769      =>[282481  :1442440505 :        4][4645]:0 3 0 1 1
+[ 1444.235246] mdss_dsi_clk_req_state:835      =>[282482  :1442440506 :        1][4645]:0 3 0 0 0
+[ 1444.235254] dsi_recheck_clk_state:587       =>[282483  :1442440509 :        3][4645]:1 1 1 1
+[ 1444.235262] mdss_dsi_event_handler:2730     =>[282484  :1442440513 :        4][4645]:6 0 1 3333
+[ 1444.235271] mdss_dsi_clk_req_state:769      =>[282485  :1442440516 :        3][4645]:0 3 1 0 0
+[ 1444.235280] mdss_dsi_clk_req_state:835      =>[282486  :1442440517 :        1][4645]:0 3 1 1 1
+[ 1444.235289] dsi_recheck_clk_state:587       =>[282487  :1442440519 :        2][4645]:1 1 1 1
+[ 1444.235297] mdss_dsi_clk_req_state:769      =>[282488  :1442440521 :        2][4645]:1 3 1 0 0
+[ 1444.235306] mdss_dsi_clk_req_state:835      =>[282489  :1442440522 :        1][4645]:1 3 1 1 1
+[ 1444.235314] dsi_recheck_clk_state:587       =>[282490  :1442440524 :        2][4645]:1 1 1 1
+[ 1444.235323] mdss_dsi_clk_req_state:769      =>[282491  :1442440542 :       18][4645]:0 3 1 1 1
+[ 1444.235331] mdss_dsi_clk_req_state:835      =>[282492  :1442440544 :        2][4645]:0 3 1 1 1
+[ 1444.235340] mdss_dsi_clk_req_state:769      =>[282493  :1442440545 :        1][4645]:1 3 0 1 1
+[ 1444.235348] mdss_dsi_clk_req_state:835      =>[282494  :1442440547 :        2][4645]:1 3 0 0 0
+[ 1444.235357] dsi_recheck_clk_state:587       =>[282495  :1442440548 :        1][4645]:1 1 1 1
+[ 1444.235365] mdss_dsi_clk_req_state:769      =>[282496  :1442440550 :        2][4645]:0 3 0 1 1
+[ 1444.235374] mdss_dsi_clk_req_state:835      =>[282497  :1442440551 :        1][4645]:0 3 0 1 1
+[ 1444.235383] mdss_dsi_clk_req_state:769      =>[282498  :1442440553 :        2][4645]:0 3 0 1 1
+[ 1444.235391] mdss_dsi_clk_req_state:835      =>[282499  :1442440554 :        1][4645]:0 3 0 0 0
+[ 1444.235399] dsi_recheck_clk_state:587       =>[282500  :1442440555 :        1][4645]:1 1 1 1
+[ 1444.235408] mdss_dsi_event_handler:2730     =>[282501  :1442440559 :        4][4645]:7 0 0 3333
+[ 1444.235417] mdss_dsi_clk_req_state:769      =>[282502  :1442440561 :        2][4645]:0 1 1 0 0
+[ 1444.235425] mdss_dsi_clk_req_state:835      =>[282503  :1442440562 :        1][4645]:0 1 1 1 0
+[ 1444.235433] dsi_recheck_clk_state:587       =>[282504  :1442440564 :        2][4645]:1 1 1 1
+[ 1444.235442] mdss_dsi_clk_req_state:769      =>[282505  :1442440591 :       27][4645]:0 1 0 1 0
+[ 1444.235450] mdss_dsi_clk_req_state:835      =>[282506  :1442440593 :        2][4645]:0 1 0 0 0
+[ 1444.235458] dsi_recheck_clk_state:587       =>[282507  :1442440594 :        1][4645]:1 1 1 1
+[ 1444.235467] mdss_dsi_event_handler:2730     =>[282508  :1442440628 :       34][4645]:7 0 1 3333
+[ 1444.235476] mdss_dsi_clk_req_state:769      =>[282509  :1442440630 :        2][4645]:1 1 1 0 0
+[ 1444.235484] mdss_dsi_clk_req_state:835      =>[282510  :1442440632 :        2][4645]:1 1 1 1 0
+[ 1444.235492] dsi_recheck_clk_state:587       =>[282511  :1442440633 :        1][4645]:1 1 1 1
+[ 1444.240504] mdss_dsi_clk_req_state:769      =>[282512  :1442440683 :       50][4645]:1 1 0 1 0
+[ 1444.240514] mdss_dsi_clk_req_state:835      =>[282513  :1442440684 :        1][4645]:1 1 0 0 0
+[ 1444.240522] dsi_recheck_clk_state:587       =>[282514  :1442440686 :        2][4645]:1 1 1 1
+[ 1444.240531] mdss_mdp_cmd_stop:3122          =>[282515  :1442770027 :   329341][4645]:0 0 2222
+[ 1444.240540] mdss_mdp_clk_ctrl:1495          =>[282516  :1442770198 :      171][4645]:0 0 1225
+[ 1444.240548] mdss_smmu_detach:141            =>[282517  :1442770227 :       29][4645]:1
+[ 1444.240556] mdss_update_reg_bus_vote:653    =>[282518  :1442770239 :       12][4645]:0 1 2 0
+[ 1444.240565] mdss_update_reg_bus_vote:653    =>[282519  :1442770249 :       10][4645]:0 1 3 0
+[ 1444.240573] mdss_update_reg_bus_vote:653    =>[282520  :1442770278 :       29][4645]:0 1 4 0
+[ 1444.240581] mdss_update_reg_bus_vote:653    =>[282521  :1442770311 :       33][4645]:0 1 5 0
+[ 1444.240589] mdss_update_reg_bus_vote:653    =>[282522  :1442770370 :       59][4645]:0 1 0 0
+[ 1444.240598] mdss_dsi_event_handler:2730     =>[282523  :1442770380 :       10][4645]:8 0 0 3333
+[ 1444.240606] mdss_dsi_event_handler:2730     =>[282524  :1442770383 :        3][4645]:8 0 1 3333
+[ 1444.240615] mdss_mdp_footswitch_ctrl:4752   =>[282525  :1442770448 :       65][45  ]:0 1 0 0 0
+[ 1444.240623] mdss_dsi_event_handler:2730     =>[282526  :1442770462 :       14][45  ]:9 0 0 3333
+[ 1444.240631] mdss_dsi_event_handler:2730     =>[282527  :1442770463 :        1][45  ]:9 0 1 3333
+[ 1444.240639] mdss_dsi_event_handler:2730     =>[282528  :1442771208 :      745][4645]:1 0 0 3333
+[ 1444.240647] mdss_dsi_event_handler:2730     =>[282529  :1442771211 :        3][4645]:1 0 1 3333
+[ 1444.240656] mdss_mdp_clk_ctrl:1495          =>[282530  :1442771214 :        3][4645]:1 1 1225
+[ 1444.240664] mdss_dsi_event_handler:2730     =>[282531  :1442771226 :       12][4645]:a 0 0 3333
+[ 1444.240672] mdss_dsi_event_handler:2730     =>[282532  :1442771227 :        1][4645]:a 0 1 3333
+[ 1444.240680] mdss_mdp_footswitch_ctrl:4752   =>[282533  :1442771234 :        7][4645]:1 0 0 0 0
+[ 1444.240689] mdss_update_reg_bus_vote:653    =>[282534  :1442771245 :       11][4645]:0 1 0 1
+[ 1444.240697] mdss_smmu_attach:122            =>[282535  :1442771247 :        2][4645]:0
+[ 1444.240705] mdss_update_reg_bus_vote:653    =>[282536  :1442771263 :       16][4645]:0 1 2 1
+[ 1444.240713] mdss_update_reg_bus_vote:653    =>[282537  :1442771372 :      109][4645]:0 1 3 1
+[ 1444.240721] mdss_update_reg_bus_vote:653    =>[282538  :1442771467 :       95][4645]:0 1 4 1
+[ 1444.240729] mdss_update_reg_bus_vote:653    =>[282539  :1442771476 :        9][4645]:0 1 5 1
+[ 1444.240738] mdss_mdp_cmd_ctx_setup:3233     =>[282540  :1442771641 :      165][4645]:0 0
+[ 1444.240746] mdss_mdp_cmd_ctx_setup:3233     =>[282541  :1442771684 :       43][4645]:0 0
+[ 1444.240754] mdss_mdp_clk_ctrl:1495          =>[282542  :1442771785 :      101][4645]:0 0 1225
+[ 1444.240762] mdss_smmu_detach:141            =>[282543  :1442771807 :       22][4645]:1
+[ 1444.245773] mdss_update_reg_bus_vote:653    =>[282544  :1442771813 :        6][4645]:0 1 2 0
+[ 1444.245782] mdss_update_reg_bus_vote:653    =>[282545  :1442771820 :        7][4645]:0 1 3 0
+[ 1444.245790] mdss_update_reg_bus_vote:653    =>[282546  :1442771844 :       24][4645]:0 1 4 0
+[ 1444.245799] mdss_update_reg_bus_vote:653    =>[282547  :1442771876 :       32][4645]:0 1 5 0
+[ 1444.245807] mdss_update_reg_bus_vote:653    =>[282548  :1442771906 :       30][4645]:0 1 0 0
+[ 1444.245816] mdss_mdp_footswitch_ctrl:4752   =>[282549  :1442771943 :       37][45  ]:0 1 0 0 1
+[ 1444.245824] mdss_smmu_attach:122            =>[282550  :1442771995 :       52][4645]:0
+[ 1444.245833] mdss_update_reg_bus_vote:653    =>[282551  :1442772003 :        8][4645]:0 1 2 1
+[ 1444.245841] mdss_update_reg_bus_vote:653    =>[282552  :1442772107 :      104][4645]:0 1 3 1
+[ 1444.245849] mdss_update_reg_bus_vote:653    =>[282553  :1442772199 :       92][4645]:0 1 4 1
+[ 1444.245857] mdss_update_reg_bus_vote:653    =>[282554  :1442772208 :        9][4645]:0 1 5 1
+[ 1444.245865] mdss_mdp_clk_ctrl:1495          =>[282555  :1442772217 :        9][4645]:1 1 1225
+[ 1444.245874] mdss_mdp_footswitch_ctrl:4752   =>[282556  :1442772221 :        4][4645]:1 0 1 0 1
+[ 1444.245882] mdss_update_reg_bus_vote:653    =>[282557  :1442772227 :        6][4645]:0 1 0 1
+[ 1444.245892] mdss_mdp_set_mixer_roi:4414     =>[282558  :1442772496 :      269][4645]:0 0 1 0 0 5a0 a00
+[ 1444.245899] mdss_mdp_cmd_pre_programming:2281=>[282559  :1442772499 :        3][4645]:0
+[ 1444.245908] __mdss_mdp_mixer_write_cfg:4589 =>[282560  :1442772653 :      154][4645]:0 1000000 0 0
+[ 1444.245917] mdss_mdp_mixer_setup:4868       =>[282561  :1442772655 :        2][4645]:0 0 0 a00 5a0
+[ 1444.245926] mdss_mdp_cmd_wait4pingpong:1895 =>[282562  :1442772669 :       14][4645]:0 0 5a0 a00
+[ 1444.245934] mdss_mdp_cmd_wait4pingpong:1973 =>[282563  :1442772674 :        5][4645]:0 0 0
+[ 1444.245942] mdss_mdp_display_commit:5669    =>[282564  :1442772737 :       63][4645]:2 22040 0 0
+[ 1444.245951] mdss_dsi_event_handler:2730     =>[282565  :1442772743 :        6][4645]:2 0 0 3333
+[ 1444.245959] mdss_dsi_clk_req_state:769      =>[282566  :1442797535 :    24792][4645]:0 1 1 0 0
+[ 1444.245968] mdss_dsi_clk_req_state:835      =>[282567  :1442797536 :        1][4645]:0 1 1 1 0
+[ 1444.245976] dsi_recheck_clk_state:587       =>[282568  :1442797538 :        2][4645]:1 1 1 1
+[ 1444.245984] mdss_dsi_clk_req_state:769      =>[282569  :1442800374 :     2836][4645]:0 2 1 1 0
+[ 1444.245993] mdss_dsi_clk_req_state:835      =>[282570  :1442800376 :        2][4645]:0 2 1 1 1
+[ 1444.246001] dsi_recheck_clk_state:587       =>[282571  :1442800378 :        2][4645]:1 1 1 1
+[ 1444.246009] mdss_dsi_clk_req_state:769      =>[282572  :1442815536 :    15158][4645]:0 3 0 1 1
+[ 1444.246017] mdss_dsi_clk_req_state:835      =>[282573  :1442815538 :        2][4645]:0 3 0 0 0
+[ 1444.246025] dsi_recheck_clk_state:587       =>[282574  :1442815541 :        3][4645]:1 1 1 1
+[ 1444.246034] mdss_dsi_event_handler:2730     =>[282575  :1442815566 :       25][4645]:2 0 1 3333
+[ 1444.251058] mdss_dsi_clk_req_state:769      =>[282576  :1442821752 :     6186][4645]:1 1 1 0 0
+[ 1444.251076] mdss_dsi_clk_req_state:835      =>[282577  :1442821753 :        1][4645]:1 1 1 1 0
+[ 1444.251093] dsi_recheck_clk_state:587       =>[282578  :1442821754 :        1][4645]:1 1 1 1
+[ 1444.251111] mdss_dsi_clk_req_state:769      =>[282579  :1442822290 :      536][4645]:0 3 1 0 0
+[ 1444.251127] mdss_dsi_clk_req_state:835      =>[282580  :1442822291 :        1][4645]:0 3 1 1 1
+[ 1444.251145] dsi_recheck_clk_state:587       =>[282581  :1442822292 :        1][4645]:1 1 1 1
+[ 1444.251161] mdss_dsi_clk_req_state:769      =>[282582  :1442822293 :        1][4645]:1 2 1 1 0
+[ 1444.251178] mdss_dsi_clk_req_state:835      =>[282583  :1442822293 :        0][4645]:1 2 1 1 1
+[ 1444.251194] dsi_recheck_clk_state:587       =>[282584  :1442822294 :        1][4645]:1 1 1 1
+[ 1444.251211] mdss_dsi_clk_req_state:769      =>[282585  :1442822312 :       18][4645]:0 3 1 1 1
+[ 1444.251227] mdss_dsi_clk_req_state:835      =>[282586  :1442822312 :        0][4645]:0 3 1 1 1
+[ 1444.251233] mdss_dsi_clk_req_state:769      =>[282587  :1442822313 :        1][4645]:1 3 0 1 1
+[ 1444.251238] mdss_dsi_clk_req_state:835      =>[282588  :1442822314 :        1][4645]:1 3 0 0 0
+[ 1444.251244] dsi_recheck_clk_state:587       =>[282589  :1442822315 :        1][4645]:1 1 1 1
+[ 1444.251250] mdss_dsi_clk_req_state:769      =>[282590  :1442822316 :        1][4645]:0 3 0 1 1
+[ 1444.251256] mdss_dsi_clk_req_state:835      =>[282591  :1442822316 :        0][4645]:0 3 0 1 1
+[ 1444.251261] mdss_dsi_clk_req_state:769      =>[282592  :1442822317 :        1][4645]:0 3 0 1 1
+[ 1444.251267] mdss_dsi_clk_req_state:835      =>[282593  :1442822317 :        0][4645]:0 3 0 0 0
+[ 1444.251273] dsi_recheck_clk_state:587       =>[282594  :1442822318 :        1][4645]:1 1 1 1
+[ 1444.251279] mdss_dsi_event_handler:2730     =>[282595  :1442822331 :       13][4645]:3 0 0 3333
+[ 1444.251284] mdss_dsi_clk_req_state:769      =>[282596  :1442822339 :        8][4645]:0 3 1 0 0
+[ 1444.251289] mdss_dsi_clk_req_state:835      =>[282597  :1442822340 :        1][4645]:0 3 1 1 1
+[ 1444.251292] dsi_recheck_clk_state:587       =>[282598  :1442822341 :        1][4645]:1 1 1 1
+[ 1444.251295] mdss_dsi_clk_req_state:769      =>[282599  :1442822342 :        1][4645]:0 3 1 1 1
+[ 1444.251298] mdss_dsi_clk_req_state:835      =>[282600  :1442822342 :        0][4645]:0 3 1 1 1
+[ 1444.251301] mdss_dsi_clk_req_state:769      =>[282601  :1442822343 :        1][4645]:1 3 1 0 0
+[ 1444.251309] mdss_dsi_clk_req_state:835      =>[282602  :1442822344 :        1][4645]:1 3 1 1 1
+[ 1444.251312] dsi_recheck_clk_state:587       =>[282603  :1442822344 :        0][4645]:1 1 1 1
+[ 1444.251315] mdss_dsi_cmdlist_commit:2611    =>[282604  :1442822348 :        4][4645]:0 0 0 1225 1111
+[ 1444.251318] mdss_dsi_cmdlist_commit:2665    =>[282605  :1442822349 :        1][4645]:0 12 18 0 1225
+[ 1444.251321] mdss_dsi_clk_req_state:769      =>[282606  :1442822592 :      243][4645]:0 3 1 1 1
+[ 1444.251325] mdss_dsi_clk_req_state:835      =>[282607  :1442822593 :        1][4645]:0 3 1 1 1
+[ 1444.256328] mdss_dsi_delay_cmd:2580         =>[282608  :1442822594 :        1][4645]:0 0 0
+[ 1444.256331] mdss_dsi_clk_req_state:769      =>[282609  :1443020494 :   197900][4645]:0 3 0 1 1
+[ 1444.256334] mdss_dsi_clk_req_state:835      =>[282610  :1443020496 :        2][4645]:0 3 0 1 1
+[ 1444.256337] mdss_dsi_cmdlist_commit:2731    =>[282611  :1443020498 :        2][4645]:0 0 0 1225 2222
+[ 1444.256341] mdss_dsi_cmdlist_commit:2611    =>[282612  :1443020504 :        6][4645]:0 0 0 1225 1111
+[ 1444.256344] mdss_dsi_cmdlist_commit:2665    =>[282613  :1443020506 :        2][4645]:0 2 1 0 1225
+[ 1444.256347] mdss_dsi_clk_req_state:769      =>[282614  :1443020777 :      271][4645]:0 3 1 1 1
+[ 1444.256350] mdss_dsi_clk_req_state:835      =>[282615  :1443020778 :        1][4645]:0 3 1 1 1
+[ 1444.256353] mdss_dsi_delay_cmd:2580         =>[282616  :1443020780 :        2][4645]:0 0 0
+[ 1444.256356] mdss_dsi_clk_req_state:769      =>[282617  :1443220494 :   199714][4645]:0 3 0 1 1
+[ 1444.256359] mdss_dsi_clk_req_state:835      =>[282618  :1443220497 :        3][4645]:0 3 0 1 1
+[ 1444.256362] mdss_dsi_cmdlist_commit:2731    =>[282619  :1443220498 :        1][4645]:0 0 0 1225 2222
+[ 1444.256365] mdss_dsi_clk_req_state:769      =>[282620  :1443220502 :        4][4645]:0 3 0 1 1
+[ 1444.256368] mdss_dsi_clk_req_state:835      =>[282621  :1443220503 :        1][4645]:0 3 0 1 1
+[ 1444.256371] mdss_dsi_clk_req_state:769      =>[282622  :1443220507 :        4][4645]:0 3 1 1 1
+[ 1444.256374] mdss_dsi_clk_req_state:835      =>[282623  :1443220508 :        1][4645]:0 3 1 1 1
+[ 1444.256377] mdss_dsi_clk_req_state:769      =>[282624  :1443220510 :        2][4645]:1 3 0 1 1
+[ 1444.256380] mdss_dsi_clk_req_state:835      =>[282625  :1443220511 :        1][4645]:1 3 0 0 0
+[ 1444.256383] dsi_recheck_clk_state:587       =>[282626  :1443220514 :        3][4645]:1 1 1 1
+[ 1444.256386] mdss_dsi_clk_req_state:769      =>[282627  :1443220516 :        2][4645]:0 3 0 1 1
+[ 1444.256389] mdss_dsi_clk_req_state:835      =>[282628  :1443220517 :        1][4645]:0 3 0 1 1
+[ 1444.256392] mdss_dsi_clk_req_state:769      =>[282629  :1443220519 :        2][4645]:0 3 0 1 1
+[ 1444.256395] mdss_dsi_clk_req_state:835      =>[282630  :1443220520 :        1][4645]:0 3 0 0 0
+[ 1444.256398] dsi_recheck_clk_state:587       =>[282631  :1443220521 :        1][4645]:1 1 1 1
+[ 1444.256414] mdss_dsi_event_handler:2730     =>[282632  :1443220536 :       15][4645]:3 0 1 3333
+[ 1444.256418] mdss_dsi_clk_req_state:769      =>[282633  :1443220544 :        8][4645]:0 3 1 0 0
+[ 1444.256421] mdss_dsi_clk_req_state:835      =>[282634  :1443220545 :        1][4645]:0 3 1 1 1
+[ 1444.256423] dsi_recheck_clk_state:587       =>[282635  :1443220547 :        2][4645]:1 1 1 1
+[ 1444.256426] mdss_dsi_clk_req_state:769      =>[282636  :1443220548 :        1][4645]:1 3 1 0 0
+[ 1444.256429] mdss_dsi_clk_req_state:835      =>[282637  :1443220550 :        2][4645]:1 3 1 1 1
+[ 1444.256432] dsi_recheck_clk_state:587       =>[282638  :1443220551 :        1][4645]:1 1 1 1
+[ 1444.256435] mdss_dsi_clk_req_state:769      =>[282639  :1443220556 :        5][4645]:0 3 1 1 1
+[ 1444.261439] mdss_dsi_clk_req_state:835      =>[282640  :1443220557 :        1][4645]:0 3 1 1 1
+[ 1444.261443] mdss_dsi_clk_req_state:769      =>[282641  :1443220558 :        1][4645]:1 3 0 1 1
+[ 1444.261446] mdss_dsi_clk_req_state:835      =>[282642  :1443220560 :        2][4645]:1 3 0 0 0
+[ 1444.261449] dsi_recheck_clk_state:587       =>[282643  :1443220561 :        1][4645]:1 1 1 1
+[ 1444.261451] mdss_dsi_clk_req_state:769      =>[282644  :1443220563 :        2][4645]:0 3 0 1 1
+[ 1444.261454] mdss_dsi_clk_req_state:835      =>[282645  :1443220564 :        1][4645]:0 3 0 1 1
+[ 1444.261457] mdss_dsi_clk_req_state:769      =>[282646  :1443220566 :        2][4645]:0 3 0 1 1
+[ 1444.261460] mdss_dsi_clk_req_state:835      =>[282647  :1443220567 :        1][4645]:0 3 0 0 0
+[ 1444.261463] dsi_recheck_clk_state:587       =>[282648  :1443220568 :        1][4645]:1 1 1 1
+[ 1444.261466] mdss_dsi_event_handler:2730     =>[282649  :1443220576 :        8][4645]:4 0 0 3333
+[ 1444.261469] mdss_dsi_event_handler:2730     =>[282650  :1443220578 :        2][4645]:4 0 1 3333
+[ 1444.261472] mdss_dsi_event_handler:2730     =>[282651  :1443220595 :       17][4645]:16 1ae8d08 0 3333
+[ 1444.261475] mdss_dsi_event_handler:2730     =>[282652  :1443220597 :        2][4645]:16 1ae8d08 1 3333
+[ 1444.261478] mdss_dsi_event_handler:2730     =>[282653  :1443220599 :        2][4645]:17 1ae8d18 0 3333
+[ 1444.261481] mdss_dsi_event_handler:2730     =>[282654  :1443220600 :        1][4645]:17 1ae8d18 1 3333
+[ 1444.261484] mdss_mdp_cmd_kickoff:2703       =>[282655  :1443220621 :       21][4645]:0 0 0 0 5a0 a00
+[ 1444.261487] mdss_mdp_resource_control:593   =>[282656  :1443220625 :        4][4645]:0 0 1 1111
+[ 1444.261490] mdss_mdp_resource_control:633   =>[282657  :1443220631 :        6][4645]:0 0 1 11
+[ 1444.261493] mdss_dsi_event_handler:2730     =>[282658  :1443220634 :        3][4645]:10 33153818 0 3333
+[ 1444.261496] mdss_dsi_clk_req:162            =>[282659  :1443220636 :        2][4645]:0 1 0 1225 0
+[ 1444.261499] mdss_dsi_clk_req:171            =>[282660  :1443220637 :        1][4645]:0 1 0 1225 0
+[ 1444.261502] mdss_dsi_clk_req_state:769      =>[282661  :1443220639 :        2][4645]:0 3 1 1 1
+[ 1444.261505] mdss_dsi_clk_req_state:835      =>[282662  :1443220640 :        1][4645]:0 3 1 1 1
+[ 1444.261508] mdss_dsi_event_handler:2730     =>[282663  :1443220642 :        2][4645]:10 33153818 1 3333
+[ 1444.261511] mdss_dsi_clk_req:162            =>[282664  :1443220643 :        1][4645]:1 1 0 1225 0
+[ 1444.261515] mdss_dsi_clk_req:171            =>[282665  :1443220644 :        1][4645]:1 1 0 1225 0
+[ 1444.261518] mdss_dsi_clk_req_state:769      =>[282666  :1443220646 :        2][4645]:0 3 1 1 1
+[ 1444.261521] mdss_dsi_clk_req_state:835      =>[282667  :1443220647 :        1][4645]:0 3 1 1 1
+[ 1444.261524] mdss_dsi_clk_req_state:769      =>[282668  :1443220649 :        2][4645]:1 3 1 1 1
+[ 1444.261527] mdss_dsi_clk_req_state:835      =>[282669  :1443220650 :        1][4645]:1 3 1 1 1
+[ 1444.261530] mdss_update_reg_bus_vote:653    =>[282670  :1443220656 :        6][4645]:0 1 0 1
+[ 1444.261532] mdss_mdp_cmd_clk_on:933         =>[282671  :1443220658 :        2][4645]:0 1 0
+[ 1444.266536] mdss_bus_bandwidth_ctrl:1450    =>[282672  :1443220660 :        2][4645]:1 1
+[ 1444.266540] mdss_mdp_cmd_clk_on:933         =>[282673  :1443221130 :      470][4645]:0 0 1
+[ 1444.266543] mdss_mdp_resource_control:902   =>[282674  :1443221134 :        4][4645]:1 1 2222
+[ 1444.266546] mdss_dsi_event_handler:2730     =>[282675  :1443221137 :        3][4645]:11 0 0 3333
+[ 1444.266549] mdss_dsi_cmdlist_commit:2611    =>[282676  :1443221140 :        3][4645]:0 1 0 1225 1111
+[ 1444.266552] mdss_dsi_cmd_mdp_busy:2459      =>[282677  :1443221142 :        2][4645]:0 0 1225 1111
+[ 1444.266555] mdss_dsi_cmd_mdp_busy:2495      =>[282678  :1443221145 :        3][4645]:0 0 1225 2222
+[ 1444.266558] mdss_dsi_cmdlist_commit:2731    =>[282679  :1443221147 :        2][4645]:0 1 0 1225 2222
+[ 1444.266561] mdss_dsi_cmd_mdp_start:2399     =>[282680  :1443221150 :        3][4645]:0 1 1225
+[ 1444.266564] mdss_dsi_event_handler:2730     =>[282681  :1443221151 :        1][4645]:11 0 1 3333
+[ 1444.266567] mdss_dsi_cmdlist_commit:2611    =>[282682  :1443221154 :        3][4645]:1 1 0 1225 1111
+[ 1444.266570] mdss_dsi_cmd_mdp_busy:2459      =>[282683  :1443221155 :        1][4645]:1 0 1225 1111
+[ 1444.266573] mdss_dsi_cmd_mdp_busy:2495      =>[282684  :1443221157 :        2][4645]:1 0 1225 2222
+[ 1444.266576] mdss_dsi_cmdlist_commit:2731    =>[282685  :1443221158 :        1][4645]:1 1 0 1225 2222
+[ 1444.266579] mdss_dsi_cmd_mdp_start:2399     =>[282686  :1443221161 :        3][4645]:1 1 1225
+[ 1444.266581] __mdss_mdp_kickoff:2611         =>[282687  :1443221207 :       46][4645]:0
+[ 1444.266584] __mdss_mdp_kickoff:2636         =>[282688  :1443221212 :        5][4645]:11 0
+[ 1444.266587] mdss_mdp_cmd_kickoff:2792       =>[282689  :1443221215 :        3][4645]:0 0
+[ 1444.266590] __mdss_fb_display_thread:3662   =>[282690  :1443231407 :    10192][4649]:0 1111 1
+[ 1444.266593] mdss_mdp_set_mixer_roi:4414     =>[282691  :1443231484 :       77][4649]:0 0 1 0 0 5a0 a00
+[ 1444.266596] mdss_mdp_cmd_pre_programming:2281=>[282692  :1443231487 :        3][4649]:0
+[ 1444.266599] __mdss_mdp_pipe_program_pixel_extn_helper:2834=>[282693  :1443231979 :      492][4649]:3 0 0 0 a0005a0
+[ 1444.266602] __mdss_mdp_pipe_program_pixel_extn_helper:2834=>[282694  :1443231991 :       12][4649]:3 1 0 0 a0005a0
+[ 1444.266605] __mdss_mdp_pipe_program_pixel_extn_helper:2834=>[282695  :1443232004 :       13][4649]:3 3 0 0 a0005a0
+[ 1444.266608] mdss_mdp_pipe_queue_data:2675   =>[282696  :1443232005 :        1][4649]:3 0 0 0 222
+[ 1444.266612] mdss_mdp_pipe_position_update:1857=>[282697  :1443232049 :       44][4649]:3 0 a0005a0 0 a0005a0 0 0
+[ 1444.266615] mdss_mdp_pipe_stride_update:1914=>[282698  :1443232062 :       13][4649]:3 0 0 1680 0
+[ 1444.266618] __mdss_mdp_mixer_write_cfg:4589 =>[282699  :1443232667 :      605][4649]:0 200 0 0
+[ 1444.266621] mdss_mdp_mixer_setup:4868       =>[282700  :1443232669 :        2][4649]:0 0 0 a00 5a0
+[ 1444.266624] mdss_mdp_cmd_wait4pingpong:1895 =>[282701  :1443232683 :       14][4649]:0 1 5a0 a00
+[ 1444.266627] mdss_mdp_cmd_wait4pingpong:1914 =>[282702  :1444230015 :   997332][4649]:0 0 1
+[ 1444.266630] mdss_mdp_cmd_wait4pingpong:1939 =>[282703  :1444230037 :       22][4649]:bad
+[ 1444.271632] ======== Debug bus DUMP =========
+[ 1444.271635] mdss_dump_debug_bus: start_addr:0xffffff8001971000 end_addr:0xffffff800197d100
+[ 1444.277510] ========End Debug bus=========
+[ 1444.277511] ======== VBIF Debug bus DUMP =========
+[ 1444.277513] mdss_dump_vbif_debug_bus: start_addr:0xffffff80019c1000 end_addr:0xffffff80019c8480
+[ 1444.279945] ========End VBIF Debug bus=========
+[ 1444.279946] ======== NRT VBIF Debug bus DUMP =========
+[ 1444.279948] mdss_dump_vbif_debug_bus: start_addr:0xffffff80019d0000 end_addr:0xffffff80019d6100
+[ 1444.281965] ========End VBIF Debug bus=========
+[ 1444.281972] __mdss_fb_sync_buf_done_callback: mdp-fence: frame timeout
+[ 1444.480007] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x2b
+[ 1444.480011] mdss_dsi_cmds_tx: failed to call
+[ 1444.480190] mdss_mdp_cmd_kickoff: INTR2 Status = 0x410110, 3
+[ 1444.480346] [cap] fb_notifier_callback, event = 1
+[ 1444.480356] [TP]:fb_notifier_callback, event 1
+[ 1444.481077] [cap] fb_notifier_callback, event = 16
+[ 1444.481082] [TP]:fb_notifier_callback, event 16
+[ 1444.481280] fb_event_callback: fb0, event=9, blank=1
+[ 1444.481284] [cap] fb_notifier_callback, event = 9
+[ 1444.481315] [BATT] fb_notifier_callback-> display is Off
+[ 1444.481315] [TP]:fb_notifier_callback, event 9
+[ 1444.481341] [BATT] batt_worker: total_time since last batt update = 5920 ms.
+[ 1444.508963] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 1444.510718] [BATT] ID=1,level=100,level_raw=100,vol=4369mV,temp=332,current=762uA,chg_name=USB_CDP,chg_src=1,chg_en=1,health=1,overload=0,duration=0min,vbus=5150mV,max_iusb=1500mA,chg_limit_reason=0,chg_stop_reason=0,consistent=-1,flag=0x00000000,AICL=1500mA,htc_ext=0x08,level_accu=59226,htcchg=0,usb_temp=312,usb_overheat=0,usb_overheat_stat=0,batt_state=1 at 1444510840407 (1976-06-21 14:29:39.616398174 UTC)
+[ 1445.483167] mdss_mdp_cmd_wait4pingpong:wait4pingpong timed out ctl=0 rc=0 cnt=1 koff_cnt=1
+[ 1445.483184] __mdss_fb_sync_buf_done_callback: mdp-fence: frame timeout
+[ 1445.683330] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x2b
+[ 1445.683334] mdss_dsi_cmds_tx: failed to call
+[ 1445.683505] mdss_mdp_cmd_kickoff: INTR2 Status = 0x410110, 2
+[ 1445.759685] Xorg[4645]: syscall 283
+[ 1445.759695] Code: 93407c21 d2802368 a90153f3 d4000001 (7100001f)
+[ 1445.759702] CPU: 2 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1445.759706] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1445.759710] task: ffffffc0f3a1c680 ti: ffffffc033150000 task.ti: ffffffc033150000
+[ 1445.759715] PC is at 0x7fae6dea94
+[ 1445.759718] LR is at 0x7fae727440
+[ 1445.759721] pc : [<0000007fae6dea94>] lr : [<0000007fae727440>] pstate: 60000000
+[ 1445.759724] sp : 0000007fd5921270
+[ 1445.759727] x29: 0000007fd5921270 x28: 0000000000000001
+[ 1445.759799] x27: 0000007fab1add80 x26: 0000007fab1adb90
+[ 1445.759810] x25: 0000007fae77c000 x24: 0000007fab1add58
+[ 1445.759815] x23: 0000007fae6b9090 x22: 0000007fab1add18
+[ 1445.759820] x21: 0000000000000001 x20: 0000000000000040
+[ 1445.759825] x19: 0000007fab1add58 x18: 0000007fab1ae9a0
+[ 1445.759830] x17: 0000007fd5921250 x16: 0000007fa1b25a48
+[ 1445.759835] x15: 2000000000000000 x14: 0000007fa19e0ff8
+[ 1445.759839] x13: 0000007fae226598 x12: 0000007fae2263d0
+[ 1445.759844] x11: 0000000000000018 x10: 000000000004fff8
+[ 1445.759849] x9 : 0000007fa1991000 x8 : 000000000000011b
+[ 1445.759854] x7 : 0000007fae6b9158 x6 : 0000000000000003
+[ 1445.759859] x5 : 0000007fab1add58 x4 : 0000007fa1dd74f0
+[ 1445.759864] x3 : 0000000000000008 x2 : 0000000000000008
+[ 1445.759868] x1 : 0000000000000000 x0 : 0000000000000008
+
+[ 1445.975811] [cap] fb_notifier_callback, event = 16
+[ 1445.975815] [TP]:fb_notifier_callback, event 16
+[ 1445.975818] [S_HUB] [TP] tp_st: status = 0
+[ 1445.977923] [TP]:[SensorHub] Switch touch i2c to CPU
+[ 1445.978096] mdss_mdp_cmd_panel_on: INTR2 Status = 0x410110, 5
+[ 1445.978198] fb_event_callback: fb0, event=9, blank=0
+[ 1445.978200] [cap] fb_notifier_callback, event = 9
+[ 1445.978202] [cap] cypress_cap_late_resume
+[ 1445.978204] [cap] cypress_cap_pinctrl_select: set to 1
+[ 1445.978207] [cap] cypress_set_sleep_mode: 0
+[ 1445.979017] [BATT] fb_notifier_callback-> display is On
+[ 1445.979017] [TP]:fb_notifier_callback, event 9
+[ 1445.979027] [BATT] batt_worker: total_time since last batt update = 1496 ms.
+[ 1445.982348] Xorg[4645]: syscall 283
+[ 1445.982356] Code: d2802368 d2800200 d2800001 d4000001 (d65f03c0)
+[ 1445.982364] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1445.982369] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1445.982375] task: ffffffc0f3a1c680 ti: ffffffc033150000 task.ti: ffffffc033150000
+[ 1445.982380] PC is at 0x7fae6debdc
+[ 1445.982386] LR is at 0x7fae71c4b8
+[ 1445.982391] pc : [<0000007fae6debdc>] lr : [<0000007fae71c4b8>] pstate: 20000000
+[ 1445.982394] sp : 0000007fd59226f0
+[ 1445.982399] x29: 0000007fd59226f0 x28: 0000007fae77c258
+[ 1445.982407] x27: 0000005555795eb8 x26: 0000005555797b10
+[ 1445.982414] x25: 0000000000000000 x24: 000000555575a600
+[ 1445.982421] x23: 0000007fae6b9090 x22: 000000555575f100
+[ 1445.982428] x21: 0000007fd5922778 x20: 0000007fd59228d0
+[ 1445.982435] x19: 0000007fae77c000 x18: 0000000000000000
+[ 1445.982444] x17: 0000007fae71c164 x16: 00000055557558e8
+[ 1445.982451] x15: 0000ff0000ff0000 x14: 01000805000004f0
+[ 1445.982459] x13: 00000000000000ff x12: 0000ff0000ff0000
+[ 1445.982466] x11: 0000000000000010 x10: 000000000000000f
+[ 1445.982473] x9 : 0000000000000008 x8 : 000000000000011b
+[ 1445.982479] x7 : 0000000000000000 x6 : 0000000000000000
+[ 1445.982486] x5 : 000000007fffffff x4 : 0000000300000000
+[ 1445.982493] x3 : 0000000000000008 x2 : 0000000000000000
+[ 1445.982500] x1 : 0000000000000000 x0 : 0000000000000010
+
+[ 1446.002305] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 1446.004174] [BATT] ID=1,level=100,level_raw=100,vol=4369mV,temp=332,current=762uA,chg_name=USB_CDP,chg_src=1,chg_en=1,health=1,overload=0,duration=0min,vbus=5069mV,max_iusb=1500mA,chg_limit_reason=0,chg_stop_reason=0,consistent=-1,flag=0x00000000,AICL=1500mA,htc_ext=0x08,level_accu=59226,htcchg=0,usb_temp=312,usb_overheat=0,usb_overheat_stat=0,batt_state=0 at 1446004305764 (1976-06-21 14:29:41.109851761 UTC)
+[ 1446.020900] vgaarb: this pci device is not a vga device
+[ 1446.020926] [cap] fb_notifier_callback, event = 16
+[ 1446.020930] [TP]:fb_notifier_callback, event 16
+[ 1446.020932] [S_HUB] [TP] tp_st: status = 0
+[ 1446.022313] [TP]:[SensorHub] Switch touch i2c to CPU
+[ 1446.022355] ------------[ cut here ]------------
+[ 1446.022367] WARNING: CPU: 0 PID: 4645 at ../kernel/irq/manage.c:448 __enable_irq+0x50/0x84()
+[ 1446.022369] Unbalanced enable for IRQ 368
+[ 1446.022374] CPU: 0 PID: 4645 Comm: Xorg Tainted: G        W      3.18.31-04300 #3-postmarketOS
+[ 1446.022376] Hardware name: HTC Corporation. MSM8996v3 PME PVT (DT)
+[ 1446.022378] Call trace:
+[ 1446.022385] [<ffffffc0000887b8>] dump_backtrace+0x0/0x254
+[ 1446.022389] [<ffffffc000088a20>] show_stack+0x14/0x1c
+[ 1446.022394] [<ffffffc000d68a58>] dump_stack+0x84/0xac
+[ 1446.022398] [<ffffffc00009f6e8>] warn_slowpath_common+0x88/0xb4
+[ 1446.022402] [<ffffffc00009f788>] warn_slowpath_fmt+0x48/0x50
+[ 1446.022405] [<ffffffc0000e8270>] __enable_irq+0x50/0x84
+[ 1446.022407] [<ffffffc0000e8314>] enable_irq+0x70/0x74
+[ 1446.022413] [<ffffffc0003e3814>] fb_event_callback+0x1e0/0x238
+[ 1446.022418] [<ffffffc0000b99b8>] notifier_call_chain+0x64/0x84
+[ 1446.022421] [<ffffffc0000b9c70>] __blocking_notifier_call_chain+0x4c/0x78
+[ 1446.022424] [<ffffffc0000b9cb0>] blocking_notifier_call_chain+0x14/0x1c
+[ 1446.022430] [<ffffffc00036a1e0>] fb_notifier_call_chain+0x1c/0x24
+[ 1446.022433] [<ffffffc00036b0d0>] fb_blank+0x64/0x88
+[ 1446.022436] [<ffffffc00036b5ac>] do_fb_ioctl+0x4b8/0x500
+[ 1446.022440] [<ffffffc00036bdc0>] fb_ioctl+0x28/0x38
+[ 1446.022444] [<ffffffc0001a11d8>] do_vfs_ioctl+0xa4/0x560
+[ 1446.022447] [<ffffffc0001a16f0>] SyS_ioctl+0x5c/0x8c
+[ 1446.022450] ---[ end trace 6ff96182a7c898ac ]---
+[ 1446.022453] fb_event_callback: fb0, event=9, blank=0
+[ 1446.022456] [cap] fb_notifier_callback, event = 9
+[ 1446.022458] [cap] cypress_cap_late_resume
+[ 1446.022460] [cap] cypress_cap_pinctrl_select: set to 1
+[ 1446.022463] [cap] cypress_set_sleep_mode: 0
+[ 1446.023132] [BATT] fb_notifier_callback-> display is On
+[ 1446.023132] [TP]:fb_notifier_callback, event 9
+[ 1446.029016] [BATT] batt_worker: total_time since last batt update = 50 ms.
+[ 1446.052363] [BATT] calculate_batt_cycle_info: g_batt_first_use_time = 2016-01-01 12:00:04, g_overheat_55_sec = 1563, g_total_level_raw = 59226
+[ 1446.054267] [BATT] ID=1,level=100,level_raw=100,vol=4369mV,temp=332,current=762uA,chg_name=USB_CDP,chg_src=1,chg_en=1,health=1,overload=0,duration=0min,vbus=5176mV,max_iusb=1500mA,chg_limit_reason=0,chg_stop_reason=0,consistent=-1,flag=0x00000000,AICL=1500mA,htc_ext=0x08,level_accu=59226,htcchg=0,usb_temp=312,usb_overheat=0,usb_overheat_stat=0,batt_state=0 at 1446054387228 (1976-06-21 14:29:41.159930776 UTC)
+[ 1446.879922] FG: fg_is_batt_id_valid: fg batt sts 0x8
+[ 1446.979815] mdss_check_te_status_v2: TE IRQ line not enabled yet
+[ 1447.026556] mdss_mdp_cmd_wait4pingpong:wait4pingpong timed out ctl=0 rc=0 cnt=2 koff_cnt=1
+[ 1447.026571] __mdss_fb_sync_buf_done_callback: mdp-fence: frame timeout
+[ 1447.033228] mdss_fb_report_panel_dead: Panel has gone bad, sending uevent - PANEL_ALIVE=0
+[ 1447.226694] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x2b
+[ 1447.226699] mdss_dsi_cmds_tx: failed to call
+[ 1447.226929] mdss_mdp_cmd_kickoff: INTR2 Status = 0x410110, 4
+[ 1447.227094] [cap] fb_notifier_callback, event = 1
+[ 1447.227103] [TP]:fb_notifier_callback, event 1
+[ 1447.269719] mdss_fb_set_backlight: defer backlight value 0
+[ 1447.269925] mdss_mdp_overlay_release: Unable to unset pipe(s) ndx=0x8 unset=0x0
+[ 1448.269865] mdss_mdp_cmd_wait4pingpong:wait4pingpong timed out ctl=0 rc=0 cnt=3 koff_cnt=1
+[ 1448.269900] __mdss_fb_sync_buf_done_callback: mdp-fence: frame timeout
+[ 1448.470046] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x2b
+[ 1448.470062] mdss_dsi_cmds_tx: failed to call
+[ 1448.470262] mdss_mdp_cmd_kickoff: INTR2 Status = 0x410110, 3
+[ 1448.959898] charger_exist_lock Unlock
+[ 1449.469907] mdss_mdp_cmd_wait4pingpong:wait4pingpong timed out ctl=0 rc=0 cnt=4 koff_cnt=1
+[ 1449.469940] __mdss_fb_sync_buf_done_callback: mdp-fence: frame timeout
+[ 1449.669948] mdss_dsi_cmd_mdp_busy: timeout error, TE ISR status=0x410110
+[ 1449.669974] xlog buffer overflow before dump: 342
+[ 1449.669993] mdss_mdp_cmd_wait4pingpong:1895 =>[282790  :1444484047 :       33][4649]:0 1 5a0 a00
+[ 1449.670009] mdss_mdp_cmd_wait4pingpong:1914 =>[282791  :1445483282 :   999235][4649]:0 0 1
+[ 1449.670024] mdss_mdp_cmd_wait4pingpong:1973 =>[282792  :1445483316 :       34][4649]:0 0
+[ 1449.670039] mdss_dsi_event_handler:2730     =>[282793  :1445483379 :       63][4649]:1b 0 0 3333
+[ 1449.670056] mdss_dsi_clk_req_state:769      =>[282794  :1445483384 :        5][4649]:0 3 1 0 0
+[ 1449.670071] mdss_dsi_clk_req_state:835      =>[282795  :1445483385 :        1][4649]:0 3 1 1 1
+[ 1449.670087] dsi_recheck_clk_state:587       =>[282796  :1445483388 :        3][4649]:1 1 1 1
+[ 1449.670103] mdss_dsi_cmdlist_commit:2611    =>[282797  :1445483424 :       36][4649]:0 0 0 1229 1111
+[ 1449.670119] mdss_dsi_cmdlist_commit:2665    =>[282798  :1445483426 :        2][4649]:0 6 2 0 1229
+[ 1449.670134] mdss_dsi_clk_req_state:769      =>[282799  :1445483462 :       36][4649]:0 3 1 1 1
+[ 1449.670149] mdss_dsi_clk_req_state:835      =>[282800  :1445483463 :        1][4649]:0 3 1 1 1
+[ 1449.670163] mdss_dsi_delay_cmd:2580         =>[282801  :1445483466 :        3][4649]:0 0 0
+[ 1449.670178] mdss_dsi_clk_req_state:769      =>[282802  :1445683479 :   200013][4649]:0 3 0 1 1
+[ 1449.670192] mdss_dsi_clk_req_state:835      =>[282803  :1445683482 :        3][4649]:0 3 0 1 1
+[ 1449.670207] mdss_dsi_cmdlist_commit:2731    =>[282804  :1445683484 :        2][4649]:0 0 0 1229 2222
+[ 1449.670221] mdss_dsi_clk_req_state:769      =>[282805  :1445683486 :        2][4649]:0 3 0 1 1
+[ 1449.670235] mdss_dsi_clk_req_state:835      =>[282806  :1445683488 :        2][4649]:0 3 0 0 0
+[ 1449.670249] dsi_recheck_clk_state:587       =>[282807  :1445683489 :        1][4649]:1 1 1 1
+[ 1449.670264] mdss_dsi_event_handler:2730     =>[282808  :1445683492 :        3][4649]:1b 0 1 3333
+[ 1449.670278] mdss_dsi_clk_req_state:769      =>[282809  :1445683494 :        2][4649]:0 3 1 0 0
+[ 1449.670292] mdss_dsi_clk_req_state:835      =>[282810  :1445683496 :        2][4649]:0 3 1 1 1
+[ 1449.670306] dsi_recheck_clk_state:587       =>[282811  :1445683497 :        1][4649]:1 1 1 1
+[ 1449.670320] mdss_dsi_clk_req_state:769      =>[282812  :1445683499 :        2][4649]:1 3 1 0 0
+[ 1449.670334] mdss_dsi_clk_req_state:835      =>[282813  :1445683500 :        1][4649]:1 3 1 1 1
+[ 1449.670347] dsi_recheck_clk_state:587       =>[282814  :1445683502 :        2][4649]:1 1 1 1
+[ 1449.670362] mdss_dsi_clk_req_state:769      =>[282815  :1445683535 :       33][4649]:0 3 1 1 1
+[ 1449.670376] mdss_dsi_clk_req_state:835      =>[282816  :1445683536 :        1][4649]:0 3 1 1 1
+[ 1449.670389] mdss_dsi_clk_req_state:769      =>[282817  :1445683538 :        2][4649]:1 3 0 1 1
+[ 1449.670404] mdss_dsi_clk_req_state:835      =>[282818  :1445683539 :        1][4649]:1 3 0 0 0
+[ 1449.670417] dsi_recheck_clk_state:587       =>[282819  :1445683540 :        1][4649]:1 1 1 1
+[ 1449.670431] mdss_dsi_clk_req_state:769      =>[282820  :1445683542 :        2][4649]:0 3 0 1 1
+[ 1449.670445] mdss_dsi_clk_req_state:835      =>[282821  :1445683543 :        1][4649]:0 3 0 1 1
+[ 1449.675476] mdss_dsi_clk_req_state:769      =>[282822  :1445683545 :        2][4649]:0 3 0 1 1
+[ 1449.675497] mdss_dsi_clk_req_state:835      =>[282823  :1445683546 :        1][4649]:0 3 0 0 0
+[ 1449.675512] dsi_recheck_clk_state:587       =>[282824  :1445683547 :        1][4649]:1 1 1 1
+[ 1449.675527] mdss_mdp_display_commit:5669    =>[282825  :1445683577 :       30][4649]:2 8 0 0
+[ 1449.675543] mdss_mdp_cmd_kickoff:2703       =>[282826  :1445683582 :        5][4649]:0 0 0 0 5a0 a00
+[ 1449.675558] mdss_mdp_resource_control:593   =>[282827  :1445683586 :        4][4649]:0 1 1 1111
+[ 1449.675572] mdss_mdp_resource_control:633   =>[282828  :1445683591 :        5][4649]:0 1 1 11
+[ 1449.675585] mdss_mdp_resource_control:902   =>[282829  :1445683593 :        2][4649]:1 1 2222
+[ 1449.675599] mdss_dsi_event_handler:2730     =>[282830  :1445683595 :        2][4649]:11 0 0 3333
+[ 1449.675614] mdss_dsi_cmdlist_commit:2611    =>[282831  :1445683597 :        2][4649]:0 1 0 1229 1111
+[ 1449.675628] mdss_dsi_cmd_mdp_busy:2459      =>[282832  :1445683599 :        2][4649]:0 0 1229 1111
+[ 1449.675641] mdss_dsi_cmd_mdp_busy:2495      =>[282833  :1445683601 :        2][4649]:0 0 1229 2222
+[ 1449.675656] mdss_dsi_cmdlist_commit:2731    =>[282834  :1445683603 :        2][4649]:0 1 0 1229 2222
+[ 1449.675669] mdss_dsi_cmd_mdp_start:2399     =>[282835  :1445683605 :        2][4649]:0 1 1229
+[ 1449.675683] mdss_dsi_event_handler:2730     =>[282836  :1445683607 :        2][4649]:11 0 1 3333
+[ 1449.675697] mdss_dsi_cmdlist_commit:2611    =>[282837  :1445683609 :        2][4649]:1 1 0 1229 1111
+[ 1449.675710] mdss_dsi_cmd_mdp_busy:2459      =>[282838  :1445683611 :        2][4649]:1 0 1229 1111
+[ 1449.675724] mdss_dsi_cmd_mdp_busy:2495      =>[282839  :1445683613 :        2][4649]:1 0 1229 2222
+[ 1449.675737] mdss_dsi_cmdlist_commit:2731    =>[282840  :1445683614 :        1][4649]:1 1 0 1229 2222
+[ 1449.675750] mdss_dsi_cmd_mdp_start:2399     =>[282841  :1445683616 :        2][4649]:1 1 1229
+[ 1449.675763] __mdss_mdp_kickoff:2611         =>[282842  :1445683651 :       35][4649]:0
+[ 1449.675776] __mdss_mdp_kickoff:2636         =>[282843  :1445683656 :        5][4649]:11 0
+[ 1449.675789] mdss_mdp_cmd_kickoff:2792       =>[282844  :1445683660 :        4][4649]:0 0
+[ 1449.675802] __mdss_fb_display_thread:3664   =>[282845  :1445683715 :       55][4649]:0 2222
+[ 1449.675816] mdss_dsi_event_handler:2730     =>[282846  :1445978130 :   294415][4645]:2 0 0 3333
+[ 1449.675830] mdss_dsi_event_handler:2730     =>[282847  :1445978144 :       14][4645]:2 0 1 3333
+[ 1449.675843] mdss_dsi_event_handler:2730     =>[282848  :1445978156 :       12][4645]:3 0 0 3333
+[ 1449.675856] mdss_dsi_clk_req_state:769      =>[282849  :1445978165 :        9][4645]:0 3 1 0 0
+[ 1449.675870] mdss_dsi_clk_req_state:835      =>[282850  :1445978166 :        1][4645]:0 3 1 1 1
+[ 1449.675883] dsi_recheck_clk_state:587       =>[282851  :1445978168 :        2][4645]:1 1 1 1
+[ 1449.675896] mdss_dsi_clk_req_state:769      =>[282852  :1445978169 :        1][4645]:0 3 1 1 1
+[ 1449.675909] mdss_dsi_clk_req_state:835      =>[282853  :1445978169 :        0][4645]:0 3 1 1 1
+[ 1449.680939] mdss_dsi_clk_req_state:769      =>[282854  :1445978171 :        2][4645]:1 3 1 0 0
+[ 1449.680959] mdss_dsi_clk_req_state:835      =>[282855  :1445978171 :        0][4645]:1 3 1 1 1
+[ 1449.680974] dsi_recheck_clk_state:587       =>[282856  :1445978172 :        1][4645]:1 1 1 1
+[ 1449.680988] mdss_dsi_clk_req_state:769      =>[282857  :1445978174 :        2][4645]:0 3 0 1 1
+[ 1449.681001] mdss_dsi_clk_req_state:835      =>[282858  :1445978174 :        0][4645]:0 3 0 1 1
+[ 1449.681014] mdss_dsi_clk_req_state:769      =>[282859  :1445978176 :        2][4645]:0 3 1 1 1
+[ 1449.681028] mdss_dsi_clk_req_state:835      =>[282860  :1445978176 :        0][4645]:0 3 1 1 1
+[ 1449.681041] mdss_dsi_clk_req_state:769      =>[282861  :1445978177 :        1][4645]:1 3 0 1 1
+[ 1449.681054] mdss_dsi_clk_req_state:835      =>[282862  :1445978178 :        1][4645]:1 3 0 0 0
+[ 1449.681067] dsi_recheck_clk_state:587       =>[282863  :1445978178 :        0][4645]:1 1 1 1
+[ 1449.681080] mdss_dsi_clk_req_state:769      =>[282864  :1445978179 :        1][4645]:0 3 0 1 1
+[ 1449.681093] mdss_dsi_clk_req_state:835      =>[282865  :1445978180 :        1][4645]:0 3 0 1 1
+[ 1449.681106] mdss_dsi_clk_req_state:769      =>[282866  :1445978181 :        1][4645]:0 3 0 1 1
+[ 1449.681119] mdss_dsi_clk_req_state:835      =>[282867  :1445978181 :        0][4645]:0 3 0 0 0
+[ 1449.681132] dsi_recheck_clk_state:587       =>[282868  :1445978182 :        1][4645]:1 1 1 1
+[ 1449.681146] mdss_dsi_event_handler:2730     =>[282869  :1445978185 :        3][4645]:3 0 1 3333
+[ 1449.681160] mdss_dsi_clk_req_state:769      =>[282870  :1445978188 :        3][4645]:0 3 1 0 0
+[ 1449.681173] mdss_dsi_clk_req_state:835      =>[282871  :1445978189 :        1][4645]:0 3 1 1 1
+[ 1449.681186] dsi_recheck_clk_state:587       =>[282872  :1445978189 :        0][4645]:1 1 1 1
+[ 1449.681199] mdss_dsi_clk_req_state:769      =>[282873  :1445978190 :        1][4645]:1 3 1 0 0
+[ 1449.681212] mdss_dsi_clk_req_state:835      =>[282874  :1445978191 :        1][4645]:1 3 1 1 1
+[ 1449.681225] dsi_recheck_clk_state:587       =>[282875  :1445978191 :        0][4645]:1 1 1 1
+[ 1449.681238] mdss_dsi_clk_req_state:769      =>[282876  :1445978193 :        2][4645]:0 3 1 1 1
+[ 1449.681252] mdss_dsi_clk_req_state:835      =>[282877  :1445978193 :        0][4645]:0 3 1 1 1
+[ 1449.681265] mdss_dsi_clk_req_state:769      =>[282878  :1445978194 :        1][4645]:1 3 0 1 1
+[ 1449.681278] mdss_dsi_clk_req_state:835      =>[282879  :1445978195 :        1][4645]:1 3 0 0 0
+[ 1449.681291] dsi_recheck_clk_state:587       =>[282880  :1445978195 :        0][4645]:1 1 1 1
+[ 1449.681304] mdss_dsi_clk_req_state:769      =>[282881  :1445978196 :        1][4645]:0 3 0 1 1
+[ 1449.681317] mdss_dsi_clk_req_state:835      =>[282882  :1445978196 :        0][4645]:0 3 0 1 1
+[ 1449.681330] mdss_dsi_clk_req_state:769      =>[282883  :1445978197 :        1][4645]:0 3 0 1 1
+[ 1449.681344] mdss_dsi_clk_req_state:835      =>[282884  :1445978198 :        1][4645]:0 3 0 0 0
+[ 1449.681357] dsi_recheck_clk_state:587       =>[282885  :1445978198 :        0][4645]:1 1 1 1
+[ 1449.686391] mdss_dsi_event_handler:2730     =>[282886  :1445978201 :        3][4645]:4 0 0 3333
+[ 1449.686519] mdss_dsi_event_handler:2730     =>[282887  :1445978202 :        1][4645]:4 0 1 3333
+[ 1449.686539] mdss_dsi_event_handler:2730     =>[282888  :1445978213 :       11][4645]:16 1ae8d08 0 3333
+[ 1449.686557] mdss_dsi_event_handler:2730     =>[282889  :1445978214 :        1][4645]:16 1ae8d08 1 3333
+[ 1449.686573] mdss_dsi_event_handler:2730     =>[282890  :1445978215 :        1][4645]:17 1ae8d18 0 3333
+[ 1449.686589] mdss_dsi_event_handler:2730     =>[282891  :1445978216 :        1][4645]:17 1ae8d18 1 3333
+[ 1449.686606] __mdss_fb_display_thread:3662   =>[282892  :1446028115 :    49899][4649]:0 1111 1
+[ 1449.686625] mdss_mdp_set_mixer_roi:4414     =>[282893  :1446028143 :       28][4649]:0 0 1 0 0 5a0 a00
+[ 1449.686640] mdss_mdp_cmd_pre_programming:2281=>[282894  :1446028146 :        3][4649]:0
+[ 1449.686657] mdss_mdp_pipe_queue_data:2675   =>[282895  :1446028157 :       11][4649]:3 0 0 2 222
+[ 1449.686673] __mdss_mdp_mixer_write_cfg:4589 =>[282896  :1446028227 :       70][4649]:0 200 0 0
+[ 1449.686690] mdss_mdp_mixer_setup:4868       =>[282897  :1446028228 :        1][4649]:0 0 0 a00 5a0
+[ 1449.686707] mdss_mdp_cmd_wait4pingpong:1895 =>[282898  :1446028239 :       11][4649]:0 1 5a0 a00
+[ 1449.686723] mdss_mdp_cmd_wait4pingpong:1914 =>[282899  :1447026670 :   998431][4649]:0 0 1
+[ 1449.686738] mdss_mdp_cmd_wait4pingpong:1973 =>[282900  :1447026704 :       34][4649]:0 0
+[ 1449.686754] mdss_dsi_event_handler:2730     =>[282901  :1447026774 :       70][4649]:1b 0 0 3333
+[ 1449.686770] mdss_dsi_clk_req_state:769      =>[282902  :1447026779 :        5][4649]:0 3 1 0 0
+[ 1449.686786] mdss_dsi_clk_req_state:835      =>[282903  :1447026781 :        2][4649]:0 3 1 1 1
+[ 1449.686802] dsi_recheck_clk_state:587       =>[282904  :1447026783 :        2][4649]:1 1 1 1
+[ 1449.686819] mdss_dsi_cmdlist_commit:2611    =>[282905  :1447026817 :       34][4649]:0 0 0 1229 1111
+[ 1449.686836] mdss_dsi_cmdlist_commit:2665    =>[282906  :1447026819 :        2][4649]:0 6 2 0 1229
+[ 1449.686852] mdss_dsi_clk_req_state:769      =>[282907  :1447026864 :       45][4649]:0 3 1 1 1
+[ 1449.686868] mdss_dsi_clk_req_state:835      =>[282908  :1447026865 :        1][4649]:0 3 1 1 1
+[ 1449.686883] mdss_dsi_delay_cmd:2580         =>[282909  :1447026868 :        3][4649]:0 0 0
+[ 1449.686900] mdss_dsi_clk_req_state:769      =>[282910  :1447226853 :   199985][4649]:0 3 0 1 1
+[ 1449.686917] mdss_dsi_clk_req_state:835      =>[282911  :1447226855 :        2][4649]:0 3 0 1 1
+[ 1449.686933] mdss_dsi_cmdlist_commit:2731    =>[282912  :1447226857 :        2][4649]:0 0 0 1229 2222
+[ 1449.686949] mdss_dsi_clk_req_state:769      =>[282913  :1447226861 :        4][4649]:0 3 0 1 1
+[ 1449.686964] mdss_dsi_clk_req_state:835      =>[282914  :1447226862 :        1][4649]:0 3 0 0 0
+[ 1449.686979] dsi_recheck_clk_state:587       =>[282915  :1447226864 :        2][4649]:1 1 1 1
+[ 1449.686993] mdss_dsi_event_handler:2730     =>[282916  :1447226867 :        3][4649]:1b 0 1 3333
+[ 1449.687008] mdss_dsi_clk_req_state:769      =>[282917  :1447226869 :        2][4649]:0 3 1 0 0
+[ 1449.692200] mdss_dsi_clk_req_state:835      =>[282918  :1447226871 :        2][4649]:0 3 1 1 1
+[ 1449.692306] dsi_recheck_clk_state:587       =>[282919  :1447226872 :        1][4649]:1 1 1 1
+[ 1449.692315] mdss_dsi_clk_req_state:769      =>[282920  :1447226874 :        2][4649]:1 3 1 0 0
+[ 1449.692323] mdss_dsi_clk_req_state:835      =>[282921  :1447226875 :        1][4649]:1 3 1 1 1
+[ 1449.692330] dsi_recheck_clk_state:587       =>[282922  :1447226877 :        2][4649]:1 1 1 1
+[ 1449.692337] mdss_dsi_clk_req_state:769      =>[282923  :1447226910 :       33][4649]:0 3 1 1 1
+[ 1449.692344] mdss_dsi_clk_req_state:835      =>[282924  :1447226912 :        2][4649]:0 3 1 1 1
+[ 1449.692350] mdss_dsi_clk_req_state:769      =>[282925  :1447226913 :        1][4649]:1 3 0 1 1
+[ 1449.692357] mdss_dsi_clk_req_state:835      =>[282926  :1447226915 :        2][4649]:1 3 0 0 0
+[ 1449.692364] dsi_recheck_clk_state:587       =>[282927  :1447226916 :        1][4649]:1 1 1 1
+[ 1449.692370] mdss_dsi_clk_req_state:769      =>[282928  :1447226918 :        2][4649]:0 3 0 1 1
+[ 1449.692377] mdss_dsi_clk_req_state:835      =>[282929  :1447226919 :        1][4649]:0 3 0 1 1
+[ 1449.692384] mdss_dsi_clk_req_state:769      =>[282930  :1447226920 :        1][4649]:0 3 0 1 1
+[ 1449.692390] mdss_dsi_clk_req_state:835      =>[282931  :1447226922 :        2][4649]:0 3 0 0 0
+[ 1449.692397] dsi_recheck_clk_state:587       =>[282932  :1447226923 :        1][4649]:1 1 1 1
+[ 1449.692404] mdss_mdp_display_commit:5669    =>[282933  :1447226992 :       69][4649]:2 22048 0 0
+[ 1449.692411] mdss_mdp_cmd_kickoff:2703       =>[282934  :1447226998 :        6][4649]:0 0 0 0 5a0 a00
+[ 1449.692418] mdss_mdp_resource_control:593   =>[282935  :1447227003 :        5][4649]:0 1 1 1111
+[ 1449.692425] mdss_mdp_resource_control:633   =>[282936  :1447227011 :        8][4649]:0 1 1 11
+[ 1449.692432] mdss_mdp_resource_control:902   =>[282937  :1447227012 :        1][4649]:1 1 2222
+[ 1449.692439] mdss_dsi_event_handler:2730     =>[282938  :1447227015 :        3][4649]:11 0 0 3333
+[ 1449.692446] mdss_dsi_cmdlist_commit:2611    =>[282939  :1447227018 :        3][4649]:0 1 0 1229 1111
+[ 1449.692453] mdss_dsi_cmd_mdp_busy:2459      =>[282940  :1447227020 :        2][4649]:0 0 1229 1111
+[ 1449.692460] mdss_dsi_cmd_mdp_busy:2495      =>[282941  :1447227022 :        2][4649]:0 0 1229 2222
+[ 1449.692467] mdss_dsi_cmdlist_commit:2731    =>[282942  :1447227024 :        2][4649]:0 1 0 1229 2222
+[ 1449.692473] mdss_dsi_cmd_mdp_start:2399     =>[282943  :1447227027 :        3][4649]:0 1 1229
+[ 1449.692480] mdss_dsi_event_handler:2730     =>[282944  :1447227029 :        2][4649]:11 0 1 3333
+[ 1449.692487] mdss_dsi_cmdlist_commit:2611    =>[282945  :1447227031 :        2][4649]:1 1 0 1229 1111
+[ 1449.692494] mdss_dsi_cmd_mdp_busy:2459      =>[282946  :1447227033 :        2][4649]:1 0 1229 1111
+[ 1449.692500] mdss_dsi_cmd_mdp_busy:2495      =>[282947  :1447227034 :        1][4649]:1 0 1229 2222
+[ 1449.692507] mdss_dsi_cmdlist_commit:2731    =>[282948  :1447227036 :        2][4649]:1 1 0 1229 2222
+[ 1449.692513] mdss_dsi_cmd_mdp_start:2399     =>[282949  :1447227038 :        2][4649]:1 1 1229
+[ 1449.697530] __mdss_mdp_kickoff:2611         =>[282950  :1447227076 :       38][4649]:0
+[ 1449.697540] __mdss_mdp_kickoff:2636         =>[282951  :1447227080 :        4][4649]:11 0
+[ 1449.697547] mdss_mdp_cmd_kickoff:2792       =>[282952  :1447227084 :        4][4649]:0 0
+[ 1449.697554] __mdss_fb_display_thread:3664   =>[282953  :1447227154 :       70][4649]:0 2222
+[ 1449.697562] mdss_mdp_set_mixer_roi:4414     =>[282954  :1447270065 :    42911][4645]:0 0 1 0 0 5a0 a00
+[ 1449.697569] mdss_mdp_cmd_pre_programming:2281=>[282955  :1447270068 :        3][4645]:0
+[ 1449.697576] __mdss_mdp_mixer_write_cfg:4589 =>[282956  :1447270098 :       30][4645]:0 1000000 0 0
+[ 1449.697583] mdss_mdp_mixer_setup:4868       =>[282957  :1447270099 :        1][4645]:0 0 0 a00 5a0
+[ 1449.697589] mdss_mdp_cmd_wait4pingpong:1895 =>[282958  :1447270105 :        6][4645]:0 1 5a0 a00
+[ 1449.697596] mdss_mdp_cmd_wait4pingpong:1914 =>[282959  :1448269974 :   999869][4645]:0 0 1
+[ 1449.697603] mdss_mdp_cmd_wait4pingpong:1973 =>[282960  :1448270040 :       66][4645]:0 0
+[ 1449.697610] mdss_dsi_event_handler:2730     =>[282961  :1448270112 :       72][4645]:1b 0 0 3333
+[ 1449.697617] mdss_dsi_clk_req_state:769      =>[282962  :1448270116 :        4][4645]:0 3 1 0 0
+[ 1449.697623] mdss_dsi_clk_req_state:835      =>[282963  :1448270118 :        2][4645]:0 3 1 1 1
+[ 1449.697630] dsi_recheck_clk_state:587       =>[282964  :1448270121 :        3][4645]:1 1 1 1
+[ 1449.697637] mdss_dsi_cmdlist_commit:2611    =>[282965  :1448270155 :       34][4645]:0 0 0 1225 1111
+[ 1449.697644] mdss_dsi_cmdlist_commit:2665    =>[282966  :1448270157 :        2][4645]:0 6 2 0 1225
+[ 1449.697650] mdss_dsi_clk_req_state:769      =>[282967  :1448270202 :       45][4645]:0 3 1 1 1
+[ 1449.697657] mdss_dsi_clk_req_state:835      =>[282968  :1448270204 :        2][4645]:0 3 1 1 1
+[ 1449.697663] mdss_dsi_delay_cmd:2580         =>[282969  :1448270207 :        3][4645]:0 0 0
+[ 1449.697670] mdss_dsi_clk_req_state:769      =>[282970  :1448470223 :   200016][4645]:0 3 0 1 1
+[ 1449.697677] mdss_dsi_clk_req_state:835      =>[282971  :1448470225 :        2][4645]:0 3 0 1 1
+[ 1449.697683] mdss_dsi_cmdlist_commit:2731    =>[282972  :1448470227 :        2][4645]:0 0 0 1225 2222
+[ 1449.697690] mdss_dsi_clk_req_state:769      =>[282973  :1448470231 :        4][4645]:0 3 0 1 1
+[ 1449.697697] mdss_dsi_clk_req_state:835      =>[282974  :1448470232 :        1][4645]:0 3 0 0 0
+[ 1449.697703] dsi_recheck_clk_state:587       =>[282975  :1448470235 :        3][4645]:1 1 1 1
+[ 1449.697710] mdss_dsi_event_handler:2730     =>[282976  :1448470238 :        3][4645]:1b 0 1 3333
+[ 1449.697716] mdss_dsi_clk_req_state:769      =>[282977  :1448470241 :        3][4645]:0 3 1 0 0
+[ 1449.697723] mdss_dsi_clk_req_state:835      =>[282978  :1448470243 :        2][4645]:0 3 1 1 1
+[ 1449.697730] dsi_recheck_clk_state:587       =>[282979  :1448470244 :        1][4645]:1 1 1 1
+[ 1449.697737] mdss_dsi_clk_req_state:769      =>[282980  :1448470246 :        2][4645]:1 3 1 0 0
+[ 1449.697743] mdss_dsi_clk_req_state:835      =>[282981  :1448470247 :        1][4645]:1 3 1 1 1
+[ 1449.702761] dsi_recheck_clk_state:587       =>[282982  :1448470249 :        2][4645]:1 1 1 1
+[ 1449.702773] mdss_dsi_clk_req_state:769      =>[282983  :1448470282 :       33][4645]:0 3 1 1 1
+[ 1449.702781] mdss_dsi_clk_req_state:835      =>[282984  :1448470283 :        1][4645]:0 3 1 1 1
+[ 1449.702788] mdss_dsi_clk_req_state:769      =>[282985  :1448470285 :        2][4645]:1 3 0 1 1
+[ 1449.702794] mdss_dsi_clk_req_state:835      =>[282986  :1448470286 :        1][4645]:1 3 0 0 0
+[ 1449.702801] dsi_recheck_clk_state:587       =>[282987  :1448470287 :        1][4645]:1 1 1 1
+[ 1449.702807] mdss_dsi_clk_req_state:769      =>[282988  :1448470289 :        2][4645]:0 3 0 1 1
+[ 1449.702814] mdss_dsi_clk_req_state:835      =>[282989  :1448470290 :        1][4645]:0 3 0 1 1
+[ 1449.702820] mdss_dsi_clk_req_state:769      =>[282990  :1448470292 :        2][4645]:0 3 0 1 1
+[ 1449.702826] mdss_dsi_clk_req_state:835      =>[282991  :1448470293 :        1][4645]:0 3 0 0 0
+[ 1449.702833] dsi_recheck_clk_state:587       =>[282992  :1448470294 :        1][4645]:1 1 1 1
+[ 1449.702840] mdss_mdp_display_commit:5669    =>[282993  :1448470329 :       35][4645]:2 20040 0 0
+[ 1449.702847] mdss_mdp_cmd_kickoff:2703       =>[282994  :1448470335 :        6][4645]:0 0 0 0 5a0 a00
+[ 1449.702853] mdss_mdp_resource_control:593   =>[282995  :1448470339 :        4][4645]:0 1 1 1111
+[ 1449.702860] mdss_mdp_resource_control:633   =>[282996  :1448470345 :        6][4645]:0 1 1 11
+[ 1449.702867] mdss_mdp_resource_control:902   =>[282997  :1448470347 :        2][4645]:1 1 2222
+[ 1449.702873] mdss_dsi_event_handler:2730     =>[282998  :1448470350 :        3][4645]:11 0 0 3333
+[ 1449.702880] mdss_dsi_cmdlist_commit:2611    =>[282999  :1448470353 :        3][4645]:0 1 0 1225 1111
+[ 1449.702887] mdss_dsi_cmd_mdp_busy:2459      =>[283000  :1448470355 :        2][4645]:0 0 1225 1111
+[ 1449.702893] mdss_dsi_cmd_mdp_busy:2495      =>[283001  :1448470357 :        2][4645]:0 0 1225 2222
+[ 1449.702900] mdss_dsi_cmdlist_commit:2731    =>[283002  :1448470359 :        2][4645]:0 1 0 1225 2222
+[ 1449.702907] mdss_dsi_cmd_mdp_start:2399     =>[283003  :1448470362 :        3][4645]:0 1 1225
+[ 1449.702913] mdss_dsi_event_handler:2730     =>[283004  :1448470364 :        2][4645]:11 0 1 3333
+[ 1449.702919] mdss_dsi_cmdlist_commit:2611    =>[283005  :1448470366 :        2][4645]:1 1 0 1225 1111
+[ 1449.702926] mdss_dsi_cmd_mdp_busy:2459      =>[283006  :1448470367 :        1][4645]:1 0 1225 1111
+[ 1449.702932] mdss_dsi_cmd_mdp_busy:2495      =>[283007  :1448470369 :        2][4645]:1 0 1225 2222
+[ 1449.702939] mdss_dsi_cmdlist_commit:2731    =>[283008  :1448470370 :        1][4645]:1 1 0 1225 2222
+[ 1449.702945] mdss_dsi_cmd_mdp_start:2399     =>[283009  :1448470372 :        2][4645]:1 1 1225
+[ 1449.702952] __mdss_mdp_kickoff:2611         =>[283010  :1448470416 :       44][4645]:0
+[ 1449.702958] __mdss_mdp_kickoff:2636         =>[283011  :1448470421 :        5][4645]:11 0
+[ 1449.702964] mdss_mdp_cmd_kickoff:2792       =>[283012  :1448470423 :        2][4645]:0 0
+[ 1449.702971] mdss_mdp_cmd_stop:2997          =>[283013  :1448470944 :      521][4645]:1 0
+[ 1449.707986] mdss_mdp_cmd_stop_sub:2958      =>[283014  :1448470947 :        3][4645]:0 1 1111
+[ 1449.707996] mdss_mdp_cmd_ctx_stop:2848      =>[283015  :1448470949 :        2][4645]:0
+[ 1449.708003] mdss_dsi_event_handler:2730     =>[283016  :1448470952 :        3][4645]:16 0 0 3333
+[ 1449.708010] mdss_dsi_event_handler:2730     =>[283017  :1448470954 :        2][4645]:16 0 1 3333
+[ 1449.708016] mdss_dsi_event_handler:2730     =>[283018  :1448470956 :        2][4645]:17 0 0 3333
+[ 1449.708023] mdss_dsi_event_handler:2730     =>[283019  :1448470958 :        2][4645]:17 0 1 3333
+[ 1449.708029] mdss_mdp_resource_control:593   =>[283020  :1448470960 :        2][4645]:0 1 3 1111
+[ 1449.708036] mdss_mdp_cmd_wait4pingpong:1895 =>[283021  :1448470964 :        4][4645]:0 1 5a0 a00
+[ 1449.708042] mdss_mdp_cmd_wait4pingpong:1914 =>[283022  :1449470021 :   999057][4645]:0 0 1
+[ 1449.708049] mdss_mdp_cmd_wait4pingpong:1973 =>[283023  :1449470078 :       57][4645]:0 0
+[ 1449.708055] mdss_mdp_resource_control:787   =>[283024  :1449470085 :        7][4645]:0 1 3 33
+[ 1449.708061] mdss_mdp_cmd_clk_off:952        =>[283025  :1449470087 :        2][4645]:0 0 2
+[ 1449.708068] mdss_dsi_event_handler:2730     =>[283026  :1449470093 :        6][4645]:10 33153a58 1 3333
+[ 1449.708075] mdss_dsi_clk_req:162            =>[283027  :1449470096 :        3][4645]:1 0 1 1225 0
+[ 1449.708081] mdss_dsi_cmd_mdp_busy:2459      =>[283028  :1449470098 :        2][4645]:1 1 1225 1111
+[ 1449.708088] mdss_dsi_mdp_busy_tout_check:2410=>[283029  :1449670019 :   199921][4645]:1 1 1225 badf
+[ 1449.708095] mdss_dsi_clk_req_state:769      =>[283030  :1449670023 :        4][4645]:0 3 1 0 0
+[ 1449.708101] mdss_dsi_clk_req_state:835      =>[283031  :1449670025 :        2][4645]:0 3 1 1 1
+[ 1449.708107] dsi_recheck_clk_state:587       =>[283032  :1449670028 :        3][4645]:1 1 1 1
+[ 1449.708114] mdss_dsi_clk_req_state:769      =>[283033  :1449670030 :        2][4645]:1 3 1 0 0
+[ 1449.708120] mdss_dsi_clk_req_state:835      =>[283034  :1449670031 :        1][4645]:1 3 1 1 1
+[ 1449.708126] dsi_recheck_clk_state:587       =>[283035  :1449670033 :        2][4645]:1 1 1 1
+[ 1449.708133] mdss_dsi_clk_req_state:769      =>[283036  :1449670047 :       14][4645]:0 3 1 1 1
+[ 1449.708139] mdss_dsi_clk_req_state:835      =>[283037  :1449670048 :        1][4645]:0 3 1 1 1
+[ 1449.708145] mdss_dsi_clk_req_state:769      =>[283038  :1449670050 :        2][4645]:1 3 0 1 1
+[ 1449.708151] mdss_dsi_clk_req_state:835      =>[283039  :1449670052 :        2][4645]:1 3 0 0 0
+[ 1449.708157] dsi_recheck_clk_state:587       =>[283040  :1449670053 :        1][4645]:1 1 1 1
+[ 1449.708164] mdss_dsi_clk_req_state:769      =>[283041  :1449670054 :        1][4645]:0 3 0 1 1
+[ 1449.708170] mdss_dsi_clk_req_state:835      =>[283042  :1449670056 :        2][4645]:0 3 0 1 1
+[ 1449.708176] mdss_dsi_clk_req_state:769      =>[283043  :1449670058 :        2][4645]:0 3 0 1 1
+[ 1449.708182] mdss_dsi_clk_req_state:835      =>[283044  :1449670059 :        1][4645]:0 3 0 0 0
+[ 1449.708188] dsi_recheck_clk_state:587       =>[283045  :1449670060 :        1][4645]:1 1 1 1
+[ 1449.913252] mdss_dsi_cmd_mdp_busy: timeout error, TE ISR status=0x410110
+[ 1449.913289] mdss_dsi_cmd_mdp_busy:2495      =>[283046  :1449713321 :    43261][4645]:1 1 1225 2222
+[ 1449.913307] mdss_dsi_clk_req:171            =>[283047  :1449713323 :        2][4645]:1 0 1 1225 0
+[ 1449.913326] mdss_dsi_clk_req_state:769      =>[283048  :1449713326 :        3][4645]:0 3 1 1 1
+[ 1449.913343] mdss_dsi_clk_req_state:835      =>[283049  :1449713327 :        1][4645]:0 3 1 1 1
+[ 1449.913360] mdss_dsi_clk_req_state:769      =>[283050  :1449713328 :        1][4645]:1 3 0 1 1
+[ 1449.913377] mdss_dsi_clk_req_state:835      =>[283051  :1449713328 :        0][4645]:1 3 0 1 1
+[ 1449.913393] mdss_dsi_clk_req_state:769      =>[283052  :1449713329 :        1][4645]:0 3 0 1 1
+[ 1449.913410] mdss_dsi_clk_req_state:835      =>[283053  :1449713330 :        1][4645]:0 3 0 1 1
+[ 1449.913426] mdss_dsi_clk_req_state:769      =>[283054  :1449713331 :        1][4645]:0 3 0 1 1
+[ 1449.913442] mdss_dsi_clk_req_state:835      =>[283055  :1449713331 :        0][4645]:0 3 0 1 1
+[ 1449.913458] mdss_mdp_cmd_clk_off:952        =>[283056  :1449713335 :        4][4645]:0 0 1
+[ 1449.913475] mdss_dsi_event_handler:2730     =>[283057  :1449713338 :        3][4645]:10 33153a58 0 3333
+[ 1449.913493] mdss_dsi_clk_req:162            =>[283058  :1449713339 :        1][4645]:0 0 1 1225 0
+[ 1449.913510] mdss_dsi_cmd_mdp_busy:2459      =>[283059  :1449713340 :        1][4645]:0 1 1225 1111
+[ 1449.913527] mdss_dsi_mdp_busy_tout_check:2410=>[283060  :1449913339 :   199999][4645]:0 1 1225 badf
+[ 1449.913543] mdss_dsi_clk_req_state:769      =>[283061  :1449913343 :        4][4645]:0 3 1 0 0
+[ 1449.913560] mdss_dsi_clk_req_state:835      =>[283062  :1449913344 :        1][4645]:0 3 1 1 1
+[ 1449.913577] dsi_recheck_clk_state:587       =>[283063  :1449913347 :        3][4645]:1 1 1 1
+[ 1449.913593] mdss_dsi_clk_req_state:769      =>[283064  :1449913361 :       14][4645]:0 3 0 1 1
+[ 1449.913609] mdss_dsi_clk_req_state:835      =>[283065  :1449913362 :        1][4645]:0 3 0 0 0
+[ 1449.913625] dsi_recheck_clk_state:587       =>[283066  :1449913364 :        2][4645]:1 1 1 1
+[ 1450.113475] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x34
+[ 1450.113492] mdss_dsi_cmds_tx: failed to call
+[ 1450.313449] mdss_dsi_cmds2buf_tx: failed to call cmd_dma_tx for cmd = 0x28
+[ 1450.313465] mdss_dsi_cmds_tx: failed to call
+[ 1450.313889] mdss_dsi_panel_power_off_hx8396c2: ctrl0 vddio=0, lab=1, ibb=2, ext-vdd_en=0
+[ 1450.313976] mdss_dsi_panel_power_off_hx8396c2: ctrl1 vddio=0, lab=1, ibb=2, ext-vdd_en=0

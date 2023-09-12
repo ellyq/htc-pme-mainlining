@@ -1,3 +1,4 @@
+# Device list
 Device:           synaptics_dsx
 Kernel:           /dev/input/event7
 Group:            1
@@ -149,3 +150,111 @@ Disable-w-typing: n/a
 Disable-w-trackpointing: n/a
 Accel profiles:   n/a
 Rotation:         0.0
+
+# Events
+## Cypress touch buttons
+-event5   DEVICE_ADDED            cypress-cap-sensor                seat0 default group1  cap:k
+ event5   KEYBOARD_KEY            +0.000s	KEY_BACK (158) pressed
+ event5   KEYBOARD_KEY            +0.051s	KEY_BACK (158) released
+ event5   KEYBOARD_KEY            +2.815s	KEY_APPSELECT (580) pressed
+ event5   KEYBOARD_KEY            +3.038s	KEY_APPSELECT (580) released
+
+## GPIO (volume + power) buttons
+-event6   DEVICE_ADDED            gpio-keys                         seat0 default group1  cap:k
+ event6   KEYBOARD_KEY            +0.000s	KEY_VOLUMEUP (115) pressed
+ event6   KEYBOARD_KEY            +0.147s	KEY_VOLUMEUP (115) released
+ event6   KEYBOARD_KEY            +1.277s	KEY_VOLUMEDOWN (114) pressed
+ event6   KEYBOARD_KEY            +1.397s	KEY_VOLUMEDOWN (114) released
+ event6   KEYBOARD_KEY            +2.327s	KEY_POWER (116) pressed
+ event6   KEYBOARD_KEY            +2.520s	KEY_POWER (116) released
+
+## Synaptics (screen touch panel)
+-event7   DEVICE_ADDED            synaptics_dsx                     seat0 default group1  cap:kt ntouches 10 calib
+ event7   TOUCH_DOWN              +0.000s	0 (0) 11.81/ 5.94 (170.00/152.00mm)
+ event7   TOUCH_FRAME             +0.000s
+ event7   TOUCH_MOTION            +0.102s	0 (0) 11.81/ 5.90 (170.00/151.00mm)
+ event7   TOUCH_FRAME             +0.102s
+ event7   TOUCH_MOTION            +0.109s	0 (0) 11.88/ 5.90 (171.00/151.00mm)
+ event7   TOUCH_FRAME             +0.109s
+ event7   TOUCH_MOTION            +0.117s	0 (0) 11.94/ 5.86 (172.00/150.00mm)
+ event7   TOUCH_FRAME             +0.117s
+ event7   TOUCH_UP                +0.125s	0 (0)
+ event7   TOUCH_FRAME             +0.125s
+ event7   TOUCH_DOWN              +0.752s	0 (0) 60.83/10.86 (876.00/278.00mm)
+ event7   TOUCH_FRAME             +0.752s
+ event7   TOUCH_UP                +0.877s	0 (0)
+ event7   TOUCH_FRAME             +0.877s
+ event7   TOUCH_DOWN              +1.504s	0 (0) 95.83/29.49 (1380.00/755.00mm)
+ event7   TOUCH_FRAME             +1.504s
+ event7   TOUCH_MOTION            +1.582s	0 (0) 95.76/29.49 (1379.00/755.00mm)
+ event7   TOUCH_FRAME             +1.582s
+ event7   TOUCH_MOTION            +1.598s	0 (0) 95.69/29.49 (1378.00/755.00mm)
+ event7   TOUCH_FRAME             +1.598s
+ event7   TOUCH_MOTION            +1.614s	0 (0) 95.62/29.49 (1377.00/755.00mm)
+ event7   TOUCH_FRAME             +1.614s
+ event7   TOUCH_MOTION            +1.622s	0 (0) 95.56/29.49 (1376.00/755.00mm)
+ event7   TOUCH_FRAME             +1.622s
+ event7   TOUCH_MOTION            +1.630s	0 (0) 95.49/29.49 (1375.00/755.00mm)
+ event7   TOUCH_FRAME             +1.630s
+ event7   TOUCH_MOTION            +1.646s	0 (0) 95.42/29.49 (1374.00/755.00mm)
+ event7   TOUCH_FRAME             +1.646s
+ event7   TOUCH_MOTION            +1.653s	0 (0) 95.35/29.49 (1373.00/755.00mm)
+ event7   TOUCH_FRAME             +1.653s
+ event7   TOUCH_UP                +1.708s	0 (0)
+ event7   TOUCH_FRAME             +1.708s
+ event7   TOUCH_DOWN              +2.113s	0 (0) 61.11/36.48 (880.00/934.00mm)
+ event7   TOUCH_FRAME             +2.113s
+ event7   TOUCH_MOTION            +2.247s	0 (0) 61.11/36.45 (880.00/933.00mm)
+ event7   TOUCH_FRAME             +2.247s
+ event7   TOUCH_MOTION            +2.255s	0 (0) 61.04/36.41 (879.00/932.00mm)
+ event7   TOUCH_FRAME             +2.255s
+ event7   TOUCH_MOTION            +2.263s	0 (0) 60.97/36.37 (878.00/931.00mm)
+ event7   TOUCH_FRAME             +2.263s
+ event7   TOUCH_MOTION            +2.270s	0 (0) 60.56/36.41 (872.00/932.00mm)
+ event7   TOUCH_FRAME             +2.270s
+ event7   TOUCH_UP                +2.278s	0 (0)
+ event7   TOUCH_FRAME             +2.278s
+ event7   TOUCH_DOWN              +2.869s	0 (0) 15.07/49.26 (217.00/1261.00mm)
+ event7   TOUCH_FRAME             +2.869s
+ event7   TOUCH_MOTION            +3.010s	0 (0) 15.21/49.41 (219.00/1265.00mm)
+ event7   TOUCH_FRAME             +3.010s
+ event7   TOUCH_MOTION            +3.018s	0 (0) 15.49/49.69 (223.00/1272.00mm)
+ event7   TOUCH_FRAME             +3.018s
+ event7   TOUCH_UP                +3.026s	0 (0)
+ event7   TOUCH_FRAME             +3.026s
+ event7   TOUCH_DOWN              +3.407s	0 (0) 70.56/66.52 (1016.00/1703.00mm)
+ event7   TOUCH_FRAME             +3.407s
+ event7   TOUCH_MOTION            +3.477s	0 (0) 70.56/66.48 (1016.00/1702.00mm)
+ event7   TOUCH_FRAME             +3.477s
+ event7   TOUCH_MOTION            +3.485s	0 (0) 70.56/66.45 (1016.00/1701.00mm)
+ event7   TOUCH_FRAME             +3.485s
+ event7   TOUCH_MOTION            +3.501s	0 (0) 70.56/66.41 (1016.00/1700.00mm)
+ event7   TOUCH_FRAME             +3.501s
+ event7   TOUCH_MOTION            +3.540s	0 (0) 70.56/66.37 (1016.00/1699.00mm)
+ event7   TOUCH_FRAME             +3.540s
+ event7   TOUCH_MOTION            +3.548s	0 (0) 70.56/66.33 (1016.00/1698.00mm)
+ event7   TOUCH_FRAME             +3.548s
+ event7   TOUCH_MOTION            +3.564s	0 (0) 70.62/66.45 (1017.00/1701.00mm)
+ event7   TOUCH_FRAME             +3.564s
+ event7   TOUCH_MOTION            +3.572s	0 (0) 70.83/66.72 (1020.00/1708.00mm)
+ event7   TOUCH_FRAME             +3.572s
+ event7   TOUCH_MOTION            +3.580s	0 (0) 70.97/67.11 (1022.00/1718.00mm)
+ event7   TOUCH_FRAME             +3.580s
+ event7   TOUCH_UP                +3.587s	0 (0)
+ event7   TOUCH_FRAME             +3.587s
+ event7   TOUCH_DOWN              +4.094s	0 (0) 74.72/95.12 (1076.00/2435.00mm)
+ event7   TOUCH_FRAME             +4.094s
+ event7   TOUCH_MOTION            +4.260s	0 (0) 74.58/95.08 (1074.00/2434.00mm)
+ event7   TOUCH_FRAME             +4.260s
+ event7   TOUCH_MOTION            +4.268s	0 (0) 74.03/95.08 (1066.00/2434.00mm)
+ event7   TOUCH_FRAME             +4.268s
+ event7   TOUCH_MOTION            +4.276s	0 (0) 73.47/95.00 (1058.00/2432.00mm)
+ event7   TOUCH_FRAME             +4.276s
+ event7   TOUCH_UP                +4.283s	0 (0)
+ event7   TOUCH_FRAME             +4.283s
+ event7   TOUCH_DOWN              +4.560s	0 (0) 25.28/92.93 (364.00/2379.00mm)
+ event7   TOUCH_FRAME             +4.560s
+ event7   TOUCH_MOTION            +4.631s	0 (0) 25.28/92.89 (364.00/2378.00mm)
+ event7   TOUCH_FRAME             +4.631s
+ event7   TOUCH_UP                +4.638s	0 (0)
+ event7   TOUCH_FRAME             +4.638s
